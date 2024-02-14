@@ -1,0 +1,37 @@
+[4.883s] Invoking command in '/home/raivo/Hermes/hermes_ws/src/odometry': PYTHONPATH=/home/raivo/Hermes/hermes_ws/src/build/odometry/prefix_override:/home/raivo/Hermes/hermes_ws/src/install/odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/odometry build --build-base /home/raivo/Hermes/hermes_ws/src/build/odometry/build install --record /home/raivo/Hermes/hermes_ws/src/build/odometry/install.log --single-version-externally-managed
+[5.536s] running egg_info
+[5.537s] creating ../build/odometry/odometry.egg-info
+[5.537s] writing ../build/odometry/odometry.egg-info/PKG-INFO
+[5.537s] writing dependency_links to ../build/odometry/odometry.egg-info/dependency_links.txt
+[5.537s] writing entry points to ../build/odometry/odometry.egg-info/entry_points.txt
+[5.537s] writing requirements to ../build/odometry/odometry.egg-info/requires.txt
+[5.537s] writing top-level names to ../build/odometry/odometry.egg-info/top_level.txt
+[5.537s] writing manifest file '../build/odometry/odometry.egg-info/SOURCES.txt'
+[5.562s] reading manifest file '../build/odometry/odometry.egg-info/SOURCES.txt'
+[5.563s] writing manifest file '../build/odometry/odometry.egg-info/SOURCES.txt'
+[5.563s] running build
+[5.563s] running build_py
+[5.563s] creating /home/raivo/Hermes/hermes_ws/src/build/odometry/build
+[5.563s] creating /home/raivo/Hermes/hermes_ws/src/build/odometry/build/lib
+[5.563s] creating /home/raivo/Hermes/hermes_ws/src/build/odometry/build/lib/odometry
+[5.563s] copying odometry/odometry_node.py -> /home/raivo/Hermes/hermes_ws/src/build/odometry/build/lib/odometry
+[5.563s] copying odometry/__init__.py -> /home/raivo/Hermes/hermes_ws/src/build/odometry/build/lib/odometry
+[5.563s] running install
+[5.564s] running install_lib
+[5.564s] creating /home/raivo/Hermes/hermes_ws/src/install/odometry/lib/python3.8/site-packages/odometry
+[5.564s] copying /home/raivo/Hermes/hermes_ws/src/build/odometry/build/lib/odometry/odometry_node.py -> /home/raivo/Hermes/hermes_ws/src/install/odometry/lib/python3.8/site-packages/odometry
+[5.564s] copying /home/raivo/Hermes/hermes_ws/src/build/odometry/build/lib/odometry/__init__.py -> /home/raivo/Hermes/hermes_ws/src/install/odometry/lib/python3.8/site-packages/odometry
+[5.566s] byte-compiling /home/raivo/Hermes/hermes_ws/src/install/odometry/lib/python3.8/site-packages/odometry/odometry_node.py to odometry_node.cpython-38.pyc
+[5.566s] byte-compiling /home/raivo/Hermes/hermes_ws/src/install/odometry/lib/python3.8/site-packages/odometry/__init__.py to __init__.cpython-38.pyc
+[5.566s] running install_data
+[5.566s] creating /home/raivo/Hermes/hermes_ws/src/install/odometry/share/ament_index
+[5.567s] creating /home/raivo/Hermes/hermes_ws/src/install/odometry/share/ament_index/resource_index
+[5.567s] creating /home/raivo/Hermes/hermes_ws/src/install/odometry/share/ament_index/resource_index/packages
+[5.567s] copying resource/odometry -> /home/raivo/Hermes/hermes_ws/src/install/odometry/share/ament_index/resource_index/packages
+[5.567s] copying package.xml -> /home/raivo/Hermes/hermes_ws/src/install/odometry/share/odometry
+[5.567s] running install_egg_info
+[5.569s] Copying ../build/odometry/odometry.egg-info to /home/raivo/Hermes/hermes_ws/src/install/odometry/lib/python3.8/site-packages/odometry-0.0.0-py3.8.egg-info
+[5.569s] running install_scripts
+[5.587s] Installing odometry_node script to /home/raivo/Hermes/hermes_ws/src/install/odometry/lib/odometry
+[5.587s] writing list of installed files to '/home/raivo/Hermes/hermes_ws/src/build/odometry/install.log'
+[5.788s] Invoked command in '/home/raivo/Hermes/hermes_ws/src/odometry' returned '0': PYTHONPATH=/home/raivo/Hermes/hermes_ws/src/build/odometry/prefix_override:/home/raivo/Hermes/hermes_ws/src/install/odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/odometry build --build-base /home/raivo/Hermes/hermes_ws/src/build/odometry/build install --record /home/raivo/Hermes/hermes_ws/src/build/odometry/install.log --single-version-externally-managed
