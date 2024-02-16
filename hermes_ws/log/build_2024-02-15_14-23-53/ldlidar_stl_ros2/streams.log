@@ -1,0 +1,5 @@
+[5.362s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/lidar_sub_ros2_ws/install/lidar_sub_ros2:/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg /usr/local/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2 -- -j6 -l6
+[7.597s] [0mCMake Error: The source directory "/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2" does not appear to contain CMakeLists.txt.
+[7.598s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[7.599s] make: *** [Makefile:429: cmake_check_build_system] Error 1
+[7.600s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/lidar_sub_ros2_ws/install/lidar_sub_ros2:/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg /usr/local/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2 -- -j6 -l6

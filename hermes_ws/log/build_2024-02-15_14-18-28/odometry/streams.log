@@ -1,0 +1,37 @@
+[8.757s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/odometry': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odometry build --build-base /home/hermes/Hermes/hermes_ws/build/odometry/build install --record /home/hermes/Hermes/hermes_ws/build/odometry/install.log --single-version-externally-managed
+[9.904s] running egg_info
+[9.904s] creating ../../build/odometry/odometry.egg-info
+[9.904s] writing ../../build/odometry/odometry.egg-info/PKG-INFO
+[9.905s] writing dependency_links to ../../build/odometry/odometry.egg-info/dependency_links.txt
+[9.905s] writing entry points to ../../build/odometry/odometry.egg-info/entry_points.txt
+[9.905s] writing requirements to ../../build/odometry/odometry.egg-info/requires.txt
+[9.905s] writing top-level names to ../../build/odometry/odometry.egg-info/top_level.txt
+[9.909s] writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[10.086s] reading manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[10.087s] writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[10.098s] running build
+[10.098s] running build_py
+[10.098s] creating /home/hermes/Hermes/hermes_ws/build/odometry/build
+[10.099s] creating /home/hermes/Hermes/hermes_ws/build/odometry/build/lib
+[10.099s] creating /home/hermes/Hermes/hermes_ws/build/odometry/build/lib/odometry
+[10.099s] copying odometry/__init__.py -> /home/hermes/Hermes/hermes_ws/build/odometry/build/lib/odometry
+[10.099s] copying odometry/odometry_node.py -> /home/hermes/Hermes/hermes_ws/build/odometry/build/lib/odometry
+[10.099s] running install
+[10.099s] running install_lib
+[10.103s] creating /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages/odometry
+[10.103s] copying /home/hermes/Hermes/hermes_ws/build/odometry/build/lib/odometry/__init__.py -> /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages/odometry
+[10.105s] copying /home/hermes/Hermes/hermes_ws/build/odometry/build/lib/odometry/odometry_node.py -> /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages/odometry
+[10.107s] byte-compiling /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages/odometry/__init__.py to __init__.cpython-38.pyc
+[10.113s] byte-compiling /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages/odometry/odometry_node.py to odometry_node.cpython-38.pyc
+[10.116s] running install_data
+[10.120s] creating /home/hermes/Hermes/hermes_ws/install/odometry/share/ament_index
+[10.120s] creating /home/hermes/Hermes/hermes_ws/install/odometry/share/ament_index/resource_index
+[10.120s] creating /home/hermes/Hermes/hermes_ws/install/odometry/share/ament_index/resource_index/packages
+[10.121s] copying resource/odometry -> /home/hermes/Hermes/hermes_ws/install/odometry/share/ament_index/resource_index/packages
+[10.132s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/odometry/share/odometry
+[10.133s] running install_egg_info
+[10.137s] Copying ../../build/odometry/odometry.egg-info to /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages/odometry-0.0.0-py3.8.egg-info
+[10.235s] running install_scripts
+[10.236s] Installing odometry_node script to /home/hermes/Hermes/hermes_ws/install/odometry/lib/odometry
+[10.237s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/odometry/install.log'
+[11.217s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/odometry' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odometry build --build-base /home/hermes/Hermes/hermes_ws/build/odometry/build install --record /home/hermes/Hermes/hermes_ws/build/odometry/install.log --single-version-externally-managed
