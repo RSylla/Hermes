@@ -1,0 +1,21 @@
+[12.570s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/gps_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gps_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/gps_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log --single-version-externally-managed
+[13.276s] running egg_info
+[13.278s] writing ../../build/gps_publisher/gps_publisher.egg-info/PKG-INFO
+[13.279s] writing dependency_links to ../../build/gps_publisher/gps_publisher.egg-info/dependency_links.txt
+[13.280s] writing entry points to ../../build/gps_publisher/gps_publisher.egg-info/entry_points.txt
+[13.280s] writing requirements to ../../build/gps_publisher/gps_publisher.egg-info/requires.txt
+[13.281s] writing top-level names to ../../build/gps_publisher/gps_publisher.egg-info/top_level.txt
+[13.358s] reading manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'
+[13.359s] writing manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'
+[13.359s] running build
+[13.359s] running build_py
+[13.360s] running install
+[13.362s] running install_lib
+[13.422s] running install_data
+[13.422s] running install_egg_info
+[13.422s] removing '/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.8/site-packages/gps_publisher-0.0.0-py3.8.egg-info' (and everything under it)
+[13.422s] Copying ../../build/gps_publisher/gps_publisher.egg-info to /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.8/site-packages/gps_publisher-0.0.0-py3.8.egg-info
+[13.423s] running install_scripts
+[13.424s] Installing gps_publisher_node script to /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/gps_publisher
+[13.424s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log'
+[14.064s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/gps_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gps_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/gps_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log --single-version-externally-managed

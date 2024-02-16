@@ -1,0 +1,125 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)
+  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+  CMakeLists.txt:19 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/include;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/ldlidar_driver/include/core;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/ldlidar_driver/include/dataprocess;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/ldlidar_driver/include/filter;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/ldlidar_driver/include/logger;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/ldlidar_driver/include/networkcom;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/ldlidar_driver/include/serialcom
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2
+[ 12%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/dataprocess/lipkg.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/core/ldlidar_driver.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/filter/tofbf.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/logger/log_module.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/serialcom/serial_interface_linux.cpp.o[0m
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:64:12:[m[K [01;31m[Kerror: [m[K‘[01m[KCmdInterfaceLinux[m[K’ is not a member of ‘[01m[Kldlidar[m[K’
+   64 |   ldlidar::[01;31m[KCmdInterfaceLinux[m[K *cmd_port = new ldlidar::CmdInterfaceLinux();
+      |            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:64:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_port[m[K’ was not declared in this scope
+   64 |   ldlidar::CmdInterfaceLinux *[01;31m[Kcmd_port[m[K = new ldlidar::CmdInterfaceLinux();
+      |                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:64:46:[m[K [01;31m[Kerror: [m[Kexpected type-specifier
+   64 |   ldlidar::CmdInterfaceLinux *cmd_port = new [01;31m[Kldlidar[m[K::CmdInterfaceLinux();
+      |                                              [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/include/ros2_api.h:24[m[K,
+                 from [01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:22[m[K:
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:66:90:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ldlidar::LiPkg[m[K’ has no member named ‘[01m[KGetSdkPackVersionNum[m[K’
+   66 |   RCLCPP_INFO_STREAM(node->get_logger(), " [ldrobot] SDK Pack Version is " << lidar_pkg->[01;31m[KGetSdkPackVersionNum[m[K());
+      |                                                                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:95:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool ldlidar::LiPkg::IsFrameReady()[m[K’ is private within this context
+   95 |     if (lidar_pkg->IsFrameReady([01;31m[K)[m[K) {
+      |                                 [01;31m[K^[m[K
+In file included from [01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:23[m[K:
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/ldlidar_driver/include/dataprocess/lipkg.h:125:8:[m[K [01;36m[Knote: [m[Kdeclared private here
+  125 |   bool [01;36m[KIsFrameReady[m[K(void);
+      |        [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:96:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid ldlidar::LiPkg::ResetFrameReady()[m[K’ is private within this context
+   96 |       lidar_pkg->ResetFrameReady([01;31m[K)[m[K;
+      |                                  [01;31m[K^[m[K
+In file included from [01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:23[m[K:
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/ldlidar_driver/include/dataprocess/lipkg.h:127:8:[m[K [01;36m[Knote: [m[Kdeclared private here
+  127 |   void [01;36m[KResetFrameReady[m[K(void);
+      |        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:98:69:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kldlidar::LiPkg::GetLaserScanData()[m[K’
+   98 |       ldlidar::Points2D laserscandata = lidar_pkg->GetLaserScanData([01;31m[K)[m[K;
+      |                                                                     [01;31m[K^[m[K
+In file included from [01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:23[m[K:
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/ldlidar_driver/include/dataprocess/lipkg.h:77:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool ldlidar::LiPkg::GetLaserScanData(ldlidar::Points2D&)[m[K’
+   77 |   bool [01;36m[KGetLaserScanData[m[K(Points2D& out);
+      |        [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/ldlidar_driver/include/dataprocess/lipkg.h:77:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:114:10:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[K<type error>[m[K’ argument given to ‘[01m[Kdelete[m[K’, expected pointer
+  114 |   delete [01;31m[Kcmd_port[m[K;
+      |          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:[m[K In function ‘[01m[Kvoid ToLaserscanMessagePublish(ldlidar::Points2D&, ldlidar::LiPkg*, LaserScanSetting&, rclcpp::Node::SharedPtr&, rclcpp::Publisher<sensor_msgs::msg::LaserScan_<std::allocator<void> > >::SharedPtr&)[m[K’:
+[01m[K/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_stl_ros2/src/demo.cpp:139:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ldlidar::LiPkg[m[K’ has no member named ‘[01m[KkPointFrequence[m[K’
+  139 |   float scan_freq = static_cast<float>(commpkg->[01;31m[KkPointFrequence[m[K);
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/ldlidar_stl_ros2_node.dir/build.make:76: CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ldlidar_stl_ros2_node.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
