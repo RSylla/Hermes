@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'tof_publisher = tof_publisher.tof_publisher_node:main'
+            'tof_data = tof_publisher.tof_data_node:main'
         ],
     },
 )
