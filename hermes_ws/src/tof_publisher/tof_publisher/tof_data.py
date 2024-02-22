@@ -3,16 +3,15 @@ from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
 import math 
 
-class LaserScanSubscriber(Node):
-
+class LidarToTofProcessor(Node):
     def __init__(self):
-        super().__init__('laser_scan_subscriber')
-        self.subscription = self.create_subscription(
-            LaserScan,
-            '/scan',
-            self.listener_callback,
-            10)
-        self.subscription  # prevent unused variable warning
+        super().__init__('lidar_to_tof_processor')
+
+        # Subscriber to lidar data
+        self.lidar_sub = self.create_subscription(LaserScan, '/scan', self.lidar_callback, 10)
+
+        # Publisher for processed tof data
+        self.tof_pub = self.create_publisher(LaserScan, '/tof_data', 10) 
 
     def listener_callback(self, msg):
         numerical_ranges = [r for r in msg.ranges if isinstance(r, (int, float)) and not math.isnan(r)]
@@ -22,11 +21,12 @@ class LaserScanSubscriber(Node):
         else:
             self.get_logger().info('No numerical, non-NaN ranges found.')
 
+
 def main(args=None):
     rclpy.init(args=args)
-    laser_scan_subscriber = LaserScanSubscriber()
-    rclpy.spin(laser_scan_subscriber)
-    laser_scan_subscriber.destroy_node()
+    lidar_to_tof_processor = LidarToTofProcessor()
+    rclpy.spin(lidar_to_tof_processor)
+    lidar_to_tof_processor.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
