@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'tof_publisher = tof_publisher.tof_publisher_node:main'
         ],
     },
 )
