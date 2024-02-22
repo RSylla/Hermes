@@ -35,7 +35,7 @@ def generate_launch_description():
         {'port_name': '/dev/ttyUSB0'},
         {'port_baudrate': 230400},
         {'laser_scan_dir': True},
-        {'enable_angle_crop_func': False},
+        {'enable_angle_crop_func': True},
         {'angle_crop_min': 135.0},
         {'angle_crop_max': 225.0}
       ]
