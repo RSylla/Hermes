@@ -1,0 +1,409 @@
+[0.000000] (-) TimerEvent: {}
+[0.000689] (cameras) JobQueued: {'identifier': 'cameras', 'dependencies': OrderedDict()}
+[0.000887] (gps_publisher) JobQueued: {'identifier': 'gps_publisher', 'dependencies': OrderedDict()}
+[0.001394] (imu_publisher) JobQueued: {'identifier': 'imu_publisher', 'dependencies': OrderedDict()}
+[0.001728] (ldlidar_stl_ros2) JobQueued: {'identifier': 'ldlidar_stl_ros2', 'dependencies': OrderedDict()}
+[0.001880] (odometry) JobQueued: {'identifier': 'odometry', 'dependencies': OrderedDict()}
+[0.001927] (teleop_control) JobQueued: {'identifier': 'teleop_control', 'dependencies': OrderedDict()}
+[0.001966] (cameras) JobStarted: {'identifier': 'cameras'}
+[0.099410] (-) TimerEvent: {}
+[0.199829] (-) TimerEvent: {}
+[0.301793] (-) TimerEvent: {}
+[0.402376] (-) TimerEvent: {}
+[0.494306] (gps_publisher) JobStarted: {'identifier': 'gps_publisher'}
+[0.502652] (-) TimerEvent: {}
+[0.603075] (-) TimerEvent: {}
+[0.703820] (-) TimerEvent: {}
+[0.804791] (-) TimerEvent: {}
+[0.905553] (-) TimerEvent: {}
+[0.979991] (imu_publisher) JobStarted: {'identifier': 'imu_publisher'}
+[1.005688] (-) TimerEvent: {}
+[1.106391] (-) TimerEvent: {}
+[1.206902] (-) TimerEvent: {}
+[1.310505] (-) TimerEvent: {}
+[1.411708] (-) TimerEvent: {}
+[1.496837] (ldlidar_stl_ros2) JobStarted: {'identifier': 'ldlidar_stl_ros2'}
+[1.511982] (-) TimerEvent: {}
+[1.612865] (-) TimerEvent: {}
+[1.713454] (-) TimerEvent: {}
+[1.814433] (-) TimerEvent: {}
+[1.884859] (odometry) JobStarted: {'identifier': 'odometry'}
+[1.914626] (-) TimerEvent: {}
+[2.015588] (-) TimerEvent: {}
+[2.116517] (-) TimerEvent: {}
+[2.217214] (-) TimerEvent: {}
+[2.318303] (-) TimerEvent: {}
+[2.368778] (teleop_control) JobStarted: {'identifier': 'teleop_control'}
+[2.418510] (-) TimerEvent: {}
+[2.519425] (-) TimerEvent: {}
+[2.620334] (-) TimerEvent: {}
+[2.721300] (-) TimerEvent: {}
+[2.822558] (-) TimerEvent: {}
+[2.923624] (-) TimerEvent: {}
+[3.024258] (-) TimerEvent: {}
+[3.124585] (-) TimerEvent: {}
+[3.224892] (-) TimerEvent: {}
+[3.325245] (-) TimerEvent: {}
+[3.426066] (-) TimerEvent: {}
+[3.526783] (-) TimerEvent: {}
+[3.627849] (-) TimerEvent: {}
+[3.728593] (-) TimerEvent: {}
+[3.829249] (-) TimerEvent: {}
+[3.929908] (-) TimerEvent: {}
+[4.030251] (-) TimerEvent: {}
+[4.130544] (-) TimerEvent: {}
+[4.230874] (-) TimerEvent: {}
+[4.331395] (-) TimerEvent: {}
+[4.433194] (-) TimerEvent: {}
+[4.534618] (-) TimerEvent: {}
+[4.635194] (-) TimerEvent: {}
+[4.735681] (-) TimerEvent: {}
+[4.836342] (-) TimerEvent: {}
+[4.936675] (-) TimerEvent: {}
+[5.036952] (-) TimerEvent: {}
+[5.137268] (-) TimerEvent: {}
+[5.237802] (-) TimerEvent: {}
+[5.338794] (-) TimerEvent: {}
+[5.439313] (-) TimerEvent: {}
+[5.536225] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'cmake'}
+[5.536894] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/local/bin/cmake', '/home/hermes/Hermes/hermes_ws/src/lidar_publisher', '-DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2'], 'cwd': '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'et:en_CA:en_AU:en'), ('USER', 'hermes'), ('SSH_CLIENT', '10.0.3.16 33886 22'), ('LC_TIME', 'et_EE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hermes'), ('OLDPWD', '/home/hermes/Hermes/hermes_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'et_EE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_colcon_cd_root', '/home/hermes/ros2_install'), ('COLCON_PREFIX_PATH', '/home/hermes/ros2_teleop_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hermes'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hermes/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'et_EE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'et_EE.UTF-8'), ('LC_TELEPHONE', 'et_EE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg'), ('SHELL', '/bin/bash'), ('LC_NAME', 'et_EE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'et_EE.UTF-8'), ('LC_IDENTIFICATION', 'et_EE.UTF-8'), ('PWD', '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.3.16 33886 10.0.3.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/home/hermes/ros2_teleop_ws/build/teleop_pkg:/home/hermes/ros2_teleop_ws/install/teleop_pkg/lib/python3.8/site-packages'), ('LC_NUMERIC', 'et_EE.UTF-8'), ('LC_PAPER', 'et_EE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg')]), 'shell': False}
+[5.539389] (-) TimerEvent: {}
+[5.640140] (-) TimerEvent: {}
+[5.740975] (-) TimerEvent: {}
+[5.841641] (-) TimerEvent: {}
+[5.942303] (-) TimerEvent: {}
+[6.042974] (-) TimerEvent: {}
+[6.143802] (-) TimerEvent: {}
+[6.244908] (-) TimerEvent: {}
+[6.346292] (-) TimerEvent: {}
+[6.447318] (-) TimerEvent: {}
+[6.548224] (-) TimerEvent: {}
+[6.649080] (-) TimerEvent: {}
+[6.749738] (-) TimerEvent: {}
+[6.850399] (-) TimerEvent: {}
+[6.951025] (-) TimerEvent: {}
+[7.051773] (-) TimerEvent: {}
+[7.152572] (-) TimerEvent: {}
+[7.253944] (-) TimerEvent: {}
+[7.354761] (-) TimerEvent: {}
+[7.406449] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[7.407353] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[7.407816] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[7.408135] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.408609] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.408869] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.409892] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.411444] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.411765] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.412414] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.412578] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.413225] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.413474] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[7.414215] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[7.414662] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[7.417989] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[7.418196] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.418355] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[7.418497] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[7.418642] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[7.418774] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.418915] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/python.cmake:22 (find_package):\n'}
+[7.419125] (ldlidar_stl_ros2) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[7.420957] (ldlidar_stl_ros2) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[7.421426] (ldlidar_stl_ros2) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[7.422213] (ldlidar_stl_ros2) StderrLine: {'line': b'\n'}
+[7.422798] (ldlidar_stl_ros2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[7.423048] (ldlidar_stl_ros2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/all.cmake:53 (include)\n'}
+[7.423348] (ldlidar_stl_ros2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_core-extras.cmake:17 (include)\n'}
+[7.424421] (ldlidar_stl_ros2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[7.427491] (ldlidar_stl_ros2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[7.427936] (ldlidar_stl_ros2) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[7.428087] (ldlidar_stl_ros2) StderrLine: {'line': b'  CMakeLists.txt:19 (find_package)\n'}
+[7.428220] (ldlidar_stl_ros2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[7.428355] (ldlidar_stl_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[7.455239] (-) TimerEvent: {}
+[7.489686] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[7.494828] (ldlidar_stl_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.498554] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.555516] (-) TimerEvent: {}
+[7.645602] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[7.646644] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[7.655658] (-) TimerEvent: {}
+[7.746999] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[7.747984] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[7.755795] (-) TimerEvent: {}
+[7.856450] (-) TimerEvent: {}
+[7.864676] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[7.868279] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.956608] (-) TimerEvent: {}
+[8.057290] (-) TimerEvent: {}
+[8.157989] (-) TimerEvent: {}
+[8.192350] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[8.258154] (-) TimerEvent: {}
+[8.358913] (-) TimerEvent: {}
+[8.433265] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[8.459081] (-) TimerEvent: {}
+[8.559881] (-) TimerEvent: {}
+[8.612998] (ldlidar_stl_ros2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.620978] (ldlidar_stl_ros2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[8.623578] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/hermes/Hermes/hermes_ws/src/lidar_publisher/include;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_driver/include/core;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_driver/include/dataprocess;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_driver/include/filter;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_driver/include/logger;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_driver/include/networkcom;/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_driver/include/serialcom\n'}
+[8.624230] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[8.631091] (ldlidar_stl_ros2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[8.631931] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[8.634863] (ldlidar_stl_ros2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[8.638161] (ldlidar_stl_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.640890] (ldlidar_stl_ros2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[8.647748] (ldlidar_stl_ros2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[8.648516] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[8.651432] (ldlidar_stl_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.655944] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Configuring done (3.0s)\n'}
+[8.659987] (-) TimerEvent: {}
+[8.669129] (cameras) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/cameras', 'build', '--build-base', '/home/hermes/Hermes/hermes_ws/build/cameras/build', 'install', '--record', '/home/hermes/Hermes/hermes_ws/build/cameras/install.log', '--single-version-externally-managed'], 'cwd': '/home/hermes/Hermes/hermes_ws/src/cameras', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'et:en_CA:en_AU:en', 'USER': 'hermes', 'SSH_CLIENT': '10.0.3.16 33886 22', 'LC_TIME': 'et_EE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/hermes', 'OLDPWD': '/home/hermes/Hermes/hermes_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'et_EE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/home/hermes/ros2_install', 'COLCON_PREFIX_PATH': '/home/hermes/ros2_teleop_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'hermes', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/hermes/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'et_EE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'et_EE.UTF-8', 'LC_TELEPHONE': 'et_EE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg', 'SHELL': '/bin/bash', 'LC_NAME': 'et_EE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'et_EE.UTF-8', 'LC_IDENTIFICATION': 'et_EE.UTF-8', 'PWD': '/home/hermes/Hermes/hermes_ws/build/cameras', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.3.16 33886 10.0.3.77 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hermes/Hermes/hermes_ws/build/cameras/prefix_override:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/hermes/ros2_teleop_ws/build/teleop_pkg:/home/hermes/ros2_teleop_ws/install/teleop_pkg/lib/python3.8/site-packages', 'LC_NUMERIC': 'et_EE.UTF-8', 'LC_PAPER': 'et_EE.UTF-8', 'COLCON': '1'}, 'shell': False}
+[8.683519] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[8.688505] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2\n'}
+[8.703446] (odometry) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/odometry', 'build', '--build-base', '/home/hermes/Hermes/hermes_ws/build/odometry/build', 'install', '--record', '/home/hermes/Hermes/hermes_ws/build/odometry/install.log', '--single-version-externally-managed'], 'cwd': '/home/hermes/Hermes/hermes_ws/src/odometry', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'et:en_CA:en_AU:en', 'USER': 'hermes', 'SSH_CLIENT': '10.0.3.16 33886 22', 'LC_TIME': 'et_EE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/hermes', 'OLDPWD': '/home/hermes/Hermes/hermes_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'et_EE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/home/hermes/ros2_install', 'COLCON_PREFIX_PATH': '/home/hermes/ros2_teleop_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'hermes', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/hermes/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'et_EE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'et_EE.UTF-8', 'LC_TELEPHONE': 'et_EE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg', 'SHELL': '/bin/bash', 'LC_NAME': 'et_EE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'et_EE.UTF-8', 'LC_IDENTIFICATION': 'et_EE.UTF-8', 'PWD': '/home/hermes/Hermes/hermes_ws/build/odometry', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.3.16 33886 10.0.3.77 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/hermes/ros2_teleop_ws/build/teleop_pkg:/home/hermes/ros2_teleop_ws/install/teleop_pkg/lib/python3.8/site-packages', 'LC_NUMERIC': 'et_EE.UTF-8', 'LC_PAPER': 'et_EE.UTF-8', 'COLCON': '1'}, 'shell': False}
+[8.713995] (gps_publisher) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/gps_publisher', 'build', '--build-base', '/home/hermes/Hermes/hermes_ws/build/gps_publisher/build', 'install', '--record', '/home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log', '--single-version-externally-managed'], 'cwd': '/home/hermes/Hermes/hermes_ws/src/gps_publisher', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'et:en_CA:en_AU:en', 'USER': 'hermes', 'SSH_CLIENT': '10.0.3.16 33886 22', 'LC_TIME': 'et_EE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/hermes', 'OLDPWD': '/home/hermes/Hermes/hermes_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'et_EE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/home/hermes/ros2_install', 'COLCON_PREFIX_PATH': '/home/hermes/ros2_teleop_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'hermes', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/hermes/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'et_EE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'et_EE.UTF-8', 'LC_TELEPHONE': 'et_EE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg', 'SHELL': '/bin/bash', 'LC_NAME': 'et_EE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'et_EE.UTF-8', 'LC_IDENTIFICATION': 'et_EE.UTF-8', 'PWD': '/home/hermes/Hermes/hermes_ws/build/gps_publisher', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.3.16 33886 10.0.3.77 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/hermes/ros2_teleop_ws/build/teleop_pkg:/home/hermes/ros2_teleop_ws/install/teleop_pkg/lib/python3.8/site-packages', 'LC_NUMERIC': 'et_EE.UTF-8', 'LC_PAPER': 'et_EE.UTF-8', 'COLCON': '1'}, 'shell': False}
+[8.724176] (imu_publisher) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/imu_publisher', 'build', '--build-base', '/home/hermes/Hermes/hermes_ws/build/imu_publisher/build', 'install', '--record', '/home/hermes/Hermes/hermes_ws/build/imu_publisher/install.log', '--single-version-externally-managed'], 'cwd': '/home/hermes/Hermes/hermes_ws/src/imu_publisher', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'et:en_CA:en_AU:en', 'USER': 'hermes', 'SSH_CLIENT': '10.0.3.16 33886 22', 'LC_TIME': 'et_EE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/hermes', 'OLDPWD': '/home/hermes/Hermes/hermes_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'et_EE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/home/hermes/ros2_install', 'COLCON_PREFIX_PATH': '/home/hermes/ros2_teleop_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'hermes', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/hermes/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'et_EE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'et_EE.UTF-8', 'LC_TELEPHONE': 'et_EE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg', 'SHELL': '/bin/bash', 'LC_NAME': 'et_EE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'et_EE.UTF-8', 'LC_IDENTIFICATION': 'et_EE.UTF-8', 'PWD': '/home/hermes/Hermes/hermes_ws/build/imu_publisher', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.3.16 33886 10.0.3.77 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hermes/Hermes/hermes_ws/build/imu_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/hermes/ros2_teleop_ws/build/teleop_pkg:/home/hermes/ros2_teleop_ws/install/teleop_pkg/lib/python3.8/site-packages', 'LC_NUMERIC': 'et_EE.UTF-8', 'LC_PAPER': 'et_EE.UTF-8', 'COLCON': '1'}, 'shell': False}
+[8.736969] (teleop_control) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/teleop_control', 'build', '--build-base', '/home/hermes/Hermes/hermes_ws/build/teleop_control/build', 'install', '--record', '/home/hermes/Hermes/hermes_ws/build/teleop_control/install.log', '--single-version-externally-managed'], 'cwd': '/home/hermes/Hermes/hermes_ws/src/teleop_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'et:en_CA:en_AU:en', 'USER': 'hermes', 'SSH_CLIENT': '10.0.3.16 33886 22', 'LC_TIME': 'et_EE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/hermes', 'OLDPWD': '/home/hermes/Hermes/hermes_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'et_EE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_colcon_cd_root': '/home/hermes/ros2_install', 'COLCON_PREFIX_PATH': '/home/hermes/ros2_teleop_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'hermes', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/hermes/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'et_EE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'et_EE.UTF-8', 'LC_TELEPHONE': 'et_EE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg', 'SHELL': '/bin/bash', 'LC_NAME': 'et_EE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'et_EE.UTF-8', 'LC_IDENTIFICATION': 'et_EE.UTF-8', 'PWD': '/home/hermes/Hermes/hermes_ws/build/teleop_control', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.3.16 33886 10.0.3.77 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/hermes/ros2_teleop_ws/build/teleop_pkg:/home/hermes/ros2_teleop_ws/install/teleop_pkg/lib/python3.8/site-packages', 'LC_NUMERIC': 'et_EE.UTF-8', 'LC_PAPER': 'et_EE.UTF-8', 'COLCON': '1'}, 'shell': False}
+[8.753190] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[8.755622] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'build'}
+[8.755744] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2', '--', '-j6', '-l6'], 'cwd': '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'et:en_CA:en_AU:en'), ('USER', 'hermes'), ('SSH_CLIENT', '10.0.3.16 33886 22'), ('LC_TIME', 'et_EE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hermes'), ('OLDPWD', '/home/hermes/Hermes/hermes_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'et_EE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_colcon_cd_root', '/home/hermes/ros2_install'), ('COLCON_PREFIX_PATH', '/home/hermes/ros2_teleop_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hermes'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hermes/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'et_EE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'et_EE.UTF-8'), ('LC_TELEPHONE', 'et_EE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg'), ('SHELL', '/bin/bash'), ('LC_NAME', 'et_EE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'et_EE.UTF-8'), ('LC_IDENTIFICATION', 'et_EE.UTF-8'), ('PWD', '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.3.16 33886 10.0.3.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/home/hermes/ros2_teleop_ws/build/teleop_pkg:/home/hermes/ros2_teleop_ws/install/teleop_pkg/lib/python3.8/site-packages'), ('LC_NUMERIC', 'et_EE.UTF-8'), ('LC_PAPER', 'et_EE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg')]), 'shell': False}
+[8.760139] (-) TimerEvent: {}
+[8.861036] (-) TimerEvent: {}
+[8.962641] (-) TimerEvent: {}
+[9.063819] (-) TimerEvent: {}
+[9.164918] (-) TimerEvent: {}
+[9.233799] (cameras) StdoutLine: {'line': b'running egg_info\n'}
+[9.245302] (cameras) StdoutLine: {'line': b'writing ../../build/cameras/cameras.egg-info/PKG-INFO\n'}
+[9.246017] (cameras) StdoutLine: {'line': b'writing dependency_links to ../../build/cameras/cameras.egg-info/dependency_links.txt\n'}
+[9.246412] (cameras) StdoutLine: {'line': b'writing entry points to ../../build/cameras/cameras.egg-info/entry_points.txt\n'}
+[9.246692] (cameras) StdoutLine: {'line': b'writing requirements to ../../build/cameras/cameras.egg-info/requires.txt\n'}
+[9.246878] (cameras) StdoutLine: {'line': b'writing top-level names to ../../build/cameras/cameras.egg-info/top_level.txt\n'}
+[9.265091] (-) TimerEvent: {}
+[9.271599] (imu_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[9.273799] (imu_publisher) StdoutLine: {'line': b'writing ../../build/imu_publisher/imu_publisher.egg-info/PKG-INFO\n'}
+[9.274992] (imu_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/imu_publisher/imu_publisher.egg-info/dependency_links.txt\n'}
+[9.276032] (imu_publisher) StdoutLine: {'line': b'writing entry points to ../../build/imu_publisher/imu_publisher.egg-info/entry_points.txt\n'}
+[9.276889] (imu_publisher) StdoutLine: {'line': b'writing requirements to ../../build/imu_publisher/imu_publisher.egg-info/requires.txt\n'}
+[9.277621] (imu_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/imu_publisher/imu_publisher.egg-info/top_level.txt\n'}
+[9.349555] (imu_publisher) StdoutLine: {'line': b"reading manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'\n"}
+[9.352371] (imu_publisher) StdoutLine: {'line': b"writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'\n"}
+[9.353523] (imu_publisher) StdoutLine: {'line': b'running build\n'}
+[9.354062] (imu_publisher) StdoutLine: {'line': b'running build_py\n'}
+[9.355326] (imu_publisher) StdoutLine: {'line': b'running install\n'}
+[9.357827] (imu_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[9.361932] (imu_publisher) StdoutLine: {'line': b'running install_data\n'}
+[9.363937] (imu_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.365213] (-) TimerEvent: {}
+[9.369567] (imu_publisher) StdoutLine: {'line': b"removing '/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.8/site-packages/imu_publisher-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.370895] (imu_publisher) StdoutLine: {'line': b'Copying ../../build/imu_publisher/imu_publisher.egg-info to /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.8/site-packages/imu_publisher-0.0.0-py3.8.egg-info\n'}
+[9.373567] (imu_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[9.391557] (cameras) StdoutLine: {'line': b"reading manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'\n"}
+[9.394260] (cameras) StdoutLine: {'line': b"writing manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'\n"}
+[9.394846] (cameras) StdoutLine: {'line': b'running build\n'}
+[9.395280] (cameras) StdoutLine: {'line': b'running build_py\n'}
+[9.396049] (cameras) StdoutLine: {'line': b'running install\n'}
+[9.398360] (cameras) StdoutLine: {'line': b'running install_lib\n'}
+[9.415490] (cameras) StdoutLine: {'line': b'running install_data\n'}
+[9.417108] (cameras) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.421676] (cameras) StdoutLine: {'line': b"removing '/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.8/site-packages/cameras-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.422357] (cameras) StdoutLine: {'line': b'Copying ../../build/cameras/cameras.egg-info to /home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.8/site-packages/cameras-0.0.0-py3.8.egg-info\n'}
+[9.424570] (cameras) StdoutLine: {'line': b'running install_scripts\n'}
+[9.434326] (imu_publisher) StdoutLine: {'line': b'Installing imu_publisher_node script to /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/imu_publisher\n'}
+[9.448305] (imu_publisher) StdoutLine: {'line': b"writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/imu_publisher/install.log'\n"}
+[9.465425] (-) TimerEvent: {}
+[9.511571] (cameras) StdoutLine: {'line': b'Installing cameras_node script to /home/hermes/Hermes/hermes_ws/install/cameras/lib/cameras\n'}
+[9.512579] (cameras) StdoutLine: {'line': b"writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/cameras/install.log'\n"}
+[9.526137] (gps_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[9.527653] (gps_publisher) StdoutLine: {'line': b'writing ../../build/gps_publisher/gps_publisher.egg-info/PKG-INFO\n'}
+[9.528266] (gps_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/gps_publisher/gps_publisher.egg-info/dependency_links.txt\n'}
+[9.540090] (gps_publisher) StdoutLine: {'line': b'writing entry points to ../../build/gps_publisher/gps_publisher.egg-info/entry_points.txt\n'}
+[9.540631] (gps_publisher) StdoutLine: {'line': b'writing requirements to ../../build/gps_publisher/gps_publisher.egg-info/requires.txt\n'}
+[9.540880] (gps_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/gps_publisher/gps_publisher.egg-info/top_level.txt\n'}
+[9.565610] (-) TimerEvent: {}
+[9.571416] (odometry) StdoutLine: {'line': b'running egg_info\n'}
+[9.583556] (odometry) StdoutLine: {'line': b'writing ../../build/odometry/odometry.egg-info/PKG-INFO\n'}
+[9.584864] (odometry) StdoutLine: {'line': b'writing dependency_links to ../../build/odometry/odometry.egg-info/dependency_links.txt\n'}
+[9.586864] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o\x1b[0m\n'}
+[9.587479] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/filter/tofbf.cpp.o\x1b[0m\n'}
+[9.587698] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/core/ldlidar_driver.cpp.o\x1b[0m\n'}
+[9.587861] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/dataprocess/lipkg.cpp.o\x1b[0m\n'}
+[9.588080] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/logger/log_module.cpp.o\x1b[0m\n'}
+[9.588288] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp.o\x1b[0m\n'}
+[9.588518] (imu_publisher) CommandEnded: {'returncode': 0}
+[9.589342] (odometry) StdoutLine: {'line': b'writing entry points to ../../build/odometry/odometry.egg-info/entry_points.txt\n'}
+[9.589651] (odometry) StdoutLine: {'line': b'writing requirements to ../../build/odometry/odometry.egg-info/requires.txt\n'}
+[9.589895] (odometry) StdoutLine: {'line': b'writing top-level names to ../../build/odometry/odometry.egg-info/top_level.txt\n'}
+[9.674514] (-) TimerEvent: {}
+[9.680219] (gps_publisher) StdoutLine: {'line': b"reading manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'\n"}
+[9.682142] (gps_publisher) StdoutLine: {'line': b"writing manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'\n"}
+[9.688423] (gps_publisher) StdoutLine: {'line': b'running build\n'}
+[9.689306] (gps_publisher) StdoutLine: {'line': b'running build_py\n'}
+[9.690013] (gps_publisher) StdoutLine: {'line': b'running install\n'}
+[9.691334] (gps_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[9.693867] (gps_publisher) StdoutLine: {'line': b'running install_data\n'}
+[9.695529] (gps_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.698980] (gps_publisher) StdoutLine: {'line': b"removing '/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.8/site-packages/gps_publisher-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.709299] (teleop_control) StdoutLine: {'line': b'running egg_info\n'}
+[9.711587] (teleop_control) StdoutLine: {'line': b'writing ../../build/teleop_control/teleop_control.egg-info/PKG-INFO\n'}
+[9.714929] (gps_publisher) StdoutLine: {'line': b'Copying ../../build/gps_publisher/gps_publisher.egg-info to /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.8/site-packages/gps_publisher-0.0.0-py3.8.egg-info\n'}
+[9.718254] (teleop_control) StdoutLine: {'line': b'writing dependency_links to ../../build/teleop_control/teleop_control.egg-info/dependency_links.txt\n'}
+[9.719991] (teleop_control) StdoutLine: {'line': b'writing entry points to ../../build/teleop_control/teleop_control.egg-info/entry_points.txt\n'}
+[9.720644] (teleop_control) StdoutLine: {'line': b'writing requirements to ../../build/teleop_control/teleop_control.egg-info/requires.txt\n'}
+[9.720820] (teleop_control) StdoutLine: {'line': b'writing top-level names to ../../build/teleop_control/teleop_control.egg-info/top_level.txt\n'}
+[9.720968] (gps_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[9.727396] (odometry) StdoutLine: {'line': b"reading manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'\n"}
+[9.729750] (odometry) StdoutLine: {'line': b"writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'\n"}
+[9.731615] (odometry) StdoutLine: {'line': b'running build\n'}
+[9.732972] (odometry) StdoutLine: {'line': b'running build_py\n'}
+[9.734658] (odometry) StdoutLine: {'line': b'running install\n'}
+[9.744873] (odometry) StdoutLine: {'line': b'running install_lib\n'}
+[9.748638] (odometry) StdoutLine: {'line': b'running install_data\n'}
+[9.750032] (odometry) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.754423] (odometry) StdoutLine: {'line': b"removing '/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages/odometry-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.755209] (odometry) StdoutLine: {'line': b'Copying ../../build/odometry/odometry.egg-info to /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages/odometry-0.0.0-py3.8.egg-info\n'}
+[9.779414] (-) TimerEvent: {}
+[9.780653] (odometry) StdoutLine: {'line': b'running install_scripts\n'}
+[9.787440] (teleop_control) StdoutLine: {'line': b"reading manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'\n"}
+[9.789710] (teleop_control) StdoutLine: {'line': b"writing manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'\n"}
+[9.790292] (teleop_control) StdoutLine: {'line': b'running build\n'}
+[9.796704] (teleop_control) StdoutLine: {'line': b'running build_py\n'}
+[9.798238] (teleop_control) StdoutLine: {'line': b'running install\n'}
+[9.798704] (teleop_control) StdoutLine: {'line': b'running install_lib\n'}
+[9.800371] (gps_publisher) StdoutLine: {'line': b'Installing gps_publisher_node script to /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/gps_publisher\n'}
+[9.802040] (teleop_control) StdoutLine: {'line': b'running install_data\n'}
+[9.802299] (gps_publisher) StdoutLine: {'line': b"writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log'\n"}
+[9.802493] (teleop_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.804665] (teleop_control) StdoutLine: {'line': b"removing '/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.8/site-packages/teleop_control-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[9.806710] (teleop_control) StdoutLine: {'line': b'Copying ../../build/teleop_control/teleop_control.egg-info to /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.8/site-packages/teleop_control-0.0.0-py3.8.egg-info\n'}
+[9.814208] (teleop_control) StdoutLine: {'line': b'running install_scripts\n'}
+[9.841452] (odometry) StdoutLine: {'line': b'Installing odometry_node script to /home/hermes/Hermes/hermes_ws/install/odometry/lib/odometry\n'}
+[9.843174] (odometry) StdoutLine: {'line': b"writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/odometry/install.log'\n"}
+[9.851750] (teleop_control) StdoutLine: {'line': b'Installing teleop_control_node script to /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/teleop_control\n'}
+[9.853099] (teleop_control) StdoutLine: {'line': b"writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/teleop_control/install.log'\n"}
+[9.879566] (-) TimerEvent: {}
+[9.980865] (-) TimerEvent: {}
+[10.087361] (-) TimerEvent: {}
+[10.195058] (-) TimerEvent: {}
+[10.200893] (ldlidar_stl_ros2) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/ldlidar_driver/src/serialcom/serial_interface_linux.cpp.o\x1b[0m\n'}
+[10.295354] (-) TimerEvent: {}
+[10.347460] (imu_publisher) JobEnded: {'identifier': 'imu_publisher', 'rc': 0}
+[10.348940] (cameras) CommandEnded: {'returncode': 0}
+[10.395633] (-) TimerEvent: {}
+[10.496773] (-) TimerEvent: {}
+[10.598755] (-) TimerEvent: {}
+[10.700167] (-) TimerEvent: {}
+[10.725447] (cameras) JobEnded: {'identifier': 'cameras', 'rc': 0}
+[10.727508] (gps_publisher) CommandEnded: {'returncode': 0}
+[10.800365] (-) TimerEvent: {}
+[10.901647] (-) TimerEvent: {}
+[11.003312] (-) TimerEvent: {}
+[11.057346] (gps_publisher) JobEnded: {'identifier': 'gps_publisher', 'rc': 0}
+[11.058285] (odometry) CommandEnded: {'returncode': 0}
+[11.103524] (-) TimerEvent: {}
+[11.204386] (-) TimerEvent: {}
+[11.305856] (-) TimerEvent: {}
+[11.383394] (odometry) JobEnded: {'identifier': 'odometry', 'rc': 0}
+[11.384305] (teleop_control) CommandEnded: {'returncode': 0}
+[11.405949] (-) TimerEvent: {}
+[11.506806] (-) TimerEvent: {}
+[11.607838] (-) TimerEvent: {}
+[11.695321] (teleop_control) JobEnded: {'identifier': 'teleop_control', 'rc': 0}
+[11.707914] (-) TimerEvent: {}
+[11.808220] (-) TimerEvent: {}
+[11.908713] (-) TimerEvent: {}
+[12.009176] (-) TimerEvent: {}
+[12.109621] (-) TimerEvent: {}
+[12.210055] (-) TimerEvent: {}
+[12.310500] (-) TimerEvent: {}
+[12.410985] (-) TimerEvent: {}
+[12.511439] (-) TimerEvent: {}
+[12.611860] (-) TimerEvent: {}
+[12.712285] (-) TimerEvent: {}
+[12.812951] (-) TimerEvent: {}
+[12.913413] (-) TimerEvent: {}
+[13.013881] (-) TimerEvent: {}
+[13.114358] (-) TimerEvent: {}
+[13.214806] (-) TimerEvent: {}
+[13.315478] (-) TimerEvent: {}
+[13.415954] (-) TimerEvent: {}
+[13.516402] (-) TimerEvent: {}
+[13.616830] (-) TimerEvent: {}
+[13.717277] (-) TimerEvent: {}
+[13.817941] (-) TimerEvent: {}
+[13.918420] (-) TimerEvent: {}
+[14.018901] (-) TimerEvent: {}
+[14.119402] (-) TimerEvent: {}
+[14.219882] (-) TimerEvent: {}
+[14.320403] (-) TimerEvent: {}
+[14.420896] (-) TimerEvent: {}
+[14.521363] (-) TimerEvent: {}
+[14.621841] (-) TimerEvent: {}
+[14.722308] (-) TimerEvent: {}
+[14.822815] (-) TimerEvent: {}
+[14.923324] (-) TimerEvent: {}
+[15.023789] (-) TimerEvent: {}
+[15.124272] (-) TimerEvent: {}
+[15.224757] (-) TimerEvent: {}
+[15.325264] (-) TimerEvent: {}
+[15.425740] (-) TimerEvent: {}
+[15.526211] (-) TimerEvent: {}
+[15.626644] (-) TimerEvent: {}
+[15.727303] (-) TimerEvent: {}
+[15.827774] (-) TimerEvent: {}
+[15.928229] (-) TimerEvent: {}
+[16.028717] (-) TimerEvent: {}
+[16.129190] (-) TimerEvent: {}
+[16.229641] (-) TimerEvent: {}
+[16.329984] (-) TimerEvent: {}
+[16.430298] (-) TimerEvent: {}
+[16.530599] (-) TimerEvent: {}
+[16.552135] (ldlidar_stl_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ldlidar_stl_ros2_node\x1b[0m\n'}
+[16.630786] (-) TimerEvent: {}
+[16.731475] (-) TimerEvent: {}
+[16.832006] (-) TimerEvent: {}
+[16.904369] (ldlidar_stl_ros2) StdoutLine: {'line': b'[100%] Built target ldlidar_stl_ros2_node\n'}
+[16.923469] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[16.932249] (-) TimerEvent: {}
+[17.030386] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'install'}
+[17.034705] (-) TimerEvent: {}
+[17.102692] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2'], 'cwd': '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'et:en_CA:en_AU:en'), ('USER', 'hermes'), ('SSH_CLIENT', '10.0.3.16 33886 22'), ('LC_TIME', 'et_EE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hermes'), ('OLDPWD', '/home/hermes/Hermes/hermes_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'et_EE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_colcon_cd_root', '/home/hermes/ros2_install'), ('COLCON_PREFIX_PATH', '/home/hermes/ros2_teleop_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hermes'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hermes/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'et_EE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'et_EE.UTF-8'), ('LC_TELEPHONE', 'et_EE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg'), ('SHELL', '/bin/bash'), ('LC_NAME', 'et_EE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'et_EE.UTF-8'), ('LC_IDENTIFICATION', 'et_EE.UTF-8'), ('PWD', '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.0.3.16 33886 10.0.3.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/home/hermes/ros2_teleop_ws/build/teleop_pkg:/home/hermes/ros2_teleop_ws/install/teleop_pkg/lib/python3.8/site-packages'), ('LC_NUMERIC', 'et_EE.UTF-8'), ('LC_PAPER', 'et_EE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy:/home/hermes/ros2_teleop_ws/install/teleop_pkg')]), 'shell': False}
+[17.134707] (-) TimerEvent: {}
+[17.163981] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.164345] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node\n'}
+[17.166663] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node" to ""\n'}
+[17.166855] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch\n'}
+[17.167040] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld19.launch.py\n'}
+[17.167278] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_stl27l.launch.py\n'}
+[17.167486] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/stl27l.launch.py\n'}
+[17.167689] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld19.launch.py\n'}
+[17.167883] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld06.launch.py\n'}
+[17.168093] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld06.launch.py\n'}
+[17.168290] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2\n'}
+[17.168456] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2/ldlidar.rviz\n'}
+[17.168835] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_stl_ros2\n'}
+[17.169186] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_stl_ros2\n'}
+[17.169532] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.sh\n'}
+[17.169796] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.dsv\n'}
+[17.170060] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.sh\n'}
+[17.170320] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.dsv\n'}
+[17.170579] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.bash\n'}
+[17.170842] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.sh\n'}
+[17.171098] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.zsh\n'}
+[17.171363] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.dsv\n'}
+[17.171610] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.dsv\n'}
+[17.171936] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/packages/ldlidar_stl_ros2\n'}
+[17.172378] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config.cmake\n'}
+[17.172776] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config-version.cmake\n'}
+[17.172993] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Installing: /home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.xml\n'}
+[17.184396] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[17.234904] (-) TimerEvent: {}
+[17.335695] (-) TimerEvent: {}
+[17.444424] (-) TimerEvent: {}
+[17.545948] (-) TimerEvent: {}
+[17.646588] (-) TimerEvent: {}
+[17.747863] (-) TimerEvent: {}
+[17.848284] (-) TimerEvent: {}
+[17.949143] (-) TimerEvent: {}
+[18.036368] (ldlidar_stl_ros2) JobEnded: {'identifier': 'ldlidar_stl_ros2', 'rc': 0}
+[18.038826] (-) EventReactorShutdown: {}
