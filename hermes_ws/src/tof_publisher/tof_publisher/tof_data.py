@@ -24,10 +24,10 @@ class LaserScanSubscriber(Node):
             sector_end = sector_start + sector_size - 1
 
             sector_values = msg.ranges[sector_start:sector_end + 1]
-            for range in sector_values:
-                if range < 1.0 and not math.isnan(range):
+            for range_value in sector_values:  
+                if range_value < 1.0 and not math.isnan(range_value):
                     self.get_logger().warn(
-                        f'Warning: Object too close in sector {sector_num + 1}. Value: {range}')
+                        f'Warning: Object too close in sector {sector_num + 1}. Value: {range_value}')
 
 def main(args=None):
     rclpy.init(args=args)
