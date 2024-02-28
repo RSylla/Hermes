@@ -13,7 +13,18 @@ class LaserScanSubscriber(Node):
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
-    
+
+        # Initialize flags and timers
+        self.sector_1_flag = 0
+        self.sector_2_flag = 0
+        self.sector_3_flag = 0
+        self.sector_4_flag = 0
+
+        self.sector_1_timer = self.create_timer(1.0, self.reset_sector_1_flag)  # 1-second timer
+        self.sector_2_timer = self.create_timer(1.0, self.reset_sector_2_flag)
+        self.sector_3_timer = self.create_timer(1.0, self.reset_sector_3_flag)
+        self.sector_4_timer = self.create_timer(1.0, self.reset_sector_4_flag)
+
     def do_action_for_sector_1(self):
         # Implement actions for sector 1 warning here
         pass
@@ -30,6 +41,18 @@ class LaserScanSubscriber(Node):
         # Implement actions for sector 4 warning here
         pass
 
+    def reset_sector_1_flag(self):
+        self.sector_1_flag = 0
+
+    def reset_sector_2_flag(self):
+        self.sector_2_flag = 0
+
+    def reset_sector_3_flag(self):
+        self.sector_3_flag = 0
+
+    def reset_sector_4_flag(self):
+        self.sector_4_flag = 0
+
     def listener_callback(self, msg):
         range_start = 0
         range_end = 227
@@ -42,32 +65,26 @@ class LaserScanSubscriber(Node):
             sector_values = msg.ranges[sector_start:sector_end + 1]
             for range_value in sector_values:  
                 if range_value < 1.0 and not math.isnan(range_value):
-                    #self.get_logger().warn(
-                        #f'Warning: Object too close in sector {sector_num + 1}. Value: {range_value}')
 
                     # Actions based on sector
                     if sector_num == 0:  # Sector 1
-                        sector_1_flag += 1
-                        if sector_1_flag == 2:
-                            sector_1_flag = 0
+                        self.sector_1_flag += 1
+                        if self.sector_1_flag == 2:
                             print("Sector 1 danger")
                             self.do_action_for_sector_1()  
                     elif sector_num == 1:  # Sector 2
-                        sector_2_flag += 1
-                        if sector_2_flag == 2:
-                            sector_2_flag = 0
+                        self.sector_2_flag += 1
+                        if self.sector_2_flag == 2:
                             print("Sector 2 danger")
                             self.do_action_for_sector_2()  
                     elif sector_num == 2:  # Sector 3
-                        sector_3_flag += 1
-                        if sector_3_flag == 2:
-                            sector_3_flag = 0
+                        self.sector_3_flag += 1
+                        if self.sector_3_flag == 2:
                             print("Sector 3 danger")
                             self.do_action_for_sector_3()
                     elif sector_num == 3:  # Sector 4
-                        sector_4_flag += 1
-                        if sector_4_flag == 2:
-                            sector_4_flag = 0
+                        self.sector_4_flag += 1
+                        if self.sector_4_flag == 2:
                             print("Sector 4 danger")
                             self.do_action_for_sector_4() 
 
@@ -81,4 +98,3 @@ def main(args=None):
 if __name__ == '__main__':
     print("Activating LaserScanSubscriber node...")
     main()
-    
