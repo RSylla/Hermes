@@ -47,17 +47,29 @@ class LaserScanSubscriber(Node):
 
                     # Actions based on sector
                     if sector_num == 0:  # Sector 1
-                        print("Sector 1 danger")
-                        self.do_action_for_sector_1()  
+                        sector_1_flag += 1
+                        if sector_1_flag == 2:
+                            sector_1_flag = 0
+                            print("Sector 1 danger")
+                            self.do_action_for_sector_1()  
                     elif sector_num == 1:  # Sector 2
-                        print("Sector 2 danger")
-                        self.do_action_for_sector_2()  
+                        sector_2_flag += 1
+                        if sector_2_flag == 2:
+                            sector_2_flag = 0
+                            print("Sector 2 danger")
+                            self.do_action_for_sector_2()  
                     elif sector_num == 2:  # Sector 3
-                        print("Sector 3 danger")
-                        self.do_action_for_sector_3()
+                        sector_3_flag += 1
+                        if sector_3_flag == 2:
+                            sector_3_flag = 0
+                            print("Sector 3 danger")
+                            self.do_action_for_sector_3()
                     elif sector_num == 3:  # Sector 4
-                        print("Sector 4 danger")
-                        self.do_action_for_sector_4() 
+                        sector_4_flag += 1
+                        if sector_4_flag == 2:
+                            sector_4_flag = 0
+                            print("Sector 4 danger")
+                            self.do_action_for_sector_4() 
 
 def main(args=None):
     rclpy.init(args=args)
