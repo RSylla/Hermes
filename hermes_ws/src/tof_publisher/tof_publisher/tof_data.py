@@ -15,10 +15,8 @@ class LaserScanSubscriber(Node):
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        numerical_values = [range for range in msg.ranges if isinstance(range, (int, float)) and not math.isnan(range)]
-        self.get_logger().info(f'Numerical values in ranges: {numerical_values}')
-
-
+        numerical_value_positions = [(i, range) for i, range in enumerate(msg.ranges) if isinstance(range, (int, float)) and not math.isnan(range)]
+        self.get_logger().info(f'Numerical values and their positions in ranges: {numerical_value_positions}')
 
 def main(args=None):
     rclpy.init(args=args)
