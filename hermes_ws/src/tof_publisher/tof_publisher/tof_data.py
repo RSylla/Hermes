@@ -13,6 +13,22 @@ class LaserScanSubscriber(Node):
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
+    
+    def do_action_for_sector_1(self):
+        # Implement actions for sector 1 warning here
+        pass
+
+    def do_action_for_sector_2(self):
+        # Implement actions for sector 2 warning here
+        pass
+
+    def do_action_for_sector_3(self):
+        # Implement actions for sector 3 warning here
+        pass
+
+    def do_action_for_sector_4(self):
+        # Implement actions for sector 4 warning here
+        pass
 
     def listener_callback(self, msg):
         range_start = 0
@@ -28,6 +44,16 @@ class LaserScanSubscriber(Node):
                 if range_value < 1.0 and not math.isnan(range_value):
                     self.get_logger().warn(
                         f'Warning: Object too close in sector {sector_num + 1}. Value: {range_value}')
+
+                    # Actions based on sector
+                    if sector_num == 0:  # Sector 1
+                        self.do_action_for_sector_1()  
+                    elif sector_num == 1:  # Sector 2
+                        self.do_action_for_sector_2()  
+                    elif sector_num == 2:  # Sector 3
+                        self.do_action_for_sector_3()
+                    elif sector_num == 3:  # Sector 4
+                        self.do_action_for_sector_4() 
 
 def main(args=None):
     rclpy.init(args=args)
