@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
+import math 
 
 class LaserScanSubscriber(Node):
 
@@ -14,7 +15,7 @@ class LaserScanSubscriber(Node):
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        num_numerical_values = sum(1 for range in msg.ranges if isinstance(range, (int, float)))
+        num_numerical_values = sum(1 for range in msg.ranges if isinstance(range, (int, float)) and not math.isnan(range))
         self.get_logger().info(f'Number of numerical values in ranges: {num_numerical_values}')
 
 
