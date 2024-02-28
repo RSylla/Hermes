@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
-import math 
+import math
 
 class LaserScanSubscriber(Node):
 
@@ -15,8 +15,17 @@ class LaserScanSubscriber(Node):
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        numerical_value_positions = [(i, range) for i, range in enumerate(msg.ranges) if isinstance(range, (int, float)) and not math.isnan(range)]
-        self.get_logger().info(f'Numerical values and their positions in ranges: {numerical_value_positions}')
+        range_start = 1
+        range_end = 228
+        sector_size = (range_end - range_start + 1) // 4  # Integer division for equal sectors
+
+        for sector_num in range(4):
+            sector_start = range_start + sector_num * sector_size
+            sector_end = sector_start + sector_size - 1
+
+            sector_values = msg.ranges[sector_start:sector_end + 1]
+            if any(range < 1.0 and not math.isnan(range) for range in sector_values):
+                self.get_logger().warn(f'Warning: Object too close in sector {sector_num + 1}')
 
 def main(args=None):
     rclpy.init(args=args)
