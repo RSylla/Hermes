@@ -66,25 +66,26 @@ class LaserScanSubscriber(Node):
             for range_value in sector_values:  
                 if range_value < 1.0 and not math.isnan(range_value):
 
+                    # Actions based on sector
                     if sector_num == 0:  # Sector 1
                         self.sector_1_flag += 1
                         if self.sector_1_flag == 2:
-                            print("Sector 1 danger")
+                            print("Sector 1 danger: Value =", range_value)  # Show the value
                             self.do_action_for_sector_1()  
                     elif sector_num == 1:  # Sector 2
                         self.sector_2_flag += 1
                         if self.sector_2_flag == 2:
-                            print("Sector 2 danger")
+                            print("Sector 2 danger: Value =", range_value)
                             self.do_action_for_sector_2()  
                     elif sector_num == 2:  # Sector 3
                         self.sector_3_flag += 1
                         if self.sector_3_flag == 2:
-                            print("Sector 3 danger")
+                            print("Sector 3 danger: Value =", range_value)
                             self.do_action_for_sector_3()
                     elif sector_num == 3:  # Sector 4
                         self.sector_4_flag += 1
                         if self.sector_4_flag == 2:
-                            print("Sector 4 danger")
+                            print("Sector 4 danger: Value =", range_value)
                             self.do_action_for_sector_4() 
 
 def main(args=None):
@@ -95,5 +96,4 @@ def main(args=None):
     rclpy.shutdown()
 
 if __name__ == '__main__':
-    print("Activating LaserScanSubscriber node...")
     main()
