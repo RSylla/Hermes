@@ -66,7 +66,6 @@ class LaserScanSubscriber(Node):
             for range_value in sector_values:  
                 if range_value < 1.0 and not math.isnan(range_value):
 
-                    # Actions based on sector
                     if sector_num == 0:  # Sector 1
                         self.sector_1_flag += 1
                         if self.sector_1_flag == 2:
