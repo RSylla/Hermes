@@ -42,17 +42,21 @@ class LaserScanSubscriber(Node):
             sector_values = msg.ranges[sector_start:sector_end + 1]
             for range_value in sector_values:  
                 if range_value < 1.0 and not math.isnan(range_value):
-                    self.get_logger().warn(
-                        f'Warning: Object too close in sector {sector_num + 1}. Value: {range_value}')
+                    #self.get_logger().warn(
+                        #f'Warning: Object too close in sector {sector_num + 1}. Value: {range_value}')
 
                     # Actions based on sector
                     if sector_num == 0:  # Sector 1
+                        print("Sector 1 danger")
                         self.do_action_for_sector_1()  
                     elif sector_num == 1:  # Sector 2
+                        print("Sector 2 danger")
                         self.do_action_for_sector_2()  
                     elif sector_num == 2:  # Sector 3
+                        print("Sector 3 danger")
                         self.do_action_for_sector_3()
                     elif sector_num == 3:  # Sector 4
+                        print("Sector 4 danger")
                         self.do_action_for_sector_4() 
 
 def main(args=None):
