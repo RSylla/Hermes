@@ -14,7 +14,7 @@ class LaserScanSubscriber(Node):
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        self.get_logger().info('Range min: "%f"' % msg.range_min)
+        self.get_logger().info('Range min: "%f"' % msg.ranges)
 
 def main(args=None):
     rclpy.init(args=args)
