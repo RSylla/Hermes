@@ -96,4 +96,5 @@ def main(args=None):
     rclpy.shutdown()
 
 if __name__ == '__main__':
+    laser_scan_subscriber.get_logger().info("Activating LaserScanSubscriber node...")  # For logging
     main()
