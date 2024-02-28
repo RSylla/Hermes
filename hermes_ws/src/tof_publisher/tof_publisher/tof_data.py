@@ -14,8 +14,9 @@ class LaserScanSubscriber(Node):
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        num_values = len(msg.ranges)
-        self.get_logger().info(f'Number of values in ranges: {num_values}')
+        num_numerical_values = sum(1 for range in msg.ranges if isinstance(range, (int, float)))
+        self.get_logger().info(f'Number of numerical values in ranges: {num_numerical_values}')
+
 
 
 def main(args=None):
