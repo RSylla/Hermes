@@ -1,0 +1,21 @@
+[6.516s] Invoking command in '/home/raivo/Hermes/hermes_ws/src/lidar_publisher': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/lidar_publisher/prefix_override:/home/raivo/Hermes/hermes_ws/install/lidar_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lidar_publisher build --build-base /home/raivo/Hermes/hermes_ws/build/lidar_publisher/build install --record /home/raivo/Hermes/hermes_ws/build/lidar_publisher/install.log --single-version-externally-managed
+[7.005s] running egg_info
+[7.005s] writing ../../build/lidar_publisher/lidar_publisher.egg-info/PKG-INFO
+[7.005s] writing dependency_links to ../../build/lidar_publisher/lidar_publisher.egg-info/dependency_links.txt
+[7.005s] writing entry points to ../../build/lidar_publisher/lidar_publisher.egg-info/entry_points.txt
+[7.006s] writing requirements to ../../build/lidar_publisher/lidar_publisher.egg-info/requires.txt
+[7.006s] writing top-level names to ../../build/lidar_publisher/lidar_publisher.egg-info/top_level.txt
+[7.032s] reading manifest file '../../build/lidar_publisher/lidar_publisher.egg-info/SOURCES.txt'
+[7.032s] writing manifest file '../../build/lidar_publisher/lidar_publisher.egg-info/SOURCES.txt'
+[7.032s] running build
+[7.032s] running build_py
+[7.032s] running install
+[7.033s] running install_lib
+[7.036s] running install_data
+[7.036s] running install_egg_info
+[7.038s] removing '/home/raivo/Hermes/hermes_ws/install/lidar_publisher/lib/python3.8/site-packages/lidar_publisher-0.0.0-py3.8.egg-info' (and everything under it)
+[7.038s] Copying ../../build/lidar_publisher/lidar_publisher.egg-info to /home/raivo/Hermes/hermes_ws/install/lidar_publisher/lib/python3.8/site-packages/lidar_publisher-0.0.0-py3.8.egg-info
+[7.038s] running install_scripts
+[7.058s] Installing lidar_publisher_node script to /home/raivo/Hermes/hermes_ws/install/lidar_publisher/lib/lidar_publisher
+[7.058s] writing list of installed files to '/home/raivo/Hermes/hermes_ws/build/lidar_publisher/install.log'
+[7.675s] Invoked command in '/home/raivo/Hermes/hermes_ws/src/lidar_publisher' returned '0': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/lidar_publisher/prefix_override:/home/raivo/Hermes/hermes_ws/install/lidar_publisher/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lidar_publisher build --build-base /home/raivo/Hermes/hermes_ws/build/lidar_publisher/build install --record /home/raivo/Hermes/hermes_ws/build/lidar_publisher/install.log --single-version-externally-managed

@@ -1,0 +1,9 @@
+{
+  "package_name": "ublox_ubx_interfaces",
+  "non_idl_tuples": [
+    "/home/raivo/Hermes/hermes_ws/src/gps_publisher/ublox_ubx_interfaces:srv/HotStart.srv",
+    "/home/raivo/Hermes/hermes_ws/src/gps_publisher/ublox_ubx_interfaces:srv/WarmStart.srv",
+    "/home/raivo/Hermes/hermes_ws/src/gps_publisher/ublox_ubx_interfaces:srv/ColdStart.srv",
+    "/home/raivo/Hermes/hermes_ws/src/gps_publisher/ublox_ubx_interfaces:srv/ResetODO.srv"
+  ]
+}

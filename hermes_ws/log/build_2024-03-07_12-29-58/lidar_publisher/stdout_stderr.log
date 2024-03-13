@@ -1,0 +1,26 @@
+running egg_info
+creating ../../build/lidar_publisher/lidar_publisher.egg-info
+writing ../../build/lidar_publisher/lidar_publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/lidar_publisher/lidar_publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/lidar_publisher/lidar_publisher.egg-info/entry_points.txt
+writing requirements to ../../build/lidar_publisher/lidar_publisher.egg-info/requires.txt
+writing top-level names to ../../build/lidar_publisher/lidar_publisher.egg-info/top_level.txt
+writing manifest file '../../build/lidar_publisher/lidar_publisher.egg-info/SOURCES.txt'
+reading manifest file '../../build/lidar_publisher/lidar_publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/lidar_publisher/lidar_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/raivo/Hermes/hermes_ws/build/lidar_publisher/build
+creating /home/raivo/Hermes/hermes_ws/build/lidar_publisher/build/lib
+creating /home/raivo/Hermes/hermes_ws/build/lidar_publisher/build/lib/lidar_publisher
+copying lidar_publisher/__init__.py -> /home/raivo/Hermes/hermes_ws/build/lidar_publisher/build/lib/lidar_publisher
+copying lidar_publisher/lidar_publisher_node.py -> /home/raivo/Hermes/hermes_ws/build/lidar_publisher/build/lib/lidar_publisher
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/raivo/Hermes/hermes_ws/install/lidar_publisher/lib/python3.8/site-packages/lidar_publisher-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/lidar_publisher/lidar_publisher.egg-info to /home/raivo/Hermes/hermes_ws/install/lidar_publisher/lib/python3.8/site-packages/lidar_publisher-0.0.0-py3.8.egg-info
+running install_scripts
+Installing lidar_publisher_node script to /home/raivo/Hermes/hermes_ws/install/lidar_publisher/lib/lidar_publisher
+writing list of installed files to '/home/raivo/Hermes/hermes_ws/build/lidar_publisher/install.log'

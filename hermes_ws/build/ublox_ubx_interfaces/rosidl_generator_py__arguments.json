@@ -1,0 +1,30 @@
+{
+  "package_name": "ublox_ubx_interfaces",
+  "output_dir": "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_generator_py/ublox_ubx_interfaces",
+  "template_dir": "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces:srv/HotStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces:srv/WarmStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces:srv/ColdStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces:srv/ResetODO.idl"
+  ],
+  "target_dependencies": [
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/lib/python3.8/site-packages/rosidl_generator_py/__init__.py",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/lib/python3.8/site-packages/rosidl_generator_py/generate_py_impl.py",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/home/raivo/ros2_humble/install/rosidl_generator_py/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces/srv/HotStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces/srv/WarmStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces/srv/ColdStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces/srv/ResetODO.idl"
+  ]
+}

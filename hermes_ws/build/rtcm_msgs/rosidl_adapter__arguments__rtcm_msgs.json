@@ -1,0 +1,6 @@
+{
+  "package_name": "rtcm_msgs",
+  "non_idl_tuples": [
+    "/home/raivo/Hermes/hermes_ws/src/gps_publisher/rtcm_msgs-master:msg/Message.msg"
+  ]
+}

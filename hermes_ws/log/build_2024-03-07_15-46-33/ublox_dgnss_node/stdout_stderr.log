@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target ublox_dgnss_components[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/ublox_dgnss_components.dir/src/usb.cpp.o[0m
+[ 60%] Built target ublox_dgnss_node
+[01m[K/home/raivo/Hermes/hermes_ws/src/gps_publisher/ublox_dgnss_node/src/usb.cpp:[m[K In member function ‘[01m[Kbool usb::Connection::open_device()[m[K’:
+[01m[K/home/raivo/Hermes/hermes_ws/src/gps_publisher/ublox_dgnss_node/src/usb.cpp:204:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krc[m[K’ was not declared in this scope
+  204 |   [01;31m[Krc[m[K = libusb_get_device_descriptor(dev_, &dev_desc);
+      |   [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/ublox_dgnss_components.dir/build.make:63: CMakeFiles/ublox_dgnss_components.dir/src/usb.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/ublox_dgnss_components.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

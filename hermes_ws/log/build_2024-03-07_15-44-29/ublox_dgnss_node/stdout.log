@@ -1,0 +1,3 @@
+[35m[1mScanning dependencies of target ublox_dgnss_components[0m
+[ 40%] Built target ublox_dgnss_node
+[ 60%] [32mBuilding CXX object CMakeFiles/ublox_dgnss_components.dir/src/usb.cpp.o[0m

@@ -1,0 +1,21 @@
+[4.780s] Invoking command in '/home/raivo/Hermes/hermes_ws/src/teleop_control': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/raivo/Hermes/hermes_ws/install/teleop_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_control build --build-base /home/raivo/Hermes/hermes_ws/build/teleop_control/build install --record /home/raivo/Hermes/hermes_ws/build/teleop_control/install.log --single-version-externally-managed
+[5.484s] running egg_info
+[5.485s] writing ../../build/teleop_control/teleop_control.egg-info/PKG-INFO
+[5.485s] writing dependency_links to ../../build/teleop_control/teleop_control.egg-info/dependency_links.txt
+[5.486s] writing entry points to ../../build/teleop_control/teleop_control.egg-info/entry_points.txt
+[5.486s] writing requirements to ../../build/teleop_control/teleop_control.egg-info/requires.txt
+[5.487s] writing top-level names to ../../build/teleop_control/teleop_control.egg-info/top_level.txt
+[5.508s] reading manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'
+[5.509s] writing manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'
+[5.509s] running build
+[5.509s] running build_py
+[5.509s] running install
+[5.511s] running install_lib
+[5.513s] running install_data
+[5.513s] running install_egg_info
+[5.515s] removing '/home/raivo/Hermes/hermes_ws/install/teleop_control/lib/python3.8/site-packages/teleop_control-0.0.0-py3.8.egg-info' (and everything under it)
+[5.515s] Copying ../../build/teleop_control/teleop_control.egg-info to /home/raivo/Hermes/hermes_ws/install/teleop_control/lib/python3.8/site-packages/teleop_control-0.0.0-py3.8.egg-info
+[5.515s] running install_scripts
+[5.534s] Installing teleop_control_node script to /home/raivo/Hermes/hermes_ws/install/teleop_control/lib/teleop_control
+[5.535s] writing list of installed files to '/home/raivo/Hermes/hermes_ws/build/teleop_control/install.log'
+[5.982s] Invoked command in '/home/raivo/Hermes/hermes_ws/src/teleop_control' returned '0': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/raivo/Hermes/hermes_ws/install/teleop_control/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/teleop_control build --build-base /home/raivo/Hermes/hermes_ws/build/teleop_control/build install --record /home/raivo/Hermes/hermes_ws/build/teleop_control/install.log --single-version-externally-managed

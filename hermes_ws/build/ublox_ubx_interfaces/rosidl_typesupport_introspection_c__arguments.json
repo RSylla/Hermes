@@ -1,0 +1,25 @@
+{
+  "package_name": "ublox_ubx_interfaces",
+  "output_dir": "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_typesupport_introspection_c/ublox_ubx_interfaces",
+  "template_dir": "/home/raivo/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource",
+  "idl_tuples": [
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces:srv/HotStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces:srv/WarmStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces:srv/ColdStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces:srv/ResetODO.idl"
+  ],
+  "target_dependencies": [
+    "/home/raivo/ros2_humble/install/rosidl_typesupport_introspection_c/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c",
+    "/home/raivo/ros2_humble/install/rosidl_typesupport_introspection_c/lib/python3.8/site-packages/rosidl_typesupport_introspection_c/__init__.py",
+    "/home/raivo/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em",
+    "/home/raivo/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em",
+    "/home/raivo/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em",
+    "/home/raivo/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
+    "/home/raivo/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
+    "/home/raivo/ros2_humble/install/rosidl_typesupport_introspection_c/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces/srv/HotStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces/srv/WarmStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces/srv/ColdStart.idl",
+    "/home/raivo/Hermes/hermes_ws/build/ublox_ubx_interfaces/rosidl_adapter/ublox_ubx_interfaces/srv/ResetODO.idl"
+  ]
+}

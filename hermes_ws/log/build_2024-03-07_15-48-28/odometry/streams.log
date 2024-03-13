@@ -1,0 +1,21 @@
+[7.500s] Invoking command in '/home/raivo/Hermes/hermes_ws/src/odometry': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/odometry/prefix_override:/home/raivo/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odometry build --build-base /home/raivo/Hermes/hermes_ws/build/odometry/build install --record /home/raivo/Hermes/hermes_ws/build/odometry/install.log --single-version-externally-managed
+[8.560s] running egg_info
+[8.561s] writing ../../build/odometry/odometry.egg-info/PKG-INFO
+[8.561s] writing dependency_links to ../../build/odometry/odometry.egg-info/dependency_links.txt
+[8.561s] writing entry points to ../../build/odometry/odometry.egg-info/entry_points.txt
+[8.562s] writing requirements to ../../build/odometry/odometry.egg-info/requires.txt
+[8.562s] writing top-level names to ../../build/odometry/odometry.egg-info/top_level.txt
+[8.562s] reading manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[8.562s] writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[8.562s] running build
+[8.562s] running build_py
+[8.562s] running install
+[8.562s] running install_lib
+[8.562s] running install_data
+[8.562s] running install_egg_info
+[8.562s] removing '/home/raivo/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages/odometry-0.0.0-py3.8.egg-info' (and everything under it)
+[8.562s] Copying ../../build/odometry/odometry.egg-info to /home/raivo/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages/odometry-0.0.0-py3.8.egg-info
+[8.562s] running install_scripts
+[8.585s] Installing odometry_node script to /home/raivo/Hermes/hermes_ws/install/odometry/lib/odometry
+[8.586s] writing list of installed files to '/home/raivo/Hermes/hermes_ws/build/odometry/install.log'
+[9.808s] Invoked command in '/home/raivo/Hermes/hermes_ws/src/odometry' returned '0': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/odometry/prefix_override:/home/raivo/Hermes/hermes_ws/install/odometry/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/odometry build --build-base /home/raivo/Hermes/hermes_ws/build/odometry/build install --record /home/raivo/Hermes/hermes_ws/build/odometry/install.log --single-version-externally-managed

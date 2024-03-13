@@ -1,0 +1,21 @@
+[8.274s] Invoking command in '/home/raivo/Hermes/hermes_ws/src/cameras': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/cameras/prefix_override:/home/raivo/Hermes/hermes_ws/install/cameras/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/cameras build --build-base /home/raivo/Hermes/hermes_ws/build/cameras/build install --record /home/raivo/Hermes/hermes_ws/build/cameras/install.log --single-version-externally-managed
+[9.648s] running egg_info
+[9.648s] writing ../../build/cameras/cameras.egg-info/PKG-INFO
+[9.648s] writing dependency_links to ../../build/cameras/cameras.egg-info/dependency_links.txt
+[9.648s] writing entry points to ../../build/cameras/cameras.egg-info/entry_points.txt
+[9.648s] writing requirements to ../../build/cameras/cameras.egg-info/requires.txt
+[9.648s] writing top-level names to ../../build/cameras/cameras.egg-info/top_level.txt
+[9.648s] reading manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+[9.648s] writing manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+[9.649s] running build
+[9.649s] running build_py
+[9.649s] running install
+[9.649s] running install_lib
+[9.649s] running install_data
+[9.649s] running install_egg_info
+[9.649s] removing '/home/raivo/Hermes/hermes_ws/install/cameras/lib/python3.8/site-packages/cameras-0.0.0-py3.8.egg-info' (and everything under it)
+[9.649s] Copying ../../build/cameras/cameras.egg-info to /home/raivo/Hermes/hermes_ws/install/cameras/lib/python3.8/site-packages/cameras-0.0.0-py3.8.egg-info
+[9.649s] running install_scripts
+[9.649s] Installing cameras_node script to /home/raivo/Hermes/hermes_ws/install/cameras/lib/cameras
+[9.649s] writing list of installed files to '/home/raivo/Hermes/hermes_ws/build/cameras/install.log'
+[11.170s] Invoked command in '/home/raivo/Hermes/hermes_ws/src/cameras' returned '0': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/cameras/prefix_override:/home/raivo/Hermes/hermes_ws/install/cameras/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/cameras build --build-base /home/raivo/Hermes/hermes_ws/build/cameras/build install --record /home/raivo/Hermes/hermes_ws/build/cameras/install.log --single-version-externally-managed
