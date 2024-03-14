@@ -18,7 +18,7 @@ class SimplePublisher(Node):
             Bool,
             '/tof_data',
             self.lidar_callback,
-            qos_profile=qos_profile_sensor_data)
+            10)
 
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
         self.subscription  # Not needed if not used later
