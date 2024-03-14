@@ -53,7 +53,7 @@ class LaserScanSubscriber(Node):
 
     def publish_actions(self):
         msg = Bool()
-        msg.sector_data = self.do_action_for_sector_1 or self.do_action_for_sector_2 or self.do_action_for_sector_3 or self.do_action_for_sector_4
+        msg.data = self.do_action_for_sector_1 or self.do_action_for_sector_2 or self.do_action_for_sector_3 or self.do_action_for_sector_4
         self.publisher.publish(msg)
 
 def main(args=None):
