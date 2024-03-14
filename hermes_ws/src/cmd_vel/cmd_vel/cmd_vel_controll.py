@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
+from std_msgs.msg import Bool
 import serial
 import struct
 from serial import SerialException
@@ -10,13 +11,15 @@ class SimplePublisher(Node):
     def __init__(self):
         super().__init__('cmd_vel_publisher')
         self.subscription = self.create_subscription(
+            Bool,  # Specify the message type you're subscribing to
             '/tof_data',
             self.lidar_callback,
-            10)
+            qos_profile=rclpy.qos.qos_profile_sensor_data)
+        
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
         self.subscription  
         self.serial_port = self.initialize_serial(['/dev/ttyACM0', '/dev/ttyACM1', '/dev/ttyACM2'])
-        self.motorspeedflag = False
+        self.motorspeedflag = 0
     
     def initialize_serial(self, port_list, baud_rate=115200):
         for port in port_list:
