@@ -21,7 +21,6 @@ setup(
     entry_points={
         'console_scripts': [
             'tof_data = tof_publisher.tof_data:main'
-            'cmd_vel = tof_publisher.cmd_vel:main'
         ],
     },
 )
