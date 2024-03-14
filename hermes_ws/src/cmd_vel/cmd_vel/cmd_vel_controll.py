@@ -5,15 +5,12 @@ from std_msgs.msg import Bool
 import serial
 import struct
 from serial import SerialException
-from rclpy.qos import QoSProfile
-from rclpy.qos import qos_profile_sensor_data 
 
 class SimplePublisher(Node):
 
     def __init__(self):
         super().__init__('cmd_vel_publisher')
 
-        # QoS for sensor data subscription
         self.subscription = self.create_subscription(
             Bool,
             '/tof_data',
