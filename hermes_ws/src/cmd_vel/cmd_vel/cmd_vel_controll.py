@@ -12,6 +12,7 @@ class SimplePublisher(Node):
     def __init__(self):
         super().__init__('cmd_vel_publisher')
         qos_profile = QoSProfile(depth=10)
+        print(f"QoS Profile: {qos_profile}")
         self.subscription = self.create_subscription(
             Bool,
             '/tof_data',
