@@ -1,7 +1,9 @@
 import rclpy
+import math
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
-import math
+from std_msgs.msg import Bool
+
 
 class LaserScanSubscriber(Node):
 
@@ -12,19 +14,12 @@ class LaserScanSubscriber(Node):
             '/scan',
             self.listener_callback,
             10)
-        self.subscription  # prevent unused variable warning
+        self.publisher = self.create_publisher(Bool, '/tof_data', 10)
 
-    def do_action_for_sector_1(self):
-        pass
-
-    def do_action_for_sector_2(self):
-        pass
-
-    def do_action_for_sector_3(self):
-        pass
-
-    def do_action_for_sector_4(self):
-        pass
+        self.do_action_for_sector_1 = False
+        self.do_action_for_sector_2 = False
+        self.do_action_for_sector_3 = False
+        self.do_action_for_sector_4 = False
 
     def listener_callback(self, msg):
         range_start = 0
@@ -42,16 +37,24 @@ class LaserScanSubscriber(Node):
                     # Actions based on sector
                     if sector_num == 0:  # Sector 1
                         print("Sector 1 danger: Value =", range_value)  
-                        self.do_action_for_sector_1()  
+                        self.do_action_for_sector_1 = True 
                     elif sector_num == 1:  # Sector 2
                         print("Sector 2 danger: Value =", range_value)
-                        self.do_action_for_sector_2()  
+                        self.do_action_for_sector_2 = True  
                     elif sector_num == 2:  # Sector 3
                         print("Sector 3 danger: Value =", range_value)
-                        self.do_action_for_sector_3()
+                        self.do_action_for_sector_3 = True
                     elif sector_num == 3:  # Sector 4
                         print("Sector 4 danger: Value =", range_value)
-                        self.do_action_for_sector_4() 
+                        self.do_action_for_sector_4 = True
+
+        # Publish the actions
+        self.publish_actions()
+
+    def publish_actions(self):
+        msg = Bool()
+        msg.sector_data = self.do_action_for_sector_1 or self.do_action_for_sector_2 or self.do_action_for_sector_3 or self.do_action_for_sector_4
+        self.publisher.publish(msg)
 
 def main(args=None):
     rclpy.init(args=args)
