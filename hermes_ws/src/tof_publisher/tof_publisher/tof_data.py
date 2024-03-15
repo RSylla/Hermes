@@ -52,7 +52,7 @@ class LaserScanSubscriber(Node):
                     elif sector_num == 3:  # Sector 4
                         print("Sector 4 danger: Value =", range_value)
                         self.do_action_for_sector_4 = True
-                else:
+                elif range_value > 1.0 or math.isnan(range_value):
                     self.do_action_for_sector_1 = False
                     self.do_action_for_sector_2 = False
                     self.do_action_for_sector_3 = False
