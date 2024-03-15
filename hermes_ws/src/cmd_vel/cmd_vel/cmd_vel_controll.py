@@ -30,20 +30,19 @@ class SimplePublisher(Node):
                 self.get_logger().error(f"Failed to connect on {port}")  # Use error logging
         raise SerialException("No available serial ports found")
 
-    def lidar_callback(self, msg):
-        if msg.data == True:
-            self.motorspeedflag = True
-            print("Motorspeedflag: ", self.motorspeedflag)
-        else:
-            self.motorspeedflag = False
-            print("Motorspeedflag: ", self.motorspeedflag)
-
-        # Send speed command over serial:
-        data_to_send = struct.pack('ff', self.motorspeedflag, 0.0)  # Assuming only linear speed
+    def send_motor_command(self, motor_state):
+        data_to_send = b'\x01' if motor_state else b'\x00'  
         try:
             self.serial_port.write(data_to_send)
         except SerialException as e:
             self.get_logger().error(f"Serial write failed: {e}")
+
+    def lidar_callback(self, msg):
+        if msg.data == True:
+            print("Motorspeedflag: ", self.motorspeedflag)
+        else:
+            print("Motorspeedflag: ", self.motorspeedflag)
+        self.send_motor_command(self.motorspeedflag)
 
 def main(args=None):
     rclpy.init(args=args)
