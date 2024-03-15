@@ -15,15 +15,15 @@ class LaserScanSubscriber(Node):
             self.listener_callback,
             10)
         self.publisher = self.create_publisher(Bool, '/tof_data', 10)
-
-        self.do_action_for_sector_1 = False
-        self.do_action_for_sector_2 = False
-        self.do_action_for_sector_3 = False
-        self.do_action_for_sector_4 = False
+        self.stop = False
+        #self.do_action_for_sector_1 = False
+        #self.do_action_for_sector_2 = False
+        #self.do_action_for_sector_3 = False
+        #self.do_action_for_sector_4 = False
 
     def publish_actions(self):
         msg = Bool()
-        msg.data = self.do_action_for_sector_1 or self.do_action_for_sector_2 or self.do_action_for_sector_3 or self.do_action_for_sector_4
+        msg.data = self.stop#self.do_action_for_sector_1 or self.do_action_for_sector_2 or self.do_action_for_sector_3 or self.do_action_for_sector_4
         self.publisher.publish(msg)
 
     def listener_callback(self, msg):
@@ -37,27 +37,30 @@ class LaserScanSubscriber(Node):
 
             sector_values = msg.ranges[sector_start:sector_end + 1]
             for range_value in sector_values:  
-                if 0.0 < range_value < 1.0 and not math.isnan(range_value):
-
-                    # Actions based on sector
-                    if sector_num == 0:  # Sector 1
-                        self.sector_1_value = range_value
-                        self.do_action_for_sector_1 = True 
-                    elif sector_num == 1:  # Sector 2
-                        self.sector_2_value = range_value
-                        self.do_action_for_sector_2 = True  
-                    elif sector_num == 2:  # Sector 3
-                        self.sector_3_value = range_value
-                        self.do_action_for_sector_3 = True
-                    elif sector_num == 3:  # Sector 4
-                        self.sector_4_value = range_value
-                        self.do_action_for_sector_4 = True
+                if 0.0 < range_value < 0.5 and not math.isnan(range_value):
+                    
+                    if sector_num == 0 or sector_num == 1 or sector_num == 2 or sector_num == 3:
+                        self.stop=True
                     else:
-                        self.do_action_for_sector_1 = False
-                        self.do_action_for_sector_2 = False
-                        self.do_action_for_sector_3 = False
-                        self.do_action_for_sector_4 = False
-        print([self.do_action_for_sector_1, self.sector_1_value],[self.do_action_for_sector_2, self.sector_2_value],[self.do_action_for_sector_3, self.sector_3_value], [self.do_action_for_sector_4, self.sector_4_value])     
+                        self.stop=False
+                    #if sector_num == 0:  # Sector 1
+                    #    self.sector_1_value = range_value
+                    #    self.do_action_for_sector_1 = True 
+                    #elif sector_num == 1:  # Sector 2
+                    #    self.sector_2_value = range_value
+                    #    self.do_action_for_sector_2 = True  
+                    #elif sector_num == 2:  # Sector 3
+                    #    self.sector_3_value = range_value
+                    #    self.do_action_for_sector_3 = True
+                    #elif sector_num == 3:  # Sector 4
+                    #    self.sector_4_value = range_value
+                    #    self.do_action_for_sector_4 = True
+                    #else:
+                    #    self.do_action_for_sector_1 = False
+                    #    self.do_action_for_sector_2 = False
+                    #    self.do_action_for_sector_3 = False
+                    #    self.do_action_for_sector_4 = False
+        print(self.stop)#[self.do_action_for_sector_1, self.sector_1_value],[self.do_action_for_sector_2, self.sector_2_value],[self.do_action_for_sector_3, self.sector_3_value], [self.do_action_for_sector_4, self.sector_4_value])     
                 #print(self.do_action_for_sector_1, self.do_action_for_sector_2, self.do_action_for_sector_3, self.do_action_for_sector_4)
 
         # Publish the actions
