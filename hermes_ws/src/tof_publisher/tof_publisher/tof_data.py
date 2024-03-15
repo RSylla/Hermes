@@ -41,9 +41,12 @@ class LaserScanSubscriber(Node):
                     
                     #if sector_num == 0 or sector_num == 1 or sector_num == 2 or sector_num == 3:
                         self.stop=True
+                        self.publish_actions()
                         print(self.stop)
+
                 else:
                     self.stop=False
+                    self.publish_actions()
                     print(self.stop)
                     #if sector_num == 0:  # Sector 1
                     #    self.sector_1_value = range_value
@@ -66,7 +69,7 @@ class LaserScanSubscriber(Node):
                 #print(self.do_action_for_sector_1, self.do_action_for_sector_2, self.do_action_for_sector_3, self.do_action_for_sector_4)
 
         # Publish the actions
-        self.publish_actions()
+        #self.publish_actions()
 
 def main(args=None):
     rclpy.init(args=args)
