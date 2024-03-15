@@ -41,8 +41,10 @@ class LaserScanSubscriber(Node):
                     
                     #if sector_num == 0 or sector_num == 1 or sector_num == 2 or sector_num == 3:
                         self.stop=True
+                        print(self.stop)
                 else:
                     self.stop=False
+                    print(self.stop)
                     #if sector_num == 0:  # Sector 1
                     #    self.sector_1_value = range_value
                     #    self.do_action_for_sector_1 = True 
@@ -60,7 +62,7 @@ class LaserScanSubscriber(Node):
                     #    self.do_action_for_sector_2 = False
                     #    self.do_action_for_sector_3 = False
                     #    self.do_action_for_sector_4 = False
-        print(self.stop)#[self.do_action_for_sector_1, self.sector_1_value],[self.do_action_for_sector_2, self.sector_2_value],[self.do_action_for_sector_3, self.sector_3_value], [self.do_action_for_sector_4, self.sector_4_value])     
+        #print(self.stop)#[self.do_action_for_sector_1, self.sector_1_value],[self.do_action_for_sector_2, self.sector_2_value],[self.do_action_for_sector_3, self.sector_3_value], [self.do_action_for_sector_4, self.sector_4_value])     
                 #print(self.do_action_for_sector_1, self.do_action_for_sector_2, self.do_action_for_sector_3, self.do_action_for_sector_4)
 
         # Publish the actions
