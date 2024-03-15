@@ -40,11 +40,11 @@ class LaserScanSubscriber(Node):
             for range_value in sector_values:
                 if 0.0 < range_value < 1.0 and not math.isnan(range_value):
                     self.stop = True  # Set the flag to True if a valid range value is found
-                    print(range_value, self.stop)
+                    #print(range_value, self.stop)
                     self.publish_actions()  # Publish actions immediately
                 elif range_value > 1.0:
                     self.stop = False  # Reset the flag if a range_value greater than 1.0 is encountered
-                    print(self.stop)
+                    #print(self.stop)
                     self.publish_actions()  # Publish actions immediately
                     break  # Exit the loop as we don't need to check further in this sector
                 

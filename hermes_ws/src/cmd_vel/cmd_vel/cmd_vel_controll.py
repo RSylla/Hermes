@@ -37,13 +37,13 @@ class SimplePublisher(Node):
         else:
             self.motorspeedflag = False
             print("Motorspeedflag: ", self.motorspeedflag)
-#
-    #    # Send speed command over serial:
-    #    data_to_send = struct.pack('ff', self.motorspeedflag, 0.0)  # Assuming only linear speed
-    #    try:
-    #        self.serial_port.write(data_to_send)
-    #    except SerialException as e:
-    #        self.get_logger().error(f"Serial write failed: {e}")
+
+        # Send speed command over serial:
+        data_to_send = struct.pack('ff', self.motorspeedflag, 0.0)  # Assuming only linear speed
+        try:
+            self.serial_port.write(data_to_send)
+        except SerialException as e:
+            self.get_logger().error(f"Serial write failed: {e}")
 
 def main(args=None):
     rclpy.init(args=args)
