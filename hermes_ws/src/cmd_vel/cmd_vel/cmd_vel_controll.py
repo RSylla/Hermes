@@ -36,8 +36,10 @@ class SimplePublisher(Node):
     def lidar_callback(self, msg):
         if msg.data:
             self.motorspeedflag = 1
+            print("Motorspeedflag: ", self.motorspeedflag)
         else:
             self.motorspeedflag = 0
+            print("Motorspeedflag: ", self.motorspeedflag)
 
         # Send speed command over serial:
         data_to_send = struct.pack('ff', self.motorspeedflag, 0.0)  # Assuming only linear speed
