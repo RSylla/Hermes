@@ -57,7 +57,8 @@ def main(args=None):
     except KeyboardInterrupt:  # Allow graceful shutdown with Ctrl-C
         pass
     finally:
-        arduino_bridge.serial_port.close()
+        if arduino_bridge.serial_port:
+            arduino_bridge.serial_port.close()  # Close the serial port if it exists
         arduino_bridge.destroy_node()
         rclpy.shutdown()
 
