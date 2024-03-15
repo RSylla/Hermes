@@ -17,9 +17,9 @@ class SimplePublisher(Node):
             Bool,
             '/tof_data',
             self.lidar_callback,
-            qos_profile=qos_profile)
+            qos_profile)  # This line is correct according to the provided code context
 
-        #self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
+        #self.publisher_ = self.create_publisher(Twist, '/cmd_vel', qos_profile)
         self.subscription  # Not needed if not used later
 
         self.serial_port = self.initialize_serial(['/dev/ttyACM0', '/dev/ttyACM1', '/dev/ttyACM2'])
@@ -29,7 +29,7 @@ class SimplePublisher(Node):
         for port in port_list:
             try:
                 serial_port = serial.Serial(port, baud_rate)
-                serial_port.flushInput()  
+                serial_port.flushInput()
                 self.get_logger().info(f"Connected to {port}")
                 return serial_port
             except SerialException:
@@ -58,7 +58,7 @@ def main(args=None):
     except KeyboardInterrupt:  # Allow graceful shutdown with Ctrl-C
         pass
     finally:
-        arduino_bridge.serial_port.close()  
+        arduino_bridge.serial_port.close()
         arduino_bridge.destroy_node()
         rclpy.shutdown()
 
