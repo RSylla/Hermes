@@ -41,23 +41,23 @@ class LaserScanSubscriber(Node):
 
                     # Actions based on sector
                     if sector_num == 0:  # Sector 1
-                        print("Sector 1 danger: Value =", range_value)  
+                        self.sector_1_value = range_value
                         self.do_action_for_sector_1 = True 
                     elif sector_num == 1:  # Sector 2
-                        print("Sector 2 danger: Value =", range_value)
+                        self.sector_2_value = range_value
                         self.do_action_for_sector_2 = True  
                     elif sector_num == 2:  # Sector 3
-                        print("Sector 3 danger: Value =", range_value)
+                        self.sector_3_value = range_value
                         self.do_action_for_sector_3 = True
                     elif sector_num == 3:  # Sector 4
-                        #print("Sector 4 danger: Value =", range_value)
+                        self.sector_4_value = range_value
                         self.do_action_for_sector_4 = True
                 elif range_value > 1.0 or math.isnan(range_value):
                     self.do_action_for_sector_1 = False
                     self.do_action_for_sector_2 = False
                     self.do_action_for_sector_3 = False
                     self.do_action_for_sector_4 = False
-                
+        print([self.do_action_for_sector_1, self.sector_1_value],[self.do_action_for_sector_2, self.sector_2_value],[self.do_action_for_sector_3, self.sector_3_value], [self.do_action_for_sector_4, self.sector_4_value])     
                 #print(self.do_action_for_sector_1, self.do_action_for_sector_2, self.do_action_for_sector_3, self.do_action_for_sector_4)
 
         # Publish the actions
