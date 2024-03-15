@@ -1,10 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Twist
 from std_msgs.msg import Bool
-import serial
-import struct
-from serial import SerialException
 
 class SimplePublisher(Node):
 
@@ -14,55 +10,22 @@ class SimplePublisher(Node):
             Bool,
             '/tof_data',
             self.lidar_callback,
-            10)  # This line is correct according to the provided code context
-
-        #self.publisher_ = self.create_publisher(Twist, '/cmd_vel', qos_profile)
-        self.subscription  # Not needed if not used later
-
-        self.serial_port = self.initialize_serial(['/dev/ttyACM0', '/dev/ttyACM1', '/dev/ttyACM2'])
-        self.motorspeedflag = 0
-
-    def initialize_serial(self, port_list, baud_rate=115200):
-        for port in port_list:
-            try:
-                serial_port = serial.Serial(port, baud_rate)
-                serial_port.flushInput()
-                self.get_logger().info(f"Connected to {port}")
-                return serial_port
-            except SerialException:
-                self.get_logger().error(f"Failed to connect on {port}")  # Use error logging
-        raise SerialException("No available serial ports found")
+            10)
+        self.get_logger().info('SimplePublisher node initialized')
 
     def lidar_callback(self, msg):
-        self.motorspeedflag= msg.data
-        print("Motorspeedflag: ", self.motorspeedflag)
-    #def lidar_callback(self, msg):
-    #    if msg.data == True:
-    #        self.motorspeedflag = True
-    #        print("Motorspeedflag: ", self.motorspeedflag)
-    #    else:
-    #        self.motorspeedflag = False
-    #        print("Motorspeedflag: ", self.motorspeedflag)
-#
-    #    # Send speed command over serial:
-    #    data_to_send = struct.pack('ff', self.motorspeedflag, 0.0)  # Assuming only linear speed
-    #    try:
-    #        self.serial_port.write(data_to_send)
-    #    except SerialException as e:
-    #        self.get_logger().error(f"Serial write failed: {e}")
+        self.get_logger().info(f'Received Bool message: {msg.data}')
 
 def main(args=None):
     rclpy.init(args=args)
-    arduino_bridge = SimplePublisher()
+    simple_publisher = SimplePublisher()
 
     try:
-        rclpy.spin(arduino_bridge)
-    except KeyboardInterrupt:  # Allow graceful shutdown with Ctrl-C
+        rclpy.spin(simple_publisher)
+    except KeyboardInterrupt:
         pass
     finally:
-        if arduino_bridge.serial_port:
-            arduino_bridge.serial_port.close()  # Close the serial port if it exists
-        arduino_bridge.destroy_node()
+        simple_publisher.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':
