@@ -36,8 +36,8 @@ def generate_launch_description():
         {'port_baudrate': 230400},
         {'laser_scan_dir': True},
         {'enable_angle_crop_func': True},
-        {'angle_crop_min': 10.0},
-        {'angle_crop_max': 360.0}
+        {'angle_crop_min': 0.0},
+        {'angle_crop_max': 180.0}
       ]
   )
 
