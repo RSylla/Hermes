@@ -31,7 +31,8 @@ class SimplePublisher(Node):
         raise SerialException("No available serial ports found")
 
     def send_motor_command(self, motor_state):
-        data_to_send = 't' if motor_state else 'f'  
+        data_to_send = 't' if motor_state else 'f'
+        data_to_send = data_to_send.encode()
         try:
             self.serial_port.write(data_to_send)
         except SerialException as e:
