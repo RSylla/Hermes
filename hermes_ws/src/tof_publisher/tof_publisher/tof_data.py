@@ -41,8 +41,8 @@ class LaserScanSubscriber(Node):
                     
                     if sector_num == 0 or sector_num == 1 or sector_num == 2 or sector_num == 3:
                         self.stop=True
-                    else:
-                        self.stop=False
+                else:
+                    self.stop=False
                     #if sector_num == 0:  # Sector 1
                     #    self.sector_1_value = range_value
                     #    self.do_action_for_sector_1 = True 
