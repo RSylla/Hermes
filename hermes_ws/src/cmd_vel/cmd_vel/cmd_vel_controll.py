@@ -1,67 +1,63 @@
 import rclpy
-import math
 from rclpy.node import Node
-from sensor_msgs.msg import LaserScan
+from geometry_msgs.msg import Twist
 from std_msgs.msg import Bool
+import serial
+import struct
+from serial import SerialException
 
-
-class LaserScanSubscriber(Node):
+class SimplePublisher(Node):
 
     def __init__(self):
-        super().__init__('laser_scan_subscriber')
+        super().__init__('cmd_vel_publisher')
         self.subscription = self.create_subscription(
-            LaserScan,
-            '/scan',
-            self.listener_callback,
-            10)
-        self.publisher = self.create_publisher(Bool, '/tof_data', 10)
+            Bool,
+            '/tof_data',
+            self.lidar_callback,
+            10)  # This line is correct according to the provided code context
 
-        self.do_action_for_sector_1 = False
-        self.do_action_for_sector_2 = False
-        self.do_action_for_sector_3 = False
-        self.do_action_for_sector_4 = False
+        #self.publisher_ = self.create_publisher(Twist, '/cmd_vel', qos_profile)
+        self.subscription  # Not needed if not used later
 
-    def listener_callback(self, msg):
-        range_start = 0
-        range_end = 227
-        sector_size = (range_end - range_start + 1) // 4 
+        self.serial_port = self.initialize_serial(['/dev/ttyACM0', '/dev/ttyACM1', '/dev/ttyACM2'])
+        self.motorspeedflag = 0
 
-        for sector_num in range(4):
-            sector_start = range_start + sector_num * sector_size
-            sector_end = sector_start + sector_size - 1
+    def initialize_serial(self, port_list, baud_rate=115200):
+        for port in port_list:
+            try:
+                serial_port = serial.Serial(port, baud_rate)
+                serial_port.flushInput()
+                self.get_logger().info(f"Connected to {port}")
+                return serial_port
+            except SerialException:
+                self.get_logger().error(f"Failed to connect on {port}")  # Use error logging
+        raise SerialException("No available serial ports found")
 
-            sector_values = msg.ranges[sector_start:sector_end + 1]
-            for range_value in sector_values:  
-                if 0.0 < range_value < 1.0 and not math.isnan(range_value):
+    def lidar_callback(self, msg):
+        if msg.data:
+            self.motorspeedflag = 1
+        else:
+            self.motorspeedflag = 0
 
-                    # Actions based on sector
-                    if sector_num == 0:  # Sector 1
-                        print("Sector 1 danger: Value =", range_value)  
-                        self.do_action_for_sector_1 = True 
-                    elif sector_num == 1:  # Sector 2
-                        print("Sector 2 danger: Value =", range_value)
-                        self.do_action_for_sector_2 = True  
-                    elif sector_num == 2:  # Sector 3
-                        print("Sector 3 danger: Value =", range_value)
-                        self.do_action_for_sector_3 = True
-                    elif sector_num == 3:  # Sector 4
-                        print("Sector 4 danger: Value =", range_value)
-                        self.do_action_for_sector_4 = True
-
-        # Publish the actions
-        self.publish_actions()
-
-    def publish_actions(self):
-        msg = Bool()
-        msg.data = self.do_action_for_sector_1 or self.do_action_for_sector_2 or self.do_action_for_sector_3 or self.do_action_for_sector_4
-        self.publisher.publish(msg)
+        # Send speed command over serial:
+        data_to_send = struct.pack('ff', self.motorspeedflag, 0.0)  # Assuming only linear speed
+        try:
+            self.serial_port.write(data_to_send)
+        except SerialException as e:
+            self.get_logger().error(f"Serial write failed: {e}")
 
 def main(args=None):
     rclpy.init(args=args)
-    laser_scan_subscriber = LaserScanSubscriber()
-    rclpy.spin(laser_scan_subscriber)
-    laser_scan_subscriber.destroy_node()
-    rclpy.shutdown()
+    arduino_bridge = SimplePublisher()
+
+    try:
+        rclpy.spin(arduino_bridge)
+    except KeyboardInterrupt:  # Allow graceful shutdown with Ctrl-C
+        pass
+    finally:
+        arduino_bridge.serial_port.close()
+        arduino_bridge.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

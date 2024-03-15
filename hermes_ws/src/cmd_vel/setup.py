@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'cmd_vel_controll = cmd_vel.cmd_vel:main'
+            'cmd_vel_controll = cmd_vel.cmd_vel_controll:main'
         ],
     },
 )
