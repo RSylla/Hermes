@@ -52,11 +52,12 @@ class LaserScanSubscriber(Node):
                     elif sector_num == 3:  # Sector 4
                         print("Sector 4 danger: Value =", range_value)
                         self.do_action_for_sector_4 = True
+                else:
+                    self.do_action_for_sector_1 = False
+                    self.do_action_for_sector_2 = False
+                    self.do_action_for_sector_3 = False
+                    self.do_action_for_sector_4 = False
             
-            self.do_action_for_sector_1 = False
-            self.do_action_for_sector_2 = False
-            self.do_action_for_sector_3 = False
-            self.do_action_for_sector_4 = False
             print(self.do_action_for_sector_1, self.do_action_for_sector_2, self.do_action_for_sector_3, self.do_action_for_sector_4)
 
         # Publish the actions
