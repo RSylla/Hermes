@@ -34,7 +34,7 @@ class SimplePublisher(Node):
         raise SerialException("No available serial ports found")
 
     def lidar_callback(self, msg):
-        if msg.data == True:
+        if msg.stop == True:
             self.motorspeedflag = True
             print("Motorspeedflag: ", self.motorspeedflag)
         else:
