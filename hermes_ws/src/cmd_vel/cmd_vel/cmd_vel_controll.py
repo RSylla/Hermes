@@ -19,7 +19,7 @@ class SimplePublisher(Node):
             self.lidar_callback,
             qos_profile=qos_profile)
 
-        self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
+        #self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
         self.subscription  # Not needed if not used later
 
         self.serial_port = self.initialize_serial(['/dev/ttyACM0', '/dev/ttyACM1', '/dev/ttyACM2'])
