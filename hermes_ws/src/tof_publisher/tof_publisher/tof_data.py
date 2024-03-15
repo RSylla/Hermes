@@ -52,7 +52,7 @@ class LaserScanSubscriber(Node):
                     elif sector_num == 3:  # Sector 4
                         self.sector_4_value = range_value
                         self.do_action_for_sector_4 = True
-                    else:
+                else:
                         self.do_action_for_sector_1 = False
                         self.do_action_for_sector_2 = False
                         self.do_action_for_sector_3 = False
