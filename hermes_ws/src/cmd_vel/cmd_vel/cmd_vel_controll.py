@@ -5,19 +5,16 @@ from std_msgs.msg import Bool
 import serial
 import struct
 from serial import SerialException
-from rclpy.qos import QoSProfile
 
 class SimplePublisher(Node):
 
     def __init__(self):
         super().__init__('cmd_vel_publisher')
-        qos_profile = QoSProfile(depth=10)
-        print(f"QoS Profile: {qos_profile}")
         self.subscription = self.create_subscription(
             Bool,
             '/tof_data',
             self.lidar_callback,
-            qos_profile)  # This line is correct according to the provided code context
+            10)  # This line is correct according to the provided code context
 
         #self.publisher_ = self.create_publisher(Twist, '/cmd_vel', qos_profile)
         self.subscription  # Not needed if not used later
