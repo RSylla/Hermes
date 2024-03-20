@@ -40,9 +40,11 @@ class SimplePublisher(Node):
 
     def lidar_callback(self, msg):
         if msg.data == True:
-            print("Motorspeedflag: ", self.motorspeedflag)
+            self.motorspeedflag = True
+            print("MotorspeedflagTrue: ", self.motorspeedflag)
         else:
-            print("Motorspeedflag: ", self.motorspeedflag)
+            self.motorspeedflag = False
+            print("MotorspeedflagFlag: ", self.motorspeedflag)
         self.send_motor_command(self.motorspeedflag)
 
 def main(args=None):
