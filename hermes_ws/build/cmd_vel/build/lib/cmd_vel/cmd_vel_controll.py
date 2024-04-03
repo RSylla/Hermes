@@ -47,7 +47,7 @@ def main(args=None):
 
     try:
         rclpy.spin(arduino_bridge)
-    except KeyboardInterrupt:
+        except KeyboardInterrupt:
         pass
     finally:
         if arduino_bridge.serial_port:
@@ -57,4 +57,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
