@@ -1,0 +1,1 @@
+/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/launch/ldlidar_rviz2.launch.py

@@ -1,0 +1,21 @@
+[2.072s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/teleop_control': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hermes/Hermes/hermes_ws/build/teleop_control/build --no-deps symlink_data --force
+[2.941s] running develop
+[2.941s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.942s]   warnings.warn(
+[3.314s] running egg_info
+[3.314s] writing teleop_control.egg-info/PKG-INFO
+[3.315s] writing dependency_links to teleop_control.egg-info/dependency_links.txt
+[3.316s] writing entry points to teleop_control.egg-info/entry_points.txt
+[3.316s] writing requirements to teleop_control.egg-info/requires.txt
+[3.316s] writing top-level names to teleop_control.egg-info/top_level.txt
+[3.322s] reading manifest file 'teleop_control.egg-info/SOURCES.txt'
+[3.324s] writing manifest file 'teleop_control.egg-info/SOURCES.txt'
+[3.328s] running build_ext
+[3.328s] Creating /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop-control.egg-link (link to .)
+[3.331s] Installing teleop_control_node script to /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/teleop_control
+[3.332s] 
+[3.332s] Installed /home/hermes/Hermes/hermes_ws/build/teleop_control
+[3.332s] running symlink_data
+[3.332s] symbolically linking /home/hermes/Hermes/hermes_ws/build/teleop_control/resource/teleop_control -> /home/hermes/Hermes/hermes_ws/install/teleop_control/share/ament_index/resource_index/packages
+[3.333s] symbolically linking /home/hermes/Hermes/hermes_ws/build/teleop_control/package.xml -> /home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control
+[3.435s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/teleop_control' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hermes/Hermes/hermes_ws/build/teleop_control/build --no-deps symlink_data --force
