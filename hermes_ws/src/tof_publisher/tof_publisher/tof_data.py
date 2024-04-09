@@ -11,7 +11,7 @@ class LaserScanSubscriber(Node):
         super().__init__('laser_scan_subscriber')
         self.subscription = self.create_subscription(
             LaserScan,
-            '/scan',
+            '/ldlidar_node/scan',
             self.listener_callback,
             10)
         self.publisher = self.create_publisher(Bool, '/tof_data', 10)
