@@ -1,319 +1,171 @@
-- [cn](#操作指南)
-- [en](#Instructions)
-# 操作指南
+<h1 align="center">
+  ldrobot-lidar-ros2
+</h1>
 
->此SDK仅适用于深圳乐动机器人有限公司销售的激光雷达产品，产品型号为:
-> - LDROBOT LiDAR LD06
-> - LDROBOT LiDAR LD19
-> - LDROBOT LiDAR STL-27L
+<h4 align="center">ROS2 package for LDRobot lidar. Based on Nav2 Lifecycle nodes</h4>
 
-## 0. 获取雷达的ROS2功能包
-```bash
-cd ~
+<p align="center">
+  <a href="#get-the-lidar">Get the lidar</a> •
+  <a href="#the-node-in-action">YouTube videos</a> •
+  <a href="#install-the-node">Install</a> •
+  <a href="#start-the-node">Start the Node</a> •
+  <a href="#parameters">Parameters</a> •
+  <a href="#display-scan-on-rviz2">RViz2</a> •  
+  <a href="#integrate-the-node-in-your-robot">Robot integration</a>
+</p>
+<br>
 
-mkdir -p ldlidar_ros2_ws/src
+This node is designed to work with the DToF 2D Lidar sensors [LD19](https://www.ldrobot.com/product/en/112) made by [LDRobot](https://www.ldrobot.com/en).
 
-cd ldlidar_ros2_ws/src
+It can work also with the [LD06](https://www.ldrobot.com/product/en/98) model, but no tests have been performed with it. LD06 cannot work outdoor.
 
-git clone  https://github.com/ldrobotSensorTeam/ldlidar_stl_ros2.git
-```
-## 1. 系统设置
-- 第一步，通过板载串口或者USB转串口模块(例如,cp2102模块)的方式使雷达连接到你的系统主板.
-- 第二步，设置雷达在系统中挂载的串口设备-x权限(以/dev/ttyUSB0为例)
-	- 实际使用时，根据雷达在你的系统中的实际挂载情况来设置，可以使用`ls -l /dev`命令查看.
+LD19             |  LD06
+:-------------------------:|:-------------------------:
+![ld19](https://user-images.githubusercontent.com/3648617/204473718-803d25d9-605a-4eaa-a047-d5d3524eead8.png)  |  ![ld06](https://user-images.githubusercontent.com/3648617/204473720-97f72c31-188e-4f5c-b98b-1033a5afe91e.png)
 
-``` bash
-cd ~/ldlidar_ros2_ws
+## Get the lidar
 
-sudo chmod 777 /dev/ttyUSB0
-```
-- 第三步，修改`launch/`目录下雷达产品型号对应的lanuch文件中的`port_name`值，以`ld06.launch.py` 和 `/dev/ttyUSB0`为例，如下所示.
+My lidar (LD19) comes from the [LDRobot kickstarter campaing](https://www.kickstarter.com/projects/ldrobot/ld-air-lidar-360-tof-sensor-for-all-robotic-applications) ended in 2021.
 
-```py
-#!/usr/bin/env python3
-from launch import LaunchDescription
-from launch_ros.actions import Node
+LDRobot then created also an [Indiegogo campaign](https://www.indiegogo.com/projects/ld-air-lidar-tof-sensor-for-robotic-applications--3#/) for the LD19.
 
-'''
-Parameter Description:
----
-- Set laser scan directon: 
-  1. Set counterclockwise, example: {'laser_scan_dir': True}
-  2. Set clockwise,        example: {'laser_scan_dir': False}
-- Angle crop setting, Mask data within the set angle range:
-  1. Enable angle crop fuction:
-    1.1. enable angle crop,  example: {'enable_angle_crop_func': True}
-    1.2. disable angle crop, example: {'enable_angle_crop_func': False}
-  2. Angle cropping interval setting:
-  - The distance and intensity data within the set angle range will be set to 0.
-  - angle >= 'angle_crop_min' and angle <= 'angle_crop_max' which is [angle_crop_min, angle_crop_max], unit is degress.
-    example:
-      {'angle_crop_min': 135.0}
-      {'angle_crop_max': 225.0}
-      which is [135.0, 225.0], angle unit is degress.
-'''
+LDRobot today distributes the Lidar through third-party resellers:
 
-def generate_launch_description():
-  # LDROBOT LiDAR publisher node
-  ldlidar_node = Node(
-      package='ldlidar_stl_ros2',
-      executable='ldlidar_stl_ros2_node',
-      name='LD06',
-      output='screen',
-      parameters=[
-        {'product_name': 'LDLiDAR_LD06'},
-        {'topic_name': 'scan'},
-        {'frame_id': 'base_laser'},
-        {'port_name': '/dev/ttyUSB0'},
-        {'port_baudrate': 230400},
-        {'laser_scan_dir': True},
-        {'enable_angle_crop_func': False},
-        {'angle_crop_min': 135.0},
-        {'angle_crop_max': 225.0}
-      ]
-  )
+* Waveshare: [LD19](https://www.waveshare.com/wiki/DTOF_LIDAR_LD19)
+* Innomaker: [LD19](https://www.inno-maker.com/product/lidar-ld06/)
+* Other: [Search on Google](https://www.google.com/search?q=ld19+lidar&newwindow=1&sxsrf=ALiCzsb2xd4qTTA78N00mP9-PP5HY4axZw:1669710673586&source=lnms&tbm=shop&sa=X&ved=2ahUKEwjYns78_NL7AhVLVfEDHf2PDk8Q_AUoA3oECAIQBQ&cshid=1669710734415350&biw=1862&bih=882&dpr=1)
 
-  # base_link to base_laser tf node
-  base_link_to_laser_tf_node = Node(
-    package='tf2_ros',
-    executable='static_transform_publisher',
-    name='base_link_to_base_laser_ld06',
-    arguments=['0','0','0.18','0','0','0','base_link','base_laser']
-  )
+## The node in action
 
+LD19 Lifecycle            |  LD19 outdoor
+:-------------------------:|:-------------------------:
+[![LD19 Lifecycle](https://img.youtube.com/vi/mbKwmK3Yjus/mqdefault.jpg)](https://youtu.be/mbKwmK3Yjus) | [![LD19 outdoor](https://img.youtube.com/vi/zyggXjW6cDo/mqdefault.jpg)](https://youtu.be/zyggXjW6cDo)
 
-  # Define LaunchDescription variable
-  ld = LaunchDescription()
+## Install the node
 
-  ld.add_action(ldlidar_node)
-  ld.add_action(base_link_to_laser_tf_node)
+The node is designed to work in [ROS2 Humble](https://docs.ros.org/en/humble/index.html).
 
-  return ld
-```
-## 2. 编译方法
+Clone the repository in your ROS2 workspace:
 
-使用colcon编译.
+    cd ~/ros2_ws/src/ #use your current ros2 workspace folder
+    git clone https://github.com/Myzhar/ldrobot-lidar-ros2.git
 
-```bash
-cd ~/ldlidar_ros2_ws
+Add dependencies:
 
-colcon build
-```
-## 3. 运行方法
-### 3.1. 设置功能包环境变量
+    sudo apt install libudev-dev
 
-- 编译完成后需要将编译生成的相关文件加入环境变量，便于 ROS 环境可以识别， 执行命令如下所示， 该命令是临时给终端加入环境变量，意味着您如果重新打开新的终端，也需要重新执行如下命令.
+Install the udev rules
 
-  ```bash
-  cd ~/ldlidar_ros2_ws
+    cd ~/ros2_ws/src/ldrobot-lidar-ros2/scripts/
+    ./create_udev_rules.sh
 
-  source install/setup.bash
-  ```
-- 为了重新打开终端后，永久不用执行上述添加环境变量的命令，可以进行如下操作.
+Build the packages:
 
-  ```bash
-  echo source ~/ldlidar_ros2_ws/install/setup.bash >> ~/.bashrc
+    cd ~/ros2_ws/
+    rosdep install --from-paths src --ignore-src -r -y
+    colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release
 
-  source ~/.bashrc
-  ```
-### 3.2. 启动激光雷达节点
+Update the environment variables:
 
-- 产品型号为 LDROBOT LiDAR LD06
-  - 启动ld06 lidar node:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 ld06.launch.py
-  ```
-  - 启动ld06 lidar node并显示激光数据在Rviz2上:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 viewer_ld06.launch.py
-  ```
+    echo source $(pwd)/install/local_setup.bash >> ~/.bashrc
+    source ~/.bashrc
 
-- 产品型号为 LDROBOT LiDAR LD19
-  - 启动ld19 lidar node:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 ld19.launch.py
-  ```
-  - 启动ld19 lidar node并显示激光数据在Rviz2上:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 viewer_ld19.launch.py
-  ```
-  
-- 产品型号为 LDROBOT LiDAR STL-27L
-  - 启动stl27l lidar node:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 stl27l.launch.py
-  ```
-  - 启动stl27l lidar node并显示激光数据在Rviz2上:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 viewer_stl27l.launch.py
-  ```
+## Start the node
 
-##   4. 测试
+### Default parameters
 
-> 代码支持ubuntu20.04 ROS2 foxy版本及以上测试，使用rviz2可视化。
-- 新打开一个终端 (Ctrl + Alt + T),运行命令:`rviz2`,并通过Rviz2工具打开readme文件所在目录的rviz2文件夹下面的ldlidar.rviz文件
-```bash
-rviz2
-```
+Open a terminal console and enter the following command:
 
-# Instructions
+    ros2 run ldlidar_node ldlidar_node # <--- not recommended. Better using the launch file 
 
-> This SDK is only applicable to the LiDAR products sold by Shenzhen LDROBOT Co., LTD. The product models are :
-> - LDROBOT LiDAR LD06
-> - LDROBOT LiDAR LD19
-> - LDROBOT LiDAR STL-27L
+the `ldlidar` node is based on the [`ROS2 lifecycle` architecture](https://design.ros2.org/articles/node_lifecycle.html), hence it starts in the `UNCONFIGURED` state.
+To configure the node, setting all the parameters to the default value, trying to estabilish a connection, and activating the scan publisher, the lifecycle services must be called.
 
-## step 0: get LiDAR ROS2 Package
-```bash
-cd ~
+Open a new terminal console and enter the following command: 
 
-mkdir -p ldlidar_ros2_ws/src
+    ros2 lifecycle set /lidar_node configure
 
-cd ldlidar_ros2_ws/src
+`Transitioning successful` is returned if the node is correctly configured and the connection is estabilished, `Transitioning failed` in case of errors. Look at the node log for information about eventual connection problems.
 
-git clone  https://github.com/ldrobotSensorTeam/ldlidar_stl_ros2.git
-```
-## step 1: system setup
-- Connect the LiDAR to your system motherboard via an onboard serial port or usB-to-serial module (for example, CP2102 module).
+The node is now in the `INACTIVE` state, enter the following command to activate:
 
-- Set the -x permission for the serial port device mounted by the radar in the system (for example, /dev/ttyUSB0)
+    ros2 lifecycle set /lidar_node activate
+    
+The node is now activated and the `/ldlidar_node/scan` topic of type `sensor_msgs/msg/LaserScan` is available to be subscribed.
 
-  - In actual use, the LiDAR can be set according to the actual mounted status of your system, you can use 'ls -l /dev' command to view.
+### Launch file with YAML parameters
 
-``` bash
-cd ~/ldlidar_ros2_ws
+The default values of the [parameters of the node](#parameters) can be modified by editing the file [`ldlidar.yaml`](ldlidar_node/config/ldlidar.yaml).
 
-sudo chmod 777 /dev/ttyUSB0
-```
-- Modify the `port_name` value in the Lanuch file corresponding to the radar product model under `launch/`, using `ld06.launch.py` and `/dev/ttyUSB0` as an example, as shown below.
+Open a terminal console and enter the following command to start the node with customized parameters:
 
-```py
-#!/usr/bin/env python3
-from launch import LaunchDescription
-from launch_ros.actions import Node
+    ros2 launch ldlidar_node ldlidar.launch.py
+    
+The [`ldlidar.yaml`](ldlidar_node/config/ldlidar.yaml) script also starts a `robot_state_publisher` node that provides the static TF transform of the LDLidar [`ldlidar_base`->`ldlidar_link`], and provides the ldlidar description in the `/robot_description`.
 
-'''
-Parameter Description:
----
-- Set laser scan directon: 
-  1. Set counterclockwise, example: {'laser_scan_dir': True}
-  2. Set clockwise,        example: {'laser_scan_dir': False}
-- Angle crop setting, Mask data within the set angle range:
-  1. Enable angle crop fuction:
-    1.1. enable angle crop,  example: {'enable_angle_crop_func': True}
-    1.2. disable angle crop, example: {'enable_angle_crop_func': False}
-  2. Angle cropping interval setting:
-  - The distance and intensity data within the set angle range will be set to 0.
-  - angle >= 'angle_crop_min' and angle <= 'angle_crop_max' which is [angle_crop_min, angle_crop_max], unit is degress.
-    example:
-      {'angle_crop_min': 135.0}
-      {'angle_crop_max': 225.0}
-      which is [135.0, 225.0], angle unit is degress.
-'''
+![](./images/ldlidar_tf.png)
 
-def generate_launch_description():
-  # LDROBOT LiDAR publisher node
-  ldlidar_node = Node(
-      package='ldlidar_stl_ros2',
-      executable='ldlidar_stl_ros2_node',
-      name='LD06',
-      output='screen',
-      parameters=[
-        {'product_name': 'LDLiDAR_LD06'},
-        {'topic_name': 'scan'},
-        {'frame_id': 'base_laser'},
-        {'port_name': '/dev/ttyUSB0'},
-        {'port_baudrate': 230400},
-        {'laser_scan_dir': True},
-        {'enable_angle_crop_func': False},
-        {'angle_crop_min': 135.0},
-        {'angle_crop_max': 225.0}
-      ]
-  )
+### Launch file with YAML parameters and Lifecycle manager
 
-  # base_link to base_laser tf node
-  base_link_to_laser_tf_node = Node(
-    package='tf2_ros',
-    executable='static_transform_publisher',
-    name='base_link_to_base_laser_ld06',
-    arguments=['0','0','0.18','0','0','0','base_link','base_laser']
-  )
+Thanks to the [NAV2](https://navigation.ros.org/index.html) project it is possible to launch a [`lifecycle_manager`](https://navigation.ros.org/configuration/packages/configuring-lifecycle.html) node that is taking care of processing the state transitions described above.
+
+An example launch file is provided, [`ldlidar_with_mgr.launch.py`](ldlidar_node/launch/ldlidar_with_mgr.launch.py), that illustrates how to start a `ldlidar_node` that loads the parameters from the `ldlidar.yaml` file, and starts the `lifecycle_manager` correctly configured with the file [`lifecycle_mgr.yaml`](ldlidar_node/config/lifecycle_mgr.yaml) to manage the lifecycle processing:
+
+    ros2 launch ldlidar_node ldlidar_with_mgr.launch.py
+
+The `ldlidar_with_mgr.launch.py` script automatically starts the `ldlidar_node` by including the `ldlidar.launch.py` launch file.
+
+## Parameters
+
+Following the list of node parameters:
+
+* **`general.debug_mode`**: set to `true` to activate debug messages
+* **`comm.serial_port`**: the serial port path
+* **`comm.baudrate`**: the serial port baudrate
+* **`comm.timeout_msec`**: the serial communication timeout in milliseconds
+* **`lidar.model`**: Lidar model [LDLiDAR_LD06, LDLiDAR_LD19, LDLiDAR_STL27L]
+* **`lidar.rot_verse`**: The rotation verse. Use clockwise if the lidar is mounted upsidedown. [CW, CCW]
+* **`lidar.units`**: distance measurement units [M, CM, MM]
+* **`lidar.frame_id`**: TF frame name for the lidar
+* **`lidar.bins`**: set to 0 for dinamic scan size according to rotation speed, set to a fixed value [e.g. 455] for compatibility with SLAM Toolbox
+* **`lidar.range_min`**: minimum scan distance
+* **`lidar.range_max`**: maximum scan distance
+* **`lidar.enable_angle_crop`**: enable angle cropping
+* **`lidar.angle_crop_min`**: minimum cropping angle
+* **`lidar.angle_crop_max`**: maximum cropping angle
+
+## Display scan on RVIZ2
+
+The launch file `ldlidar_rviz2.launch.py` starts the `ldlidar_node` node, the `lifecycle_manager` node, and a precofigured instance of RViz2 to display the 2D laser scan provided by the LDRobot sensors. This is an example to demonstrate how to correctly setup RViz2 to be used with the `ldlidar_node` node.
+
+Open a terminal console and enter the following command:
+
+    ros2 launch ldlidar_node ldlidar_rviz2.launch.py
+
+![](./images/ldlidar_rviz2.png)
+
+## Integrate the node in your robot
+
+Follow the following procedure, to integrate the `ldlidar_node` in a robot configuration:
+
+* Provide a TF transform from `base_link` to `ldlidar_base`, that is placed in the center of the base of the lidar scanner. The `ldlidar_base` -> `ldlidar_link` transform is provided by the `robot_state_publisher` started by the `ldlidar.launch.py` launch file.
+* Modify the [`ldlidar.yaml`](ldlidar_node/config/ldlidar.yaml) to match the configuration of the robot.
+* Include the [`ldlidar.launch.py`](ldlidar_node/launch/ldlidar.launch.py) in the bringup launch file of the robot. Follow the [provided example](#launch-file-with-yaml-parameters-and-lifecycle-manager).
+* Handle lifecycle to correctly start the node. You can use the Nav2 `lifecycle_manager`, by including it in the bringup launch file. Follow the [provided example](#launch-file-with-yaml-parameters-and-lifecycle-manager).
+* Enjoy your working system
+
+## SLAM Toolbox example
+
+The launch file `ldlidar_slam.launch.py` shows how to use the node with the [SLAM Toolbox](https://github.com/SteveMacenski/slam_toolbox) package to generate a 2D map for robot navigation.
+
+![](./images/ld19_slam.png)
 
 
-  # Define LaunchDescription variable
-  ld = LaunchDescription()
 
-  ld.add_action(ldlidar_node)
-  ld.add_action(base_link_to_laser_tf_node)
 
-  return ld
-```
 
-## step 2: build
 
-Run the following command.
 
-```bash
-cd ~/ldlidar_ros2_ws
 
-colcon build
-```
-## step 3: run
 
-### step3.1: package environment variable settings
 
-- After the compilation is completed, you need to add the relevant files generated by the compilation to the environment variables, so that the ROS environment can recognize them. The execution command is as follows. This command is to temporarily add environment variables to the terminal, which means that if you reopen a new terminal, you also need to re-execute it. The following command.
-  
-  ```bash
-  cd ~/ldlidar_ros2_ws
-  
-  source install/setup.bash
-  ```
-  
-- In order to never need to execute the above command to add environment variables after reopening the terminal, you can do the following.
-
-  ```bash
-  echo source ~/ldlidar_ros2_ws/install/setup.bash >> ~/.bashrc
-  
-  source ~/.bashrc
-  ```
-### step3.2: start LiDAR node
-
-- The product is LDROBOT LiDAR LD06
-  - start ld06 lidar node:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 ld06.launch.py
-  ```
-  - start ld06 lidar node and show on the Rviz2:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 viewer_ld06.launch.py
-  ```
-
-- The product is LDROBOT LiDAR LD19
-  - start ld19 lidar node:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 ld19.launch.py
-  ```
-  - start ld19 lidar node and show on the Rviz2:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 viewer_ld19.launch.py
-  ```
-  
-- The product is LDROBOT LiDAR STL-27L
-  - start stl27l lidar node:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 stl27l.launch.py
-  ```
-  - start stl27l lidar node and show on the Rviz2:
-  ``` bash
-  ros2 launch ldlidar_stl_ros2 viewer_stl27l.launch.py
-  ```
-
-## step 4: test
-
-> The code supports ubuntu 20.04 ros2 foxy version and above, using rviz2 visualization.
-
-- new a terminal (Ctrl + Alt + T) and use Rviz2 tool(run command: `rviz2`) ,open the `ldlidar.rviz` file below the rviz2 folder of the readme file directory
-```bash
-rviz2
-```

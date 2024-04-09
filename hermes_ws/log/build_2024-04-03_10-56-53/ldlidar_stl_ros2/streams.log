@@ -1,0 +1,4 @@
+[1.682s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2 -- -j6 -l6
+[2.235s] make: /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake: No such file or directory
+[2.237s] make: *** [Makefile:429: cmake_check_build_system] Error 127
+[2.779s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_stl_ros2 -- -j6 -l6

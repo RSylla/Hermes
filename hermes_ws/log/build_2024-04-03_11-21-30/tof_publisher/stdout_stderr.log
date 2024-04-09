@@ -1,0 +1,26 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating tof_publisher.egg-info
+writing tof_publisher.egg-info/PKG-INFO
+writing dependency_links to tof_publisher.egg-info/dependency_links.txt
+writing entry points to tof_publisher.egg-info/entry_points.txt
+writing requirements to tof_publisher.egg-info/requires.txt
+writing top-level names to tof_publisher.egg-info/top_level.txt
+writing manifest file 'tof_publisher.egg-info/SOURCES.txt'
+reading manifest file 'tof_publisher.egg-info/SOURCES.txt'
+writing manifest file 'tof_publisher.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages/tof-publisher.egg-link (link to .)
+Installing tof_data script to /home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/tof_publisher
+
+Installed /home/hermes/Hermes/hermes_ws/build/tof_publisher
+running symlink_data
+creating /home/hermes/Hermes/hermes_ws/install/tof_publisher/share/ament_index
+creating /home/hermes/Hermes/hermes_ws/install/tof_publisher/share/ament_index/resource_index
+creating /home/hermes/Hermes/hermes_ws/install/tof_publisher/share/ament_index/resource_index/packages
+symbolically linking /home/hermes/Hermes/hermes_ws/build/tof_publisher/resource/tof_publisher -> /home/hermes/Hermes/hermes_ws/install/tof_publisher/share/ament_index/resource_index/packages
+symbolically linking /home/hermes/Hermes/hermes_ws/build/tof_publisher/package.xml -> /home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher

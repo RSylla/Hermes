@@ -1,0 +1,1 @@
+/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/component/include/ldlidar_component.hpp

@@ -1,0 +1,1 @@
+/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/serialcom/serial_interface_linux.h

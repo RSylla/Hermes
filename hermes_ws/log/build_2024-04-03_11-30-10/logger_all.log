@@ -1,0 +1,730 @@
+[0.235s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.235s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa7003370>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa70e3eb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa70e3eb0>>)
+[0.603s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.604s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.604s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.604s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.604s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.604s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.604s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hermes/Hermes/hermes_ws'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/cameras) by extensions ['ignore', 'ignore_ament_install']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/cameras) by extension 'ignore'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/cameras) by extension 'ignore_ament_install'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/cameras) by extensions ['colcon_pkg']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/cameras) by extension 'colcon_pkg'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/cameras) by extensions ['colcon_meta']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/cameras) by extension 'colcon_meta'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/cameras) by extensions ['ros']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/cameras) by extension 'ros'
+[0.638s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cameras' with type 'ros.ament_python' and name 'cameras'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel) by extensions ['ignore', 'ignore_ament_install']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel) by extension 'ignore'
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel) by extension 'ignore_ament_install'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel) by extensions ['colcon_pkg']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel) by extension 'colcon_pkg'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel) by extensions ['colcon_meta']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel) by extension 'colcon_meta'
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel) by extensions ['ros']
+[0.639s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel) by extension 'ros'
+[0.640s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cmd_vel' with type 'ros.ament_python' and name 'cmd_vel'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_publisher) by extension 'ignore'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_publisher) by extension 'ignore_ament_install'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_publisher) by extensions ['colcon_pkg']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_publisher) by extension 'colcon_pkg'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_publisher) by extensions ['colcon_meta']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_publisher) by extension 'colcon_meta'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_publisher) by extensions ['ros']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(src/gps_publisher) by extension 'ros'
+[0.642s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gps_publisher' with type 'ros.ament_python' and name 'gps_publisher'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extension 'ignore'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extension 'ignore_ament_install'
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extensions ['colcon_pkg']
+[0.642s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extension 'colcon_pkg'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extensions ['colcon_meta']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extension 'colcon_meta'
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extensions ['ros']
+[0.643s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_publisher) by extension 'ros'
+[0.644s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_publisher' with type 'ros.ament_python' and name 'imu_publisher'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extension 'ignore'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extension 'ignore_ament_install'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extensions ['colcon_pkg']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extension 'colcon_pkg'
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extensions ['colcon_meta']
+[0.644s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extension 'colcon_meta'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extensions ['ros']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extension 'ros'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extensions ['cmake', 'python']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extension 'cmake'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extension 'python'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extensions ['python_setup_py']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher) by extension 'python_setup_py'
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extensions ['ignore', 'ignore_ament_install']
+[0.645s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extension 'ignore'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extension 'ignore_ament_install'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extensions ['colcon_pkg']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extension 'colcon_pkg'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extensions ['colcon_meta']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extension 'colcon_meta'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extensions ['ros']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extension 'ros'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extensions ['cmake', 'python']
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extension 'cmake'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extension 'python'
+[0.646s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extensions ['python_setup_py']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/3d_model) by extension 'python_setup_py'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extension 'ignore'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extension 'ignore_ament_install'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extensions ['colcon_pkg']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extension 'colcon_pkg'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extensions ['colcon_meta']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extension 'colcon_meta'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extensions ['ros']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extension 'ros'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extensions ['cmake', 'python']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extension 'cmake'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extension 'python'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extensions ['python_setup_py']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/docs) by extension 'python_setup_py'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extensions ['ignore', 'ignore_ament_install']
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extension 'ignore'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extension 'ignore_ament_install'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extensions ['colcon_pkg']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extension 'colcon_pkg'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extensions ['colcon_meta']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extension 'colcon_meta'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extensions ['ros']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extension 'ros'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extensions ['cmake', 'python']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extension 'cmake'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extension 'python'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extensions ['python_setup_py']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/images) by extension 'python_setup_py'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar) by extensions ['ignore', 'ignore_ament_install']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar) by extension 'ignore'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar) by extension 'ignore_ament_install'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar) by extensions ['colcon_pkg']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar) by extension 'colcon_pkg'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar) by extensions ['colcon_meta']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar) by extension 'colcon_meta'
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar) by extensions ['ros']
+[0.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar) by extension 'ros'
+[0.651s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_publisher/ldlidar' with type 'ros.ament_cmake' and name 'ldlidar'
+[0.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_component) by extensions ['ignore', 'ignore_ament_install']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_component) by extension 'ignore'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_component) by extension 'ignore_ament_install'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_component) by extensions ['colcon_pkg']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_component) by extension 'colcon_pkg'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_component) by extensions ['colcon_meta']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_component) by extension 'colcon_meta'
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_component) by extensions ['ros']
+[0.652s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_component) by extension 'ros'
+[0.655s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_publisher/ldlidar_component' with type 'ros.ament_cmake' and name 'ldlidar_component'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_node) by extensions ['ignore', 'ignore_ament_install']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_node) by extension 'ignore'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_node) by extension 'ignore_ament_install'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_node) by extensions ['colcon_pkg']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_node) by extension 'colcon_pkg'
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_node) by extensions ['colcon_meta']
+[0.655s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_node) by extension 'colcon_meta'
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_node) by extensions ['ros']
+[0.656s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/ldlidar_node) by extension 'ros'
+[0.657s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_publisher/ldlidar_node' with type 'ros.ament_cmake' and name 'ldlidar_node'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extensions ['ignore', 'ignore_ament_install']
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extension 'ignore'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extension 'ignore_ament_install'
+[0.657s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extensions ['colcon_pkg']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extension 'colcon_pkg'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extensions ['colcon_meta']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extension 'colcon_meta'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extensions ['ros']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extension 'ros'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extensions ['cmake', 'python']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extension 'cmake'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extension 'python'
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extensions ['python_setup_py']
+[0.658s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/rules) by extension 'python_setup_py'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extension 'ignore'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extension 'ignore_ament_install'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extensions ['colcon_pkg']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extension 'colcon_pkg'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extensions ['colcon_meta']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extension 'colcon_meta'
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extensions ['ros']
+[0.659s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extension 'ros'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extensions ['cmake', 'python']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extension 'cmake'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extension 'python'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extensions ['python_setup_py']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_publisher/scripts) by extension 'python_setup_py'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'ignore'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'ignore_ament_install'
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['colcon_pkg']
+[0.660s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'colcon_pkg'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['colcon_meta']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'colcon_meta'
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extensions ['ros']
+[0.661s] Level 1:colcon.colcon_core.package_identification:_identify(src/odometry) by extension 'ros'
+[0.662s] DEBUG:colcon.colcon_core.package_identification:Package 'src/odometry' with type 'ros.ament_python' and name 'odometry'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_control) by extensions ['ignore', 'ignore_ament_install']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_control) by extension 'ignore'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_control) by extension 'ignore_ament_install'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_control) by extensions ['colcon_pkg']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_control) by extension 'colcon_pkg'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_control) by extensions ['colcon_meta']
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_control) by extension 'colcon_meta'
+[0.662s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_control) by extensions ['ros']
+[0.663s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_control) by extension 'ros'
+[0.663s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleop_control' with type 'ros.ament_python' and name 'teleop_control'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/tof_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/tof_publisher) by extension 'ignore'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/tof_publisher) by extension 'ignore_ament_install'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/tof_publisher) by extensions ['colcon_pkg']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/tof_publisher) by extension 'colcon_pkg'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/tof_publisher) by extensions ['colcon_meta']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/tof_publisher) by extension 'colcon_meta'
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/tof_publisher) by extensions ['ros']
+[0.664s] Level 1:colcon.colcon_core.package_identification:_identify(src/tof_publisher) by extension 'ros'
+[0.665s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tof_publisher' with type 'ros.ament_python' and name 'tof_publisher'
+[0.665s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.665s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.665s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.665s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.666s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.740s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.741s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.746s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/hermes/Downloads/hermes/ros2_ws/src/install
+[0.747s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/hermes/Hermes/hermes_ws/install
+[0.751s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 314 installed packages in /opt/ros/humble
+[0.753s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.840s] Level 5:colcon.colcon_core.verb:set package 'cameras' build argument 'cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'cameras' build argument 'cmake_target' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'cameras' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'cameras' build argument 'cmake_clean_cache' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'cameras' build argument 'cmake_clean_first' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'cameras' build argument 'cmake_force_configure' from command line to 'False'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'cameras' build argument 'ament_cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'cameras' build argument 'catkin_cmake_args' from command line to 'None'
+[0.841s] Level 5:colcon.colcon_core.verb:set package 'cameras' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.841s] DEBUG:colcon.colcon_core.verb:Building package 'cameras' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hermes/Hermes/hermes_ws/build/cameras', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hermes/Hermes/hermes_ws/install/cameras', 'merge_install': False, 'path': '/home/hermes/Hermes/hermes_ws/src/cameras', 'symlink_install': False, 'test_result_base': None}
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel' build argument 'cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel' build argument 'cmake_target' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel' build argument 'cmake_clean_cache' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel' build argument 'cmake_clean_first' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel' build argument 'cmake_force_configure' from command line to 'False'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel' build argument 'ament_cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel' build argument 'catkin_cmake_args' from command line to 'None'
+[0.842s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.842s] DEBUG:colcon.colcon_core.verb:Building package 'cmd_vel' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hermes/Hermes/hermes_ws/build/cmd_vel', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hermes/Hermes/hermes_ws/install/cmd_vel', 'merge_install': False, 'path': '/home/hermes/Hermes/hermes_ws/src/cmd_vel', 'symlink_install': False, 'test_result_base': None}
+[0.843s] Level 5:colcon.colcon_core.verb:set package 'gps_publisher' build argument 'cmake_args' from command line to 'None'
+[0.843s] Level 5:colcon.colcon_core.verb:set package 'gps_publisher' build argument 'cmake_target' from command line to 'None'
+[0.843s] Level 5:colcon.colcon_core.verb:set package 'gps_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.843s] Level 5:colcon.colcon_core.verb:set package 'gps_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.843s] Level 5:colcon.colcon_core.verb:set package 'gps_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.843s] Level 5:colcon.colcon_core.verb:set package 'gps_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.843s] Level 5:colcon.colcon_core.verb:set package 'gps_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.843s] Level 5:colcon.colcon_core.verb:set package 'gps_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.843s] Level 5:colcon.colcon_core.verb:set package 'gps_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.843s] DEBUG:colcon.colcon_core.verb:Building package 'gps_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hermes/Hermes/hermes_ws/build/gps_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hermes/Hermes/hermes_ws/install/gps_publisher', 'merge_install': False, 'path': '/home/hermes/Hermes/hermes_ws/src/gps_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'imu_publisher' build argument 'cmake_args' from command line to 'None'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'imu_publisher' build argument 'cmake_target' from command line to 'None'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'imu_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'imu_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'imu_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'imu_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'imu_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'imu_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.844s] Level 5:colcon.colcon_core.verb:set package 'imu_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.844s] DEBUG:colcon.colcon_core.verb:Building package 'imu_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hermes/Hermes/hermes_ws/build/imu_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hermes/Hermes/hermes_ws/install/imu_publisher', 'merge_install': False, 'path': '/home/hermes/Hermes/hermes_ws/src/imu_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_args' from command line to 'None'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_target' from command line to 'None'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_clean_cache' from command line to 'False'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_clean_first' from command line to 'False'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'cmake_force_configure' from command line to 'False'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'ament_cmake_args' from command line to 'None'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'catkin_cmake_args' from command line to 'None'
+[0.845s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_component' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.845s] DEBUG:colcon.colcon_core.verb:Building package 'ldlidar_component' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hermes/Hermes/hermes_ws/build/ldlidar_component', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hermes/Hermes/hermes_ws/install/ldlidar_component', 'merge_install': False, 'path': '/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component', 'symlink_install': False, 'test_result_base': None}
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_args' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_target' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.846s] Level 5:colcon.colcon_core.verb:set package 'odometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.847s] DEBUG:colcon.colcon_core.verb:Building package 'odometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hermes/Hermes/hermes_ws/build/odometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hermes/Hermes/hermes_ws/install/odometry', 'merge_install': False, 'path': '/home/hermes/Hermes/hermes_ws/src/odometry', 'symlink_install': False, 'test_result_base': None}
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'teleop_control' build argument 'cmake_args' from command line to 'None'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'teleop_control' build argument 'cmake_target' from command line to 'None'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'teleop_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'teleop_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'teleop_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'teleop_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.847s] Level 5:colcon.colcon_core.verb:set package 'teleop_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'teleop_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'teleop_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.848s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hermes/Hermes/hermes_ws/build/teleop_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hermes/Hermes/hermes_ws/install/teleop_control', 'merge_install': False, 'path': '/home/hermes/Hermes/hermes_ws/src/teleop_control', 'symlink_install': False, 'test_result_base': None}
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'tof_publisher' build argument 'cmake_args' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'tof_publisher' build argument 'cmake_target' from command line to 'None'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'tof_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'tof_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'tof_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.848s] Level 5:colcon.colcon_core.verb:set package 'tof_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'tof_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'tof_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'tof_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.849s] DEBUG:colcon.colcon_core.verb:Building package 'tof_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hermes/Hermes/hermes_ws/build/tof_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hermes/Hermes/hermes_ws/install/tof_publisher', 'merge_install': False, 'path': '/home/hermes/Hermes/hermes_ws/src/tof_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_args' from command line to 'None'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_target' from command line to 'None'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.849s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.850s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.850s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.850s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.850s] Level 5:colcon.colcon_core.verb:set package 'ldlidar_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.850s] DEBUG:colcon.colcon_core.verb:Building package 'ldlidar_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hermes/Hermes/hermes_ws/build/ldlidar_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hermes/Hermes/hermes_ws/install/ldlidar_node', 'merge_install': False, 'path': '/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node', 'symlink_install': False, 'test_result_base': None}
+[0.850s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_args' from command line to 'None'
+[0.850s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_target' from command line to 'None'
+[0.850s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.850s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_clean_cache' from command line to 'False'
+[0.851s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_clean_first' from command line to 'False'
+[0.851s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'cmake_force_configure' from command line to 'False'
+[0.851s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'ament_cmake_args' from command line to 'None'
+[0.851s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'catkin_cmake_args' from command line to 'None'
+[0.851s] Level 5:colcon.colcon_core.verb:set package 'ldlidar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.851s] DEBUG:colcon.colcon_core.verb:Building package 'ldlidar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hermes/Hermes/hermes_ws/build/ldlidar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hermes/Hermes/hermes_ws/install/ldlidar', 'merge_install': False, 'path': '/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar', 'symlink_install': False, 'test_result_base': None}
+[0.851s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.853s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.854s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component' with build type 'ament_cmake'
+[0.854s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component'
+[0.859s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.860s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.860s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.869s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hermes/Hermes/hermes_ws/src/cameras' with build type 'ament_python'
+[0.869s] Level 1:colcon.colcon_core.shell:create_environment_hook('cameras', 'ament_prefix_path')
+[0.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/hook/ament_prefix_path.ps1'
+[0.871s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/hook/ament_prefix_path.dsv'
+[0.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/hook/ament_prefix_path.sh'
+[0.874s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.874s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.882s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hermes/Hermes/hermes_ws/src/cmd_vel' with build type 'ament_python'
+[0.883s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel', 'ament_prefix_path')
+[0.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/hook/ament_prefix_path.ps1'
+[0.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/hook/ament_prefix_path.dsv'
+[0.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/hook/ament_prefix_path.sh'
+[0.886s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.886s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.894s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hermes/Hermes/hermes_ws/src/gps_publisher' with build type 'ament_python'
+[0.894s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_publisher', 'ament_prefix_path')
+[0.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/hook/ament_prefix_path.ps1'
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/hook/ament_prefix_path.dsv'
+[0.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/hook/ament_prefix_path.sh'
+[0.898s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.898s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.906s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hermes/Hermes/hermes_ws/src/imu_publisher' with build type 'ament_python'
+[0.906s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_publisher', 'ament_prefix_path')
+[0.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/hook/ament_prefix_path.ps1'
+[0.908s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/hook/ament_prefix_path.dsv'
+[0.908s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/hook/ament_prefix_path.sh'
+[0.909s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.910s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.918s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hermes/Hermes/hermes_ws/src/odometry' with build type 'ament_python'
+[0.918s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry', 'ament_prefix_path')
+[0.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/hook/ament_prefix_path.ps1'
+[0.919s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/hook/ament_prefix_path.dsv'
+[0.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/hook/ament_prefix_path.sh'
+[0.921s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.921s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.937s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/ldlidar_component
+[1.532s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hermes/Hermes/hermes_ws/src/cameras'
+[1.533s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.533s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.131s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hermes/Hermes/hermes_ws/src/cmd_vel'
+[2.132s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.132s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.733s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hermes/Hermes/hermes_ws/src/gps_publisher'
+[2.733s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.734s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.329s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hermes/Hermes/hermes_ws/src/imu_publisher'
+[3.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.330s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.930s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hermes/Hermes/hermes_ws/src/odometry'
+[3.931s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.931s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.772s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/gps_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/gps_publisher/build
+[4.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/odometry': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/odometry/build
+[4.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/cmd_vel': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cmd_vel/prefix_override:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/cmd_vel/build
+[4.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/cameras': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cameras/prefix_override:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/cameras/build
+[4.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/imu_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/imu_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/imu_publisher/build
+[5.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/ldlidar_component
+[5.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_component -- -j6 -l6
+[5.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/odometry' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/odometry/build
+[5.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/src/odometry': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry build --build-base /home/hermes/Hermes/hermes_ws/build/odometry/build install --record /home/hermes/Hermes/hermes_ws/build/odometry/install.log --single-version-externally-managed install_data --force
+[5.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_component -- -j6 -l6
+[5.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/gps_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/gps_publisher/build
+[5.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/src/gps_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gps_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/gps_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log --single-version-externally-managed install_data --force
+[5.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/cmd_vel' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cmd_vel/prefix_override:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/cmd_vel/build
+[5.934s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/src/cmd_vel': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cmd_vel/prefix_override:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_vel build --build-base /home/hermes/Hermes/hermes_ws/build/cmd_vel/build install --record /home/hermes/Hermes/hermes_ws/build/cmd_vel/install.log --install-scripts $base/lib/cmd_vel --single-version-externally-managed install_data --force
+[5.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/cameras' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cameras/prefix_override:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/cameras/build
+[5.941s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/src/cameras': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cameras/prefix_override:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cameras build --build-base /home/hermes/Hermes/hermes_ws/build/cameras/build install --record /home/hermes/Hermes/hermes_ws/build/cameras/install.log --single-version-externally-managed install_data --force
+[5.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/ldlidar_component
+[5.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/imu_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/imu_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/imu_publisher/build
+[5.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/src/imu_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/imu_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/imu_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/imu_publisher/install.log --single-version-externally-managed install_data --force
+[6.023s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar_component)
+[6.030s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component' for CMake module files
+[6.032s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component' for CMake config files
+[6.032s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_component', 'cmake_prefix_path')
+[6.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.ps1'
+[6.034s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.dsv'
+[6.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.sh'
+[6.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/ldlidar_component
+[6.037s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib'
+[6.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_component', 'ld_library_path_lib')
+[6.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.ps1'
+[6.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.dsv'
+[6.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.sh'
+[6.041s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/bin'
+[6.041s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib/pkgconfig/ldlidar_component.pc'
+[6.042s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib/python3.10/site-packages'
+[6.042s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/bin'
+[6.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.ps1'
+[6.045s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.dsv'
+[6.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.sh'
+[6.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.bash'
+[6.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.zsh'
+[6.051s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/colcon-core/packages/ldlidar_component)
+[6.132s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar_component)
+[6.133s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component' for CMake module files
+[6.134s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component' for CMake config files
+[6.135s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_component', 'cmake_prefix_path')
+[6.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.ps1'
+[6.136s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.dsv'
+[6.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/cmake_prefix_path.sh'
+[6.138s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib'
+[6.139s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_component', 'ld_library_path_lib')
+[6.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.ps1'
+[6.140s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.dsv'
+[6.141s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/hook/ld_library_path_lib.sh'
+[6.142s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/bin'
+[6.142s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib/pkgconfig/ldlidar_component.pc'
+[6.142s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib/python3.10/site-packages'
+[6.143s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/bin'
+[6.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.ps1'
+[6.145s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.dsv'
+[6.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.sh'
+[6.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.bash'
+[6.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.zsh'
+[6.149s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/colcon-core/packages/ldlidar_component)
+[6.152s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node' with build type 'ament_cmake'
+[6.153s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node'
+[6.154s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.154s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.177s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_node': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/ldlidar_node
+[6.600s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/odometry' for CMake module files
+[6.603s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/odometry' for CMake config files
+[6.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/src/odometry' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry build --build-base /home/hermes/Hermes/hermes_ws/build/odometry/build install --record /home/hermes/Hermes/hermes_ws/build/odometry/install.log --single-version-externally-managed install_data --force
+[6.605s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/odometry/lib'
+[6.607s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/odometry/bin'
+[6.608s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/odometry/lib/pkgconfig/odometry.pc'
+[6.608s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages'
+[6.608s] Level 1:colcon.colcon_core.shell:create_environment_hook('odometry', 'pythonpath')
+[6.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/hook/pythonpath.ps1'
+[6.610s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/hook/pythonpath.dsv'
+[6.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/hook/pythonpath.sh'
+[6.613s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/odometry/bin'
+[6.613s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(odometry)
+[6.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/package.ps1'
+[6.615s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/package.dsv'
+[6.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/package.sh'
+[6.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/package.bash'
+[6.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/odometry/share/odometry/package.zsh'
+[6.618s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/odometry/share/colcon-core/packages/odometry)
+[6.619s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hermes/Hermes/hermes_ws/src/teleop_control' with build type 'ament_python'
+[6.620s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_control', 'ament_prefix_path')
+[6.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/hook/ament_prefix_path.ps1'
+[6.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/hook/ament_prefix_path.dsv'
+[6.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/hook/ament_prefix_path.sh'
+[6.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.636s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/gps_publisher' for CMake module files
+[6.637s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/gps_publisher' for CMake config files
+[6.638s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib'
+[6.638s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/gps_publisher/bin'
+[6.638s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/pkgconfig/gps_publisher.pc'
+[6.639s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages'
+[6.640s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/src/gps_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gps_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/gps_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log --single-version-externally-managed install_data --force
+[6.640s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_publisher', 'pythonpath')
+[6.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/hook/pythonpath.ps1'
+[6.642s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/hook/pythonpath.dsv'
+[6.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/hook/pythonpath.sh'
+[6.644s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/gps_publisher/bin'
+[6.644s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gps_publisher)
+[6.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/package.ps1'
+[6.645s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/package.dsv'
+[6.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/package.sh'
+[6.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/package.bash'
+[6.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/package.zsh'
+[6.648s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/colcon-core/packages/gps_publisher)
+[6.650s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hermes/Hermes/hermes_ws/src/tof_publisher' with build type 'ament_python'
+[6.650s] Level 1:colcon.colcon_core.shell:create_environment_hook('tof_publisher', 'ament_prefix_path')
+[6.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/hook/ament_prefix_path.ps1'
+[6.652s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/hook/ament_prefix_path.dsv'
+[6.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/hook/ament_prefix_path.sh'
+[6.654s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.654s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.258s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hermes/Hermes/hermes_ws/src/teleop_control'
+[7.259s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.259s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.271s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cameras' for CMake module files
+[7.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/src/cameras' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cameras/prefix_override:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cameras build --build-base /home/hermes/Hermes/hermes_ws/build/cameras/build install --record /home/hermes/Hermes/hermes_ws/build/cameras/install.log --single-version-externally-managed install_data --force
+[7.272s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cameras' for CMake config files
+[7.274s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cameras/lib'
+[7.274s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cameras/bin'
+[7.274s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cameras/lib/pkgconfig/cameras.pc'
+[7.275s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages'
+[7.275s] Level 1:colcon.colcon_core.shell:create_environment_hook('cameras', 'pythonpath')
+[7.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/hook/pythonpath.ps1'
+[7.276s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/hook/pythonpath.dsv'
+[7.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/hook/pythonpath.sh'
+[7.278s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cameras/bin'
+[7.278s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cameras)
+[7.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/package.ps1'
+[7.280s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/package.dsv'
+[7.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/package.sh'
+[7.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/package.bash'
+[7.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/cameras/share/cameras/package.zsh'
+[7.282s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/cameras/share/colcon-core/packages/cameras)
+[7.868s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hermes/Hermes/hermes_ws/src/tof_publisher'
+[7.869s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.869s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.879s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/imu_publisher' for CMake module files
+[7.880s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/src/imu_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/imu_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/imu_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/imu_publisher/install.log --single-version-externally-managed install_data --force
+[7.880s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/imu_publisher' for CMake config files
+[7.882s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib'
+[7.882s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/imu_publisher/bin'
+[7.882s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/pkgconfig/imu_publisher.pc'
+[7.883s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages'
+[7.883s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_publisher', 'pythonpath')
+[7.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/hook/pythonpath.ps1'
+[7.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/hook/pythonpath.dsv'
+[7.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/hook/pythonpath.sh'
+[7.886s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/imu_publisher/bin'
+[7.886s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_publisher)
+[7.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/package.ps1'
+[7.887s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/package.dsv'
+[7.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/package.sh'
+[7.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/package.bash'
+[7.889s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher/package.zsh'
+[7.890s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/imu_publisher/share/colcon-core/packages/imu_publisher)
+[7.892s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cmd_vel' for CMake module files
+[7.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/src/cmd_vel' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cmd_vel/prefix_override:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_vel build --build-base /home/hermes/Hermes/hermes_ws/build/cmd_vel/build install --record /home/hermes/Hermes/hermes_ws/build/cmd_vel/install.log --install-scripts $base/lib/cmd_vel --single-version-externally-managed install_data --force
+[7.894s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cmd_vel' for CMake config files
+[7.895s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib'
+[7.895s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cmd_vel/bin'
+[7.895s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/pkgconfig/cmd_vel.pc'
+[7.896s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages'
+[7.896s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel', 'pythonpath')
+[7.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/hook/pythonpath.ps1'
+[7.897s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/hook/pythonpath.dsv'
+[7.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/hook/pythonpath.sh'
+[7.899s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/cmd_vel/bin'
+[7.899s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmd_vel)
+[7.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/package.ps1'
+[7.900s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/package.dsv'
+[7.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/package.sh'
+[7.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/package.bash'
+[7.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel/package.zsh'
+[7.903s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/cmd_vel/share/colcon-core/packages/cmd_vel)
+[8.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/teleop_control': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/teleop_control/build
+[8.675s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/tof_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/tof_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/tof_publisher/build
+[9.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/teleop_control' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/teleop_control/build
+[9.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/src/teleop_control': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_control build --build-base /home/hermes/Hermes/hermes_ws/build/teleop_control/build install --record /home/hermes/Hermes/hermes_ws/build/teleop_control/install.log --single-version-externally-managed install_data --force
+[9.712s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/tof_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/tof_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/hermes/Hermes/hermes_ws/build/tof_publisher/build
+[9.715s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/src/tof_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/tof_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tof_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/tof_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/tof_publisher/install.log --install-scripts $base/lib/tof_publisher --single-version-externally-managed install_data --force
+[10.419s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/tof_publisher' for CMake module files
+[10.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/src/tof_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/tof_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tof_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/tof_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/tof_publisher/install.log --install-scripts $base/lib/tof_publisher --single-version-externally-managed install_data --force
+[10.421s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/tof_publisher' for CMake config files
+[10.422s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib'
+[10.422s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/tof_publisher/bin'
+[10.423s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/pkgconfig/tof_publisher.pc'
+[10.423s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages'
+[10.423s] Level 1:colcon.colcon_core.shell:create_environment_hook('tof_publisher', 'pythonpath')
+[10.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/hook/pythonpath.ps1'
+[10.425s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/hook/pythonpath.dsv'
+[10.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/hook/pythonpath.sh'
+[10.426s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/tof_publisher/bin'
+[10.426s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tof_publisher)
+[10.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/package.ps1'
+[10.428s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/package.dsv'
+[10.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/package.sh'
+[10.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/package.bash'
+[10.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher/package.zsh'
+[10.431s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/tof_publisher/share/colcon-core/packages/tof_publisher)
+[10.433s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/teleop_control' for CMake module files
+[10.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/src/teleop_control' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_control build --build-base /home/hermes/Hermes/hermes_ws/build/teleop_control/build install --record /home/hermes/Hermes/hermes_ws/build/teleop_control/install.log --single-version-externally-managed install_data --force
+[10.435s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/teleop_control' for CMake config files
+[10.436s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/teleop_control/lib'
+[10.437s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/teleop_control/bin'
+[10.437s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/pkgconfig/teleop_control.pc'
+[10.437s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages'
+[10.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_control', 'pythonpath')
+[10.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/hook/pythonpath.ps1'
+[10.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/hook/pythonpath.dsv'
+[10.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/hook/pythonpath.sh'
+[10.440s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/teleop_control/bin'
+[10.440s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_control)
+[10.441s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/package.ps1'
+[10.442s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/package.dsv'
+[10.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/package.sh'
+[10.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/package.bash'
+[10.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control/package.zsh'
+[10.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/teleop_control/share/colcon-core/packages/teleop_control)
+[11.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_node' returned '0': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/ldlidar_node
+[11.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_node': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_node -- -j6 -l6
+[11.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_node' returned '0': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_node -- -j6 -l6
+[11.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_node': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/ldlidar_node
+[11.475s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar_node)
+[11.476s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node' for CMake module files
+[11.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_node' returned '0': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/ldlidar_node
+[11.479s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node' for CMake config files
+[11.480s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_node', 'cmake_prefix_path')
+[11.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.ps1'
+[11.482s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.dsv'
+[11.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.sh'
+[11.485s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/lib'
+[11.485s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/bin'
+[11.486s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/lib/pkgconfig/ldlidar_node.pc'
+[11.486s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/lib/python3.10/site-packages'
+[11.487s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/bin'
+[11.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.ps1'
+[11.490s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.dsv'
+[11.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.sh'
+[11.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.bash'
+[11.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.zsh'
+[11.494s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/colcon-core/packages/ldlidar_node)
+[11.543s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar_node)
+[11.544s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node' for CMake module files
+[11.545s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node' for CMake config files
+[11.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar_node', 'cmake_prefix_path')
+[11.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.ps1'
+[11.548s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.dsv'
+[11.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/hook/cmake_prefix_path.sh'
+[11.550s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/lib'
+[11.551s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/bin'
+[11.551s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/lib/pkgconfig/ldlidar_node.pc'
+[11.552s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/lib/python3.10/site-packages'
+[11.553s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/bin'
+[11.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.ps1'
+[11.555s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.dsv'
+[11.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.sh'
+[11.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.bash'
+[11.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.zsh'
+[11.561s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/ldlidar_node/share/colcon-core/packages/ldlidar_node)
+[11.562s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar' with build type 'ament_cmake'
+[11.562s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar'
+[11.563s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.563s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/ldlidar
+[12.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar' returned '0': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/ldlidar
+[12.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar -- -j6 -l6
+[12.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar' returned '0': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar -- -j6 -l6
+[12.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/ldlidar
+[12.296s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar)
+[12.297s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar' for CMake module files
+[12.299s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar' returned '0': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/lib64:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64 /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/ldlidar
+[12.300s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar' for CMake config files
+[12.301s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar', 'cmake_prefix_path')
+[12.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.ps1'
+[12.303s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.dsv'
+[12.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.sh'
+[12.306s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar/bin'
+[12.306s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar/lib/pkgconfig/ldlidar.pc'
+[12.307s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar/lib/python3.10/site-packages'
+[12.307s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar/bin'
+[12.308s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/package.ps1'
+[12.309s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/package.dsv'
+[12.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/package.sh'
+[12.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/package.bash'
+[12.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/package.zsh'
+[12.313s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/ldlidar/share/colcon-core/packages/ldlidar)
+[12.356s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ldlidar)
+[12.357s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar' for CMake module files
+[12.358s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar' for CMake config files
+[12.358s] Level 1:colcon.colcon_core.shell:create_environment_hook('ldlidar', 'cmake_prefix_path')
+[12.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.ps1'
+[12.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.dsv'
+[12.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/hook/cmake_prefix_path.sh'
+[12.363s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar/bin'
+[12.363s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar/lib/pkgconfig/ldlidar.pc'
+[12.364s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar/lib/python3.10/site-packages'
+[12.365s] Level 1:colcon.colcon_core.environment:checking '/home/hermes/Hermes/hermes_ws/install/ldlidar/bin'
+[12.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/package.ps1'
+[12.367s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/package.dsv'
+[12.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/package.sh'
+[12.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/package.bash'
+[12.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/hermes/Hermes/hermes_ws/install/ldlidar/share/ldlidar/package.zsh'
+[12.373s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hermes/Hermes/hermes_ws/install/ldlidar/share/colcon-core/packages/ldlidar)
+[12.374s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.375s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.375s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.376s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.399s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.399s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.399s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.436s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.437s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hermes/Hermes/hermes_ws/install/local_setup.ps1'
+[12.440s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hermes/Hermes/hermes_ws/install/_local_setup_util_ps1.py'
+[12.444s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hermes/Hermes/hermes_ws/install/setup.ps1'
+[12.451s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hermes/Hermes/hermes_ws/install/local_setup.sh'
+[12.452s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hermes/Hermes/hermes_ws/install/_local_setup_util_sh.py'
+[12.453s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hermes/Hermes/hermes_ws/install/setup.sh'
+[12.458s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hermes/Hermes/hermes_ws/install/local_setup.bash'
+[12.460s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hermes/Hermes/hermes_ws/install/setup.bash'
+[12.465s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hermes/Hermes/hermes_ws/install/local_setup.zsh'
+[12.466s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hermes/Hermes/hermes_ws/install/setup.zsh'
