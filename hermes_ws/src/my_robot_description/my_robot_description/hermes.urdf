@@ -1,25 +1,74 @@
 <?xml version="1.0"?>
-<robot name="my_articulated_robot">
+<robot name="two_motor_robot">
 
-  <link name="base_link">
-    </link>
+  <!-- Define a fixed link for the base -->
+  <link name="base_link"/>
 
-  <joint name="left_motor_joint" type="continuous">
+  <!-- Define a link for the fifth wheel -->
+  <link name="fifth_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Define a link for the first wheel -->
+  <link name="wheel_1">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.05"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.1" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Define a link for the second wheel -->
+  <link name="wheel_2">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.05"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.1" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Define joints -->
+
+  <!-- Joint between base and fifth wheel -->
+  <joint name="base_to_fifth_wheel" type="fixed">
+    <origin xyz="0 0 0.025" rpy="0 0 0"/>
     <parent link="base_link"/>
-    <child link="left_wheel"/>
-    </joint>
+    <child link="fifth_wheel"/>
+  </joint>
 
-  <joint name="right_motor_joint" type="continuous">
-    </joint>
+  <!-- Joint between fifth wheel and first wheel -->
+  <joint name="fifth_wheel_to_wheel_1" type="continuous">
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+    <parent link="fifth_wheel"/>
+    <child link="wheel_1"/>
+    <axis xyz="0 1 0"/>
+  </joint>
 
-  <link name="trailer_link">
-    </link>
-
-  <joint name="base_to_trailer_pivot" type="revolute">
-    <parent link="base_link"/>
-    <child link="trailer_link"/>
-    <origin xyz="0 0 1.0" rpy="0 0 0" /> <axis xyz="0 1 0" />
-    <limit lower="-3.14159" upper="3.14159" effort="1000.0" velocity="3.0"/>
-    </joint>
+  <!-- Joint between fifth wheel and second wheel -->
+  <joint name="fifth_wheel_to_wheel_2" type="continuous">
+    <origin xyz="0 0 -0.05" rpy="0 0 0"/>
+    <parent link="fifth_wheel"/>
+    <child link="wheel_2"/>
+    <axis xyz="0 -1 0"/>
+  </joint>
 
 </robot>
