@@ -4,8 +4,8 @@
   <!-- Define a fixed link for the base -->
   <link name="base_link"/>
 
-  <!-- Define a link for the fifth wheel -->
-  <link name="fifth_wheel">
+  <!-- Define a link for the fifth wheel-like axle -->
+  <link name="fifth_wheel_axle">
     <visual>
       <geometry>
         <cylinder length="0.05" radius="0.1"/>
@@ -18,57 +18,41 @@
     </collision>
   </link>
 
-  <!-- Define a link for the first wheel -->
-  <link name="wheel_1">
-    <visual>
-      <geometry>
-        <cylinder length="0.1" radius="0.05"/>
-      </geometry>
-    </visual>
-    <collision>
-      <geometry>
-        <cylinder length="0.1" radius="0.05"/>
-      </geometry>
-    </collision>
+  <!-- Define a link for the left motor -->
+  <link name="left_motor">
+    <!-- Add visual and collision elements for left motor -->
   </link>
 
-  <!-- Define a link for the second wheel -->
-  <link name="wheel_2">
-    <visual>
-      <geometry>
-        <cylinder length="0.1" radius="0.05"/>
-      </geometry>
-    </visual>
-    <collision>
-      <geometry>
-        <cylinder length="0.1" radius="0.05"/>
-      </geometry>
-    </collision>
+  <!-- Define a link for the right motor -->
+  <link name="right_motor">
+    <!-- Add visual and collision elements for right motor -->
   </link>
 
   <!-- Define joints -->
 
-  <!-- Joint between base and fifth wheel -->
-  <joint name="base_to_fifth_wheel" type="fixed">
-    <origin xyz="0 0 0.025" rpy="0 0 0"/>
+  <!-- Joint between base and fifth wheel-like axle -->
+  <joint name="base_to_fifth_wheel_axle" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <parent link="base_link"/>
-    <child link="fifth_wheel"/>
+    <child link="fifth_wheel_axle"/>
   </joint>
 
-  <!-- Joint between fifth wheel and first wheel -->
-  <joint name="fifth_wheel_to_wheel_1" type="continuous">
-    <origin xyz="0 0 0.05" rpy="0 0 0"/>
-    <parent link="fifth_wheel"/>
-    <child link="wheel_1"/>
-    <axis xyz="0 1 0"/>
+  <!-- Joint between left motor and fifth wheel-like axle -->
+  <joint name="left_motor_to_fifth_wheel_axle" type="continuous">
+    <!-- Adjust origin and axis based on your specific setup -->
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="left_motor"/>
+    <child link="fifth_wheel_axle"/>
+    <axis xyz="1 0 0"/>
   </joint>
 
-  <!-- Joint between fifth wheel and second wheel -->
-  <joint name="fifth_wheel_to_wheel_2" type="continuous">
-    <origin xyz="0 0 -0.05" rpy="0 0 0"/>
-    <parent link="fifth_wheel"/>
-    <child link="wheel_2"/>
-    <axis xyz="0 -1 0"/>
+  <!-- Joint between right motor and fifth wheel-like axle -->
+  <joint name="right_motor_to_fifth_wheel_axle" type="continuous">
+    <!-- Adjust origin and axis based on your specific setup -->
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="right_motor"/>
+    <child link="fifth_wheel_axle"/>
+    <axis xyz="1 0 0"/>
   </joint>
 
 </robot>
