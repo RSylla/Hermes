@@ -1,0 +1,41 @@
+[0.091s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_component -- -j6 -l6
+[2.474s] [ 70%] Built target ldlidar
+[2.475s] [100%] Built target ldlidar_component
+[3.059s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_component -- -j6 -l6
+[3.152s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/ldlidar_component
+[3.172s] -- Install configuration: "Release"
+[3.172s] -- Execute custom install script
+[3.173s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib/libldlidar_component.so
+[3.174s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//defines.hpp
+[3.174s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_component.hpp
+[3.174s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_tools.hpp
+[3.175s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//visibility_control.hpp
+[3.175s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_datatype.h
+[3.175s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_driver.h
+[3.176s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//lipkg.h
+[3.176s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//tofbf.h
+[3.177s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//log_module.h
+[3.177s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//network_socket_interface_linux.h
+[3.177s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//serial_interface_linux.h
+[3.178s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/library_path.sh
+[3.178s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/library_path.dsv
+[3.178s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/package_run_dependencies/ldlidar_component
+[3.179s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/parent_prefix_path/ldlidar_component
+[3.179s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.sh
+[3.179s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.dsv
+[3.180s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/path.sh
+[3.180s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/path.dsv
+[3.180s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.bash
+[3.180s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.sh
+[3.181s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.zsh
+[3.181s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.dsv
+[3.181s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.dsv
+[3.202s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/packages/ldlidar_component
+[3.202s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/rclcpp_components/ldlidar_component
+[3.202s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.203s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_libraries-extras.cmake
+[3.203s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.203s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig.cmake
+[3.203s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig-version.cmake
+[3.204s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.xml
+[3.220s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/ldlidar_component

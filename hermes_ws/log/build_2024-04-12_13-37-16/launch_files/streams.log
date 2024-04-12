@@ -1,0 +1,20 @@
+[4.431s] Invoking command in '/home/hermes/Hermes/hermes_ws/launch_files': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/launch_files/prefix_override:/home/hermes/Hermes/hermes_ws/install/launch_files/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/launch_files build --build-base /home/hermes/Hermes/hermes_ws/build/launch_files/build install --record /home/hermes/Hermes/hermes_ws/build/launch_files/install.log --single-version-externally-managed install_data
+[5.000s] running egg_info
+[5.001s] writing ../build/launch_files/launch_files.egg-info/PKG-INFO
+[5.002s] writing dependency_links to ../build/launch_files/launch_files.egg-info/dependency_links.txt
+[5.002s] writing entry points to ../build/launch_files/launch_files.egg-info/entry_points.txt
+[5.003s] writing requirements to ../build/launch_files/launch_files.egg-info/requires.txt
+[5.003s] writing top-level names to ../build/launch_files/launch_files.egg-info/top_level.txt
+[5.008s] reading manifest file '../build/launch_files/launch_files.egg-info/SOURCES.txt'
+[5.010s] writing manifest file '../build/launch_files/launch_files.egg-info/SOURCES.txt'
+[5.010s] running build
+[5.010s] running build_py
+[5.011s] running install
+[5.012s] running install_lib
+[5.016s] running install_data
+[5.016s] running install_egg_info
+[5.021s] removing '/home/hermes/Hermes/hermes_ws/install/launch_files/lib/python3.10/site-packages/launch_files-0.0.0-py3.10.egg-info' (and everything under it)
+[5.021s] Copying ../build/launch_files/launch_files.egg-info to /home/hermes/Hermes/hermes_ws/install/launch_files/lib/python3.10/site-packages/launch_files-0.0.0-py3.10.egg-info
+[5.024s] running install_scripts
+[5.085s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/launch_files/install.log'
+[5.790s] Invoked command in '/home/hermes/Hermes/hermes_ws/launch_files' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/launch_files/prefix_override:/home/hermes/Hermes/hermes_ws/install/launch_files/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/launch_files build --build-base /home/hermes/Hermes/hermes_ws/build/launch_files/build install --record /home/hermes/Hermes/hermes_ws/build/launch_files/install.log --single-version-externally-managed install_data

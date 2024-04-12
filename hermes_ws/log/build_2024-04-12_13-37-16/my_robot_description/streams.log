@@ -1,0 +1,18 @@
+[2.780s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/my_robot_description': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/my_robot_description/prefix_override:/home/hermes/Hermes/hermes_ws/install/my_robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_description build --build-base /home/hermes/Hermes/hermes_ws/build/my_robot_description/build install --record /home/hermes/Hermes/hermes_ws/build/my_robot_description/install.log --single-version-externally-managed install_data
+[3.346s] running egg_info
+[3.348s] writing ../../build/my_robot_description/my_robot_description.egg-info/PKG-INFO
+[3.349s] writing dependency_links to ../../build/my_robot_description/my_robot_description.egg-info/dependency_links.txt
+[3.349s] writing entry points to ../../build/my_robot_description/my_robot_description.egg-info/entry_points.txt
+[3.349s] writing requirements to ../../build/my_robot_description/my_robot_description.egg-info/requires.txt
+[3.350s] writing top-level names to ../../build/my_robot_description/my_robot_description.egg-info/top_level.txt
+[3.352s] reading manifest file '../../build/my_robot_description/my_robot_description.egg-info/SOURCES.txt'
+[3.354s] writing manifest file '../../build/my_robot_description/my_robot_description.egg-info/SOURCES.txt'
+[3.355s] running build
+[3.355s] running install
+[3.356s] running install_data
+[3.356s] running install_egg_info
+[3.361s] removing '/home/hermes/Hermes/hermes_ws/install/my_robot_description/lib/python3.10/site-packages/my_robot_description-0.0.0-py3.10.egg-info' (and everything under it)
+[3.362s] Copying ../../build/my_robot_description/my_robot_description.egg-info to /home/hermes/Hermes/hermes_ws/install/my_robot_description/lib/python3.10/site-packages/my_robot_description-0.0.0-py3.10.egg-info
+[3.365s] running install_scripts
+[3.415s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/my_robot_description/install.log'
+[3.508s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/my_robot_description' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/my_robot_description/prefix_override:/home/hermes/Hermes/hermes_ws/install/my_robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_description build --build-base /home/hermes/Hermes/hermes_ws/build/my_robot_description/build install --record /home/hermes/Hermes/hermes_ws/build/my_robot_description/install.log --single-version-externally-managed install_data

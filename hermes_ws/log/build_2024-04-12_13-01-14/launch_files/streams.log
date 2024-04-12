@@ -1,0 +1,33 @@
+[3.922s] Invoking command in '/home/hermes/Hermes/hermes_ws/launch_files': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/launch_files/prefix_override:/home/hermes/Hermes/hermes_ws/install/launch_files/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/launch_files build --build-base /home/hermes/Hermes/hermes_ws/build/launch_files/build install --record /home/hermes/Hermes/hermes_ws/build/launch_files/install.log --single-version-externally-managed install_data
+[4.815s] running egg_info
+[4.816s] creating ../build/launch_files/launch_files.egg-info
+[4.817s] writing ../build/launch_files/launch_files.egg-info/PKG-INFO
+[4.817s] writing dependency_links to ../build/launch_files/launch_files.egg-info/dependency_links.txt
+[4.818s] writing entry points to ../build/launch_files/launch_files.egg-info/entry_points.txt
+[4.818s] writing requirements to ../build/launch_files/launch_files.egg-info/requires.txt
+[4.818s] writing top-level names to ../build/launch_files/launch_files.egg-info/top_level.txt
+[4.819s] writing manifest file '../build/launch_files/launch_files.egg-info/SOURCES.txt'
+[4.823s] reading manifest file '../build/launch_files/launch_files.egg-info/SOURCES.txt'
+[4.825s] writing manifest file '../build/launch_files/launch_files.egg-info/SOURCES.txt'
+[4.825s] running build
+[4.825s] running build_py
+[4.825s] creating /home/hermes/Hermes/hermes_ws/build/launch_files/build
+[4.826s] creating /home/hermes/Hermes/hermes_ws/build/launch_files/build/lib
+[4.826s] creating /home/hermes/Hermes/hermes_ws/build/launch_files/build/lib/launch_files
+[4.826s] copying launch_files/__init__.py -> /home/hermes/Hermes/hermes_ws/build/launch_files/build/lib/launch_files
+[4.826s] running install
+[4.827s] running install_lib
+[4.829s] creating /home/hermes/Hermes/hermes_ws/install/launch_files/lib/python3.10/site-packages/launch_files
+[4.830s] copying /home/hermes/Hermes/hermes_ws/build/launch_files/build/lib/launch_files/__init__.py -> /home/hermes/Hermes/hermes_ws/install/launch_files/lib/python3.10/site-packages/launch_files
+[4.831s] byte-compiling /home/hermes/Hermes/hermes_ws/install/launch_files/lib/python3.10/site-packages/launch_files/__init__.py to __init__.cpython-310.pyc
+[4.832s] running install_data
+[4.832s] creating /home/hermes/Hermes/hermes_ws/install/launch_files/share/ament_index
+[4.832s] creating /home/hermes/Hermes/hermes_ws/install/launch_files/share/ament_index/resource_index
+[4.832s] creating /home/hermes/Hermes/hermes_ws/install/launch_files/share/ament_index/resource_index/packages
+[4.833s] copying resource/launch_files -> /home/hermes/Hermes/hermes_ws/install/launch_files/share/ament_index/resource_index/packages
+[4.833s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/launch_files/share/launch_files
+[4.833s] running install_egg_info
+[4.837s] Copying ../build/launch_files/launch_files.egg-info to /home/hermes/Hermes/hermes_ws/install/launch_files/lib/python3.10/site-packages/launch_files-0.0.0-py3.10.egg-info
+[4.840s] running install_scripts
+[4.887s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/launch_files/install.log'
+[5.068s] Invoked command in '/home/hermes/Hermes/hermes_ws/launch_files' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/launch_files/prefix_override:/home/hermes/Hermes/hermes_ws/install/launch_files/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/launch_files build --build-base /home/hermes/Hermes/hermes_ws/build/launch_files/build install --record /home/hermes/Hermes/hermes_ws/build/launch_files/install.log --single-version-externally-managed install_data
