@@ -1,6 +1,16 @@
 <?xml version="1.0"?>
 <robot name="onshape">
-  <link name="part_1">
+ <!-- Define the dummy root link -->
+ <link name="base_footprint" />
+
+ <!-- Define a fixed joint connecting the dummy root link to the original root link -->
+ <joint name="base_footprint_joint" type="fixed">
+    <parent link="base_footprint" />
+    <child link="part_1" />
+ </joint>
+
+ <!-- Your original root link (now a child link) with its inertia -->
+ <link name="part_1">
     <visual>
       <origin xyz="-0.32336086541414255091 -0.28952645510435115472 -0.27072597742080689587" rpy="0 0 0" />
       <geometry>
@@ -76,16 +86,10 @@
         <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
       </geometry>
     </collision>
-    <material name="part_1_material">
-      <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
-    </material>
-    <material name="rehv1_material">
-      <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
-    </material>
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <mass value="1.0" />
       <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1" />
     </inertial>
-  </link>
+ </link>
 </robot>
