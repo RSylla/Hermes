@@ -1,0 +1,22 @@
+[3.579s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/imu_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/imu_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/imu_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/imu_publisher/install.log --single-version-externally-managed install_data
+[4.214s] running egg_info
+[4.217s] writing ../../build/imu_publisher/imu_publisher.egg-info/PKG-INFO
+[4.217s] writing dependency_links to ../../build/imu_publisher/imu_publisher.egg-info/dependency_links.txt
+[4.217s] writing entry points to ../../build/imu_publisher/imu_publisher.egg-info/entry_points.txt
+[4.218s] writing requirements to ../../build/imu_publisher/imu_publisher.egg-info/requires.txt
+[4.219s] writing top-level names to ../../build/imu_publisher/imu_publisher.egg-info/top_level.txt
+[4.223s] reading manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[4.224s] adding license file 'LICENSE'
+[4.225s] writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[4.226s] running build
+[4.226s] running build_py
+[4.227s] running install
+[4.228s] running install_lib
+[4.232s] running install_data
+[4.232s] running install_egg_info
+[4.236s] removing '/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[4.237s] Copying ../../build/imu_publisher/imu_publisher.egg-info to /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info
+[4.239s] running install_scripts
+[4.310s] Installing imu_publisher_node script to /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/imu_publisher
+[4.311s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/imu_publisher/install.log'
+[5.014s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/imu_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/imu_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/imu_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/imu_publisher/install.log --single-version-externally-managed install_data
