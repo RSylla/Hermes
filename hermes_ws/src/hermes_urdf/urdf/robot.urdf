@@ -4,7 +4,7 @@
     <visual>
       <origin xyz="-0.32336086541414255091 -0.28952645510435115472 -0.27072597742080689587" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://your_package_name/meshes/part_1.stl" />
+        <mesh filename="file:///home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/part_1.stl" />
       </geometry>
       <material name="part_1_material">
         <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
@@ -13,13 +13,13 @@
     <collision>
       <origin xyz="-0.32336086541414255091 -0.28952645510435115472 -0.27072597742080689587" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://your_package_name/meshes/part_1.stl" />
+        <mesh filename="file:///home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/part_1.stl" />
       </geometry>
     </collision>
     <visual>
       <origin xyz="-0.83086086541414272411 -0.51202645510435129683 -0.25822597742080688477" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://your_package_name/meshes/rehv1.stl" />
+        <mesh filename="file:///home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
       </geometry>
       <material name="rehv1_material">
         <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
@@ -28,13 +28,13 @@
     <collision>
       <origin xyz="-0.83086086541414272411 -0.51202645510435129683 -0.25822597742080688477" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://your_package_name/meshes/rehv1.stl" />
+        <mesh filename="file:///home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
       </geometry>
     </collision>
     <visual>
       <origin xyz="0.049139134585857391357 -0.012026455104351043562 -0.25822597742080688477" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://your_package_name/meshes/rehv1.stl" />
+        <mesh filename="file:///home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
       </geometry>
       <material name="rehv1_material">
         <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
@@ -43,13 +43,13 @@
     <collision>
       <origin xyz="0.049139134585857391357 -0.012026455104351043562 -0.25822597742080688477" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://your_package_name/meshes/rehv1.stl" />
+        <mesh filename="file:///home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
       </geometry>
     </collision>
     <visual>
       <origin xyz="-0.83086086541414261308 -0.012026455104351019276 -0.25822597742080688477" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://your_package_name/meshes/rehv1.stl" />
+        <mesh filename="file:///home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
       </geometry>
       <material name="rehv1_material">
         <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
@@ -58,13 +58,13 @@
     <collision>
       <origin xyz="-0.83086086541414261308 -0.012026455104351019276 -0.25822597742080688477" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://your_package_name/meshes/rehv1.stl" />
+        <mesh filename="file:///home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
       </geometry>
     </collision>
     <visual>
       <origin xyz="0.049139134585857280335 -0.51202645510435129683 -0.25822597742080688477" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://your_package_name/meshes/rehv1.stl" />
+        <mesh filename="file:///home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
       </geometry>
       <material name="rehv1_material">
         <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
@@ -73,7 +73,7 @@
     <collision>
       <origin xyz="0.049139134585857280335 -0.51202645510435129683 -0.25822597742080688477" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://your_package_name/meshes/rehv1.stl" />
+        <mesh filename="file:///home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
       </geometry>
     </collision>
     <material name="part_1_material">
