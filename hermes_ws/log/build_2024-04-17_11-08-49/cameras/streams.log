@@ -1,0 +1,22 @@
+[3.343s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/cameras': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cameras/prefix_override:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cameras build --build-base /home/hermes/Hermes/hermes_ws/build/cameras/build install --record /home/hermes/Hermes/hermes_ws/build/cameras/install.log --single-version-externally-managed install_data
+[3.913s] running egg_info
+[3.915s] writing ../../build/cameras/cameras.egg-info/PKG-INFO
+[3.915s] writing dependency_links to ../../build/cameras/cameras.egg-info/dependency_links.txt
+[3.916s] writing entry points to ../../build/cameras/cameras.egg-info/entry_points.txt
+[3.916s] writing requirements to ../../build/cameras/cameras.egg-info/requires.txt
+[3.916s] writing top-level names to ../../build/cameras/cameras.egg-info/top_level.txt
+[3.921s] reading manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+[3.921s] adding license file 'LICENSE'
+[3.923s] writing manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+[3.923s] running build
+[3.924s] running build_py
+[3.924s] running install
+[3.925s] running install_lib
+[3.929s] running install_data
+[3.929s] running install_egg_info
+[3.933s] removing '/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras-0.0.0-py3.10.egg-info' (and everything under it)
+[3.933s] Copying ../../build/cameras/cameras.egg-info to /home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras-0.0.0-py3.10.egg-info
+[3.936s] running install_scripts
+[3.988s] Installing cameras_node script to /home/hermes/Hermes/hermes_ws/install/cameras/lib/cameras
+[3.989s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/cameras/install.log'
+[4.365s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/cameras' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cameras/prefix_override:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cameras build --build-base /home/hermes/Hermes/hermes_ws/build/cameras/build install --record /home/hermes/Hermes/hermes_ws/build/cameras/install.log --single-version-externally-managed install_data

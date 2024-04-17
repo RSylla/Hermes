@@ -13,3 +13,4 @@ robot_model/__init__.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
+urdf/__init__.py

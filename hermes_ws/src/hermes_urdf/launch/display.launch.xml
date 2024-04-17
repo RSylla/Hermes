@@ -1,0 +1,11 @@
+<launch>
+    <!-- Declare a launch argument for the URDF file -->
+    <arg name="urdf_file" default="/Hermes/hermes_ws/urdf/robot.urdf" />
+
+    <!-- Load URDF -->
+    <node pkg="robot_state_publisher" exec="robot_state_publisher" name="robot_state_publisher" output="screen" args="$(var urdf_file)" />
+
+    <!-- RViz Visualization -->
+    <node pkg="rviz2" exec="rviz2" name="rviz" output="screen" args="-d /Hermes/hermes_ws/launch_files/config.rviz" />
+</launch>
+
