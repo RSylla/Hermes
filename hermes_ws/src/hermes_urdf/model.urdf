@@ -1,5 +1,13 @@
 <?xml version="1.0"?>
 <robot name="onshape">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="1.0" />
+      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1" />
+    </inertial>
+  </link>
+
   <link name="part_1">
     <visual>
       <origin xyz="-0.32336086541414255091 -0.28952645510435115472 -0.27072597742080689587" rpy="0 0 0" />
@@ -82,10 +90,10 @@
     <material name="rehv1_material">
       <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
     </material>
-    <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <mass value="1.0" />
-      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1" />
-    </inertial>
   </link>
+
+  <joint name="base_to_part_1" type="fixed">
+    <parent link="base_link" />
+    <child link="part_1" />
+  </joint>
 </robot>
