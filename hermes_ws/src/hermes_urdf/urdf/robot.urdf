@@ -10,7 +10,7 @@
             <geometry>
                 <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/part_1.stl">
             </geometry>
-            <origin xyz="-0.1497848790515619033 -0.101401169575144251 -0.50371394306610273173" rpy="0 -0 0" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
             <material name="grey"/>
         </visual>
     </link>
