@@ -1,95 +1,101 @@
-<?xml version="1.0"?>
 <robot name="onshape">
- <!-- Define the dummy root link -->
- <link name="base_footprint" />
+<link name="part_1">
+<visual>
+<origin xyz="-0.1497848790515619033 -0.101401169575144251 -0.50371394306610273173" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package:///part_1.stl"/>
+</geometry>
+<material name="part_1_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.1497848790515619033 -0.101401169575144251 -0.50371394306610273173" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package:///part_1.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.65728487905156207649 -0.32390116957514442086 -0.49121394306610272062" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package:///rehv1.stl"/>
+</geometry>
+<material name="rehv1_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.65728487905156207649 -0.32390116957514442086 -0.49121394306610272062" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package:///rehv1.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0.22271512094843803897 0.17609883042485588445 -0.49121394306610272062" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package:///rehv1.stl"/>
+</geometry>
+<material name="rehv1_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.22271512094843803897 0.17609883042485588445 -0.49121394306610272062" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package:///rehv1.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0.43763867567214925769 -0.1012602954234076702 -0.10860875772948018481" rpy="0 -0 -1.57079632679489678" />
+<geometry>
+<mesh filename="package:///ld19.stl"/>
+</geometry>
+<material name="ld19_material">
+<color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.43763867567214925769 -0.1012602954234076702 -0.10860875772948018481" rpy="0 -0 -1.57079632679489678" />
+<geometry>
+<mesh filename="package:///ld19.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="-0.65728487905156196547 0.17609883042485588445 -0.49121394306610272062" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package:///rehv1.stl"/>
+</geometry>
+<material name="rehv1_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.65728487905156196547 0.17609883042485588445 -0.49121394306610272062" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package:///rehv1.stl"/>
+</geometry>
+</collision>
+<visual>
+<origin xyz="0.22271512094843792795 -0.32390116957514442086 -0.49121394306610272062" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package:///rehv1.stl"/>
+</geometry>
+<material name="rehv1_material">
+<color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.22271512094843792795 -0.32390116957514442086 -0.49121394306610272062" rpy="0 -0 0" />
+<geometry>
+<mesh filename="package:///rehv1.stl"/>
+</geometry>
+</collision>
+<inertial>
+<origin xyz="-0.14984008285756178491 -0.10140116957514429263 -0.30636524238625062466" rpy="0 0 0"/>
+<mass value="518.58314000823497736" />
+<inertia ixx="13.512962609803347291" ixy="-2.2501153431609688205e-15"  ixz="-0.0052918048042431119898" iyy="72.162621958086830887" iyz="5.9138721465655623083e-16" izz="72.17225085792958339" />
+</inertial>
+</link>
 
- <!-- Define a fixed joint connecting the dummy root link to the original root link -->
- <joint name="base_footprint_joint" type="fixed">
-    <parent link="base_footprint" />
-    <child link="part_1" />
- </joint>
 
- <!-- Your original root link (now a child link) with its inertia -->
- <link name="part_1">
-    <visual>
-      <origin xyz="-0.32336086541414255091 -0.28952645510435115472 -0.27072597742080689587" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/part_1.stl" />
-      </geometry>
-      <material name="part_1_material">
-        <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.32336086541414255091 -0.28952645510435115472 -0.27072597742080689587" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/part_1.stl" />
-      </geometry>
-    </collision>
-    <visual>
-      <origin xyz="-0.83086086541414272411 -0.51202645510435129683 -0.25822597742080688477" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
-      </geometry>
-      <material name="rehv1_material">
-        <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.83086086541414272411 -0.51202645510435129683 -0.25822597742080688477" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
-      </geometry>
-    </collision>
-    <visual>
-      <origin xyz="0.049139134585857391357 -0.012026455104351043562 -0.25822597742080688477" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
-      </geometry>
-      <material name="rehv1_material">
-        <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.049139134585857391357 -0.012026455104351043562 -0.25822597742080688477" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
-      </geometry>
-    </collision>
-    <visual>
-      <origin xyz="-0.83086086541414261308 -0.012026455104351019276 -0.25822597742080688477" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
-      </geometry>
-      <material name="rehv1_material">
-        <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="-0.83086086541414261308 -0.012026455104351019276 -0.25822597742080688477" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
-      </geometry>
-    </collision>
-    <visual>
-      <origin xyz="0.049139134585857280335 -0.51202645510435129683 -0.25822597742080688477" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
-      </geometry>
-      <material name="rehv1_material">
-        <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0.049139134585857280335 -0.51202645510435129683 -0.25822597742080688477" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl" />
-      </geometry>
-    </collision>
-    <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <mass value="1.0" />
-      <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1" />
-    </inertial>
- </link>
 </robot>
