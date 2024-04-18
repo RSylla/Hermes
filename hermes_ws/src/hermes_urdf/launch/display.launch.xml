@@ -1,6 +1,6 @@
 <launch>
     <!-- Declare a launch argument for the URDF file -->
-    <!-- arg name="urdf_file" default="~/Hermes/hermes_ws/src/hermes_urdf/urdf/robot.urdf" /> -->
+    <!-- arg name="urdf_file" default="~/Hermes/hermes_ws/src/hermes_urdf/urdf/hermes.urdf" /> -->
 
     <!-- Load URDF -->
     <node pkg="robot_state_publisher" exec="robot_state_publisher" name="robot_state_publisher" output="screen" args="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/hermes.urdf" />
