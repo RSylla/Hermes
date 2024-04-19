@@ -23,7 +23,7 @@
 
     <link name="ld19">
         <visual>
-            <origin xyz="0 0 0" rpy="0 -0 -1.570796326794896558" />
+            <origin xyz="1 0 0" rpy="0 -0 -1.570796326794896558" />
             <geometry>
                 <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/ld19.stl"/>
             </geometry>
