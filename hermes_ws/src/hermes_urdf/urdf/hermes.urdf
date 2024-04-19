@@ -39,7 +39,7 @@
         <origin xyz="0.43834751520264569891 -0.10155710888826169347 -0.10871394306610271396" rpy="0 0 -1.570796326794896558" />
     </joint>
 
-    <link name= "front_left_wheel">
+    <link name= "rear_right_wheel">
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0" />
             <geometry>
@@ -51,12 +51,11 @@
         </visual>
     </link>
 
-    <joint name= "base_front_left_wheel_joint" type="fixed">
+    <joint name= "base_rear_wheel_wheel_joint" type="fixed">
         <parent link="base_link"/>
-        <child link="front_left_wheel"/>
+        <child link="rear_right_wheel"/>
         <origin xyz="-0.65728487905156207649 -0.32390116957514442086 -0.49121394306610272062" rpy="0 -0 0" />
+        <axis xyz="1 0 0" />
     </joint>
 
-
-    
 </robot>
