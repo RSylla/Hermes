@@ -1,0 +1,15 @@
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/ament_index/resource_index/package_run_dependencies/gps_publisher
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/ament_index/resource_index/parent_prefix_path/gps_publisher
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/environment/ament_prefix_path.sh
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/environment/ament_prefix_path.dsv
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/environment/path.sh
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/environment/path.dsv
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/local_setup.bash
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/local_setup.sh
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/local_setup.zsh
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/local_setup.dsv
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/package.dsv
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/ament_index/resource_index/packages/gps_publisher
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/cmake/gps_publisherConfig.cmake
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/cmake/gps_publisherConfig-version.cmake
+/home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher/package.xml

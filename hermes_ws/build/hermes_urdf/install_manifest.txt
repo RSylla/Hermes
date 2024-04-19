@@ -1,4 +1,4 @@
-/home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/display.launch.xml
+/home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/display.launch.py
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv1.stl
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_7.part
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.part
