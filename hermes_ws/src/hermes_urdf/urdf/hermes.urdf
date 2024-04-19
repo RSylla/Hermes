@@ -79,7 +79,7 @@
 
     <link name= "rear_left_wheel"/>
         <visual>
-            <origin xyz="-0.65728487905156196547 0.17609883042485588445 -0.49121394306610272062" rpy="0 -0 0" />
+            <origin xyz="0 0 0" rpy="0 -0 0" />
             <geometry>
                 <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl"/>
             </geometry>
