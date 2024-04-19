@@ -70,11 +70,11 @@
         </visual>
     </link>
 
-    <joint name= "base_front_left_wheel_joint" type="continuous">
+    <joint name="base_front_left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="front_left_wheel"/>
-        <origin xyz="0.22271512094843803897 0.17609883042485588445 -0.49121394306610272062" rpy="0 -0 0" />
-        <axis xyz="0 1 0"/>
+        <origin xyz="0.22271512094843803897 0.17609883042485588445 -0.49121394306610272062" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
     </joint>
 
 </robot>
