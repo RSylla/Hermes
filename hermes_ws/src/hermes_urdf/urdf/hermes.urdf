@@ -51,10 +51,29 @@
         </visual>
     </link>
 
-    <joint name= "base_rear_wheel_wheel_joint" type="fixed">
+    <joint name= "base_rear_right_wheel_joint" type="fixed">
         <parent link="base_link"/>
         <child link="rear_right_wheel"/>
         <origin xyz="-0.65728487905156207649 -0.32390116957514442086 -0.49121394306610272062" rpy="0 -0 0" />
+        <axis xyz="1 0 0" />
+    </joint>
+
+    <link name= "rear_left_wheel">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv1.stl"/>
+            </geometry>
+            <material name="rehv1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name= "base_rear_left_wheel_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="rear_left_wheel"/>
+        <origin xyz="0.22271512094843803897 0.17609883042485588445 -0.49121394306610272062" rpy="0 -0 0" />
         <axis xyz="1 0 0" />
     </joint>
 
