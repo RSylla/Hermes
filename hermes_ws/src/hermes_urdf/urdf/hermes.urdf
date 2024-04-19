@@ -8,6 +8,8 @@
     <material name= "ld19 color">
         <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
     </material>
+
+    <link name="base_footprint"/>
     
     <link name="base_link">
         <visual>
@@ -55,7 +57,7 @@
         <parent link="base_link"/>
         <child link="rear_right_wheel"/>
         <origin xyz="-0.65728487905156207649 -0.32390116957514442086 -0.49121394306610272062" rpy="0 -0 0" />
-        <axis xyz="0 1 0"/>
+        <axis xyz="1 0 0"/>
     </joint>
 
     <link name= "front_left_wheel">
@@ -89,7 +91,7 @@
         </visual>
     </link>
 
-    <joint name="base_rear_left_wheel_joint" type="fixed">
+    <joint name="base_rear_left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="rear_left_wheel"/>
         <origin xyz="-0.65728487905156196547 0.17609883042485588445 -0.49121394306610272062" rpy="0 0 0" />
@@ -108,12 +110,19 @@
         </visual>
     </link>
 
-    <joint name="base_front_right_wheel_joint" type="fixed">
+    <joint name="base_front_right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="front_right_wheel"/>
         <origin xyz="0.22271512094843792795 -0.32390116957514442086 -0.49121394306610272062" rpy="0 0 0" />
-        <axis xyz="0 1 0" />
+        <axis xyz="1 0 0" />
     </joint>
+    
+    <joint name="base_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+    </joint>
+
 </robot>
 
     
