@@ -23,7 +23,7 @@
 
     <link name="ld19">
         <visual>
-            <origin xyz="1 0 0" rpy="0 -0 -1.570796326794896558" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
                 <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/ld19.stl"/>
             </geometry>
@@ -36,7 +36,7 @@
     <joint name="base_lidar_joint" type="fixed">
         <parent link="base_link"/>
         <child link="ld19"/>
-        <origin xyz="0.43834751520264569891 -0.10155710888826169347 -0.10871394306610271396" rpy="0 -0 -1.570796326794896558" />
+        <origin xyz="0.43834751520264569891 -0.10155710888826169347 -0.10871394306610271396" rpy="0 0 -1.570796326794896558" />
     </joint>
 
 </robot>
