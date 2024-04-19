@@ -1,11 +1,27 @@
-<launch>
+<!---->
+   <!-- <launch> -->
     <!-- Declare a launch argument for the URDF file -->
     <!-- arg name="urdf_file" default="~/Hermes/hermes_ws/src/hermes_urdf/urdf/hermes.urdf" /> -->
 
     <!-- Load URDF -->
-    <node pkg="robot_state_publisher" exec="robot_state_publisher" name="robot_state_publisher" output="screen" args="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/hermes.urdf" />
+   <!-- <node pkg="robot_state_publisher" exec="robot_state_publisher" name="robot_state_publisher" output="screen" args="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/hermes.urdf" />-->
+    <!-- RViz Visualization -->
+   <!-- <node pkg="rviz2" exec="rviz2" name="rviz" output="screen" args="-d /home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/config.rviz" /> -->
+<!--</launch> -->
+
+
+<launch>
+    <!-- Declare a launch argument for the GUI -->
+    <arg name="gui" default="true" />
+
+    <!-- Load URDF -->
+    <param name="robot_description" command="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/hermes.urdf" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+    <!-- Joint State Publisher -->
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" if="$(arg gui)" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" unless="$(arg gui)" />
 
     <!-- RViz Visualization -->
-    <node pkg="rviz2" exec="rviz2" name="rviz" output="screen" args="-d /home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/config.rviz" />
+    <node name="rviz2" pkg="rviz2" type="rviz2" args="-d /home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/config.rviz" />
 </launch>
-
