@@ -36,20 +36,3 @@
     </joint>
 
 </robot>
-import xml.etree.ElementTree as ET
-
-tree = ET.parse('hermes.urdf')
-root = tree.getroot()
-
-for origin in root.iter('origin'):
-    xyz = origin.get('xyz')
-    rpy = origin.get('rpy')
-    print(f'xyz = {xyz} rpy= {rpy}')
-
-# If you want to modify the values
-for origin in root.iter('origin'):
-    origin.set('xyz', 'x y z')
-    origin.set('rpy', 'r p y')
-
-# Save the modified tree to a new file
-tree.write('modified_hermes.urdf')
