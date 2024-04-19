@@ -51,9 +51,4 @@
         </visual>
     </link>
 
-    <joint name= "base_front_left_wheel_joint" type="continous">
-        <parent link="base_link"/>
-        <child link="front_left_wheel"/>
-        <origin xyz="-0.65728487905156207649 -0.32390116957514442086 -0.49121394306610272062" rpy="0 -0 0" />
-    </joint>
 </robot>
