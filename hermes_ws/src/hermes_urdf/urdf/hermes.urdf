@@ -53,7 +53,7 @@
         </visual>
     </link>
 
-    <joint name= "base_rear_right_wheel_joint" type="continuous">
+    <joint name= "base_rear_right_wheel_joint" type="fixed">
         <parent link="base_link"/>
         <child link="rear_right_wheel"/>
         <origin xyz="-0.65728487905156207649 -0.32390116957514442086 -0.49121394306610272062" rpy="0 -0 0" />
@@ -72,7 +72,7 @@
         </visual>
     </link>
 
-    <joint name="base_front_left_wheel_joint" type="continuous">
+    <joint name="base_front_left_wheel_joint" type="fixed">
         <parent link="base_link"/>
         <child link="front_left_wheel"/>
         <origin xyz="0.22271512094843803897 0.17609883042485588445 -0.49121394306610272062" rpy="0 0 0" />
@@ -91,7 +91,7 @@
         </visual>
     </link>
 
-    <joint name="base_rear_left_wheel_joint" type="continuous">
+    <joint name="base_rear_left_wheel_joint" type="fixed">
         <parent link="base_link"/>
         <child link="rear_left_wheel"/>
         <origin xyz="-0.65728487905156196547 0.17609883042485588445 -0.49121394306610272062" rpy="0 0 0" />
@@ -110,7 +110,7 @@
         </visual>
     </link>
 
-    <joint name="base_front_right_wheel_joint" type="continuous">
+    <joint name="base_front_right_wheel_joint" type="fixed">
         <parent link="base_link"/>
         <child link="front_right_wheel"/>
         <origin xyz="0.22271512094843792795 -0.32390116957514442086 -0.49121394306610272062" rpy="0 0 0" />
