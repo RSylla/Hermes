@@ -1,0 +1,2 @@
+Invoking command in '/home/hermes/Hermes/hermes_ws/build/gps_publisher': /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/gps_publisher -- -j6 -l6
+Invoked command in '/home/hermes/Hermes/hermes_ws/build/gps_publisher' returned '2': /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/gps_publisher -- -j6 -l6

@@ -1,0 +1,46 @@
+[1.437s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_urdf -- -j6 -l6
+[2.097s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_urdf -- -j6 -l6
+[2.241s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/hermes_urdf
+[2.266s] -- Install configuration: ""
+[2.266s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch
+[2.266s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/display.launch.py
+[2.266s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf
+[2.267s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv1.stl
+[2.267s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_7.part
+[2.267s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.part
+[2.267s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_43.stl
+[2.267s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_37.part
+[2.267s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_43.part
+[2.267s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_7.stl
+[2.267s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.stl
+[2.267s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/lidar urdf
+[2.268s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/lidar urdf/ldlidar_descr.urdf.xml
+[2.268s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/lidar urdf/model
+[2.268s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/lidar urdf/model/LD19.stl
+[2.268s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_37.stl
+[2.268s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/__init__.py
+[2.268s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.rviz
+[2.269s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/part_1.stl
+[2.269s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/.robot.urdf.swp
+[2.269s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.json
+[2.269s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes.urdf
+[2.269s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_75.part
+[2.269s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_75.stl
+[2.269s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/part_1.part
+[2.269s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv1.part
+[2.269s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/package_run_dependencies/hermes_urdf
+[2.270s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/parent_prefix_path/hermes_urdf
+[2.270s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/ament_prefix_path.sh
+[2.270s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/ament_prefix_path.dsv
+[2.270s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/path.sh
+[2.270s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/path.dsv
+[2.270s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.bash
+[2.270s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.sh
+[2.270s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.zsh
+[2.271s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.dsv
+[2.271s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/package.dsv
+[2.271s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/packages/hermes_urdf
+[2.271s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/cmake/hermes_urdfConfig.cmake
+[2.271s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/cmake/hermes_urdfConfig-version.cmake
+[2.271s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/package.xml
+[2.314s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/hermes_urdf

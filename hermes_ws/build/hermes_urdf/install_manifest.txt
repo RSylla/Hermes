@@ -7,8 +7,6 @@
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_43.part
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_7.stl
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.stl
-/home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/lidar urdf/ldlidar_descr.urdf.xml
-/home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/lidar urdf/model/LD19.stl
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/surface_37.stl
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/__init__.py
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.rviz

@@ -1,0 +1,6 @@
+{
+  "package_name": "hermes_interfaces",
+  "non_idl_tuples": [
+    "/home/hermes/Hermes/hermes_ws/src/hermes_interfaces:msg/GpsFixed.msg"
+  ]
+}
