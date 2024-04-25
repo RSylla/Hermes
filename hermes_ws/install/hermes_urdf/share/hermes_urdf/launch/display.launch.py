@@ -16,7 +16,8 @@ def generate_launch_description():
     robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        parameters=[{'robot_description': "$(find-pkg-share hermes_urdf)/urdf/hermes.urdf"}]
+        parameters=[{'robot_description': "/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/hermes.urdf"}]
+        
     )
 
     # Conditionally launch the Joint State Publisher GUI or non-GUI
@@ -36,7 +37,8 @@ def generate_launch_description():
     rviz2 = Node(
         package='rviz2',
         executable='rviz2',
-        arguments=['-d', '$(find-pkg-share hermes_urdf)/config/rviz/config.rviz']
+        arguments=['-d', '/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/config.rviz']
+        
     )
 
     return LaunchDescription([
