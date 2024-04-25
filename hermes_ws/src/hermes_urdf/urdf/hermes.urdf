@@ -120,7 +120,7 @@
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
-        <origin xyz="50 50 50" rpy="0 0 0" />
+        <origin xyz="50 50 50" rpy="1 1 1" />
     </joint>
 
 </robot>
