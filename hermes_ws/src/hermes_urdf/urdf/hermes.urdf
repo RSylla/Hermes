@@ -117,11 +117,7 @@
         <axis xyz="1 0 0" />
     </joint>
     
-    <joint name="base_joint" type="fixed">
-        <parent link="base_footprint"/>
-        <child link="base_link"/>
-        <origin xyz="0 0 0.53514" rpy="0 0 0" />
-    </joint>
+    
 
 </robot>
 
