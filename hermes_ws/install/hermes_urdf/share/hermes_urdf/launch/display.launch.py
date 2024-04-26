@@ -9,7 +9,7 @@ import os
 def generate_launch_description():
     # Get the path to the 'hermes_urdf' package
     hermes_urdf_dir = get_package_share_directory('hermes_urdf')
-    urdf_file_path = os.path.join(hermes_urdf_dir, 'urdf', 'hermes.urdf')
+    urdf_file_path = os.path.join(hermes_urdf_dir, 'urdf', 'hermes_model.urdf')
     rviz_config_path = os.path.join(hermes_urdf_dir, 'urdf', 'config.rviz')
 
     # Declare a launch argument for the GUI
