@@ -74,7 +74,7 @@
     </link>
 
     <joint name="base_front_left_wheel_joint" type="continuous">
-        <parent link="base_link"/>
+        <parent link="liigend"/>
         <child link="front_left_wheel"/>
         <origin xyz="0.9483341292917480958 0.29532256962300351688 0.60755675209035853168" rpy="-5.7841602488177229343e-14 1.5707963267948958919 0" />
         <axis xyz="0 1 0" />
@@ -112,7 +112,7 @@
     </link>
 
     <joint name="base_front_right_wheel_joint" type="continuous">
-        <parent link="base_link"/>
+        <parent link="liigend"/>
         <child link="front_right_wheel"/>
         <origin xyz="0.9483341292917799592 -0.2596774303769966985 0.6075567520903586427" rpy="-6.1350056294378907142e-22 -2.2686993105950812583e-15 5.7620574978045523474e-14" />
         <axis xyz="0 1 0" />
@@ -140,7 +140,7 @@
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
-        <origin xyz="0 0 0.615" rpy="0 0 0" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
     </joint>
 
 </robot>
