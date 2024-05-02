@@ -77,7 +77,7 @@
         <parent link="liigend"/>
         <child link="front_left_wheel"/>
         <origin xyz="-0.30232256962300351688 0 0" rpy="0 0 0" />
-        <axis xyz="0 0 1" />
+        <axis xyz="1 0 0" />
     </joint>
 
     <link name= "rear_left_wheel">
@@ -115,7 +115,7 @@
         <parent link="liigend"/>
         <child link="front_right_wheel"/>
         <origin xyz="0.2523774303769966985 0 0" rpy="0 0 0" />
-        <axis xyz="0 0 1" />
+        <axis xyz="1 0 0" />
     </joint>
 
     <link name= "liigend">
