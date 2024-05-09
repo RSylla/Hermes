@@ -21,8 +21,8 @@ def generate_launch_description():
     )
 
     # Ignition Gazebo Server
-    ign_gazebo = ExecuteProcess(
-        cmd=['ign', 'gazebo', '-v', '4', sdf_file_path],
+    gazebo_launch = ExecuteProcess(
+        cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path],
         output='screen'
     )
 
@@ -65,7 +65,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         gui_arg,
-        ign_gazebo,
+        gazebo_launch,
         spawn_robot,
         robot_state_publisher,
         joint_state_publisher_gui,
