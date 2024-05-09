@@ -1,3 +1,6 @@
+/home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/gazebo_model.launch.py
+/home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/my_world.world
+/home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/gazebo_test.launch.py
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/display.launch.py
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.part
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/liigend.part
@@ -9,6 +12,7 @@
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/__init__.py
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.rviz
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/.robot.urdf.swp
+/home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes_model.sdf
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.json
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes.urdf
 /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/robot.urdf

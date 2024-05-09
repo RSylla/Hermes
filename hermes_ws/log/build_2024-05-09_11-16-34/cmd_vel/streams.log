@@ -1,0 +1,37 @@
+[2.603s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/cmd_vel': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cmd_vel/prefix_override:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_vel build --build-base /home/hermes/Hermes/hermes_ws/build/cmd_vel/build install --record /home/hermes/Hermes/hermes_ws/build/cmd_vel/install.log --single-version-externally-managed install_data
+[3.626s] running egg_info
+[3.627s] creating ../../build/cmd_vel/cmd_vel.egg-info
+[3.628s] writing ../../build/cmd_vel/cmd_vel.egg-info/PKG-INFO
+[3.628s] writing dependency_links to ../../build/cmd_vel/cmd_vel.egg-info/dependency_links.txt
+[3.628s] writing entry points to ../../build/cmd_vel/cmd_vel.egg-info/entry_points.txt
+[3.628s] writing requirements to ../../build/cmd_vel/cmd_vel.egg-info/requires.txt
+[3.628s] writing top-level names to ../../build/cmd_vel/cmd_vel.egg-info/top_level.txt
+[3.628s] writing manifest file '../../build/cmd_vel/cmd_vel.egg-info/SOURCES.txt'
+[3.628s] reading manifest file '../../build/cmd_vel/cmd_vel.egg-info/SOURCES.txt'
+[3.628s] writing manifest file '../../build/cmd_vel/cmd_vel.egg-info/SOURCES.txt'
+[3.629s] running build
+[3.629s] running build_py
+[3.629s] creating /home/hermes/Hermes/hermes_ws/build/cmd_vel/build
+[3.629s] creating /home/hermes/Hermes/hermes_ws/build/cmd_vel/build/lib
+[3.629s] creating /home/hermes/Hermes/hermes_ws/build/cmd_vel/build/lib/cmd_vel
+[3.629s] copying cmd_vel/cmd_vel_controll.py -> /home/hermes/Hermes/hermes_ws/build/cmd_vel/build/lib/cmd_vel
+[3.629s] copying cmd_vel/__init__.py -> /home/hermes/Hermes/hermes_ws/build/cmd_vel/build/lib/cmd_vel
+[3.629s] running install
+[3.630s] running install_lib
+[3.630s] creating /home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel
+[3.630s] copying /home/hermes/Hermes/hermes_ws/build/cmd_vel/build/lib/cmd_vel/cmd_vel_controll.py -> /home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel
+[3.630s] copying /home/hermes/Hermes/hermes_ws/build/cmd_vel/build/lib/cmd_vel/__init__.py -> /home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel
+[3.630s] byte-compiling /home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel/cmd_vel_controll.py to cmd_vel_controll.cpython-310.pyc
+[3.630s] byte-compiling /home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel/__init__.py to __init__.cpython-310.pyc
+[3.630s] running install_data
+[3.630s] creating /home/hermes/Hermes/hermes_ws/install/cmd_vel/share/ament_index
+[3.631s] creating /home/hermes/Hermes/hermes_ws/install/cmd_vel/share/ament_index/resource_index
+[3.631s] creating /home/hermes/Hermes/hermes_ws/install/cmd_vel/share/ament_index/resource_index/packages
+[3.631s] copying resource/cmd_vel -> /home/hermes/Hermes/hermes_ws/install/cmd_vel/share/ament_index/resource_index/packages
+[3.631s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel
+[3.631s] running install_egg_info
+[3.631s] Copying ../../build/cmd_vel/cmd_vel.egg-info to /home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel-0.0.0-py3.10.egg-info
+[3.632s] running install_scripts
+[3.670s] Installing cmd_vel_controll script to /home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/cmd_vel
+[3.671s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/cmd_vel/install.log'
+[3.824s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/cmd_vel' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cmd_vel/prefix_override:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_vel build --build-base /home/hermes/Hermes/hermes_ws/build/cmd_vel/build install --record /home/hermes/Hermes/hermes_ws/build/cmd_vel/install.log --single-version-externally-managed install_data

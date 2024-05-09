@@ -34,7 +34,7 @@ class Gps_publisher_node(Node):
         return gps_data
 
     def timer_callback(self):
-        if time() - self.start_time > 2:
+        if time() - self.start_time > 2.5:
             self.send_diff_corrections(self.corr_host, self.corr_port, self.stream)
             self.time = time()
         
@@ -44,9 +44,9 @@ class Gps_publisher_node(Node):
         data = NMEAReader.parse(gps_data)
         if data.msgID == "UBX":   
              if data.msgId == "00":
-                print(data)
+                #print(data)
                 msg.diff_age = float(data.diffAge) if not data.diffAge == "" else float(99.99)
-                msg.is_corrected = True if msg.diff_age < 5 else False
+                msg.is_corrected = True if msg.diff_age < 6 else False
                 msg.message_id = f"{data.msgID} {data.msgId}"
                 msg.utc_time = str(data.time)
                 msg.latitude = float(data.lat)

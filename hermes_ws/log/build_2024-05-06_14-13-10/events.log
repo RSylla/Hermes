@@ -1,0 +1,29 @@
+[0.000000] (-) TimerEvent: {}
+[0.000921] (-) JobUnselected: {'identifier': 'cameras'}
+[0.001213] (-) JobUnselected: {'identifier': 'cmd_vel'}
+[0.001312] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.001389] (-) JobUnselected: {'identifier': 'gazebo_dev'}
+[0.001461] (-) JobUnselected: {'identifier': 'gazebo_msgs'}
+[0.001529] (-) JobUnselected: {'identifier': 'gazebo_plugins'}
+[0.001593] (-) JobUnselected: {'identifier': 'gazebo_ros'}
+[0.001655] (-) JobUnselected: {'identifier': 'gazebo_ros_pkgs'}
+[0.001718] (-) JobUnselected: {'identifier': 'gps_publisher'}
+[0.001781] (-) JobUnselected: {'identifier': 'hermes_interfaces'}
+[0.001845] (-) JobUnselected: {'identifier': 'hermes_navigation'}
+[0.001906] (-) JobUnselected: {'identifier': 'hermes_urdf'}
+[0.001969] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.002033] (-) JobUnselected: {'identifier': 'imu_publisher'}
+[0.002116] (-) JobUnselected: {'identifier': 'ldlidar'}
+[0.002178] (-) JobUnselected: {'identifier': 'ldlidar_component'}
+[0.002240] (-) JobUnselected: {'identifier': 'ldlidar_node'}
+[0.002303] (-) JobUnselected: {'identifier': 'odometry'}
+[0.002364] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.002429] (-) JobUnselected: {'identifier': 'teleop_control'}
+[0.002493] (-) JobUnselected: {'identifier': 'tof_publisher'}
+[0.002555] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.002618] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.002680] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.002748] (turtlebot3_simulations) JobQueued: {'identifier': 'turtlebot3_simulations', 'dependencies': OrderedDict([('cv_bridge', '/home/hermes/Hermes/hermes_ws/install/cv_bridge'), ('gazebo_dev', '/home/hermes/Hermes/hermes_ws/install/gazebo_dev'), ('gazebo_msgs', '/home/hermes/Hermes/hermes_ws/install/gazebo_msgs'), ('turtlebot3_fake_node', '/home/hermes/Hermes/hermes_ws/install/turtlebot3_fake_node'), ('gazebo_ros', '/home/hermes/Hermes/hermes_ws/install/gazebo_ros'), ('gazebo_plugins', '/home/hermes/Hermes/hermes_ws/install/gazebo_plugins'), ('gazebo_ros_pkgs', '/home/hermes/Hermes/hermes_ws/install/gazebo_ros_pkgs'), ('turtlebot3_gazebo', '/home/hermes/Hermes/hermes_ws/install/turtlebot3_gazebo')])}
+[0.002853] (turtlebot3_simulations) JobStarted: {'identifier': 'turtlebot3_simulations'}
+[0.035102] (turtlebot3_simulations) JobEnded: {'identifier': 'turtlebot3_simulations', 'rc': 1}
+[0.045818] (-) EventReactorShutdown: {}

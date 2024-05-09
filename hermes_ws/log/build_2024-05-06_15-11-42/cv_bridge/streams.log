@@ -1,0 +1,54 @@
+[0.107s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/cv_bridge -- -j6 -l6
+[0.283s] [ 12%] Built target gtest
+[0.284s] [ 12%] Built target ament_cmake_python_symlink_cv_bridge
+[0.303s] [ 31%] Built target cv_bridge
+[0.307s] [ 43%] Built target gtest_main
+[0.513s] [100%] Built target cv_bridge-utest
+[0.514s] [ 62%] Built target cv_bridge_boost
+[1.212s] running egg_info
+[1.214s] writing cv_bridge.egg-info/PKG-INFO
+[1.215s] writing dependency_links to cv_bridge.egg-info/dependency_links.txt
+[1.216s] writing top-level names to cv_bridge.egg-info/top_level.txt
+[1.222s] reading manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[1.223s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[1.319s] [100%] Built target ament_cmake_python_build_cv_bridge_egg
+[1.673s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/cv_bridge -- -j6 -l6
+[2.460s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/cv_bridge
+[2.478s] -- Install configuration: ""
+[2.479s] -- Execute custom install script
+[2.480s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh
+[2.480s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv
+[2.481s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/PKG-INFO
+[2.481s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/SOURCES.txt
+[2.482s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/dependency_links.txt
+[2.482s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/top_level.txt
+[2.483s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py
+[2.483s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py
+[2.485s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h
+[2.486s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost//cv_bridge_boost.so
+[2.487s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h
+[2.487s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.h
+[2.487s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/lib/libcv_bridge.so
+[2.488s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge
+[2.488s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge
+[2.489s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh
+[2.492s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv
+[2.492s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/environment/path.sh
+[2.492s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/environment/path.dsv
+[2.492s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/local_setup.bash
+[2.492s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/local_setup.sh
+[2.493s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/local_setup.zsh
+[2.493s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/local_setup.dsv
+[2.493s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/package.dsv
+[2.511s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge
+[2.512s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake
+[2.512s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.512s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[2.512s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+[2.512s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake
+[2.513s] -- Up-to-date symlink: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/package.xml
+[2.613s] Listing '/home/hermes/Hermes/hermes_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...
+[2.613s] Listing '/home/hermes/Hermes/hermes_ws/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost'...
+[2.629s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake
+[2.629s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake
+[2.641s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/cv_bridge

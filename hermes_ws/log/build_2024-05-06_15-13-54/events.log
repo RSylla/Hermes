@@ -1,0 +1,59 @@
+[0.000000] (-) TimerEvent: {}
+[0.001265] (cameras) JobQueued: {'identifier': 'cameras', 'dependencies': OrderedDict()}
+[0.001564] (cmd_vel) JobQueued: {'identifier': 'cmd_vel', 'dependencies': OrderedDict()}
+[0.001838] (cv_bridge) JobQueued: {'identifier': 'cv_bridge', 'dependencies': OrderedDict()}
+[0.001937] (gazebo_dev) JobQueued: {'identifier': 'gazebo_dev', 'dependencies': OrderedDict()}
+[0.002010] (gazebo_msgs) JobQueued: {'identifier': 'gazebo_msgs', 'dependencies': OrderedDict()}
+[0.002087] (gps_publisher) JobQueued: {'identifier': 'gps_publisher', 'dependencies': OrderedDict()}
+[0.002156] (hermes_interfaces) JobQueued: {'identifier': 'hermes_interfaces', 'dependencies': OrderedDict()}
+[0.002222] (hermes_navigation) JobQueued: {'identifier': 'hermes_navigation', 'dependencies': OrderedDict()}
+[0.002286] (hermes_urdf) JobQueued: {'identifier': 'hermes_urdf', 'dependencies': OrderedDict()}
+[0.002349] (image_geometry) JobQueued: {'identifier': 'image_geometry', 'dependencies': OrderedDict()}
+[0.002412] (imu_publisher) JobQueued: {'identifier': 'imu_publisher', 'dependencies': OrderedDict()}
+[0.002474] (ldlidar_component) JobQueued: {'identifier': 'ldlidar_component', 'dependencies': OrderedDict()}
+[0.002535] (odometry) JobQueued: {'identifier': 'odometry', 'dependencies': OrderedDict()}
+[0.002597] (teleop_control) JobQueued: {'identifier': 'teleop_control', 'dependencies': OrderedDict()}
+[0.002658] (tof_publisher) JobQueued: {'identifier': 'tof_publisher', 'dependencies': OrderedDict()}
+[0.002719] (turtlebot3_fake_node) JobQueued: {'identifier': 'turtlebot3_fake_node', 'dependencies': OrderedDict()}
+[0.002782] (gazebo_ros) JobQueued: {'identifier': 'gazebo_ros', 'dependencies': OrderedDict([('gazebo_dev', '/home/hermes/Hermes/hermes_ws/install/gazebo_dev'), ('gazebo_msgs', '/home/hermes/Hermes/hermes_ws/install/gazebo_msgs')])}
+[0.002855] (ldlidar_node) JobQueued: {'identifier': 'ldlidar_node', 'dependencies': OrderedDict([('ldlidar_component', '/home/hermes/Hermes/hermes_ws/install/ldlidar_component')])}
+[0.002923] (opencv_tests) JobQueued: {'identifier': 'opencv_tests', 'dependencies': OrderedDict([('cv_bridge', '/home/hermes/Hermes/hermes_ws/install/cv_bridge')])}
+[0.003000] (vision_opencv) JobQueued: {'identifier': 'vision_opencv', 'dependencies': OrderedDict([('cv_bridge', '/home/hermes/Hermes/hermes_ws/install/cv_bridge'), ('image_geometry', '/home/hermes/Hermes/hermes_ws/install/image_geometry')])}
+[0.003072] (gazebo_plugins) JobQueued: {'identifier': 'gazebo_plugins', 'dependencies': OrderedDict([('cv_bridge', '/home/hermes/Hermes/hermes_ws/install/cv_bridge'), ('gazebo_dev', '/home/hermes/Hermes/hermes_ws/install/gazebo_dev'), ('gazebo_msgs', '/home/hermes/Hermes/hermes_ws/install/gazebo_msgs'), ('gazebo_ros', '/home/hermes/Hermes/hermes_ws/install/gazebo_ros')])}
+[0.003152] (ldlidar) JobQueued: {'identifier': 'ldlidar', 'dependencies': OrderedDict([('ldlidar_component', '/home/hermes/Hermes/hermes_ws/install/ldlidar_component'), ('ldlidar_node', '/home/hermes/Hermes/hermes_ws/install/ldlidar_node')])}
+[0.003221] (gazebo_ros_pkgs) JobQueued: {'identifier': 'gazebo_ros_pkgs', 'dependencies': OrderedDict([('cv_bridge', '/home/hermes/Hermes/hermes_ws/install/cv_bridge'), ('gazebo_dev', '/home/hermes/Hermes/hermes_ws/install/gazebo_dev'), ('gazebo_msgs', '/home/hermes/Hermes/hermes_ws/install/gazebo_msgs'), ('gazebo_ros', '/home/hermes/Hermes/hermes_ws/install/gazebo_ros'), ('gazebo_plugins', '/home/hermes/Hermes/hermes_ws/install/gazebo_plugins')])}
+[0.003294] (turtlebot3_gazebo) JobQueued: {'identifier': 'turtlebot3_gazebo', 'dependencies': OrderedDict([('cv_bridge', '/home/hermes/Hermes/hermes_ws/install/cv_bridge'), ('gazebo_dev', '/home/hermes/Hermes/hermes_ws/install/gazebo_dev'), ('gazebo_msgs', '/home/hermes/Hermes/hermes_ws/install/gazebo_msgs'), ('gazebo_ros', '/home/hermes/Hermes/hermes_ws/install/gazebo_ros'), ('gazebo_plugins', '/home/hermes/Hermes/hermes_ws/install/gazebo_plugins'), ('gazebo_ros_pkgs', '/home/hermes/Hermes/hermes_ws/install/gazebo_ros_pkgs')])}
+[0.003375] (turtlebot3_simulations) JobQueued: {'identifier': 'turtlebot3_simulations', 'dependencies': OrderedDict([('cv_bridge', '/home/hermes/Hermes/hermes_ws/install/cv_bridge'), ('gazebo_dev', '/home/hermes/Hermes/hermes_ws/install/gazebo_dev'), ('gazebo_msgs', '/home/hermes/Hermes/hermes_ws/install/gazebo_msgs'), ('turtlebot3_fake_node', '/home/hermes/Hermes/hermes_ws/install/turtlebot3_fake_node'), ('gazebo_ros', '/home/hermes/Hermes/hermes_ws/install/gazebo_ros'), ('gazebo_plugins', '/home/hermes/Hermes/hermes_ws/install/gazebo_plugins'), ('gazebo_ros_pkgs', '/home/hermes/Hermes/hermes_ws/install/gazebo_ros_pkgs'), ('turtlebot3_gazebo', '/home/hermes/Hermes/hermes_ws/install/turtlebot3_gazebo')])}
+[0.003454] (cv_bridge) JobStarted: {'identifier': 'cv_bridge'}
+[0.008874] (cv_bridge) JobEnded: {'identifier': 'cv_bridge', 'rc': 0}
+[0.010862] (gazebo_dev) JobStarted: {'identifier': 'gazebo_dev'}
+[0.025482] (gazebo_msgs) JobStarted: {'identifier': 'gazebo_msgs'}
+[0.040685] (ldlidar_component) JobStarted: {'identifier': 'ldlidar_component'}
+[0.055581] (image_geometry) JobStarted: {'identifier': 'image_geometry'}
+[0.070398] (turtlebot3_fake_node) JobStarted: {'identifier': 'turtlebot3_fake_node'}
+[0.086758] (gazebo_dev) JobEnded: {'identifier': 'gazebo_dev', 'rc': 'SIGINT'}
+[0.087814] (gazebo_msgs) JobEnded: {'identifier': 'gazebo_msgs', 'rc': 'SIGINT'}
+[0.088771] (ldlidar_component) JobEnded: {'identifier': 'ldlidar_component', 'rc': 'SIGINT'}
+[0.089225] (image_geometry) JobEnded: {'identifier': 'image_geometry', 'rc': 'SIGINT'}
+[0.089675] (turtlebot3_fake_node) JobEnded: {'identifier': 'turtlebot3_fake_node', 'rc': 'SIGINT'}
+[0.099183] (-) TimerEvent: {}
+[0.099817] (cameras) JobSkipped: {'identifier': 'cameras'}
+[0.099910] (cmd_vel) JobSkipped: {'identifier': 'cmd_vel'}
+[0.099955] (gps_publisher) JobSkipped: {'identifier': 'gps_publisher'}
+[0.099993] (hermes_interfaces) JobSkipped: {'identifier': 'hermes_interfaces'}
+[0.100027] (hermes_navigation) JobSkipped: {'identifier': 'hermes_navigation'}
+[0.100061] (hermes_urdf) JobSkipped: {'identifier': 'hermes_urdf'}
+[0.100093] (imu_publisher) JobSkipped: {'identifier': 'imu_publisher'}
+[0.100124] (odometry) JobSkipped: {'identifier': 'odometry'}
+[0.100156] (teleop_control) JobSkipped: {'identifier': 'teleop_control'}
+[0.100187] (tof_publisher) JobSkipped: {'identifier': 'tof_publisher'}
+[0.100218] (gazebo_ros) JobSkipped: {'identifier': 'gazebo_ros'}
+[0.100248] (ldlidar_node) JobSkipped: {'identifier': 'ldlidar_node'}
+[0.100279] (opencv_tests) JobSkipped: {'identifier': 'opencv_tests'}
+[0.100310] (vision_opencv) JobSkipped: {'identifier': 'vision_opencv'}
+[0.100341] (gazebo_plugins) JobSkipped: {'identifier': 'gazebo_plugins'}
+[0.100372] (ldlidar) JobSkipped: {'identifier': 'ldlidar'}
+[0.100402] (gazebo_ros_pkgs) JobSkipped: {'identifier': 'gazebo_ros_pkgs'}
+[0.100432] (turtlebot3_gazebo) JobSkipped: {'identifier': 'turtlebot3_gazebo'}
+[0.100463] (turtlebot3_simulations) JobSkipped: {'identifier': 'turtlebot3_simulations'}
+[0.100496] (-) EventReactorShutdown: {}

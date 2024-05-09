@@ -1,0 +1,140 @@
+[0.033s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/gazebo_ros': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/gazebo_dev:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/gazebo_ros -- -j6 -l6
+[0.223s] [  3%] Built target ament_cmake_python_symlink_scripts
+[0.223s] [  5%] Built target gtest
+[0.223s] [  6%] Built target gtest_main
+[0.240s] [ 10%] Built target mock_robot_state_publisher
+[0.268s] [ 15%] Built target gazebo_ros_utils
+[0.269s] [ 20%] Built target gazebo_ros_node
+[0.287s] [ 23%] Built target mock_gazebo_ros_factory
+[0.317s] [ 28%] [32mBuilding CXX object CMakeFiles/gazebo_ros_init.dir/src/gazebo_ros_init.cpp.o[0m
+[0.317s] [ 28%] [32mBuilding CXX object CMakeFiles/gazebo_ros_properties.dir/src/gazebo_ros_properties.cpp.o[0m
+[0.317s] [ 28%] [32mBuilding CXX object CMakeFiles/gazebo_ros_factory.dir/src/gazebo_ros_factory.cpp.o[0m
+[0.336s] [ 30%] [32mBuilding CXX object CMakeFiles/gazebo_ros_state.dir/src/gazebo_ros_state.cpp.o[0m
+[0.382s] [ 33%] Built target gazebo_ros_force_system
+[0.464s] [ 36%] Built target args_init
+[0.552s] [ 40%] Built target create_node_without_init
+[0.638s] [ 43%] Built target multiple_nodes
+[0.722s] [ 46%] Built target ros_world_plugin
+[0.804s] [ 50%] Built target sdf_node
+[0.850s] running egg_info
+[0.852s] writing scripts.egg-info/PKG-INFO
+[0.852s] writing dependency_links to scripts.egg-info/dependency_links.txt
+[0.853s] writing top-level names to scripts.egg-info/top_level.txt
+[0.859s] reading manifest file 'scripts.egg-info/SOURCES.txt'
+[0.861s] writing manifest file 'scripts.egg-info/SOURCES.txt'
+[0.877s] [ 53%] Built target test_conversions
+[0.940s] [ 53%] Built target ament_cmake_python_build_scripts_egg
+[0.987s] [ 55%] [32mBuilding CXX object test/CMakeFiles/test_gazebo_ros_init.dir/test_gazebo_ros_init.cpp.o[0m
+[0.995s] [ 58%] Built target test_gazebo_ros_factory
+[1.052s] [ 60%] [32mBuilding CXX object test/CMakeFiles/test_gazebo_ros_joint_effort.dir/test_gazebo_ros_joint_effort.cpp.o[0m
+[42.609s] [ 61%] [32m[1mLinking CXX shared library libgazebo_ros_state.so[0m
+[44.930s] [ 63%] [32m[1mLinking CXX shared library libgazebo_ros_factory.so[0m
+[44.945s] [ 63%] Built target gazebo_ros_state
+[45.029s] [ 65%] [32mBuilding CXX object test/CMakeFiles/test_gazebo_ros_link_wrench.dir/test_gazebo_ros_link_wrench.cpp.o[0m
+[46.858s] [ 66%] [32m[1mLinking CXX shared library libgazebo_ros_init.so[0m
+[47.117s] [ 66%] Built target gazebo_ros_factory
+[47.175s] [ 68%] [32mBuilding CXX object test/CMakeFiles/test_gazebo_ros_properties.dir/test_gazebo_ros_properties.cpp.o[0m
+[49.400s] [ 68%] Built target gazebo_ros_init
+[49.450s] [ 70%] [32mBuilding CXX object test/CMakeFiles/test_gazebo_ros_state.dir/test_gazebo_ros_state.cpp.o[0m
+[52.489s] [ 71%] [32m[1mLinking CXX shared library libgazebo_ros_properties.so[0m
+[54.963s] [ 71%] Built target gazebo_ros_properties
+[55.021s] [ 73%] [32mBuilding CXX object test/CMakeFiles/test_node.dir/test_node.cpp.o[0m
+[68.489s] [ 75%] [32m[1mLinking CXX executable test_gazebo_ros_init[0m
+[72.488s] [ 75%] Built target test_gazebo_ros_init
+[73.903s] [ 76%] [32m[1mLinking CXX executable test_gazebo_ros_joint_effort[0m
+[76.237s] [ 78%] [32m[1mLinking CXX executable test_node[0m
+[77.630s] [ 78%] Built target test_gazebo_ros_joint_effort
+[78.424s] [ 78%] Built target test_node
+[83.479s] [ 80%] [32mBuilding CXX object test/CMakeFiles/test_qos.dir/test_qos.cpp.o[0m
+[84.509s] [ 81%] [32mBuilding CXX object test/CMakeFiles/test_plugins.dir/test_plugins.cpp.o[0m
+[85.556s] [ 83%] [32mBuilding CXX object test/CMakeFiles/test_reject_duplicate_nodes.dir/test_reject_duplicate_nodes.cpp.o[0m
+[92.994s] [ 85%] [32m[1mLinking CXX executable test_qos[0m
+[95.281s] [ 85%] Built target test_qos
+[95.339s] [ 86%] [32mBuilding CXX object test/CMakeFiles/test_sim_time.dir/test_sim_time.cpp.o[0m
+[108.629s] [ 88%] [32m[1mLinking CXX executable test_reject_duplicate_nodes[0m
+[109.666s] [ 90%] [32m[1mLinking CXX executable test_gazebo_ros_link_wrench[0m
+[111.070s] [ 91%] [32m[1mLinking CXX executable test_plugins[0m
+[111.493s] [ 91%] Built target test_reject_duplicate_nodes
+[112.842s] [ 91%] Built target test_plugins
+[113.602s] [ 91%] Built target test_gazebo_ros_link_wrench
+[120.388s] [ 93%] [32m[1mLinking CXX executable test_gazebo_ros_properties[0m
+[121.651s] [ 95%] [32m[1mLinking CXX executable test_sim_time[0m
+[123.126s] [ 95%] Built target test_sim_time
+[123.177s] [ 96%] [32mBuilding CXX object test/CMakeFiles/test_utils.dir/test_utils.cpp.o[0m
+[124.642s] [ 96%] Built target test_gazebo_ros_properties
+[134.285s] [ 98%] [32m[1mLinking CXX executable test_gazebo_ros_state[0m
+[138.969s] [ 98%] Built target test_gazebo_ros_state
+[144.150s] [100%] [32m[1mLinking CXX executable test_utils[0m
+[146.309s] [100%] Built target test_utils
+[146.364s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/gazebo_ros' returned '0': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/gazebo_dev:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/gazebo_ros -- -j6 -l6
+[146.561s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/gazebo_ros': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/gazebo_dev:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/gazebo_ros
+[146.581s] -- Install configuration: ""
+[146.583s] -- Execute custom install script
+[146.584s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/environment/pythonpath.sh
+[146.607s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/environment/pythonpath.dsv
+[146.630s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts-3.7.0-py3.10.egg-info/PKG-INFO
+[146.650s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts-3.7.0-py3.10.egg-info/SOURCES.txt
+[146.673s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts-3.7.0-py3.10.egg-info/dependency_links.txt
+[146.694s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts-3.7.0-py3.10.egg-info/top_level.txt
+[146.715s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts/__init__.py
+[146.736s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts/gazebo_ros_paths.py
+[146.757s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts/spawn_entity.py
+[146.779s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/environment/library_path.sh
+[146.799s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/environment/library_path.dsv
+[146.820s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/ament_index/resource_index/package_run_dependencies/gazebo_ros
+[146.842s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/ament_index/resource_index/parent_prefix_path/gazebo_ros
+[146.864s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/environment/ament_prefix_path.sh
+[146.883s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/environment/ament_prefix_path.dsv
+[146.904s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/environment/path.sh
+[146.923s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/environment/path.dsv
+[146.944s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/local_setup.bash
+[146.965s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/local_setup.sh
+[146.986s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/local_setup.zsh
+[147.008s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/local_setup.dsv
+[147.027s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/package.dsv
+[147.049s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/ament_index/resource_index/packages/gazebo_ros
+[147.070s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[147.093s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[147.114s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[147.134s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/cmake/gazebo_rosConfig.cmake
+[147.153s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/cmake/gazebo_rosConfig-version.cmake
+[147.174s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros/package.xml
+[147.195s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/conversions/builtin_interfaces.hpp
+[147.216s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/conversions/gazebo_msgs.hpp
+[147.235s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/conversions/generic.hpp
+[147.256s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/conversions/geometry_msgs.hpp
+[147.276s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/conversions/sensor_msgs.hpp
+[147.297s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/executor.hpp
+[147.318s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/gazebo_ros_factory.hpp
+[147.339s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/gazebo_ros_force_system.hpp
+[147.359s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/gazebo_ros_init.hpp
+[147.380s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/gazebo_ros_properties.hpp
+[147.402s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/gazebo_ros_state.hpp
+[147.423s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/node.hpp
+[147.443s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/node_visibility_control.h
+[147.465s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/qos.hpp
+[147.486s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/testing_utils.hpp
+[147.507s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/utils.hpp
+[147.527s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/include/gazebo_ros/utils_visibility_control.h
+[147.548s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/lib/gazebo_ros//gazebo_ros_paths.py
+[147.570s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/lib/libgazebo_ros_factory.so
+[147.592s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/lib/libgazebo_ros_force_system.so
+[147.612s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/lib/libgazebo_ros_init.so
+[147.631s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/lib/libgazebo_ros_node.so
+[147.651s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/lib/libgazebo_ros_properties.so
+[147.672s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/lib/libgazebo_ros_state.so
+[147.694s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/lib/libgazebo_ros_utils.so
+[147.714s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/lib/gazebo_ros//spawn_entity.py
+[147.734s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros//launch/gazebo.launch.py
+[147.755s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros//launch/gzclient.launch.py
+[147.775s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros//launch/gzserver.launch.py
+[147.795s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros//launch/spawn_entity_demo.launch.py
+[147.818s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros//worlds/empty.world
+[147.838s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros//worlds/gazebo_ros_force_system_demo.world
+[147.858s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros//worlds/gazebo_ros_properties_demo.world
+[147.879s] -- Symlinking: /home/hermes/Hermes/hermes_ws/install/gazebo_ros/share/gazebo_ros//worlds/gazebo_ros_state_demo.world
+[148.035s] Listing '/home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts'...
+[148.035s] Compiling '/home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts/__init__.py'...
+[148.035s] Compiling '/home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts/gazebo_ros_paths.py'...
+[148.035s] Compiling '/home/hermes/Hermes/hermes_ws/install/gazebo_ros/local/lib/python3.10/dist-packages/scripts/spawn_entity.py'...
+[148.060s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/gazebo_ros' returned '0': CMAKE_PREFIX_PATH=/home/hermes/Hermes/hermes_ws/install/gazebo_dev:/home/hermes/Hermes/hermes_ws/install/ldlidar_stl_ros2:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/ldlidar_stl_ros2:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/gazebo_ros

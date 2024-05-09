@@ -1,0 +1,38 @@
+[3.660s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/odometry': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry build --build-base /home/hermes/Hermes/hermes_ws/build/odometry/build install --record /home/hermes/Hermes/hermes_ws/build/odometry/install.log --single-version-externally-managed install_data
+[5.714s] running egg_info
+[5.730s] creating ../../build/odometry/odometry.egg-info
+[5.731s] writing ../../build/odometry/odometry.egg-info/PKG-INFO
+[5.732s] writing dependency_links to ../../build/odometry/odometry.egg-info/dependency_links.txt
+[5.732s] writing entry points to ../../build/odometry/odometry.egg-info/entry_points.txt
+[5.732s] writing requirements to ../../build/odometry/odometry.egg-info/requires.txt
+[5.732s] writing top-level names to ../../build/odometry/odometry.egg-info/top_level.txt
+[5.733s] writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[5.770s] reading manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[5.770s] adding license file 'LICENSE'
+[5.771s] writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[5.777s] running build
+[5.777s] running build_py
+[5.778s] creating /home/hermes/Hermes/hermes_ws/build/odometry/build
+[5.778s] creating /home/hermes/Hermes/hermes_ws/build/odometry/build/lib
+[5.785s] creating /home/hermes/Hermes/hermes_ws/build/odometry/build/lib/odometry
+[5.786s] copying odometry/__init__.py -> /home/hermes/Hermes/hermes_ws/build/odometry/build/lib/odometry
+[5.787s] copying odometry/odometry_node.py -> /home/hermes/Hermes/hermes_ws/build/odometry/build/lib/odometry
+[5.792s] running install
+[5.793s] running install_lib
+[5.804s] creating /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages/odometry
+[5.804s] copying /home/hermes/Hermes/hermes_ws/build/odometry/build/lib/odometry/__init__.py -> /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages/odometry
+[5.804s] copying /home/hermes/Hermes/hermes_ws/build/odometry/build/lib/odometry/odometry_node.py -> /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages/odometry
+[5.809s] byte-compiling /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages/odometry/__init__.py to __init__.cpython-310.pyc
+[5.810s] byte-compiling /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages/odometry/odometry_node.py to odometry_node.cpython-310.pyc
+[5.810s] running install_data
+[5.810s] creating /home/hermes/Hermes/hermes_ws/install/odometry/share/ament_index
+[5.810s] creating /home/hermes/Hermes/hermes_ws/install/odometry/share/ament_index/resource_index
+[5.811s] creating /home/hermes/Hermes/hermes_ws/install/odometry/share/ament_index/resource_index/packages
+[5.811s] copying resource/odometry -> /home/hermes/Hermes/hermes_ws/install/odometry/share/ament_index/resource_index/packages
+[5.811s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/odometry/share/odometry
+[5.811s] running install_egg_info
+[5.831s] Copying ../../build/odometry/odometry.egg-info to /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages/odometry-0.0.0-py3.10.egg-info
+[5.866s] running install_scripts
+[6.109s] Installing odometry_node script to /home/hermes/Hermes/hermes_ws/install/odometry/lib/odometry
+[6.110s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/odometry/install.log'
+[6.477s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/odometry' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry build --build-base /home/hermes/Hermes/hermes_ws/build/odometry/build install --record /home/hermes/Hermes/hermes_ws/build/odometry/install.log --single-version-externally-managed install_data

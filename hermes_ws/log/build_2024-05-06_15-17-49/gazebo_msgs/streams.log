@@ -1,0 +1,24 @@
+[0.082s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/gazebo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/gazebo_msgs -- -j6 -l6
+[0.358s] [  0%] Built target gazebo_msgs__cpp
+[0.375s] [ 12%] Built target gazebo_msgs__rosidl_generator_c
+[0.434s] [ 12%] Built target ament_cmake_python_symlink_gazebo_msgs
+[0.530s] [ 24%] Built target gazebo_msgs__rosidl_typesupport_cpp
+[0.549s] [ 36%] Built target gazebo_msgs__rosidl_typesupport_fastrtps_cpp
+[0.556s] [ 49%] Built target gazebo_msgs__rosidl_typesupport_introspection_cpp
+[0.561s] [ 62%] Built target gazebo_msgs__rosidl_typesupport_introspection_c
+[0.562s] [ 75%] Built target gazebo_msgs__rosidl_typesupport_c
+[0.582s] [ 88%] Built target gazebo_msgs__rosidl_typesupport_fastrtps_c
+[0.644s] [ 88%] Built target gazebo_msgs
+[0.729s] [ 88%] Built target gazebo_msgs__py
+[0.825s] [100%] Built target gazebo_msgs__rosidl_generator_py
+[0.903s] [100%] Built target gazebo_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.904s] [100%] Built target gazebo_msgs__rosidl_typesupport_introspection_c__pyext
+[0.921s] [100%] Built target gazebo_msgs__rosidl_typesupport_c__pyext
+[1.236s] running egg_info
+[1.238s] writing gazebo_msgs.egg-info/PKG-INFO
+[1.238s] writing dependency_links to gazebo_msgs.egg-info/dependency_links.txt
+[1.238s] writing top-level names to gazebo_msgs.egg-info/top_level.txt
+[1.245s] reading manifest file 'gazebo_msgs.egg-info/SOURCES.txt'
+[1.247s] writing manifest file 'gazebo_msgs.egg-info/SOURCES.txt'
+[1.321s] [100%] Built target ament_cmake_python_build_gazebo_msgs_egg
+[1.428s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/gazebo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_model:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/my_robot_description:/home/hermes/Hermes/hermes_ws/install/lidar_publisher:/home/hermes/Hermes/hermes_ws/install/launch_files:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/gazebo_msgs -- -j6 -l6

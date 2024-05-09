@@ -1,0 +1,21 @@
+[2.392s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/cameras': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cameras/prefix_override:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hermes/Hermes/hermes_ws/build/cameras/build --no-deps symlink_data --force
+[3.320s] running develop
+[3.326s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.326s]   warnings.warn(
+[3.895s] running egg_info
+[3.895s] writing cameras.egg-info/PKG-INFO
+[3.896s] writing dependency_links to cameras.egg-info/dependency_links.txt
+[3.896s] writing entry points to cameras.egg-info/entry_points.txt
+[3.897s] writing requirements to cameras.egg-info/requires.txt
+[3.897s] writing top-level names to cameras.egg-info/top_level.txt
+[3.901s] reading manifest file 'cameras.egg-info/SOURCES.txt'
+[3.903s] writing manifest file 'cameras.egg-info/SOURCES.txt'
+[3.907s] running build_ext
+[3.907s] Creating /home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras.egg-link (link to .)
+[3.909s] Installing cameras_node script to /home/hermes/Hermes/hermes_ws/install/cameras/lib/cameras
+[3.910s] 
+[3.910s] Installed /home/hermes/Hermes/hermes_ws/build/cameras
+[3.910s] running symlink_data
+[3.910s] symbolically linking /home/hermes/Hermes/hermes_ws/build/cameras/resource/cameras -> /home/hermes/Hermes/hermes_ws/install/cameras/share/ament_index/resource_index/packages
+[3.911s] symbolically linking /home/hermes/Hermes/hermes_ws/build/cameras/package.xml -> /home/hermes/Hermes/hermes_ws/install/cameras/share/cameras
+[4.023s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/cameras' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cameras/prefix_override:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hermes/Hermes/hermes_ws/build/cameras/build --no-deps symlink_data --force

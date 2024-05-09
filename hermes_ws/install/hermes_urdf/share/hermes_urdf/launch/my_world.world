@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <include>
+      <uri>file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/hermes_model.sdf</uri>
+    </include>
+  </world>
+</sdf>
+

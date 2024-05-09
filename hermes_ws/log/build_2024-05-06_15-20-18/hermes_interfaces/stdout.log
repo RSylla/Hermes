@@ -1,0 +1,4 @@
+[  3%] Built target hermes_interfaces__cpp
+[ 12%] Built target hermes_interfaces__rosidl_generator_c
+[ 22%] Built target hermes_interfaces__rosidl_typesupport_introspection_cpp
+[ 32%] Built target hermes_interfaces__rosidl_typesupport_cpp

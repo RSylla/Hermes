@@ -1,0 +1,15 @@
+[  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[  0%] Built target gazebo_msgs__cpp
+[  0%] Built target ament_cmake_python_symlink_gazebo_msgs
+[  0%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  0%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  1%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+running egg_info
+creating gazebo_msgs.egg-info
+writing gazebo_msgs.egg-info/PKG-INFO
+writing dependency_links to gazebo_msgs.egg-info/dependency_links.txt
+writing top-level names to gazebo_msgs.egg-info/top_level.txt
+writing manifest file 'gazebo_msgs.egg-info/SOURCES.txt'
+reading manifest file 'gazebo_msgs.egg-info/SOURCES.txt'
+writing manifest file 'gazebo_msgs.egg-info/SOURCES.txt'
+[  1%] Built target ament_cmake_python_build_gazebo_msgs_egg

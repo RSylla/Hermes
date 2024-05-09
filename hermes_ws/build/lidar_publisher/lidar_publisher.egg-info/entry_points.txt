@@ -1,3 +1,0 @@
-[console_scripts]
-lidar_publisher_node = lidar_publisher.lidar_publisher_node:main
-

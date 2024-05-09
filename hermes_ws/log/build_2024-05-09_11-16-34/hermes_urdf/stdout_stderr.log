@@ -1,0 +1,60 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hermes/Hermes/hermes_ws/build/hermes_urdf
+-- Install configuration: ""
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/gazebo_model.launch.py
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/my_world.world
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/gazebo_test.launch.py
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/display.launch.py
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.part
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/liigend.part
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/kere.stl
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/kere.part
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.stl
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes_model.urdf
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv.part
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/__init__.py
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.rviz
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/.robot.urdf.swp
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes_model.sdf
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.json
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes.urdf
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/robot.urdf
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/liigend.stl
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv.stl
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/package_run_dependencies/hermes_urdf
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/parent_prefix_path/hermes_urdf
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/ament_prefix_path.sh
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/ament_prefix_path.dsv
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/path.sh
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/path.dsv
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.bash
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.sh
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.zsh
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.dsv
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/package.dsv
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/packages/hermes_urdf
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/cmake/hermes_urdfConfig.cmake
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/cmake/hermes_urdfConfig-version.cmake
+-- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/package.xml

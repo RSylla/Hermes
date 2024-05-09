@@ -1,1 +1,1 @@
-/home/hermes/Hermes/hermes_ws/build/ldlidar_component/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ldlidar_component
+rclcpp_lifecycle;rclcpp_components;rclcpp;std_msgs;sensor_msgs;diagnostic_msgs;diagnostic_updater;nav2_util;nav2_msgs;bond;bondcpp;ament_lint_auto;ament_lint_common;ament_cmake_clang_format

@@ -5,17 +5,26 @@
         <color rgba="0.7 0.7 0.7 1"/>
     </material>
 
-    <material name= "ld19 color">
+    <material name="ld19 color">
         <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
     </material>
 
-    <link name="base_footprint"/>
+    <link name="base_footprint">
+        <inertial>
+            <mass value="1.0"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
     
     <link name="base_link">
+        <inertial>
+            <mass value="5.0"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
         <visual>
             <origin xyz="0.50575420423148409466 -0.0071774303769972201683 0.60255675209035008955" rpy="7.940934590483602961e-23 -1.4644253098708242934e-15 1.55431223447518563e-15" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/kere.stl"/>
+                <mesh filename="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/kere.stl"/>
             </geometry>
             <material name="kere_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -24,10 +33,14 @@
     </link>
 
     <link name="ld19">
+        <inertial>
+            <mass value="2.0"/>
+            <inertia ixx="0.5" ixy="0.0" ixz="0.0" iyy="0.5" iyz="0.0" izz="0.5"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/ld19.stl"/>
+                <mesh filename="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/ld19.stl"/>
             </geometry>
             <material name="ld19_material">
                 <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
@@ -42,11 +55,15 @@
 
     </joint>
 
-    <link name= "rear_right_wheel">
+    <link name="rear_right_wheel">
+        <inertial>
+            <mass value="1.5"/>
+            <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+                <mesh filename="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
             </geometry>
             <material name="rehv1_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -54,18 +71,22 @@
         </visual>
     </link>
 
-    <joint name= "base_rear_right_wheel_joint" type="continuous">
+    <joint name="base_rear_right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="rear_right_wheel"/>
         <origin xyz="0.066534204231474658453 -0.21467743037699693609 0.61255675209034976536" rpy="3.3611923249190478047e-30 -1.8665624601511304194e-15 5.6898930012037971076e-16" />
         <axis xyz="0 1 0"/>
     </joint>
 
-    <link name= "front_left_wheel">
+    <link name="front_left_wheel">
+        <inertial>
+            <mass value="1.5"/>
+            <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="0 0 1.58" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+                <mesh filename="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
             </geometry>
             <material name="rehv1_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -80,11 +101,15 @@
         <axis xyz="1 0 0" />
     </joint>
 
-    <link name= "rear_left_wheel">
+    <link name="rear_left_wheel">
+        <inertial>
+            <mass value="1.5"/>
+            <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+                <mesh filename="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
             </geometry>
             <material name="rehv1_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -99,11 +124,15 @@
         <axis xyz="0 1 0" />
     </joint>
     
-    <link name= "front_right_wheel">
+    <link name="front_right_wheel">
+        <inertial>
+            <mass value="1.5"/>
+            <inertia ixx="0.3" ixy="0.0" ixz="0.0" iyy="0.3" iyz="0.0" izz="0.3"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="0 0 1.583" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+                <mesh filename="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
             </geometry>
             <material name="rehv1_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -118,11 +147,15 @@
         <axis xyz="1 0 0" />
     </joint>
 
-    <link name= "liigend">
+    <link name="liigend">
+        <inertial>
+            <mass value="3.0"/>
+            <inertia ixx="0.7" ixy="0.0" ixz="0.0" iyy="0.7" iyz="0.0" izz="0.7"/>
+        </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/liigend.stl"/>
+                <mesh filename="/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/liigend.stl"/>
             </geometry>
             <material name="liigend_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -130,7 +163,7 @@
         </visual>
     </link>
 
-    <joint name= "liigend_to_kere_joint" type="continuous">
+    <joint name="liigend_to_kere_joint" type="continuous">
         <parent link="base_link"/>
         <child link="liigend"/>
         <origin xyz="0.9483341292917655263 -0.0071774303769965852595 0.6075567520903586427" rpy="2.2686993105948162011e-15 -6.1350116673315255536e-22 -1.5707963267948390484" />
@@ -140,9 +173,64 @@
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        <origin xyz="0 0 -0.48" rpy="0 0 0" />
     </joint>
 
+<gazebo>
+    <plugin name="ignition::gazebo::systems::DiffDrive" filename="libignition-gazebo-diff-drive-system.so">
+    <!-- <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'> -->
+
+    <!-- Plugin update rate in Hz -->
+    <updateRate>10</updateRate>
+
+    <!-- Name of left joint, defaults to `left_joint` -->
+    <leftJoint>base_front_left_wheel_joint</leftJoint>
+
+    <!-- Name of right joint, defaults to `right_joint` -->
+    <rightJoint>base_front_right_wheel_joint</rightJoint>
+
+    <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
+    <wheelSeparation>0.54</wheelSeparation>
+
+    <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
+    <wheelDiameter>0.254</wheelDiameter>
+
+    <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
+    <wheelAcceleration>1.0</wheelAcceleration>
+
+    <!-- Maximum torque which the wheels can produce, in Nm, defaults to 5 Nm -->
+    <wheelTorque>5</wheelTorque>
+
+    <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
+    <commandTopic>cmd_vel</commandTopic>
+
+    <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
+    <odometryTopic>odom</odometryTopic>
+
+    <!-- Odometry frame, defaults to `odom` -->
+    <odometryFrame>odom</odometryFrame>
+
+    <!-- Robot frame to calculate odometry from, defaults to `base_footprint` -->
+    <robotBaseFrame>base_joint</robotBaseFrame>
+
+    <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
+    <odometrySource>1</odometrySource>
+
+    <!-- Set to true to publish transforms for the wheel links, defaults to false -->
+    <publishWheelTF>false</publishWheelTF>
+
+    <!-- Set to true to publish transforms for the odometry, defaults to true -->
+    <publishOdom>true</publishOdom>
+
+    <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
+    <publishWheelJointState>true</publishWheelJointState>
+
+    <!-- Set to true to swap right and left wheels, defaults to true -->
+    <legacyMode>false</legacyMode>
+  </plugin>
+</gazebo>    
+	
 </robot>
 
-    
+
+
