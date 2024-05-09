@@ -1,11 +1,10 @@
 from launch import LaunchDescription
-from launch_ros.actions import Node, ExecuteProcess # Corrected import statement
+from launch_ros.actions import Node, ExecuteProcess
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, Command
 from launch.conditions import IfCondition, UnlessCondition
 from ament_index_python.packages import get_package_share_directory
 import os
-
 
 def generate_launch_description():
     # Get the path to the 'hermes_urdf' package
@@ -20,18 +19,17 @@ def generate_launch_description():
         description='Whether to launch the GUI or not'
     )
 
-    # Ignition Gazebo Server
-    gazebo_launch = ExecuteProcess(
-        cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path],
+    # Launch Gazebo 11
+    gazebo = ExecuteProcess(
+        cmd=['gazebo', '--verbose', sdf_file_path],
         output='screen'
     )
 
-    # Spawn the robot into Ignition Gazebo
+    # Spawn the robot into Gazebo
     spawn_robot = Node(
-        package='ros_ign_gazebo',
-        executable='create',
-        arguments=['-topic', 'robot_description', '-entity', 'hermes'],
-        parameters=[{'robot_description': Command(['xacro ', urdf_file_path])}],
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        arguments=['-entity', 'hermes', '-file', sdf_file_path],
         output='screen'
     )
 
@@ -65,11 +63,10 @@ def generate_launch_description():
 
     return LaunchDescription([
         gui_arg,
-        gazebo_launch,
+        gazebo,
         spawn_robot,
         robot_state_publisher,
         joint_state_publisher_gui,
         joint_state_publisher,
         diff_drive_controller
     ])
-
