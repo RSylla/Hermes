@@ -19,18 +19,17 @@ def generate_launch_description():
         description='Whether to launch the GUI or not'
     )
 
-    # Ignition Gazebo Server
-    ign_gazebo = ExecuteProcess(
-        cmd=['ign', 'gazebo', '-v', '4', sdf_file_path],
+    # Launch Gazebo 11
+    gazebo = ExecuteProcess(
+        cmd=['gazebo', '--verbose', sdf_file_path],
         output='screen'
     )
 
-    # Spawn the robot into Ignition Gazebo
+    # Spawn the robot into Gazebo
     spawn_robot = Node(
-        package='ros_ign_gazebo',
-        executable='create',
-        arguments=['-topic', 'robot_description', '-entity', 'hermes'],
-        parameters=[{'robot_description': Command(['xacro ', urdf_file_path])}],
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        arguments=['-entity', 'hermes', '-file', sdf_file_path],
         output='screen'
     )
 
@@ -64,7 +63,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         gui_arg,
-        ign_gazebo,
+        gazebo,
         spawn_robot,
         robot_state_publisher,
         joint_state_publisher_gui,
