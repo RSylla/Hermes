@@ -260,7 +260,7 @@ ament_clang_format_BIN:FILEPATH=/opt/ros/humble/bin/ament_clang_format
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_clang_format.
-ament_cmake_clang_format_DIR:PATH=/opt/ros/humble/share/ament_cmake_clang_format/cmake
+ament_cmake_clang_format_DIR:PATH=ament_cmake_clang_format_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for ament_cmake_copyright.
 ament_cmake_copyright_DIR:PATH=/opt/ros/humble/share/ament_cmake_copyright/cmake

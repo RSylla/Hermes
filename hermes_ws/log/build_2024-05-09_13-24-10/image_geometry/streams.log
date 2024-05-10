@@ -1,0 +1,53 @@
+[0.187s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/opencv_tests:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/image_geometry -- -j6 -l6
+[4.265s] [  0%] Built target ament_cmake_python_copy_image_geometry
+[4.265s] [ 22%] Built target gtest_main
+[4.265s] running egg_info
+[4.266s] writing image_geometry.egg-info/PKG-INFO
+[4.266s] writing dependency_links to image_geometry.egg-info/dependency_links.txt
+[4.266s] writing top-level names to image_geometry.egg-info/top_level.txt
+[4.266s] reading manifest file 'image_geometry.egg-info/SOURCES.txt'
+[4.266s] writing manifest file 'image_geometry.egg-info/SOURCES.txt'
+[4.266s] [ 22%] Built target ament_cmake_python_build_image_geometry_egg
+[4.267s] [ 44%] Built target gtest
+[4.267s] [ 77%] Built target image_geometry
+[4.267s] [100%] Built target image_geometry-utest
+[4.277s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/opencv_tests:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/image_geometry -- -j6 -l6
+[4.493s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/image_geometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/opencv_tests:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/image_geometry
+[4.528s] -- Install configuration: ""
+[4.529s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/environment/pythonpath.sh
+[4.529s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/environment/pythonpath.dsv
+[4.529s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info
+[4.529s] -- Installing: /home/hermes/Hermes/hermes_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/dependency_links.txt
+[4.529s] -- Installing: /home/hermes/Hermes/hermes_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/SOURCES.txt
+[4.529s] -- Installing: /home/hermes/Hermes/hermes_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/PKG-INFO
+[4.529s] -- Installing: /home/hermes/Hermes/hermes_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/top_level.txt
+[4.529s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry
+[4.530s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py
+[4.530s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py
+[5.059s] Listing '/home/hermes/Hermes/hermes_ws/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry'...
+[5.119s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/include/image_geometry
+[5.119s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/include/image_geometry/image_geometry
+[5.120s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/include/image_geometry/image_geometry/visibility_control.hpp
+[5.120s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/include/image_geometry/image_geometry/stereo_camera_model.h
+[5.120s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/include/image_geometry/image_geometry/pinhole_camera_model.h
+[5.120s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/lib/libimage_geometry.so
+[5.121s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/ament_index/resource_index/package_run_dependencies/image_geometry
+[5.121s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/ament_index/resource_index/parent_prefix_path/image_geometry
+[5.121s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/environment/ament_prefix_path.sh
+[5.121s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/environment/ament_prefix_path.dsv
+[5.122s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/environment/path.sh
+[5.122s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/environment/path.dsv
+[5.123s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/local_setup.bash
+[5.124s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/local_setup.sh
+[5.124s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/local_setup.zsh
+[5.124s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/local_setup.dsv
+[5.124s] -- Installing: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/package.dsv
+[5.125s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/ament_index/resource_index/packages/image_geometry
+[5.125s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport.cmake
+[5.125s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport-noconfig.cmake
+[5.125s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_targets-extras.cmake
+[5.125s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.125s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake
+[5.126s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake
+[5.126s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/image_geometry/share/image_geometry/package.xml
+[5.166s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/opencv_tests:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/Hermes/install/tof_publisher:/home/hermes/Downloads/hermes/Hermes/install/teleop_control:/home/hermes/Downloads/hermes/Hermes/install/odometry:/home/hermes/Downloads/hermes/Hermes/install/imu_publisher:/home/hermes/Downloads/hermes/Hermes/install/gps_publisher:/home/hermes/Downloads/hermes/Hermes/install/cmd_vel:/home/hermes/Downloads/hermes/Hermes/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/image_geometry

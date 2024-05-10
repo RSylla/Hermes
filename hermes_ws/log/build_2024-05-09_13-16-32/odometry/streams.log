@@ -1,0 +1,22 @@
+[5.745s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/odometry': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry build --build-base /home/hermes/Hermes/hermes_ws/build/odometry/build install --record /home/hermes/Hermes/hermes_ws/build/odometry/install.log --single-version-externally-managed install_data
+[7.617s] running egg_info
+[7.622s] writing ../../build/odometry/odometry.egg-info/PKG-INFO
+[7.625s] writing dependency_links to ../../build/odometry/odometry.egg-info/dependency_links.txt
+[7.625s] writing entry points to ../../build/odometry/odometry.egg-info/entry_points.txt
+[7.627s] writing requirements to ../../build/odometry/odometry.egg-info/requires.txt
+[7.628s] writing top-level names to ../../build/odometry/odometry.egg-info/top_level.txt
+[7.635s] reading manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[7.645s] adding license file 'LICENSE'
+[7.647s] writing manifest file '../../build/odometry/odometry.egg-info/SOURCES.txt'
+[7.657s] running build
+[7.657s] running build_py
+[7.666s] running install
+[7.666s] running install_lib
+[7.683s] running install_data
+[7.684s] running install_egg_info
+[7.688s] removing '/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages/odometry-0.0.0-py3.10.egg-info' (and everything under it)
+[7.689s] Copying ../../build/odometry/odometry.egg-info to /home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages/odometry-0.0.0-py3.10.egg-info
+[7.698s] running install_scripts
+[7.923s] Installing odometry_node script to /home/hermes/Hermes/hermes_ws/install/odometry/lib/odometry
+[7.925s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/odometry/install.log'
+[8.346s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/odometry' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/odometry/prefix_override:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry build --build-base /home/hermes/Hermes/hermes_ws/build/odometry/build install --record /home/hermes/Hermes/hermes_ws/build/odometry/install.log --single-version-externally-managed install_data
