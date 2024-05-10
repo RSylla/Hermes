@@ -1,27 +1,28 @@
 from launch import LaunchDescription
+from launch.actions import ExecuteProcess, DeclareLaunchArgument, IncludeLaunchDescription
+from launch.substitutions import Command, LaunchConfiguration
 from launch_ros.actions import Node
+from ament_index_python.packages import get_package_share_directory
+import os
 
 def generate_launch_description():
+    # Setup Gazebo environment
+    source_gazebo_cmd = ExecuteProcess(
+        cmd=['bash', '-c', 'source /usr/share/gazebo/setup.bash && exec "$@"', 'dummy', 'gazebo'],
+        output='screen'
+    )
+
+    # Gazebo launch
+    pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
+    gazebo_launch_file = os.path.join(pkg_gazebo_ros, 'launch', 'gazebo.launch.py')
+    gazebo = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(gazebo_launch_file),
+        launch_arguments={'world': LaunchConfiguration('world')}.items(),
+    )
+
     return LaunchDescription([
-        # Launch Gazebo with your robot
-        Node(
-            package='gazebo_ros',
-            executable='gazebo',
-            arguments=['-s', 'libgazebo_ros_factory.so'],
-            output='screen'
-        ),
-        # Spawn your robot into Gazebo
-        Node(
-            package='gazebo_ros',
-            executable='spawn_entity.py',
-            arguments=['-topic', 'robot_description', '-entity', 'your_robot_name'],
-            output='screen'
-        ),
-        # Launch the teleoperation node
-        Node(
-            package='teleop_twist_joy',
-            executable='teleop_node',
-            parameters=[{'joy_config': 'ps3'}], # Example configuration for a PS3 controller
-            output='screen'
-        )
+        DeclareLaunchArgument('world', default_value=os.path.join(get_package_share_directory('new_arm_gazebo'), 'worlds', 'new_arm_empty.world'), description='SDF world file'),
+        source_gazebo_cmd,
+        gazebo
     ])
+

@@ -1,18 +1,17 @@
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, ExecuteProcess
+from launch.actions import DeclareLaunchArgument
 from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration, Command
 from ament_index_python.packages import get_package_share_directory
 import os
 
 def generate_launch_description():
-    # Get the path to the 'sam_bot_description' package
+    # Paths
     hermes_urdf_dir = get_package_share_directory('hermes_urdf')
     urdf_file_path = os.path.join(hermes_urdf_dir, 'urdf', 'hermes_model.urdf')
     rviz_config_path = os.path.join(hermes_urdf_dir, 'urdf', 'config.rviz')
-    world_path = os.path.join(hermes_urdf_dir, '/home/hermes/Hermes/hermes_ws/src/hermes_urdf/launch/my_world.world')
 
-    # Declare launch arguments
+    # Launch arguments
     model_arg = DeclareLaunchArgument(
         'model',
         default_value=urdf_file_path,
@@ -48,23 +47,10 @@ def generate_launch_description():
         output='screen',
         arguments=['-d', LaunchConfiguration('rvizconfig')],
     )
-    spawn_entity_node = Node(
-        package='gazebo_ros',
-        executable='spawn_entity.py',
-        arguments=['-entity', 'sam_bot', '-topic', 'robot_description'],
-        output='screen'
-    )
-    robot_localization_node = Node(
-        package='robot_localization',
-        executable='ekf_node',
-        name='ekf_filter_node',
-        output='screen',
-        parameters=[os.path.join(hermes_urdf_dir, 'config/ekf.yaml'), {'use_sim_time': LaunchConfiguration('use_sim_time')}]
-    )
-
-    # Execute Process for launching Gazebo
-    gazebo_launch = ExecuteProcess(
-        cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path],
+    teleop_node = Node(
+        package='teleop_twist_keyboard',
+        executable='teleop_twist_keyboard',
+        prefix='xterm -e',
         output='screen'
     )
 
@@ -74,8 +60,7 @@ def generate_launch_description():
         use_sim_time_arg,
         robot_state_publisher_node,
         joint_state_publisher_node,
-        spawn_entity_node,
-        robot_localization_node,
-        gazebo_launch
+        rviz_node,
+        teleop_node
     ])
 
