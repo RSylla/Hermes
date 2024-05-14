@@ -1,9 +1,9 @@
 {
   "package_name": "hermes_interfaces",
-  "output_dir": "/home/hermes/Hermes/hermes_ws/build/hermes_interfaces/rosidl_generator_c/hermes_interfaces",
+  "output_dir": "/home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces/rosidl_generator_c/hermes_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/hermes/Hermes/hermes_ws/build/hermes_interfaces/rosidl_adapter/hermes_interfaces:msg/GpsFixed.idl"
+    "/home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces/rosidl_adapter/hermes_interfaces:msg/GpsFixed.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -19,6 +19,6 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/hermes/Hermes/hermes_ws/build/hermes_interfaces/rosidl_adapter/hermes_interfaces/msg/GpsFixed.idl"
+    "/home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces/rosidl_adapter/hermes_interfaces/msg/GpsFixed.idl"
   ]
 }

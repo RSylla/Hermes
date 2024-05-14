@@ -24,7 +24,7 @@
         <visual>
             <origin xyz="0.50575420423148409466 -0.0071774303769972201683 0.60255675209035008955" rpy="7.940934590483602961e-23 -1.4644253098708242934e-15 1.55431223447518563e-15" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/kere.stl"/>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/kere.stl"/>
             </geometry>
             <material name="kere_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -40,7 +40,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/ld19.stl"/>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/ld19.stl"/>
             </geometry>
             <material name="ld19_material">
                 <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
@@ -63,7 +63,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
             </geometry>
             <material name="rehv1_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -86,7 +86,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 1.58" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
             </geometry>
             <material name="rehv1_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -109,7 +109,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
             </geometry>
             <material name="rehv1_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -132,7 +132,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 1.583" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
             </geometry>
             <material name="rehv1_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
@@ -155,7 +155,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 -0 0" />
             <geometry>
-                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/liigend.stl"/>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/liigend.stl"/>
             </geometry>
             <material name="liigend_material">
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>

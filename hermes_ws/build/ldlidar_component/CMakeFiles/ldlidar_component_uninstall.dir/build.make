@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component
+CMAKE_SOURCE_DIR = /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hermes/Hermes/hermes_ws/build/ldlidar_component
+CMAKE_BINARY_DIR = /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component
 
 # Utility rule file for ldlidar_component_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ldlidar_component_uninstall.dir/compiler_depend.make
 include CMakeFiles/ldlidar_component_uninstall.dir/progress.make
 
 CMakeFiles/ldlidar_component_uninstall:
-	/usr/bin/cmake -P /home/hermes/Hermes/hermes_ws/build/ldlidar_component/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ldlidar_component_uninstall: CMakeFiles/ldlidar_component_uninstall
 ldlidar_component_uninstall: CMakeFiles/ldlidar_component_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ldlidar_component_uninstall.dir/clean:
 .PHONY : CMakeFiles/ldlidar_component_uninstall.dir/clean
 
 CMakeFiles/ldlidar_component_uninstall.dir/depend:
-	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component /home/hermes/Hermes/hermes_ws/build/ldlidar_component /home/hermes/Hermes/hermes_ws/build/ldlidar_component /home/hermes/Hermes/hermes_ws/build/ldlidar_component/CMakeFiles/ldlidar_component_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component/CMakeFiles/ldlidar_component_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ldlidar_component_uninstall.dir/depend
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DFOUND_HUMBLE
 
-CXX_INCLUDES = -I/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/core -I/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/dataprocess -I/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/filter -I/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/logger -I/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/networkcom -I/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/serialcom
+CXX_INCLUDES = -I/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/core -I/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/dataprocess -I/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/filter -I/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/logger -I/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/networkcom -I/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/serialcom
 
 CXX_FLAGS = -O3 -DNDEBUG -fPIC -Wno-deprecated-declarations -std=gnu++14
 

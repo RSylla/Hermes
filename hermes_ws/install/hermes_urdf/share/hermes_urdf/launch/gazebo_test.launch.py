@@ -1,28 +1,67 @@
 from launch import LaunchDescription
-from launch.actions import ExecuteProcess, DeclareLaunchArgument, IncludeLaunchDescription
-from launch.substitutions import Command, LaunchConfiguration
+from launch.actions import DeclareLaunchArgument, ExecuteProcess
 from launch_ros.actions import Node
+from launch.substitutions import LaunchConfiguration, Command
+from launch.conditions import IfCondition, UnlessCondition
 from ament_index_python.packages import get_package_share_directory
 import os
 
 def generate_launch_description():
-    # Setup Gazebo environment
-    source_gazebo_cmd = ExecuteProcess(
-        cmd=['bash', '-c', 'source /usr/share/gazebo/setup.bash && exec "$@"', 'dummy', 'gazebo'],
+    # Get the path to the 'hermes_urdf' package
+    hermes_urdf_dir = get_package_share_directory('hermes_urdf')
+    urdf_file_path = os.path.join(hermes_urdf_dir, 'urdf', 'hermes_model.urdf')
+    sdf_file_path = os.path.join(hermes_urdf_dir, 'urdf', 'hermes_model.sdf')
+
+    # Declare a launch argument for the GUI
+    gui_arg = DeclareLaunchArgument(
+        'gui',
+        default_value='true',
+        description='Whether to launch the GUI or not'
+    )
+
+    # Launch Gazebo with the GazeboRosFactory factory
+    gazebo = ExecuteProcess(
+        cmd=['gazebo', '--verbose', '--factory', 'GazeboRosFactory', sdf_file_path],
         output='screen'
     )
 
-    # Gazebo launch
-    pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
-    gazebo_launch_file = os.path.join(pkg_gazebo_ros, 'launch', 'gazebo.launch.py')
-    gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(gazebo_launch_file),
-        launch_arguments={'world': LaunchConfiguration('world')}.items(),
+    # Spawn the robot into Gazebo
+    spawn_robot = Node(
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        arguments=['-entity', 'hermes', '-file', sdf_file_path],
+        output='screen'
+    )
+
+    # Robot State Publisher with robot description from the file path
+    robot_state_publisher = Node(
+        package='robot_state_publisher',
+        executable='robot_state_publisher',
+        parameters=[{'robot_description': Command(['xacro ', urdf_file_path])}]
+    )
+
+    # Diff Drive Controller
+    diff_drive_controller = Node(
+        package='diff_drive_controller',
+        executable='diff_drive_controller',
+        parameters=[{'robot_description': Command(['xacro ', urdf_file_path])}],
+        output='screen'
+    )
+
+    # Keyboard Control
+    keyboard_node = Node(
+        package='teleop_twist_keyboard',
+        executable='teleop_twist_keyboard',
+        output='screen'
     )
 
     return LaunchDescription([
-        DeclareLaunchArgument('world', default_value=os.path.join(get_package_share_directory('new_arm_gazebo'), 'worlds', 'new_arm_empty.world'), description='SDF world file'),
-        source_gazebo_cmd,
-        gazebo
+        gui_arg,
+        gazebo,
+        spawn_robot,
+        robot_state_publisher,
+        diff_drive_controller,
+        keyboard_node
     ])
+
 

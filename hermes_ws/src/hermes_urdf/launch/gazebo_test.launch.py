@@ -1,6 +1,6 @@
 from launch import LaunchDescription
-from launch_ros.actions import Node, ExecuteProcess
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, ExecuteProcess
+from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration, Command
 from launch.conditions import IfCondition, UnlessCondition
 from ament_index_python.packages import get_package_share_directory
@@ -10,7 +10,7 @@ def generate_launch_description():
     # Get the path to the 'hermes_urdf' package
     hermes_urdf_dir = get_package_share_directory('hermes_urdf')
     urdf_file_path = os.path.join(hermes_urdf_dir, 'urdf', 'hermes_model.urdf')
-    sdf_file_path = os.path.join(hermes_urdf_dir, 'sdf', 'hermes_model.sdf')
+    sdf_file_path = os.path.join(hermes_urdf_dir, 'urdf', 'hermes_model.sdf')
 
     # Declare a launch argument for the GUI
     gui_arg = DeclareLaunchArgument(
@@ -19,9 +19,9 @@ def generate_launch_description():
         description='Whether to launch the GUI or not'
     )
 
-    # Launch Gazebo 11
+    # Launch Gazebo with the GazeboRosFactory factory
     gazebo = ExecuteProcess(
-        cmd=['gazebo', '--verbose', sdf_file_path],
+        cmd=['gazebo', '--verbose', '--factory', 'GazeboRosFactory', sdf_file_path],
         output='screen'
     )
 
@@ -40,19 +40,6 @@ def generate_launch_description():
         parameters=[{'robot_description': Command(['xacro ', urdf_file_path])}]
     )
 
-    # Conditionally launch the Joint State Publisher GUI or non-GUI
-    joint_state_publisher_gui = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        condition=IfCondition(LaunchConfiguration('gui'))
-    )
-
-    joint_state_publisher = Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        condition=UnlessCondition(LaunchConfiguration('gui'))
-    )
-
     # Diff Drive Controller
     diff_drive_controller = Node(
         package='diff_drive_controller',
@@ -61,12 +48,20 @@ def generate_launch_description():
         output='screen'
     )
 
+    # Keyboard Control
+    keyboard_node = Node(
+        package='teleop_twist_keyboard',
+        executable='teleop_twist_keyboard',
+        output='screen'
+    )
+
     return LaunchDescription([
         gui_arg,
         gazebo,
         spawn_robot,
         robot_state_publisher,
-        joint_state_publisher_gui,
-        joint_state_publisher,
-        diff_drive_controller
+        diff_drive_controller,
+        keyboard_node
     ])
+
+

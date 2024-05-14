@@ -1,8 +1,8 @@
-# Install script for directory: /home/hermes/Hermes/hermes_ws/build/hermes_interfaces/hermes_interfaces__py
+# Install script for directory: /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces/hermes_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hermes/Hermes/hermes_ws/install/hermes_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

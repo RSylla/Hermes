@@ -1,0 +1,66 @@
+[0.303s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/opencv_tests:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf
+[1.133s] -- The C compiler identification is GNU 11.4.0
+[1.133s] -- The CXX compiler identification is GNU 11.4.0
+[1.134s] -- Detecting C compiler ABI info
+[1.134s] -- Detecting C compiler ABI info - done
+[1.134s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.134s] -- Detecting C compile features
+[1.134s] -- Detecting C compile features - done
+[1.134s] -- Detecting CXX compiler ABI info
+[1.134s] -- Detecting CXX compiler ABI info - done
+[1.134s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.134s] -- Detecting CXX compile features
+[1.134s] -- Detecting CXX compile features - done
+[1.134s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.134s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.134s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.135s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.135s] -- Added test 'lint_cmake' to check CMake code style
+[1.135s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.135s] -- Added test 'xmllint' to check XML markup files
+[1.135s] -- Configuring done
+[1.135s] -- Generating done
+[1.135s] -- Build files have been written to: /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf
+[1.139s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/opencv_tests:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf
+[1.141s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/opencv_tests:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf -- -j12 -l12
+[1.174s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/opencv_tests:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf -- -j12 -l12
+[1.201s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/opencv_tests:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf
+[1.208s] -- Install configuration: ""
+[1.208s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch
+[1.208s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/gazebo_test.launch.py
+[1.208s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/gazebo_model.launch.py
+[1.208s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/display.launch.py
+[1.209s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/my_world.world
+[1.209s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf
+[1.209s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv.stl
+[1.209s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/liigend.part
+[1.209s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.part
+[1.209s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.rviz
+[1.209s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/robot.urdf
+[1.209s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.json
+[1.210s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/.robot.urdf.swp
+[1.210s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv.part
+[1.210s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes.urdf
+[1.210s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.stl
+[1.212s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes_model.sdf
+[1.212s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/kere.stl
+[1.213s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/__init__.py
+[1.213s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/liigend.stl
+[1.213s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/kere.part
+[1.213s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes_model.urdf
+[1.221s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/package_run_dependencies/hermes_urdf
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/parent_prefix_path/hermes_urdf
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/ament_prefix_path.sh
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/ament_prefix_path.dsv
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/path.sh
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/path.dsv
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.bash
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.sh
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.zsh
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.dsv
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/package.dsv
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/packages/hermes_urdf
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/cmake/hermes_urdfConfig.cmake
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/cmake/hermes_urdfConfig-version.cmake
+[1.222s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/package.xml
+[1.241s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/opencv_tests:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf

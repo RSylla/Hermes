@@ -1,0 +1,40 @@
+[0.034s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/opencv_tests:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component
+[0.801s] --  * Release Mode
+[0.802s] -- * Found ROS2 humble
+[0.802s] -- * ROS2 humble is officially supported by this package.
+[0.802s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.802s] -- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.802s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.802s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.802s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.802s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.802s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.803s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.803s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.803s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.803s] -- Found rclcpp_components: 16.0.8 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.803s] -- Found nav2_util: 1.1.14 (/opt/ros/humble/share/nav2_util/cmake)
+[0.855s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.856s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.856s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.984s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.084s] -- Found diagnostic_msgs: 4.2.3 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[1.143s] [31mCMake Error at CMakeLists.txt:104 (find_package):
+[1.143s]   By not providing "Finddiagnostic_updater.cmake" in CMAKE_MODULE_PATH this
+[1.143s]   project has asked CMake to find a package configuration file provided by
+[1.144s]   "diagnostic_updater", but CMake did not find one.
+[1.144s] 
+[1.144s]   Could not find a package configuration file provided by
+[1.144s]   "diagnostic_updater" with any of the following names:
+[1.144s] 
+[1.144s]     diagnostic_updaterConfig.cmake
+[1.144s]     diagnostic_updater-config.cmake
+[1.144s] 
+[1.144s]   Add the installation prefix of "diagnostic_updater" to CMAKE_PREFIX_PATH or
+[1.144s]   set "diagnostic_updater_DIR" to a directory containing one of the above
+[1.144s]   files.  If "diagnostic_updater" provides a separate development package or
+[1.144s]   SDK, be sure it has been installed.
+[1.144s] 
+[1.144s] [0m
+[1.144s] -- Configuring incomplete, errors occurred!
+[1.144s] See also "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component/CMakeFiles/CMakeOutput.log".
