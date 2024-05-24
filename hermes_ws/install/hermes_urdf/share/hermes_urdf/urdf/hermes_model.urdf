@@ -30,6 +30,12 @@
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
             </material>
         </visual>
+        <collision>
+        	<origin xyz="0.50575420423148409466 -0.0071774303769972201683 0.60255675209035008955" rpy="7.940934590483602961e-23 -1.4644253098708242934e-15 1.55431223447518563e-15" />
+            <geometry>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/kere.stl"/>
+            </geometry>
+        </collision>
     </link>
 
     <link name="ld19">
@@ -69,6 +75,12 @@
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
             </material>
         </visual>
+        <collision>
+        	<origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+            </geometry>
+        </collision>
     </link>
 
     <joint name="base_rear_right_wheel_joint" type="continuous">
@@ -92,6 +104,12 @@
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
             </material>
         </visual>
+        <collision>
+        	<origin xyz="0 0 0" rpy="0 0 1.58" />
+            <geometry>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+            </geometry>
+        </collision>
     </link>
 
     <joint name="base_front_left_wheel_joint" type="continuous">
@@ -115,6 +133,12 @@
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
             </material>
         </visual>
+        <collision>
+        	<origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+            </geometry>
+        </collision>
     </link>
 
     <joint name="base_rear_left_wheel_joint" type="continuous">
@@ -138,6 +162,12 @@
                 <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
             </material>
         </visual>
+        <collision>
+        	<origin xyz="0 0 0" rpy="0 0 1.583" />
+            <geometry>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+            </geometry>
+        </collision>
     </link>
 
     <joint name="base_front_right_wheel_joint" type="continuous">
@@ -168,35 +198,42 @@
         <child link="liigend"/>
         <origin xyz="0.9483341292917655263 -0.0071774303769965852595 0.6075567520903586427" rpy="2.2686993105948162011e-15 -6.1350116673315255536e-22 -1.5707963267948390484" />
         <axis xyz="0 0 1"/>
+        <limit lower="-0.7854" upper="0.7854" effort="100000" velocity="100"/>
     </joint>
     
     <joint name="base_joint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
-        <origin xyz="0 0 -0.48" rpy="0 0 0" />
+        <origin xyz="0 0 -0.45" rpy="0 0 0" />
+        
     </joint>
+   
+    <gazebo>
+        <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
 
-<gazebo>
-    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
-        <updateRate>10</updateRate>
-        <leftJoint>base_front_left_wheel_joint</leftJoint>
-        <rightJoint>base_front_right_wheel_joint</rightJoint>
-        <wheelSeparation>0.54</wheelSeparation>
-        <wheelDiameter>0.254</wheelDiameter>
-        <wheelAcceleration>1.0</wheelAcceleration>
-        <wheelTorque>20</wheelTorque>
-        <commandTopic>cmd_vel</commandTopic>
-        <odometryTopic>odom</odometryTopic>
-        <odometryFrame>odom</odometryFrame>
-        <robotBaseFrame>base_footprint</robotBaseFrame>
-        <odometrySource>1</odometrySource>
-        <publishWheelTF>true</publishWheelTF>
-        <publishOdom>true</publishOdom>
-        <publishWheelJointState>true</publishWheelJointState>
-        <legacyMode>false</legacyMode>
-    </plugin>
-</gazebo>    
-	
+            <!-- Wheel Information -->
+            <left_joint>base_front_right_wheel_joint</left_joint>
+            <right_joint>base_front_left_wheel_joint</right_joint>
+            <wheel_separation>0.54</wheel_separation>
+            <wheel_diameter>0.254</wheel_diameter>
+
+
+            <!-- Limits -->
+            <max_wheel_torque>30</max_wheel_torque>
+            <max_wheel_acceleration>5.0</max_wheel_acceleration>
+
+            
+            <!-- Output -->
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_joint</robot_base_frame>
+
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+	    <legacyMode>false</legacyMode>
+
+        </plugin>
+    </gazebo>
 </robot>
 
 

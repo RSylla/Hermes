@@ -1,8 +1,45 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <sdf version="1.6">
   <world name="default">
+    <!-- Define the ground plane with a custom texture -->
+    <model name="custom_ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size> <!-- Adjust size as needed -->
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size> <!-- Adjust size as needed -->
+            </plane>
+          </geometry>
+          <material>
+            <script>
+    		<name>Gazebo/Grey</name>
+  	    </script>
+            <texture>
+              <diffuse>
+                <uri>file://home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/image.png</uri>
+              </diffuse>
+            </texture>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Include default plugins if needed -->
     <include>
-      <uri>file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/hermes_model.sdf</uri>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
     </include>
   </world>
 </sdf>

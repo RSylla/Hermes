@@ -1,6 +1,0 @@
-[0.275s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/hermes_navigation -- -j12 -l12
-[0.792s] [0mCMake Error: The current CMakeCache.txt directory /home/aleksmalm/Hermes/hermes_ws/build/hermes_navigation/CMakeCache.txt is different than the directory /home/hermes/Hermes/hermes_ws/build/hermes_navigation where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0.793s] [0mCMake Error: The source directory "/home/hermes/Hermes/hermes_ws/src/hermes_navigation" does not exist.
-[0.793s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.793s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
-[0.795s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_navigation' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/hermes_navigation -- -j12 -l12

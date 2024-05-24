@@ -1,2 +1,0 @@
-Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component -- -j12 -l12
-Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component -- -j12 -l12
