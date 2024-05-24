@@ -1,0 +1,32 @@
+[0.080s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/cv_bridge': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/cv_bridge -- -j6 -l6
+[2.131s] [  6%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o[0m
+[2.131s] [ 12%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.131s] [ 18%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o[0m
+[2.131s] [ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.131s] [ 25%] Built target ament_cmake_python_copy_cv_bridge
+[2.132s] running egg_info
+[2.132s] creating cv_bridge.egg-info
+[2.132s] writing cv_bridge.egg-info/PKG-INFO
+[2.132s] writing dependency_links to cv_bridge.egg-info/dependency_links.txt
+[2.132s] writing top-level names to cv_bridge.egg-info/top_level.txt
+[2.132s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[2.132s] reading manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[2.132s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[2.132s] [ 25%] Built target ament_cmake_python_build_cv_bridge_egg
+[3.121s] [ 31%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[3.354s] [ 31%] Built target gtest_main
+[8.316s] [ 37%] [32m[1mLinking CXX static library libgtest.a[0m
+[8.440s] [ 37%] Built target gtest
+[11.553s] [ 43%] [32m[1mLinking CXX shared library libcv_bridge.so[0m
+[11.906s] [ 43%] Built target cv_bridge
+[11.951s] [ 62%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o[0m
+[11.951s] [ 62%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv3.cpp.o[0m
+[11.951s] [ 62%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o[0m
+[11.953s] [ 68%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o[0m
+[11.955s] [ 75%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o[0m
+[11.969s] [ 81%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o[0m
+[15.627s] [ 87%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o[0m
+[19.695s] [ 93%] [32m[1mLinking CXX shared module boost/cv_bridge_boost.so[0m
+[19.939s] [ 93%] Built target cv_bridge_boost
+[20.721s] [100%] [32m[1mLinking CXX executable cv_bridge-utest[0m
+[21.149s] [100%] Built target cv_bridge-utest

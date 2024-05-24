@@ -80,6 +80,13 @@ def generate_launch_description():
     #
     # Replace the diff_drive_spawner in the final return with delayed_diff_drive_spawner
 
+    plane_model_path = os.path.join(get_package_share_directory(package_name), 'models', 'my_plane', 'model.sdf')
+
+    # Command to spawn the plane model
+    spawn_plane = ExecuteProcess(
+        cmd=['gz', 'model', '--spawn-file', plane_model_path, '--model-name', 'my_plane'],
+        output='screen'
+    )
 
 
     # Launch them all!
@@ -90,5 +97,6 @@ def generate_launch_description():
         gazebo,
         spawn_entity,
         #diff_drive_spawner,
-        #joint_broad_spawner
+        #joint_broad_spawner,
+        spawn_plane,
     ])
