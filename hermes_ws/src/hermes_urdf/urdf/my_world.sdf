@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="my_plane">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>10 10</size> <!-- Adjust size as needed -->
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/White</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 0</emissive>
+          <texture>
+            <image>file://Hermes/hermes_ws/src/hermes_urdf/urdf/image.png</image> 
+          </texture>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>10 10</size> <!-- Adjust size as needed -->
+          </plane>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+            </ode>
+          </friction>
+          <bounce/>
+          <contact>
+            <ode/>
+          </contact>
+        </surface>
+      </collision>
+    </link>
+  </model>
+</sdf>
+

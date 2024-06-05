@@ -1,0 +1,328 @@
+[0.000000] (-) TimerEvent: {}
+[0.000602] (cameras) JobQueued: {'identifier': 'cameras', 'dependencies': OrderedDict()}
+[0.001396] (cmd_vel) JobQueued: {'identifier': 'cmd_vel', 'dependencies': OrderedDict()}
+[0.001651] (cv_bridge) JobQueued: {'identifier': 'cv_bridge', 'dependencies': OrderedDict()}
+[0.001887] (gps_publisher) JobQueued: {'identifier': 'gps_publisher', 'dependencies': OrderedDict()}
+[0.001981] (hermes_interfaces) JobQueued: {'identifier': 'hermes_interfaces', 'dependencies': OrderedDict()}
+[0.002055] (hermes_navigation) JobQueued: {'identifier': 'hermes_navigation', 'dependencies': OrderedDict()}
+[0.002096] (hermes_urdf) JobQueued: {'identifier': 'hermes_urdf', 'dependencies': OrderedDict()}
+[0.002163] (image_geometry) JobQueued: {'identifier': 'image_geometry', 'dependencies': OrderedDict()}
+[0.002228] (imu_publisher) JobQueued: {'identifier': 'imu_publisher', 'dependencies': OrderedDict()}
+[0.002292] (ldlidar_component) JobQueued: {'identifier': 'ldlidar_component', 'dependencies': OrderedDict()}
+[0.002355] (odometry) JobQueued: {'identifier': 'odometry', 'dependencies': OrderedDict()}
+[0.002418] (teleop_control) JobQueued: {'identifier': 'teleop_control', 'dependencies': OrderedDict()}
+[0.002481] (tof_publisher) JobQueued: {'identifier': 'tof_publisher', 'dependencies': OrderedDict()}
+[0.002545] (ldlidar_node) JobQueued: {'identifier': 'ldlidar_node', 'dependencies': OrderedDict([('ldlidar_component', '/home/hermes/Hermes/hermes_ws/install/ldlidar_component')])}
+[0.002616] (opencv_tests) JobQueued: {'identifier': 'opencv_tests', 'dependencies': OrderedDict([('cv_bridge', '/home/hermes/Hermes/hermes_ws/install/cv_bridge')])}
+[0.002685] (vision_opencv) JobQueued: {'identifier': 'vision_opencv', 'dependencies': OrderedDict([('cv_bridge', '/home/hermes/Hermes/hermes_ws/install/cv_bridge'), ('image_geometry', '/home/hermes/Hermes/hermes_ws/install/image_geometry')])}
+[0.002756] (ldlidar) JobQueued: {'identifier': 'ldlidar', 'dependencies': OrderedDict([('ldlidar_component', '/home/hermes/Hermes/hermes_ws/install/ldlidar_component'), ('ldlidar_node', '/home/hermes/Hermes/hermes_ws/install/ldlidar_node')])}
+[0.002827] (cv_bridge) JobStarted: {'identifier': 'cv_bridge'}
+[0.017101] (ldlidar_component) JobStarted: {'identifier': 'ldlidar_component'}
+[0.027160] (image_geometry) JobStarted: {'identifier': 'image_geometry'}
+[0.037270] (cameras) JobStarted: {'identifier': 'cameras'}
+[0.050824] (cmd_vel) JobStarted: {'identifier': 'cmd_vel'}
+[0.063355] (gps_publisher) JobStarted: {'identifier': 'gps_publisher'}
+[0.078201] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'cmake'}
+[0.079520] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'build'}
+[0.080868] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hermes/Hermes/hermes_ws/build/cv_bridge', '--', '-j6', '-l6'], 'cwd': '/home/hermes/Hermes/hermes_ws/build/cv_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'hermes'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/hermes'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('SYSTEMD_EXEC_PID', '6475'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install:/home/hermes/Downloads/hermes/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hermes'), ('ONSHAPE_SECRET_KEY', 'rEU4dJJ9oXB8qVu8LGi4TkNxeVK'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/hermes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2668,unix/ubuntu:/tmp/.ICE-unix/2668'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/52a7211b_78b9_400d_ba35_9a95cd5222a7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/hermes/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/hermes'), ('AMENT_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hermes/Hermes/hermes_ws/build/cv_bridge'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ONSHAPE_ACCESS_KEY', 'jfugJvvpZLptZWiDjhxsknLt'), ('GAZEBO_PLUGIN_PATH', ':/usr/lib/aarch64-linux-gnu/ign-gazebo-6/plugins'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg/lib/python3.10/site-packages:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ONSHAPE_API', 'https://cad.onshape.com'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble')]), 'shell': False}
+[0.086817] (ldlidar_component) JobProgress: {'identifier': 'ldlidar_component', 'progress': 'cmake'}
+[0.088118] (ldlidar_component) JobProgress: {'identifier': 'ldlidar_component', 'progress': 'build'}
+[0.088678] (ldlidar_component) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hermes/Hermes/hermes_ws/build/ldlidar_component', '--', '-j6', '-l6'], 'cwd': '/home/hermes/Hermes/hermes_ws/build/ldlidar_component', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'hermes'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/hermes'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('SYSTEMD_EXEC_PID', '6475'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install:/home/hermes/Downloads/hermes/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hermes'), ('ONSHAPE_SECRET_KEY', 'rEU4dJJ9oXB8qVu8LGi4TkNxeVK'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/hermes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2668,unix/ubuntu:/tmp/.ICE-unix/2668'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/52a7211b_78b9_400d_ba35_9a95cd5222a7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/hermes/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/hermes'), ('AMENT_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hermes/Hermes/hermes_ws/build/ldlidar_component'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ONSHAPE_ACCESS_KEY', 'jfugJvvpZLptZWiDjhxsknLt'), ('GAZEBO_PLUGIN_PATH', ':/usr/lib/aarch64-linux-gnu/ign-gazebo-6/plugins'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg/lib/python3.10/site-packages:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ONSHAPE_API', 'https://cad.onshape.com'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble')]), 'shell': False}
+[0.092269] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'cmake'}
+[0.093440] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'build'}
+[0.093904] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hermes/Hermes/hermes_ws/build/image_geometry', '--', '-j6', '-l6'], 'cwd': '/home/hermes/Hermes/hermes_ws/build/image_geometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'hermes'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/hermes'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('SYSTEMD_EXEC_PID', '6475'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install:/home/hermes/Downloads/hermes/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hermes'), ('ONSHAPE_SECRET_KEY', 'rEU4dJJ9oXB8qVu8LGi4TkNxeVK'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/hermes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2668,unix/ubuntu:/tmp/.ICE-unix/2668'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/52a7211b_78b9_400d_ba35_9a95cd5222a7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/hermes/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/hermes'), ('AMENT_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hermes/Hermes/hermes_ws/build/image_geometry'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ONSHAPE_ACCESS_KEY', 'jfugJvvpZLptZWiDjhxsknLt'), ('GAZEBO_PLUGIN_PATH', ':/usr/lib/aarch64-linux-gnu/ign-gazebo-6/plugins'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg/lib/python3.10/site-packages:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ONSHAPE_API', 'https://cad.onshape.com'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099388] (-) TimerEvent: {}
+[0.199985] (-) TimerEvent: {}
+[0.301160] (-) TimerEvent: {}
+[0.401826] (-) TimerEvent: {}
+[0.502493] (-) TimerEvent: {}
+[0.603173] (-) TimerEvent: {}
+[0.703871] (-) TimerEvent: {}
+[0.804604] (-) TimerEvent: {}
+[0.905350] (-) TimerEvent: {}
+[1.006144] (-) TimerEvent: {}
+[1.106854] (-) TimerEvent: {}
+[1.207899] (-) TimerEvent: {}
+[1.308712] (-) TimerEvent: {}
+[1.409403] (-) TimerEvent: {}
+[1.510142] (-) TimerEvent: {}
+[1.610876] (-) TimerEvent: {}
+[1.711649] (-) TimerEvent: {}
+[1.812757] (-) TimerEvent: {}
+[1.913811] (-) TimerEvent: {}
+[2.014897] (-) TimerEvent: {}
+[2.116016] (-) TimerEvent: {}
+[2.133098] (cv_bridge) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o\x1b[0m\n'}
+[2.133681] (cv_bridge) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[2.133850] (cv_bridge) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o\x1b[0m\n'}
+[2.133995] (cv_bridge) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[2.134152] (cv_bridge) StdoutLine: {'line': b'[ 25%] Built target ament_cmake_python_copy_cv_bridge\n'}
+[2.134285] (cv_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[2.134411] (cv_bridge) StdoutLine: {'line': b'creating cv_bridge.egg-info\n'}
+[2.134531] (cv_bridge) StdoutLine: {'line': b'writing cv_bridge.egg-info/PKG-INFO\n'}
+[2.134648] (cv_bridge) StdoutLine: {'line': b'writing dependency_links to cv_bridge.egg-info/dependency_links.txt\n'}
+[2.134765] (cv_bridge) StdoutLine: {'line': b'writing top-level names to cv_bridge.egg-info/top_level.txt\n'}
+[2.134881] (cv_bridge) StdoutLine: {'line': b"writing manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[2.134996] (cv_bridge) StdoutLine: {'line': b"reading manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[2.135110] (cv_bridge) StdoutLine: {'line': b"writing manifest file 'cv_bridge.egg-info/SOURCES.txt'\n"}
+[2.135222] (cv_bridge) StdoutLine: {'line': b'[ 25%] Built target ament_cmake_python_build_cv_bridge_egg\n'}
+[2.174937] (ldlidar_component) StderrLine: {'line': b'\x1b[0mCMake Error: The current CMakeCache.txt directory /home/hermes/Hermes/hermes_ws/build/ldlidar_component/CMakeCache.txt is different than the directory /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt\x1b[0m\n'}
+[2.175952] (ldlidar_component) StderrLine: {'line': b'\x1b[0mCMake Error: The source directory "/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component" does not exist.\n'}
+[2.176162] (ldlidar_component) StderrLine: {'line': b'Specify --help for usage, or press the help button on the CMake GUI.\x1b[0m\n'}
+[2.176312] (ldlidar_component) StderrLine: {'line': b'gmake: *** [Makefile:322: cmake_check_build_system] Error 1\n'}
+[2.183069] (image_geometry) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[2.183636] (image_geometry) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry.dir/src/stereo_camera_model.cpp.o\x1b[0m\n'}
+[2.183822] (image_geometry) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry.dir/src/pinhole_camera_model.cpp.o\x1b[0m\n'}
+[2.183977] (image_geometry) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[2.184117] (image_geometry) StdoutLine: {'line': b'[ 44%] Built target ament_cmake_python_copy_image_geometry\n'}
+[2.184252] (image_geometry) StdoutLine: {'line': b'running egg_info\n'}
+[2.184380] (image_geometry) StdoutLine: {'line': b'creating image_geometry.egg-info\n'}
+[2.184505] (image_geometry) StdoutLine: {'line': b'writing image_geometry.egg-info/PKG-INFO\n'}
+[2.184688] (image_geometry) StdoutLine: {'line': b'writing dependency_links to image_geometry.egg-info/dependency_links.txt\n'}
+[2.184814] (image_geometry) StdoutLine: {'line': b'writing top-level names to image_geometry.egg-info/top_level.txt\n'}
+[2.184931] (image_geometry) StdoutLine: {'line': b"writing manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[2.185049] (image_geometry) StdoutLine: {'line': b"reading manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[2.185163] (image_geometry) StdoutLine: {'line': b"writing manifest file 'image_geometry.egg-info/SOURCES.txt'\n"}
+[2.185274] (image_geometry) StdoutLine: {'line': b'[ 44%] Built target ament_cmake_python_build_image_geometry_egg\n'}
+[2.196264] (gps_publisher) JobProgress: {'identifier': 'gps_publisher', 'progress': 'cmake'}
+[2.196765] (gps_publisher) JobProgress: {'identifier': 'gps_publisher', 'progress': 'build'}
+[2.197325] (gps_publisher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hermes/Hermes/hermes_ws/build/gps_publisher', '--', '-j6', '-l6'], 'cwd': '/home/hermes/Hermes/hermes_ws/build/gps_publisher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'hermes'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/lib:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:'), ('HOME', '/home/hermes'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('SYSTEMD_EXEC_PID', '6475'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install:/home/hermes/Downloads/hermes/ros2_ws/src/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'hermes'), ('ONSHAPE_SECRET_KEY', 'rEU4dJJ9oXB8qVu8LGi4TkNxeVK'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/home/hermes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2668,unix/ubuntu:/tmp/.ICE-unix/2668'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/52a7211b_78b9_400d_ba35_9a95cd5222a7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/hermes/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '0'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/hermes'), ('AMENT_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hermes/Hermes/hermes_ws/build/gps_publisher'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('ONSHAPE_ACCESS_KEY', 'jfugJvvpZLptZWiDjhxsknLt'), ('GAZEBO_PLUGIN_PATH', ':/usr/lib/aarch64-linux-gnu/ign-gazebo-6/plugins'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg/lib/python3.10/site-packages:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ONSHAPE_API', 'https://cad.onshape.com'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_navigation:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_node:/home/hermes/Downloads/hermes/ros2_ws/src/install/ldlidar_component:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport:/home/hermes/Downloads/hermes/ros2_ws/src/install/ffmpeg_image_transport_msgs:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Downloads/hermes/ros2_ws/src/install/ros2_video_stream_pkg:/opt/ros/humble')]), 'shell': False}
+[2.216200] (-) TimerEvent: {}
+[2.247804] (ldlidar_component) CommandEnded: {'returncode': 2}
+[2.248979] (gps_publisher) StderrLine: {'line': b'\x1b[0mCMake Error: The current CMakeCache.txt directory /home/hermes/Hermes/hermes_ws/build/gps_publisher/CMakeCache.txt is different than the directory /home/aleksmalm/Hermes/hermes_ws/build/gps_publisher where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt\x1b[0m\n'}
+[2.296742] (gps_publisher) StderrLine: {'line': b'\x1b[0mCMake Error: The source directory "/home/aleksmalm/Hermes/hermes_ws/src/gps_publisher" does not exist.\n'}
+[2.297181] (gps_publisher) StderrLine: {'line': b'Specify --help for usage, or press the help button on the CMake GUI.\x1b[0m\n'}
+[2.312217] (gps_publisher) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[2.316392] (-) TimerEvent: {}
+[2.341312] (gps_publisher) CommandEnded: {'returncode': 2}
+[2.416596] (-) TimerEvent: {}
+[2.517321] (-) TimerEvent: {}
+[2.618613] (-) TimerEvent: {}
+[2.622914] (gps_publisher) JobEnded: {'identifier': 'gps_publisher', 'rc': 2}
+[2.667701] (ldlidar_component) JobEnded: {'identifier': 'ldlidar_component', 'rc': 'SIGINT'}
+[2.718836] (-) TimerEvent: {}
+[2.819798] (-) TimerEvent: {}
+[2.920837] (-) TimerEvent: {}
+[3.001331] (image_geometry) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[3.021023] (-) TimerEvent: {}
+[3.122100] (-) TimerEvent: {}
+[3.123187] (cv_bridge) StdoutLine: {'line': b'[ 31%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[3.182829] (image_geometry) StdoutLine: {'line': b'[ 55%] Built target gtest_main\n'}
+[3.222282] (-) TimerEvent: {}
+[3.323295] (-) TimerEvent: {}
+[3.356783] (cv_bridge) StdoutLine: {'line': b'[ 31%] Built target gtest_main\n'}
+[3.423480] (-) TimerEvent: {}
+[3.524507] (-) TimerEvent: {}
+[3.625340] (-) TimerEvent: {}
+[3.717327] (cameras) JobEnded: {'identifier': 'cameras', 'rc': 'SIGINT'}
+[3.725500] (-) TimerEvent: {}
+[3.826262] (-) TimerEvent: {}
+[3.910045] (cmd_vel) JobEnded: {'identifier': 'cmd_vel', 'rc': 'SIGINT'}
+[3.926461] (-) TimerEvent: {}
+[4.027364] (-) TimerEvent: {}
+[4.128504] (-) TimerEvent: {}
+[4.231112] (-) TimerEvent: {}
+[4.332157] (-) TimerEvent: {}
+[4.433254] (-) TimerEvent: {}
+[4.534066] (-) TimerEvent: {}
+[4.634845] (-) TimerEvent: {}
+[4.735927] (-) TimerEvent: {}
+[4.836717] (-) TimerEvent: {}
+[4.937472] (-) TimerEvent: {}
+[5.038288] (-) TimerEvent: {}
+[5.112352] (image_geometry) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libimage_geometry.so\x1b[0m\n'}
+[5.138483] (-) TimerEvent: {}
+[5.239508] (-) TimerEvent: {}
+[5.340317] (-) TimerEvent: {}
+[5.381094] (image_geometry) StdoutLine: {'line': b'[ 66%] Built target image_geometry\n'}
+[5.440496] (-) TimerEvent: {}
+[5.541234] (-) TimerEvent: {}
+[5.642223] (-) TimerEvent: {}
+[5.742951] (-) TimerEvent: {}
+[5.843711] (-) TimerEvent: {}
+[5.944486] (-) TimerEvent: {}
+[6.045761] (-) TimerEvent: {}
+[6.146499] (-) TimerEvent: {}
+[6.247281] (-) TimerEvent: {}
+[6.348002] (-) TimerEvent: {}
+[6.448722] (-) TimerEvent: {}
+[6.549464] (-) TimerEvent: {}
+[6.650215] (-) TimerEvent: {}
+[6.750923] (-) TimerEvent: {}
+[6.851655] (-) TimerEvent: {}
+[6.952368] (-) TimerEvent: {}
+[7.053120] (-) TimerEvent: {}
+[7.153833] (-) TimerEvent: {}
+[7.254550] (-) TimerEvent: {}
+[7.355252] (-) TimerEvent: {}
+[7.455994] (-) TimerEvent: {}
+[7.556721] (-) TimerEvent: {}
+[7.657434] (-) TimerEvent: {}
+[7.758113] (-) TimerEvent: {}
+[7.859117] (-) TimerEvent: {}
+[7.960075] (-) TimerEvent: {}
+[8.060824] (-) TimerEvent: {}
+[8.161551] (-) TimerEvent: {}
+[8.262256] (-) TimerEvent: {}
+[8.318610] (cv_bridge) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[8.362459] (-) TimerEvent: {}
+[8.442260] (cv_bridge) StdoutLine: {'line': b'[ 37%] Built target gtest\n'}
+[8.462620] (-) TimerEvent: {}
+[8.563300] (-) TimerEvent: {}
+[8.660378] (image_geometry) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[8.663382] (-) TimerEvent: {}
+[8.763944] (-) TimerEvent: {}
+[8.778314] (image_geometry) StdoutLine: {'line': b'[ 77%] Built target gtest\n'}
+[8.820146] (image_geometry) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/image_geometry-utest.dir/test/utest.cpp.o\x1b[0m\n'}
+[8.864123] (-) TimerEvent: {}
+[8.964825] (-) TimerEvent: {}
+[9.065492] (-) TimerEvent: {}
+[9.166153] (-) TimerEvent: {}
+[9.266821] (-) TimerEvent: {}
+[9.367502] (-) TimerEvent: {}
+[9.468173] (-) TimerEvent: {}
+[9.568918] (-) TimerEvent: {}
+[9.669600] (-) TimerEvent: {}
+[9.770284] (-) TimerEvent: {}
+[9.870971] (-) TimerEvent: {}
+[9.971633] (-) TimerEvent: {}
+[10.072296] (-) TimerEvent: {}
+[10.173006] (-) TimerEvent: {}
+[10.273677] (-) TimerEvent: {}
+[10.374349] (-) TimerEvent: {}
+[10.475029] (-) TimerEvent: {}
+[10.575725] (-) TimerEvent: {}
+[10.676398] (-) TimerEvent: {}
+[10.777135] (-) TimerEvent: {}
+[10.877822] (-) TimerEvent: {}
+[10.978484] (-) TimerEvent: {}
+[11.079191] (-) TimerEvent: {}
+[11.179900] (-) TimerEvent: {}
+[11.280641] (-) TimerEvent: {}
+[11.381355] (-) TimerEvent: {}
+[11.482065] (-) TimerEvent: {}
+[11.555331] (cv_bridge) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libcv_bridge.so\x1b[0m\n'}
+[11.582259] (-) TimerEvent: {}
+[11.682965] (-) TimerEvent: {}
+[11.783677] (-) TimerEvent: {}
+[11.884386] (-) TimerEvent: {}
+[11.908302] (cv_bridge) StdoutLine: {'line': b'[ 43%] Built target cv_bridge\n'}
+[11.953075] (cv_bridge) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o\x1b[0m\n'}
+[11.953640] (cv_bridge) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv3.cpp.o\x1b[0m\n'}
+[11.953982] (cv_bridge) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o\x1b[0m\n'}
+[11.955659] (cv_bridge) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o\x1b[0m\n'}
+[11.957913] (cv_bridge) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o\x1b[0m\n'}
+[11.971126] (cv_bridge) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o\x1b[0m\n'}
+[11.984670] (-) TimerEvent: {}
+[12.085645] (-) TimerEvent: {}
+[12.186691] (-) TimerEvent: {}
+[12.287734] (-) TimerEvent: {}
+[12.388789] (-) TimerEvent: {}
+[12.489825] (-) TimerEvent: {}
+[12.590558] (-) TimerEvent: {}
+[12.635294] (image_geometry) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable image_geometry-utest\x1b[0m\n'}
+[12.690780] (-) TimerEvent: {}
+[12.791522] (-) TimerEvent: {}
+[12.892275] (-) TimerEvent: {}
+[12.993055] (-) TimerEvent: {}
+[13.093808] (-) TimerEvent: {}
+[13.194583] (-) TimerEvent: {}
+[13.295347] (-) TimerEvent: {}
+[13.307452] (image_geometry) StdoutLine: {'line': b'[100%] Built target image_geometry-utest\n'}
+[13.335051] (image_geometry) JobEnded: {'identifier': 'image_geometry', 'rc': 'SIGINT'}
+[13.395530] (-) TimerEvent: {}
+[13.496222] (-) TimerEvent: {}
+[13.596968] (-) TimerEvent: {}
+[13.697704] (-) TimerEvent: {}
+[13.798433] (-) TimerEvent: {}
+[13.899185] (-) TimerEvent: {}
+[13.999917] (-) TimerEvent: {}
+[14.100692] (-) TimerEvent: {}
+[14.201423] (-) TimerEvent: {}
+[14.302196] (-) TimerEvent: {}
+[14.402945] (-) TimerEvent: {}
+[14.503775] (-) TimerEvent: {}
+[14.604532] (-) TimerEvent: {}
+[14.705409] (-) TimerEvent: {}
+[14.806176] (-) TimerEvent: {}
+[14.906985] (-) TimerEvent: {}
+[15.007784] (-) TimerEvent: {}
+[15.108630] (-) TimerEvent: {}
+[15.209403] (-) TimerEvent: {}
+[15.310189] (-) TimerEvent: {}
+[15.410975] (-) TimerEvent: {}
+[15.512680] (-) TimerEvent: {}
+[15.613404] (-) TimerEvent: {}
+[15.628428] (cv_bridge) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o\x1b[0m\n'}
+[15.713607] (-) TimerEvent: {}
+[15.814350] (-) TimerEvent: {}
+[15.915063] (-) TimerEvent: {}
+[16.015781] (-) TimerEvent: {}
+[16.116494] (-) TimerEvent: {}
+[16.217276] (-) TimerEvent: {}
+[16.318002] (-) TimerEvent: {}
+[16.418787] (-) TimerEvent: {}
+[16.520006] (-) TimerEvent: {}
+[16.620701] (-) TimerEvent: {}
+[16.721401] (-) TimerEvent: {}
+[16.822127] (-) TimerEvent: {}
+[16.922866] (-) TimerEvent: {}
+[17.023595] (-) TimerEvent: {}
+[17.124330] (-) TimerEvent: {}
+[17.225111] (-) TimerEvent: {}
+[17.325839] (-) TimerEvent: {}
+[17.426569] (-) TimerEvent: {}
+[17.527318] (-) TimerEvent: {}
+[17.628027] (-) TimerEvent: {}
+[17.728723] (-) TimerEvent: {}
+[17.829444] (-) TimerEvent: {}
+[17.930158] (-) TimerEvent: {}
+[18.030873] (-) TimerEvent: {}
+[18.131561] (-) TimerEvent: {}
+[18.232265] (-) TimerEvent: {}
+[18.333000] (-) TimerEvent: {}
+[18.433699] (-) TimerEvent: {}
+[18.534397] (-) TimerEvent: {}
+[18.635102] (-) TimerEvent: {}
+[18.735809] (-) TimerEvent: {}
+[18.836502] (-) TimerEvent: {}
+[18.937217] (-) TimerEvent: {}
+[19.037909] (-) TimerEvent: {}
+[19.138654] (-) TimerEvent: {}
+[19.239423] (-) TimerEvent: {}
+[19.340138] (-) TimerEvent: {}
+[19.440830] (-) TimerEvent: {}
+[19.541503] (-) TimerEvent: {}
+[19.642170] (-) TimerEvent: {}
+[19.697516] (cv_bridge) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared module boost/cv_bridge_boost.so\x1b[0m\n'}
+[19.742357] (-) TimerEvent: {}
+[19.843057] (-) TimerEvent: {}
+[19.941839] (cv_bridge) StdoutLine: {'line': b'[ 93%] Built target cv_bridge_boost\n'}
+[19.943111] (-) TimerEvent: {}
+[20.043591] (-) TimerEvent: {}
+[20.144254] (-) TimerEvent: {}
+[20.244957] (-) TimerEvent: {}
+[20.345660] (-) TimerEvent: {}
+[20.446365] (-) TimerEvent: {}
+[20.547056] (-) TimerEvent: {}
+[20.647744] (-) TimerEvent: {}
+[20.723408] (cv_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cv_bridge-utest\x1b[0m\n'}
+[20.747923] (-) TimerEvent: {}
+[20.848664] (-) TimerEvent: {}
+[20.949370] (-) TimerEvent: {}
+[21.050042] (-) TimerEvent: {}
+[21.150728] (-) TimerEvent: {}
+[21.151468] (cv_bridge) StdoutLine: {'line': b'[100%] Built target cv_bridge-utest\n'}
+[21.179707] (cv_bridge) JobEnded: {'identifier': 'cv_bridge', 'rc': 'SIGINT'}
+[21.183053] (hermes_interfaces) JobSkipped: {'identifier': 'hermes_interfaces'}
+[21.183307] (hermes_navigation) JobSkipped: {'identifier': 'hermes_navigation'}
+[21.183455] (hermes_urdf) JobSkipped: {'identifier': 'hermes_urdf'}
+[21.183537] (imu_publisher) JobSkipped: {'identifier': 'imu_publisher'}
+[21.183608] (odometry) JobSkipped: {'identifier': 'odometry'}
+[21.183676] (teleop_control) JobSkipped: {'identifier': 'teleop_control'}
+[21.183742] (tof_publisher) JobSkipped: {'identifier': 'tof_publisher'}
+[21.183808] (ldlidar_node) JobSkipped: {'identifier': 'ldlidar_node'}
+[21.183872] (opencv_tests) JobSkipped: {'identifier': 'opencv_tests'}
+[21.183934] (vision_opencv) JobSkipped: {'identifier': 'vision_opencv'}
+[21.183996] (ldlidar) JobSkipped: {'identifier': 'ldlidar'}
+[21.184062] (-) EventReactorShutdown: {}
