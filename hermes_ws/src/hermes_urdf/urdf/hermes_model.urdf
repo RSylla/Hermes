@@ -210,7 +210,10 @@
    
     <gazebo>
         <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
-
+		
+		
+	    	
+		
             <!-- Wheel Information -->
             <left_joint>base_front_right_wheel_joint</left_joint>
             <right_joint>base_front_left_wheel_joint</right_joint>
@@ -221,12 +224,11 @@
             <!-- Limits -->
             <max_wheel_torque>30</max_wheel_torque>
             <max_wheel_acceleration>5.0</max_wheel_acceleration>
-
+	    <command_topic>cmd_vel</command_topic>
             
             <!-- Output -->
             <odometry_frame>odom</odometry_frame>
-            <robot_base_frame>base_joint</robot_base_frame>
-
+	    <robot_base_frame>base_footprint</robot_base_frame>
             <publish_odom>true</publish_odom>
             <publish_odom_tf>true</publish_odom_tf>
             <publish_wheel_tf>true</publish_wheel_tf>
@@ -234,6 +236,56 @@
 
         </plugin>
     </gazebo>
+    
+    <joint name="gps_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="gps_link"/>
+        <origin xyz="1.039666598485702087 -0.0073333696901138160917 0.99755675209036465123" rpy="0 0 0"/>
+    </joint>
+
+    <link name="gps_link">
+    	
+    	<collision>
+        	<origin xyz="1.039666598485702087 -0.0073333696901138160917 0.99755675209036465123" rpy="0 0 0"/>
+        	<geometry>
+            		<box size="0.1 0.1 0.1"/>
+        	</geometry>
+    	</collision>
+    </link>
+
+    <gazebo reference="gps_link">
+        <material>Gazebo/Orange</material>
+
+        <sensor name="gps" type="gps">
+          <always_on>true</always_on>
+          <update_rate>1</update_rate>
+          <pose>0 0 0 0 0 0</pose>
+          <gps>
+            <position_sensing>
+              <horizontal>
+                <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>0.01</stddev>
+                </noise>
+              </horizontal>
+              <vertical>
+                <noise type="gaussian">
+                  <mean>0.0</mean>
+                  <stddev>0.01</stddev>
+                </noise>
+              </vertical>
+            </position_sensing>
+          </gps>
+          <plugin name="gps_plugin" filename="libgazebo_ros_gps_sensor.so">
+            <ros>
+              <remapping>~/out:=/gps/fix</remapping>
+            </ros>
+          </plugin>
+        </sensor>
+
+
+    </gazebo>
+    
 </robot>
 
 

@@ -46,6 +46,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hermes_urdf" TYPE DIRECTORY FILES
     "/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/launch"
     "/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf"
+    "/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/params"
+    "/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/custom_ground_plane"
+    "/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/historical_launch_files"
     )
 endif()
 

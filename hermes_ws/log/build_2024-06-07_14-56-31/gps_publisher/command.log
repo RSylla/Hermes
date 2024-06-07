@@ -1,0 +1,3 @@
+Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/gps_publisher': /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/gps_publisher -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/gps_publisher
+Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/gps_publisher' returned '0': /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/gps_publisher -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/gps_publisher
+Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/gps_publisher': /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/gps_publisher -- -j12 -l12

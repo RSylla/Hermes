@@ -1,10 +1,11 @@
 import os
+import xacro
 
 from ament_index_python.packages import get_package_share_directory
 
 
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 from launch_ros.actions import Node
@@ -15,11 +16,15 @@ def generate_launch_description():
 
     package_name='hermes_urdf' 
 
+    
+
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
                 )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'true'}.items()
     )
+    
+    
 
     #joystick = IncludeLaunchDescription(
     #            PythonLaunchDescriptionSource([os.path.join(
@@ -80,7 +85,7 @@ def generate_launch_description():
     #
     # Replace the diff_drive_spawner in the final return with delayed_diff_drive_spawner
 
-    plane_model_path = os.path.join(get_package_share_directory(package_name), 'models', 'my_plane', 'model.sdf')
+    plane_model_path = os.path.join(get_package_share_directory(package_name),'urdf', 'my_world.sdf')
 
     # Command to spawn the plane model
     spawn_plane = ExecuteProcess(
@@ -99,4 +104,5 @@ def generate_launch_description():
         #diff_drive_spawner,
         #joint_broad_spawner,
         spawn_plane,
+
     ])

@@ -1,0 +1,25 @@
+[0.369s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf': /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf
+[1.313s] -- The C compiler identification is GNU 11.4.0
+[1.313s] -- The CXX compiler identification is GNU 11.4.0
+[1.313s] -- Detecting C compiler ABI info
+[1.313s] -- Detecting C compiler ABI info - done
+[1.313s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.313s] -- Detecting C compile features
+[1.313s] -- Detecting C compile features - done
+[1.313s] -- Detecting CXX compiler ABI info
+[1.313s] -- Detecting CXX compiler ABI info - done
+[1.313s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.314s] -- Detecting CXX compile features
+[1.314s] -- Detecting CXX compile features - done
+[1.314s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.314s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.314s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.315s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.315s] -- Added test 'lint_cmake' to check CMake code style
+[1.315s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.315s] -- Added test 'xmllint' to check XML markup files
+[1.315s] -- Configuring done
+[1.315s] -- Generating done
+[1.315s] -- Build files have been written to: /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf
+[1.318s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf' returned '0': /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf
+[1.319s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf': /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf -- -j12 -l12

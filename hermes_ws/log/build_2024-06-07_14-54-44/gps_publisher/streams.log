@@ -1,0 +1,2 @@
+[0.344s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/gps_publisher': /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/gps_publisher -- -j12 -l12
+[1.124s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/gps_publisher' returned '0': /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/gps_publisher -- -j12 -l12
