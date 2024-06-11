@@ -1,0 +1,50 @@
+[0.037s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component
+[1.157s] --  * Release Mode
+[1.157s] -- * Found ROS2 humble
+[1.157s] -- * ROS2 humble is officially supported by this package.
+[1.157s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.157s] -- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.157s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.157s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.157s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.157s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.157s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.157s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.157s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.157s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.157s] -- Found rclcpp_components: 16.0.9 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.157s] -- Found nav2_util: 1.1.15 (/opt/ros/humble/share/nav2_util/cmake)
+[1.157s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.157s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.157s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.158s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.158s] -- Found diagnostic_msgs: 4.2.4 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[1.158s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[1.603s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.685s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.687s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.688s] -- Configured cppcheck include dirs: /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/include;/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/tools/include;/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/component/include;/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/core;/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/dataprocess;/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/filter;/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/logger;/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/networkcom;/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/serialcom
+[1.688s] -- Configured cppcheck exclude dirs and/or files: 
+[1.691s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.691s] -- Configured cpplint exclude dirs and/or files: 
+[1.692s] -- Added test 'lint_cmake' to check CMake code style
+[1.695s] -- Added test 'uncrustify' to check C / C++ code style
+[1.695s] -- Configured uncrustify additional arguments: 
+[1.695s] -- Added test 'xmllint' to check XML markup files
+[1.698s] -- Configuring done
+[1.725s] -- Generating done
+[1.726s] -- Build files have been written to: /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component
+[1.745s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component
+[1.746s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component -- -j12 -l12
+[1.798s] [ 20%] [32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/filter/tofbf.cpp.o[0m
+[1.798s] [ 20%] [32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/dataprocess/lipkg.cpp.o[0m
+[1.800s] [ 30%] [32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/logger/log_module.cpp.o[0m
+[1.804s] [ 40%] [32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/core/ldlidar_driver.cpp.o[0m
+[1.808s] [ 50%] [32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/networkcom/network_socket_interface_linux.cpp.o[0m
+[1.810s] [ 60%] [32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/serialcom/serial_interface_linux.cpp.o[0m
+[2.592s] [ 70%] [32m[1mLinking CXX static library libldlidar.a[0m
+[2.613s] [ 70%] Built target ldlidar
+[2.626s] [ 90%] [32mBuilding CXX object CMakeFiles/ldlidar_component.dir/tools/src/ldlidar_tools.cpp.o[0m
+[2.626s] [ 90%] [32mBuilding CXX object CMakeFiles/ldlidar_component.dir/component/src/ldlidar_component.cpp.o[0m
+[7.794s] [100%] [32m[1mLinking CXX shared library libldlidar_component.so[0m
+[7.916s] [100%] Built target ldlidar_component

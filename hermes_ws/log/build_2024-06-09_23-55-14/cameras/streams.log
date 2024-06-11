@@ -1,0 +1,43 @@
+[1.589s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/src/cameras': PYTHONPATH=/home/aleksmalm/Hermes/hermes_ws/build/cameras/prefix_override:/home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cameras build --build-base /home/aleksmalm/Hermes/hermes_ws/build/cameras/build install --record /home/aleksmalm/Hermes/hermes_ws/build/cameras/install.log --single-version-externally-managed install_data
+[1.840s] running egg_info
+[1.840s] creating ../../build/cameras/cameras.egg-info
+[1.841s] writing ../../build/cameras/cameras.egg-info/PKG-INFO
+[1.841s] writing dependency_links to ../../build/cameras/cameras.egg-info/dependency_links.txt
+[1.841s] writing entry points to ../../build/cameras/cameras.egg-info/entry_points.txt
+[1.841s] writing requirements to ../../build/cameras/cameras.egg-info/requires.txt
+[1.841s] writing top-level names to ../../build/cameras/cameras.egg-info/top_level.txt
+[1.841s] writing manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+[1.843s] reading manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+[1.843s] adding license file 'LICENSE'
+[1.844s] writing manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+[1.844s] running build
+[1.844s] running build_py
+[1.844s] creating /home/aleksmalm/Hermes/hermes_ws/build/cameras/build
+[1.844s] creating /home/aleksmalm/Hermes/hermes_ws/build/cameras/build/lib
+[1.844s] creating /home/aleksmalm/Hermes/hermes_ws/build/cameras/build/lib/cameras
+[1.845s] copying cameras/__init__.py -> /home/aleksmalm/Hermes/hermes_ws/build/cameras/build/lib/cameras
+[1.845s] copying cameras/cam2.py -> /home/aleksmalm/Hermes/hermes_ws/build/cameras/build/lib/cameras
+[1.845s] copying cameras/cameras_node.py -> /home/aleksmalm/Hermes/hermes_ws/build/cameras/build/lib/cameras
+[1.845s] copying cameras/realsense.py -> /home/aleksmalm/Hermes/hermes_ws/build/cameras/build/lib/cameras
+[1.845s] running install
+[1.845s] running install_lib
+[1.846s] creating /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras
+[1.846s] copying /home/aleksmalm/Hermes/hermes_ws/build/cameras/build/lib/cameras/__init__.py -> /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras
+[1.846s] copying /home/aleksmalm/Hermes/hermes_ws/build/cameras/build/lib/cameras/cam2.py -> /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras
+[1.846s] copying /home/aleksmalm/Hermes/hermes_ws/build/cameras/build/lib/cameras/cameras_node.py -> /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras
+[1.846s] copying /home/aleksmalm/Hermes/hermes_ws/build/cameras/build/lib/cameras/realsense.py -> /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras
+[1.847s] byte-compiling /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras/__init__.py to __init__.cpython-310.pyc
+[1.847s] byte-compiling /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras/cam2.py to cam2.cpython-310.pyc
+[1.847s] byte-compiling /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras/cameras_node.py to cameras_node.cpython-310.pyc
+[1.848s] byte-compiling /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras/realsense.py to realsense.cpython-310.pyc
+[1.848s] running install_data
+[1.848s] creating /home/aleksmalm/Hermes/hermes_ws/install/cameras/share/ament_index
+[1.848s] creating /home/aleksmalm/Hermes/hermes_ws/install/cameras/share/ament_index/resource_index
+[1.848s] creating /home/aleksmalm/Hermes/hermes_ws/install/cameras/share/ament_index/resource_index/packages
+[1.849s] copying resource/cameras -> /home/aleksmalm/Hermes/hermes_ws/install/cameras/share/ament_index/resource_index/packages
+[1.849s] copying package.xml -> /home/aleksmalm/Hermes/hermes_ws/install/cameras/share/cameras
+[1.849s] running install_egg_info
+[1.850s] Copying ../../build/cameras/cameras.egg-info to /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras-0.0.0-py3.10.egg-info
+[1.851s] running install_scripts
+[1.870s] Installing cameras_node script to /home/aleksmalm/Hermes/hermes_ws/install/cameras/lib/cameras
+[1.870s] writing list of installed files to '/home/aleksmalm/Hermes/hermes_ws/build/cameras/install.log'

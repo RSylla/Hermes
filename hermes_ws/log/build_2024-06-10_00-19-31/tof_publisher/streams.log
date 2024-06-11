@@ -1,0 +1,39 @@
+[0.882s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/src/tof_publisher': PYTHONPATH=/home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/prefix_override:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tof_publisher build --build-base /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/build install --record /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/install.log --install-scripts $base/lib/tof_publisher --single-version-externally-managed install_data
+[1.081s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.081s]   warnings.warn(
+[1.086s] running egg_info
+[1.086s] creating ../../build/tof_publisher/tof_publisher.egg-info
+[1.086s] writing ../../build/tof_publisher/tof_publisher.egg-info/PKG-INFO
+[1.086s] writing dependency_links to ../../build/tof_publisher/tof_publisher.egg-info/dependency_links.txt
+[1.087s] writing entry points to ../../build/tof_publisher/tof_publisher.egg-info/entry_points.txt
+[1.087s] writing requirements to ../../build/tof_publisher/tof_publisher.egg-info/requires.txt
+[1.087s] writing top-level names to ../../build/tof_publisher/tof_publisher.egg-info/top_level.txt
+[1.087s] writing manifest file '../../build/tof_publisher/tof_publisher.egg-info/SOURCES.txt'
+[1.088s] reading manifest file '../../build/tof_publisher/tof_publisher.egg-info/SOURCES.txt'
+[1.089s] writing manifest file '../../build/tof_publisher/tof_publisher.egg-info/SOURCES.txt'
+[1.089s] running build
+[1.089s] running build_py
+[1.089s] creating /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/build
+[1.089s] creating /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/build/lib
+[1.089s] creating /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/build/lib/tof_publisher
+[1.089s] copying tof_publisher/__init__.py -> /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/build/lib/tof_publisher
+[1.089s] copying tof_publisher/tof_data.py -> /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/build/lib/tof_publisher
+[1.090s] running install
+[1.090s] running install_lib
+[1.090s] creating /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages/tof_publisher
+[1.090s] copying /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/build/lib/tof_publisher/__init__.py -> /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages/tof_publisher
+[1.090s] copying /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/build/lib/tof_publisher/tof_data.py -> /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages/tof_publisher
+[1.091s] byte-compiling /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages/tof_publisher/__init__.py to __init__.cpython-310.pyc
+[1.091s] byte-compiling /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages/tof_publisher/tof_data.py to tof_data.cpython-310.pyc
+[1.091s] running install_data
+[1.091s] creating /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/share/ament_index
+[1.091s] creating /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/share/ament_index/resource_index
+[1.091s] creating /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/share/ament_index/resource_index/packages
+[1.092s] copying resource/tof_publisher -> /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/share/ament_index/resource_index/packages
+[1.092s] copying package.xml -> /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/share/tof_publisher
+[1.092s] running install_egg_info
+[1.093s] Copying ../../build/tof_publisher/tof_publisher.egg-info to /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages/tof_publisher-0.0.0-py3.10.egg-info
+[1.093s] running install_scripts
+[1.107s] Installing tof_data script to /home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/lib/tof_publisher
+[1.107s] writing list of installed files to '/home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/install.log'
+[1.123s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/src/tof_publisher' returned '0': PYTHONPATH=/home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/prefix_override:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tof_publisher build --build-base /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/build install --record /home/aleksmalm/Hermes/hermes_ws/build/tof_publisher/install.log --install-scripts $base/lib/tof_publisher --single-version-externally-managed install_data

@@ -1,0 +1,21 @@
+[1.717s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/src/imu_publisher': PYTHONPATH=/home/aleksmalm/Hermes/hermes_ws/build/imu_publisher/prefix_override:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /home/aleksmalm/Hermes/hermes_ws/build/imu_publisher/build install --record /home/aleksmalm/Hermes/hermes_ws/build/imu_publisher/install.log --single-version-externally-managed install_data
+[1.989s] running egg_info
+[1.990s] writing ../../build/imu_publisher/imu_publisher.egg-info/PKG-INFO
+[1.990s] writing dependency_links to ../../build/imu_publisher/imu_publisher.egg-info/dependency_links.txt
+[1.990s] writing entry points to ../../build/imu_publisher/imu_publisher.egg-info/entry_points.txt
+[1.991s] writing requirements to ../../build/imu_publisher/imu_publisher.egg-info/requires.txt
+[1.991s] writing top-level names to ../../build/imu_publisher/imu_publisher.egg-info/top_level.txt
+[1.993s] reading manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[1.994s] adding license file 'LICENSE'
+[1.995s] writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[1.995s] running build
+[1.995s] running build_py
+[1.995s] running install
+[1.996s] running install_lib
+[1.998s] running install_data
+[1.998s] running install_egg_info
+[2.000s] removing '/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[2.001s] Copying ../../build/imu_publisher/imu_publisher.egg-info to /home/aleksmalm/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info
+[2.002s] running install_scripts
+[2.031s] Installing imu_publisher_node script to /home/aleksmalm/Hermes/hermes_ws/install/imu_publisher/lib/imu_publisher
+[2.032s] writing list of installed files to '/home/aleksmalm/Hermes/hermes_ws/build/imu_publisher/install.log'

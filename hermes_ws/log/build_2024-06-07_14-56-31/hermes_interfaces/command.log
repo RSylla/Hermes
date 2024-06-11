@@ -1,2 +1,0 @@
-Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces': /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/hermes_interfaces -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces
-Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces' returned '1': /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/hermes_interfaces -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces

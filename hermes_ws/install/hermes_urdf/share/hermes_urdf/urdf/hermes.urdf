@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<robot name="hermes">
+
+    <material name="grey">
+        <color rgba="0.7 0.7 0.7 1"/>
+    </material>
+
+    <material name= "ld19 color">
+        <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+    </material>
+
+    <link name="base_footprint"/>
+    
+    <link name="base_link">
+        <visual>
+            <origin xyz="0.50575420423148409466 -0.0071774303769972201683 0.60255675209035008955" rpy="7.940934590483602961e-23 -1.4644253098708242934e-15 1.55431223447518563e-15" />
+            <geometry>
+                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/kere.stl"/>
+            </geometry>
+            <material name="kere_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <link name="ld19">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/ld19.stl"/>
+            </geometry>
+            <material name="ld19_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="base_lidar_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="ld19"/>
+        <origin xyz="1.039666598485702087 -0.0073333696901138160917 0.99755675209036465123" rpy="1.4644253098708029941e-15 7.9409344339936499792e-23 -1.5707963267948970021" />
+
+    </joint>
+
+    <link name= "rear_right_wheel">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+            </geometry>
+            <material name="rehv1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name= "base_rear_right_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="rear_right_wheel"/>
+        <origin xyz="0.066534204231474658453 -0.21467743037699693609 0.61255675209034976536" rpy="3.3611923249190478047e-30 -1.8665624601511304194e-15 5.6898930012037971076e-16" />
+        <axis xyz="0 1 0"/>
+    </joint>
+
+    <link name= "front_left_wheel">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+            </geometry>
+            <material name="rehv1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="base_front_left_wheel_joint" type="continuous">
+        <parent link="liigend"/>
+        <child link="front_left_wheel"/>
+        <origin xyz="0.9483341292917480958 0.29532256962300351688 0.60755675209035853168" rpy="-5.7841602488177229343e-14 1.5707963267948958919 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <link name= "rear_left_wheel">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+            </geometry>
+            <material name="rehv1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="base_rear_left_wheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="rear_left_wheel"/>
+        <origin xyz="0.06653420423147499152 0.25032256962300086789 0.61255675209034965434" rpy="3.141592653589793116 1.8665624601511276584e-15 -3.1415926535897926719" />
+        <axis xyz="0 1 0" />
+    </joint>
+    
+    <link name= "front_right_wheel">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/rehv.stl"/>
+            </geometry>
+            <material name="rehv1_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="base_front_right_wheel_joint" type="continuous">
+        <parent link="liigend"/>
+        <child link="front_right_wheel"/>
+        <origin xyz="0.9483341292917799592 -0.2596774303769966985 0.6075567520903586427" rpy="-6.1350056294378907142e-22 -2.2686993105950812583e-15 5.7620574978045523474e-14" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <link name= "liigend">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="file:/home/hermes/Hermes/hermes_ws/src/hermes_urdf/urdf/liigend.stl"/>
+            </geometry>
+            <material name="liigend_material">
+                <color rgba="0.61568627450980395466 0.81176470588235294379 0.92941176470588238168 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name= "liigend_to_kere_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="liigend"/>
+        <origin xyz="0.9483341292917655263 -0.0071774303769965852595 0.6075567520903586427" rpy="2.2686993105948162011e-15 -6.1350116673315255536e-22 -1.5707963267948390484" />
+        <axis xyz="0 0 1"/>
+    </joint>
+    
+    <joint name="base_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    
+    
+
+</robot>
+
+    

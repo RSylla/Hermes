@@ -1,0 +1,55 @@
+[0.750s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/rlbd_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/rlbd_gazebo -- -j12 -l12
+[0.807s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/rlbd_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/rlbd_gazebo -- -j12 -l12
+[0.843s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/rlbd_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/aleksmalm/Hermes/hermes_ws/build/rlbd_gazebo
+[0.865s] -- Install configuration: ""
+[0.865s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//config
+[0.865s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//config/twist_mux.yaml
+[0.865s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//config/gazebo_params.yaml
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//launch
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//launch/black_donut_sim_ros2_control.launch.py
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//launch/mapviz.launch.py
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//launch/controller_spawner.launch.py
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//launch/sim_ros2_control.launch.py
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//rviz2
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//rviz2/display.rviz
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//rviz2/slam.rviz
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//rviz2/nav2_default_view.rviz
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//rviz2/nav2_namespaced_view.rviz
+[0.866s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//rviz2/odom_fix.rviz
+[0.867s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//rviz2/rtabmap_test.rviz
+[0.867s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds
+[0.867s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/hospital_3_floors.world
+[0.867s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/lawn.world
+[0.867s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/office.world
+[0.867s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/distribution_center.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/hospital_2_floors.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/factory.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/hospital.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/custom.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/sonoma_raceway.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/neighborhood.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/office_small.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/car.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/cafe.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/basic.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/warehouse.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/inventory.world
+[0.868s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/farm.world
+[0.869s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/world_only.model
+[0.869s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo//worlds/house.world
+[0.869s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/ament_index/resource_index/package_run_dependencies/rlbd_gazebo
+[0.869s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/ament_index/resource_index/parent_prefix_path/rlbd_gazebo
+[0.869s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/environment/ament_prefix_path.sh
+[0.869s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/environment/ament_prefix_path.dsv
+[0.869s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/environment/path.sh
+[0.869s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/environment/path.dsv
+[0.869s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/local_setup.bash
+[0.869s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/local_setup.sh
+[0.870s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/local_setup.zsh
+[0.870s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/local_setup.dsv
+[0.870s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/package.dsv
+[0.870s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/ament_index/resource_index/packages/rlbd_gazebo
+[0.870s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/cmake/rlbd_gazeboConfig.cmake
+[0.870s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/cmake/rlbd_gazeboConfig-version.cmake
+[0.870s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_gazebo/share/rlbd_gazebo/package.xml
+[0.903s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/rlbd_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/aleksmalm/Hermes/hermes_ws/build/rlbd_gazebo

@@ -1,0 +1,22 @@
+[1.294s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/src/loc_diff/nav2_gps_waypoint_follower_demo': PYTHONPATH=/home/aleksmalm/Hermes/hermes_ws/build/nav2_gps_waypoint_follower_demo/prefix_override:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/nav2_gps_waypoint_follower_demo build --build-base /home/aleksmalm/Hermes/hermes_ws/build/nav2_gps_waypoint_follower_demo/build install --record /home/aleksmalm/Hermes/hermes_ws/build/nav2_gps_waypoint_follower_demo/install.log --single-version-externally-managed install_data
+[1.544s] running egg_info
+[1.544s] writing ../../../build/nav2_gps_waypoint_follower_demo/nav2_gps_waypoint_follower_demo.egg-info/PKG-INFO
+[1.545s] writing dependency_links to ../../../build/nav2_gps_waypoint_follower_demo/nav2_gps_waypoint_follower_demo.egg-info/dependency_links.txt
+[1.545s] writing entry points to ../../../build/nav2_gps_waypoint_follower_demo/nav2_gps_waypoint_follower_demo.egg-info/entry_points.txt
+[1.545s] writing requirements to ../../../build/nav2_gps_waypoint_follower_demo/nav2_gps_waypoint_follower_demo.egg-info/requires.txt
+[1.545s] writing top-level names to ../../../build/nav2_gps_waypoint_follower_demo/nav2_gps_waypoint_follower_demo.egg-info/top_level.txt
+[1.547s] reading manifest file '../../../build/nav2_gps_waypoint_follower_demo/nav2_gps_waypoint_follower_demo.egg-info/SOURCES.txt'
+[1.548s] writing manifest file '../../../build/nav2_gps_waypoint_follower_demo/nav2_gps_waypoint_follower_demo.egg-info/SOURCES.txt'
+[1.548s] running build
+[1.549s] running build_py
+[1.549s] running install
+[1.549s] running install_lib
+[1.551s] running install_data
+[1.551s] running install_egg_info
+[1.553s] removing '/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo/lib/python3.10/site-packages/nav2_gps_waypoint_follower_demo-0.0.1-py3.10.egg-info' (and everything under it)
+[1.553s] Copying ../../../build/nav2_gps_waypoint_follower_demo/nav2_gps_waypoint_follower_demo.egg-info to /home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo/lib/python3.10/site-packages/nav2_gps_waypoint_follower_demo-0.0.1-py3.10.egg-info
+[1.554s] running install_scripts
+[1.576s] Installing gps_waypoint_logger script to /home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo/lib/nav2_gps_waypoint_follower_demo
+[1.577s] Installing interactive_waypoint_follower script to /home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo/lib/nav2_gps_waypoint_follower_demo
+[1.577s] Installing logged_waypoint_follower script to /home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo/lib/nav2_gps_waypoint_follower_demo
+[1.577s] writing list of installed files to '/home/aleksmalm/Hermes/hermes_ws/build/nav2_gps_waypoint_follower_demo/install.log'

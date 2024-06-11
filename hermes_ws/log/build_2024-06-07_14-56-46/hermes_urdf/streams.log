@@ -1,2 +1,0 @@
-[0.366s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf': /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf -- -j12 -l12
-[1.148s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf' returned '0': /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf -- -j12 -l12

@@ -1,0 +1,4 @@
+source;share/rlnav2/local_setup.bash
+source;share/rlnav2/local_setup.dsv
+source;share/rlnav2/local_setup.sh
+source;share/rlnav2/local_setup.zsh

@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/hermes_nav/hermes_nav.egg-info/PKG-INFO
+writing dependency_links to ../../build/hermes_nav/hermes_nav.egg-info/dependency_links.txt
+writing entry points to ../../build/hermes_nav/hermes_nav.egg-info/entry_points.txt
+writing requirements to ../../build/hermes_nav/hermes_nav.egg-info/requires.txt
+writing top-level names to ../../build/hermes_nav/hermes_nav.egg-info/top_level.txt
+reading manifest file '../../build/hermes_nav/hermes_nav.egg-info/SOURCES.txt'
+writing manifest file '../../build/hermes_nav/hermes_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+creating /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+copying launch/launch_sim.launch.py -> /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+copying launch/mapviz.launch.py -> /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+copying launch/rsp.launch.py -> /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+copying launch/gazebo_gps_world_hermes.launch.py -> /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+copying launch/dual_ekf_navsat.launch.py -> /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+copying launch/gps_waypoint_follower.launch.py -> /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+running install_egg_info
+removing '/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/hermes_nav/hermes_nav.egg-info to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav-0.0.0-py3.10.egg-info
+running install_scripts
+Installing gps_waypoint_logger script to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+Installing interactive_waypoint_follower script to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+Installing logged_waypoint_follower script to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+writing list of installed files to '/home/aleksmalm/Hermes/hermes_ws/build/hermes_nav/install.log'

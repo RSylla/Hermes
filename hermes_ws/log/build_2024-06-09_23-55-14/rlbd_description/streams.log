@@ -1,0 +1,25 @@
+[0.916s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/rlbd_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/loc_diff/description -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/rlbd_description
+[0.962s] -- The C compiler identification is GNU 11.4.0
+[1.040s] -- The CXX compiler identification is GNU 11.4.0
+[1.050s] -- Detecting C compiler ABI info
+[1.115s] -- Detecting C compiler ABI info - done
+[1.130s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.130s] -- Detecting C compile features
+[1.130s] -- Detecting C compile features - done
+[1.130s] -- Detecting CXX compiler ABI info
+[1.205s] -- Detecting CXX compiler ABI info - done
+[1.213s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.213s] -- Detecting CXX compile features
+[1.215s] -- Detecting CXX compile features - done
+[1.218s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.404s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.498s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.591s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.595s] -- Added test 'lint_cmake' to check CMake code style
+[1.595s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.596s] -- Added test 'xmllint' to check XML markup files
+[1.596s] -- Configuring done
+[1.596s] -- Generating done
+[1.597s] -- Build files have been written to: /home/aleksmalm/Hermes/hermes_ws/build/rlbd_description
+[1.599s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/rlbd_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/loc_diff/description -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/rlbd_description
+[1.600s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/rlbd_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/rlbd_description -- -j12 -l12

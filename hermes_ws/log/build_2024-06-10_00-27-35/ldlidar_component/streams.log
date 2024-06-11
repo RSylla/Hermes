@@ -1,0 +1,49 @@
+[0.046s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component -- -j12 -l12
+[0.896s] [ 70%] Built target ldlidar
+[0.896s] [100%] Built target ldlidar_component
+[0.902s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component -- -j12 -l12
+[0.955s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component
+[0.974s] -- Install configuration: "Release"
+[0.974s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/lib/libldlidar_component.so
+[0.976s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[0.976s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_component.hpp
+[0.976s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//defines.hpp
+[0.976s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[0.978s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_tools.hpp
+[0.978s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[0.978s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//visibility_control.hpp
+[0.978s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[0.978s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_datatype.h
+[0.978s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_driver.h
+[0.978s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[0.979s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//lipkg.h
+[0.979s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[0.979s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//tofbf.h
+[0.979s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[0.979s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//log_module.h
+[0.979s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[0.980s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//network_socket_interface_linux.h
+[0.980s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[0.980s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//serial_interface_linux.h
+[0.980s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/library_path.sh
+[0.980s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/library_path.dsv
+[0.981s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/package_run_dependencies/ldlidar_component
+[0.981s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/parent_prefix_path/ldlidar_component
+[0.981s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.sh
+[0.981s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.dsv
+[0.981s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/path.sh
+[0.981s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/path.dsv
+[0.982s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.bash
+[0.982s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.sh
+[0.982s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.zsh
+[0.982s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.dsv
+[0.982s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.dsv
+[0.982s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/packages/ldlidar_component
+[0.982s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/rclcpp_components/ldlidar_component
+[0.983s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.983s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_libraries-extras.cmake
+[0.983s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.983s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig.cmake
+[0.983s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig-version.cmake
+[0.983s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.xml
+[1.002s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/odometry:/home/aleksmalm/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/aleksmalm/Hermes/hermes_ws/install/imu_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/aleksmalm/Hermes/hermes_ws/build/ldlidar_component

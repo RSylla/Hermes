@@ -1,0 +1,53 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from hermes_interfaces/msg/GpsFixed.msg
+// generated code does not contain a copyright notice
+
+
+module hermes_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "Message for GPS data with corrections.")
+    struct GpsFixed {
+      @verbatim (language="comment", text=
+        "If corrections are applied and how old is it.")
+      boolean is_corrected;
+
+      float diff_age;
+
+      string message_id;
+
+      string utc_time;
+
+      double latitude;
+
+      double longtitude;
+
+      string north_south;
+
+      string east_west;
+
+      @verbatim (language="comment", text=
+        "Status of navigation")
+      string nav_status;
+
+      @verbatim (language="comment", text=
+        "horisontal and vertical accuracy.")
+      float hor_accuracy;
+
+      float ver_accuracy;
+
+      @verbatim (language="comment", text=
+        "Speed and direction over ground and vertical." "\n"
+        "Vertical positive is down / negative up.")
+      float speed_over_ground_kmh;
+
+      float course_over_ground_deg;
+
+      float vertical_vel_ms;
+
+      @verbatim (language="comment", text=
+        "How many sattelites used in the navigation solution.")
+      int32 num_sat;
+    };
+  };
+};

@@ -1,0 +1,38 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ldlidar_node.dir/src/ldlidar_container_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ldlidar_node[0m
+[100%] Built target ldlidar_node
+-- Install configuration: "Release"
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/lib/ldlidar_node/ldlidar_node
+-- Set runtime path of "/home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/lib/ldlidar_node/ldlidar_node" to ""
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/params
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/params/lifecycle_mgr_slam.yaml
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/params/slam_toolbox.yaml
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/params/ldlidar.yaml
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/params/lifecycle_mgr.yaml
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/config
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/config/ldlidar.rviz
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/config/ldlidar_slam.rviz
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/urdf
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/urdf/model
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/urdf/model/LD19.stl
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/urdf/ldlidar_descr.urdf.xml
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/launch
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/launch/ldlidar_slam.launch.py
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/launch/ldlidar.launch.py
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/launch/ldlidar_with_mgr.launch.py
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/launch/ldlidar_rviz2.launch.py
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ament_index/resource_index/package_run_dependencies/ldlidar_node
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ament_index/resource_index/parent_prefix_path/ldlidar_node
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/environment/ament_prefix_path.sh
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/environment/ament_prefix_path.dsv
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/environment/path.sh
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/environment/path.dsv
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/local_setup.bash
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/local_setup.sh
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/local_setup.zsh
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/local_setup.dsv
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.dsv
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ament_index/resource_index/packages/ldlidar_node
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/cmake/ldlidar_nodeConfig.cmake
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/cmake/ldlidar_nodeConfig-version.cmake
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node/share/ldlidar_node/package.xml

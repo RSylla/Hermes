@@ -1,0 +1,48 @@
+[35m[1mConsolidate compiler generated dependencies of target ldlidar[0m
+[ 70%] Built target ldlidar
+[35m[1mConsolidate compiler generated dependencies of target ldlidar_component[0m
+[100%] Built target ldlidar_component
+-- Install configuration: "Release"
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/lib/libldlidar_component.so
+-- Set runtime path of "/home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/lib/libldlidar_component.so" to ""
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_component.hpp
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//defines.hpp
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_tools.hpp
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//visibility_control.hpp
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_datatype.h
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_driver.h
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//lipkg.h
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//tofbf.h
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//log_module.h
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//network_socket_interface_linux.h
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//serial_interface_linux.h
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/library_path.sh
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/library_path.dsv
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/package_run_dependencies/ldlidar_component
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/parent_prefix_path/ldlidar_component
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.sh
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.dsv
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/path.sh
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/path.dsv
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.bash
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.sh
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.zsh
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.dsv
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.dsv
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/packages/ldlidar_component
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/rclcpp_components/ldlidar_component
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig.cmake
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig-version.cmake
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.xml

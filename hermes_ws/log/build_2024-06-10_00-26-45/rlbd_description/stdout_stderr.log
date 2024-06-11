@@ -1,0 +1,35 @@
+-- Install configuration: ""
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//config
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//config/my_controllers.yaml
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//launch
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//launch/description.launch.py
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf/black_donut.xacro
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf/gps.xacro
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf/depth_camera.xacro
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf/robot.urdf.xacro
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf/imu.xacro
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf/camera.xacro
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf/inertial_macros.xacro
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf/gazebo_control.xacro
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf/ros2_control.xacro
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//urdf/lidar.xacro
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//rviz
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//rviz/slam.rviz
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//rviz/black_donut.rviz
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description//rviz/test_odom copy.rviz
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/ament_index/resource_index/package_run_dependencies/rlbd_description
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/ament_index/resource_index/parent_prefix_path/rlbd_description
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/environment/ament_prefix_path.sh
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/environment/path.sh
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/environment/path.dsv
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/local_setup.bash
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/local_setup.sh
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/local_setup.zsh
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/local_setup.dsv
+-- Installing: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/package.dsv
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/ament_index/resource_index/packages/rlbd_description
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/cmake/rlbd_descriptionConfig.cmake
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/cmake/rlbd_descriptionConfig-version.cmake
+-- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/rlbd_description/share/rlbd_description/package.xml

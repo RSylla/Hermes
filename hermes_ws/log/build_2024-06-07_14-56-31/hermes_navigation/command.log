@@ -1,3 +1,0 @@
-Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_navigation': /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/hermes_navigation -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/hermes_navigation
-Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_navigation' returned '0': /usr/bin/cmake /home/aleksmalm/Hermes/hermes_ws/src/hermes_navigation -DCMAKE_INSTALL_PREFIX=/home/aleksmalm/Hermes/hermes_ws/install/hermes_navigation
-Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_navigation': /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/hermes_navigation -- -j12 -l12
