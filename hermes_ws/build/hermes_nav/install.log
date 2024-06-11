@@ -1,10 +1,12 @@
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav/__init__.py
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav/logged_waypoint_follower.py
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav/interactive_waypoint_follower.py
+/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav/gps_converter_node.py
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav/gps_waypoint_logger.py
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav/__pycache__/__init__.cpython-310.pyc
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav/__pycache__/logged_waypoint_follower.cpython-310.pyc
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav/__pycache__/interactive_waypoint_follower.cpython-310.pyc
+/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav/__pycache__/gps_converter_node.cpython-310.pyc
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav/__pycache__/gps_waypoint_logger.cpython-310.pyc
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/ament_index/resource_index/packages/hermes_nav
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/package.xml
@@ -21,6 +23,7 @@
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav-0.0.0-py3.10.egg-info/entry_points.txt
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav-0.0.0-py3.10.egg-info/requires.txt
+/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav/gps_converter_node
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav/gps_waypoint_logger
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav/interactive_waypoint_follower
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav/logged_waypoint_follower

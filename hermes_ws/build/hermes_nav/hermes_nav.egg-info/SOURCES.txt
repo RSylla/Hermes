@@ -9,6 +9,7 @@ setup.py
 ../../build/hermes_nav/hermes_nav.egg-info/top_level.txt
 ../../build/hermes_nav/hermes_nav.egg-info/zip-safe
 hermes_nav/__init__.py
+hermes_nav/gps_converter_node.py
 hermes_nav/gps_waypoint_logger.py
 hermes_nav/interactive_waypoint_follower.py
 hermes_nav/logged_waypoint_follower.py
