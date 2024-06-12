@@ -198,10 +198,10 @@
 	    	
 		
             <!-- Wheel Information -->
-            <left_joint>base_front_right_wheel_joint</left_joint>
-            <right_joint>base_front_left_wheel_joint</right_joint>
+            <left_joint>base_front_left_wheel_joint</left_joint>
+            <right_joint>base_front_right_wheel_joint</right_joint>
             <wheel_separation>0.555</wheel_separation>
-            <wheel_diameter>0.254</wheel_diameter>
+            <wheel_diameter>0.255</wheel_diameter>
 
 
             <!-- Limits -->
