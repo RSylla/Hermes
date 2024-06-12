@@ -1,0 +1,3 @@
+[console_scripts]
+odometry_publisher = odometry_publisher.odometry_publisher_node:main
+

@@ -1,0 +1,31 @@
+[0.075s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/rviz_imu_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/rviz_imu_plugin -- -j6 -l6
+[0.723s] [ 11%] [34m[1mAutomatic MOC for target rviz_imu_plugin[0m
+[0.723s] [ 11%] Built target rviz_imu_plugin_autogen
+[0.723s] [100%] Built target rviz_imu_plugin
+[1.324s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/rviz_imu_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/rviz_imu_plugin -- -j6 -l6
+[1.429s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/rviz_imu_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/rviz_imu_plugin
+[1.485s] -- Install configuration: ""
+[1.485s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/plugin_description.xml
+[1.485s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/library_path.sh
+[1.485s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/library_path.dsv
+[1.486s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/lib/librviz_imu_plugin.so
+[1.487s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/ament_index/resource_index/package_run_dependencies/rviz_imu_plugin
+[1.487s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/ament_index/resource_index/parent_prefix_path/rviz_imu_plugin
+[1.487s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/ament_prefix_path.sh
+[1.487s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/ament_prefix_path.dsv
+[1.488s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/path.sh
+[1.488s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/path.dsv
+[1.488s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.bash
+[1.489s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.sh
+[1.490s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.zsh
+[1.490s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.dsv
+[1.491s] -- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/package.dsv
+[1.491s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/ament_index/resource_index/packages/rviz_imu_plugin
+[1.491s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_imu_plugin
+[1.492s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.492s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[1.493s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.493s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/rviz_imu_pluginConfig.cmake
+[1.493s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/rviz_imu_pluginConfig-version.cmake
+[1.493s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/package.xml
+[1.548s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/rviz_imu_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/rviz_imu_plugin

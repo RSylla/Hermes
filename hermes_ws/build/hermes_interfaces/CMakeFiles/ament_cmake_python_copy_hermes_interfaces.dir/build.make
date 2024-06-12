@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aleksmalm/Hermes/hermes_ws/src/hermes_interfaces
+CMAKE_SOURCE_DIR = /home/hermes/Hermes/hermes_ws/src/hermes_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces
+CMAKE_BINARY_DIR = /home/hermes/Hermes/hermes_ws/build/hermes_interfaces
 
 # Utility rule file for ament_cmake_python_copy_hermes_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_hermes_interfaces.dir/compiler_depend
 include CMakeFiles/ament_cmake_python_copy_hermes_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_hermes_interfaces:
-	/usr/bin/cmake -E copy_directory /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces/rosidl_generator_py/hermes_interfaces /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces/ament_cmake_python/hermes_interfaces/hermes_interfaces
+	/usr/bin/cmake -E copy_directory /home/hermes/Hermes/hermes_ws/build/hermes_interfaces/rosidl_generator_py/hermes_interfaces /home/hermes/Hermes/hermes_ws/build/hermes_interfaces/ament_cmake_python/hermes_interfaces/hermes_interfaces
 
 ament_cmake_python_copy_hermes_interfaces: CMakeFiles/ament_cmake_python_copy_hermes_interfaces
 ament_cmake_python_copy_hermes_interfaces: CMakeFiles/ament_cmake_python_copy_hermes_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_hermes_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_hermes_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_hermes_interfaces.dir/depend:
-	cd /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aleksmalm/Hermes/hermes_ws/src/hermes_interfaces /home/aleksmalm/Hermes/hermes_ws/src/hermes_interfaces /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces/CMakeFiles/ament_cmake_python_copy_hermes_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hermes/Hermes/hermes_ws/build/hermes_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hermes/Hermes/hermes_ws/src/hermes_interfaces /home/hermes/Hermes/hermes_ws/src/hermes_interfaces /home/hermes/Hermes/hermes_ws/build/hermes_interfaces /home/hermes/Hermes/hermes_ws/build/hermes_interfaces /home/hermes/Hermes/hermes_ws/build/hermes_interfaces/CMakeFiles/ament_cmake_python_copy_hermes_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_hermes_interfaces.dir/depend
 

@@ -50,7 +50,8 @@ class Gps_publisher_node(Node):
 
         gps_data = self.recieve_gps_data(self.stream)
         data = NMEAReader.parse(gps_data)
-
+        print(data.altRef)
+        
         x, y, z = pm.geodetic2enu(float(data.lat),
                                   float(data.lon),
                                   float(data.altRef),
@@ -61,7 +62,7 @@ class Gps_publisher_node(Node):
         covariance_matrix = np.cov([x, y, z])
 
         if data.msgID == "UBX":   
-             if data.msgId == "00":
+            if data.msgId == "00":
                 #print(data)
 
                 msg.status = str(data.navStat)
@@ -86,7 +87,7 @@ class Gps_publisher_node(Node):
                 # msg.course_over_ground_deg = float(data.COG)
                 # msg.vertical_vel_ms = float(data.vVel)
                 # msg.num_sat = int(data.numSVs)
-                
+            
         self.publisher_.publish(msg)
                 
 
