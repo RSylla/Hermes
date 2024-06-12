@@ -9,6 +9,7 @@ setup.py
 ../../build/gps_publisher/gps_publisher.egg-info/top_level.txt
 ../../build/gps_publisher/gps_publisher.egg-info/zip-safe
 gps_publisher/__init__.py
+gps_publisher/gps_converter_node.py
 gps_publisher/gps_publisher_node.py
 resource/gps_publisher
 test/test_copyright.py

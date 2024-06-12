@@ -1,0 +1,27 @@
+[0.329s] Invoking command in '/home/raivo/Hermes/hermes_ws/src/gps_publisher': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/gps_publisher/prefix_override:/home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gps_publisher build --build-base /home/raivo/Hermes/hermes_ws/build/gps_publisher/build install --record /home/raivo/Hermes/hermes_ws/build/gps_publisher/install.log --single-version-externally-managed install_data
+[0.450s] running egg_info
+[0.450s] writing ../../build/gps_publisher/gps_publisher.egg-info/PKG-INFO
+[0.450s] writing dependency_links to ../../build/gps_publisher/gps_publisher.egg-info/dependency_links.txt
+[0.451s] writing entry points to ../../build/gps_publisher/gps_publisher.egg-info/entry_points.txt
+[0.451s] writing requirements to ../../build/gps_publisher/gps_publisher.egg-info/requires.txt
+[0.451s] writing top-level names to ../../build/gps_publisher/gps_publisher.egg-info/top_level.txt
+[0.451s] reading manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'
+[0.452s] writing manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'
+[0.452s] running build
+[0.452s] running build_py
+[0.452s] copying gps_publisher/gps_converter_node.py -> /home/raivo/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher
+[0.452s] copying gps_publisher/gps_publisher_node.py -> /home/raivo/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher
+[0.452s] running install
+[0.452s] running install_lib
+[0.453s] copying /home/raivo/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher/gps_converter_node.py -> /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher
+[0.453s] copying /home/raivo/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher/gps_publisher_node.py -> /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher
+[0.453s] byte-compiling /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher/gps_converter_node.py to gps_converter_node.cpython-310.pyc
+[0.453s] byte-compiling /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher/gps_publisher_node.py to gps_publisher_node.cpython-310.pyc
+[0.454s] running install_data
+[0.454s] running install_egg_info
+[0.455s] removing '/home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[0.455s] Copying ../../build/gps_publisher/gps_publisher.egg-info to /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher-0.0.0-py3.10.egg-info
+[0.455s] running install_scripts
+[0.470s] Installing gps_publisher_node script to /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/gps_publisher
+[0.471s] writing list of installed files to '/home/raivo/Hermes/hermes_ws/build/gps_publisher/install.log'
+[0.491s] Invoked command in '/home/raivo/Hermes/hermes_ws/src/gps_publisher' returned '0': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/gps_publisher/prefix_override:/home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gps_publisher build --build-base /home/raivo/Hermes/hermes_ws/build/gps_publisher/build install --record /home/raivo/Hermes/hermes_ws/build/gps_publisher/install.log --single-version-externally-managed install_data

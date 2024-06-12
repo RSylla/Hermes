@@ -1,0 +1,49 @@
+[0.000000] (-) TimerEvent: {}
+[0.000098] (-) JobUnselected: {'identifier': 'cameras'}
+[0.000118] (-) JobUnselected: {'identifier': 'cmd_vel'}
+[0.000129] (-) JobUnselected: {'identifier': 'hermes_interfaces'}
+[0.000138] (-) JobUnselected: {'identifier': 'hermes_nav'}
+[0.000146] (-) JobUnselected: {'identifier': 'hermes_navigation'}
+[0.000154] (-) JobUnselected: {'identifier': 'hermes_urdf'}
+[0.000161] (-) JobUnselected: {'identifier': 'imu_publisher'}
+[0.000168] (-) JobUnselected: {'identifier': 'ldlidar'}
+[0.000176] (-) JobUnselected: {'identifier': 'ldlidar_component'}
+[0.000185] (-) JobUnselected: {'identifier': 'ldlidar_node'}
+[0.000207] (-) JobUnselected: {'identifier': 'odometry'}
+[0.000216] (-) JobUnselected: {'identifier': 'teleop_control'}
+[0.000224] (-) JobUnselected: {'identifier': 'tof_publisher'}
+[0.000234] (gps_publisher) JobQueued: {'identifier': 'gps_publisher', 'dependencies': OrderedDict()}
+[0.000245] (gps_publisher) JobStarted: {'identifier': 'gps_publisher'}
+[0.099526] (-) TimerEvent: {}
+[0.199828] (-) TimerEvent: {}
+[0.300128] (-) TimerEvent: {}
+[0.328334] (gps_publisher) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gps_publisher', 'build', '--build-base', '/home/raivo/Hermes/hermes_ws/build/gps_publisher/build', 'install', '--record', '/home/raivo/Hermes/hermes_ws/build/gps_publisher/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/raivo/Hermes/hermes_ws/src/gps_publisher', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'raivo', 'LC_TIME': 'et_EE.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/raivo', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'et_EE.UTF-8', 'SYSTEMD_EXEC_PID': '9617', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'raivo', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'raivo', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/raivo-Latitude-5430:@/tmp/.ICE-unix/1153,unix/raivo-Latitude-5430:/tmp/.ICE-unix/1153', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'et_EE.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/3d178387_ede8_4756_b496_d6cac4226530', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'et_EE.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.RA1ZO2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.208', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'et_EE.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'et_EE.UTF-8', 'LC_IDENTIFICATION': 'et_EE.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/raivo/Hermes/hermes_ws/build/gps_publisher', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/raivo/Hermes/hermes_ws/build/gps_publisher/prefix_override:/home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'et_EE.UTF-8', 'LC_PAPER': 'et_EE.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.400336] (-) TimerEvent: {}
+[0.450119] (gps_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[0.450526] (gps_publisher) StdoutLine: {'line': b'writing ../../build/gps_publisher/gps_publisher.egg-info/PKG-INFO\n'}
+[0.450627] (gps_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/gps_publisher/gps_publisher.egg-info/dependency_links.txt\n'}
+[0.450701] (gps_publisher) StdoutLine: {'line': b'writing entry points to ../../build/gps_publisher/gps_publisher.egg-info/entry_points.txt\n'}
+[0.450770] (gps_publisher) StdoutLine: {'line': b'writing requirements to ../../build/gps_publisher/gps_publisher.egg-info/requires.txt\n'}
+[0.450837] (gps_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/gps_publisher/gps_publisher.egg-info/top_level.txt\n'}
+[0.451552] (gps_publisher) StdoutLine: {'line': b"reading manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'\n"}
+[0.451983] (gps_publisher) StdoutLine: {'line': b"writing manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'\n"}
+[0.452085] (gps_publisher) StdoutLine: {'line': b'running build\n'}
+[0.452161] (gps_publisher) StdoutLine: {'line': b'running build_py\n'}
+[0.452233] (gps_publisher) StdoutLine: {'line': b'copying gps_publisher/gps_converter_node.py -> /home/raivo/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher\n'}
+[0.452398] (gps_publisher) StdoutLine: {'line': b'copying gps_publisher/gps_publisher_node.py -> /home/raivo/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher\n'}
+[0.452473] (gps_publisher) StdoutLine: {'line': b'running install\n'}
+[0.452541] (gps_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[0.452841] (gps_publisher) StdoutLine: {'line': b'copying /home/raivo/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher/gps_converter_node.py -> /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher\n'}
+[0.452942] (gps_publisher) StdoutLine: {'line': b'copying /home/raivo/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher/gps_publisher_node.py -> /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher\n'}
+[0.453102] (gps_publisher) StdoutLine: {'line': b'byte-compiling /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher/gps_converter_node.py to gps_converter_node.cpython-310.pyc\n'}
+[0.453475] (gps_publisher) StdoutLine: {'line': b'byte-compiling /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher/gps_publisher_node.py to gps_publisher_node.cpython-310.pyc\n'}
+[0.453885] (gps_publisher) StdoutLine: {'line': b'running install_data\n'}
+[0.453985] (gps_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.454964] (gps_publisher) StdoutLine: {'line': b"removing '/home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.455064] (gps_publisher) StdoutLine: {'line': b'Copying ../../build/gps_publisher/gps_publisher.egg-info to /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher-0.0.0-py3.10.egg-info\n'}
+[0.455351] (gps_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[0.470486] (gps_publisher) StdoutLine: {'line': b'Installing gps_publisher_node script to /home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/gps_publisher\n'}
+[0.470775] (gps_publisher) StdoutLine: {'line': b"writing list of installed files to '/home/raivo/Hermes/hermes_ws/build/gps_publisher/install.log'\n"}
+[0.491289] (gps_publisher) CommandEnded: {'returncode': 0}
+[0.498811] (gps_publisher) JobEnded: {'identifier': 'gps_publisher', 'rc': 0}
+[0.499182] (-) EventReactorShutdown: {}
