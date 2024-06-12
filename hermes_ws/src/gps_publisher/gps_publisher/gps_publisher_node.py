@@ -53,23 +53,23 @@ class Gps_publisher_node(Node):
 
         x, y, z = pm.geodetic2enu(float(data.lat),
                                   float(data.lon),
-                                  float(data.altRef),
+                                  float(data.alt),
                                   58.3428685594,
                                   25,5692475361,
                                   91.357)
 
         covariance_matrix = np.cov([x, y, z])
 
-        if data.msgID == "UBX":   
-             if data.msgId == "00":
+        if data.msgID == "GGA":   
+            #  if data.msgId == "00":
                 #print(data)
 
-                msg.status = str(data.navStat)
-                msg.latitude = float(data.lat)
-                msg.longitude = float(data.lon)
-                msg.altitude = float(data.altRef)
-                msg.position_covariance = covariance_matrix.flatten()
-                msg.position_covariance_type = 3
+            msg.status = str(data.quality)
+            msg.latitude = float(data.lat)
+            msg.longitude = float(data.lon)
+            msg.altitude = float(data.alt)
+            msg.position_covariance = covariance_matrix.flatten()
+            msg.position_covariance_type = 3
                 
                 # msg.diff_age = float(data.diffAge) if not data.diffAge == "" else float(99.99)
                 # msg.is_corrected = True if msg.diff_age < 6 else False
