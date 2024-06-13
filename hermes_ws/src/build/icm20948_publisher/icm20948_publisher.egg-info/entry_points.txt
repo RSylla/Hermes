@@ -1,3 +1,0 @@
-[console_scripts]
-icm_imu = icm20948_publisher.icm_imu:main
-
