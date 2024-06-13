@@ -1,0 +1,37 @@
+[3.135s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/path_creator': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/path_creator/prefix_override:/home/hermes/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/path_creator build --build-base /home/hermes/Hermes/hermes_ws/build/path_creator/build install --record /home/hermes/Hermes/hermes_ws/build/path_creator/install.log --single-version-externally-managed install_data
+[3.720s] running egg_info
+[3.721s] creating ../../build/path_creator/path_creator.egg-info
+[3.722s] writing ../../build/path_creator/path_creator.egg-info/PKG-INFO
+[3.722s] writing dependency_links to ../../build/path_creator/path_creator.egg-info/dependency_links.txt
+[3.722s] writing entry points to ../../build/path_creator/path_creator.egg-info/entry_points.txt
+[3.723s] writing requirements to ../../build/path_creator/path_creator.egg-info/requires.txt
+[3.723s] writing top-level names to ../../build/path_creator/path_creator.egg-info/top_level.txt
+[3.723s] writing manifest file '../../build/path_creator/path_creator.egg-info/SOURCES.txt'
+[3.727s] reading manifest file '../../build/path_creator/path_creator.egg-info/SOURCES.txt'
+[3.728s] writing manifest file '../../build/path_creator/path_creator.egg-info/SOURCES.txt'
+[3.728s] running build
+[3.728s] running build_py
+[3.729s] creating /home/hermes/Hermes/hermes_ws/build/path_creator/build
+[3.729s] creating /home/hermes/Hermes/hermes_ws/build/path_creator/build/lib
+[3.729s] creating /home/hermes/Hermes/hermes_ws/build/path_creator/build/lib/path_creator
+[3.729s] copying path_creator/__init__.py -> /home/hermes/Hermes/hermes_ws/build/path_creator/build/lib/path_creator
+[3.730s] copying path_creator/path_creator_node.py -> /home/hermes/Hermes/hermes_ws/build/path_creator/build/lib/path_creator
+[3.730s] running install
+[3.731s] running install_lib
+[3.733s] creating /home/hermes/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages/path_creator
+[3.733s] copying /home/hermes/Hermes/hermes_ws/build/path_creator/build/lib/path_creator/__init__.py -> /home/hermes/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages/path_creator
+[3.733s] copying /home/hermes/Hermes/hermes_ws/build/path_creator/build/lib/path_creator/path_creator_node.py -> /home/hermes/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages/path_creator
+[3.734s] byte-compiling /home/hermes/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages/path_creator/__init__.py to __init__.cpython-310.pyc
+[3.735s] byte-compiling /home/hermes/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages/path_creator/path_creator_node.py to path_creator_node.cpython-310.pyc
+[3.736s] running install_data
+[3.736s] creating /home/hermes/Hermes/hermes_ws/install/path_creator/share/ament_index
+[3.737s] creating /home/hermes/Hermes/hermes_ws/install/path_creator/share/ament_index/resource_index
+[3.737s] creating /home/hermes/Hermes/hermes_ws/install/path_creator/share/ament_index/resource_index/packages
+[3.737s] copying resource/path_creator -> /home/hermes/Hermes/hermes_ws/install/path_creator/share/ament_index/resource_index/packages
+[3.737s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/path_creator/share/path_creator
+[3.737s] running install_egg_info
+[3.741s] Copying ../../build/path_creator/path_creator.egg-info to /home/hermes/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages/path_creator-0.0.0-py3.10.egg-info
+[3.743s] running install_scripts
+[3.792s] Installing path_creator_node script to /home/hermes/Hermes/hermes_ws/install/path_creator/lib/path_creator
+[3.793s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/path_creator/install.log'
+[3.872s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/path_creator' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/path_creator/prefix_override:/home/hermes/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/path_creator build --build-base /home/hermes/Hermes/hermes_ws/build/path_creator/build install --record /home/hermes/Hermes/hermes_ws/build/path_creator/install.log --single-version-externally-managed install_data

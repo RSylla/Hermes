@@ -1,10 +1,11 @@
 import os
 
+
 from ament_index_python.packages import get_package_share_directory
 
 
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 from launch_ros.actions import Node
@@ -15,11 +16,15 @@ def generate_launch_description():
 
     package_name='hermes_urdf' 
 
+    
+
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
                 )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'true'}.items()
     )
+    
+    
 
     #joystick = IncludeLaunchDescription(
     #            PythonLaunchDescriptionSource([os.path.join(
@@ -45,10 +50,14 @@ def generate_launch_description():
              )
 
     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
-    spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
-                        arguments=['-topic', 'robot_description',
-                                   '-entity', 'my_bot'],
-                        output='screen')
+    spawn_entity = Node(
+    package='gazebo_ros',
+    executable='spawn_entity.py',
+    arguments=['-topic', 'robot_description', '-entity', 'my_bot'],
+    output='screen',
+    additional_env={'RCUTILS_LOGGING_BUFFERED_STREAM': '1', 'RCUTILS_CONSOLE_OUTPUT_FORMAT': '{message}'}
+    )
+
 
 
     #diff_drive_spawner = Node(
@@ -80,6 +89,13 @@ def generate_launch_description():
     #
     # Replace the diff_drive_spawner in the final return with delayed_diff_drive_spawner
 
+    plane_model_path = os.path.join(get_package_share_directory(package_name),'urdf', 'my_world.sdf')
+
+    # Command to spawn the plane model
+    spawn_plane = ExecuteProcess(
+        cmd=['gz', 'model', '--spawn-file', plane_model_path, '--model-name', 'my_plane'],
+        output='screen'
+    )
 
 
     # Launch them all!
@@ -90,5 +106,7 @@ def generate_launch_description():
         gazebo,
         spawn_entity,
         #diff_drive_spawner,
-        #joint_broad_spawner
+        #joint_broad_spawner,
+        spawn_plane,
+
     ])

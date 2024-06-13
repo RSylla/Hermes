@@ -1,0 +1,38 @@
+[3.794s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/imu_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/imu_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/imu_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/imu_publisher/install.log --single-version-externally-managed install_data
+[5.240s] running egg_info
+[5.242s] creating ../../build/imu_publisher/imu_publisher.egg-info
+[5.242s] writing ../../build/imu_publisher/imu_publisher.egg-info/PKG-INFO
+[5.243s] writing dependency_links to ../../build/imu_publisher/imu_publisher.egg-info/dependency_links.txt
+[5.243s] writing entry points to ../../build/imu_publisher/imu_publisher.egg-info/entry_points.txt
+[5.243s] writing requirements to ../../build/imu_publisher/imu_publisher.egg-info/requires.txt
+[5.244s] writing top-level names to ../../build/imu_publisher/imu_publisher.egg-info/top_level.txt
+[5.257s] writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[5.261s] reading manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[5.262s] adding license file 'LICENSE'
+[5.263s] writing manifest file '../../build/imu_publisher/imu_publisher.egg-info/SOURCES.txt'
+[5.263s] running build
+[5.263s] running build_py
+[5.263s] creating /home/hermes/Hermes/hermes_ws/build/imu_publisher/build
+[5.264s] creating /home/hermes/Hermes/hermes_ws/build/imu_publisher/build/lib
+[5.264s] creating /home/hermes/Hermes/hermes_ws/build/imu_publisher/build/lib/imu_publisher
+[5.264s] copying imu_publisher/imu_publisher_node.py -> /home/hermes/Hermes/hermes_ws/build/imu_publisher/build/lib/imu_publisher
+[5.273s] copying imu_publisher/__init__.py -> /home/hermes/Hermes/hermes_ws/build/imu_publisher/build/lib/imu_publisher
+[5.273s] running install
+[5.274s] running install_lib
+[5.276s] creating /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher
+[5.277s] copying /home/hermes/Hermes/hermes_ws/build/imu_publisher/build/lib/imu_publisher/imu_publisher_node.py -> /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher
+[5.277s] copying /home/hermes/Hermes/hermes_ws/build/imu_publisher/build/lib/imu_publisher/__init__.py -> /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher
+[5.279s] byte-compiling /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher/imu_publisher_node.py to imu_publisher_node.cpython-310.pyc
+[5.279s] byte-compiling /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher/__init__.py to __init__.cpython-310.pyc
+[5.280s] running install_data
+[5.281s] creating /home/hermes/Hermes/hermes_ws/install/imu_publisher/share/ament_index
+[5.281s] creating /home/hermes/Hermes/hermes_ws/install/imu_publisher/share/ament_index/resource_index
+[5.281s] creating /home/hermes/Hermes/hermes_ws/install/imu_publisher/share/ament_index/resource_index/packages
+[5.281s] copying resource/imu_publisher -> /home/hermes/Hermes/hermes_ws/install/imu_publisher/share/ament_index/resource_index/packages
+[5.281s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/imu_publisher/share/imu_publisher
+[5.293s] running install_egg_info
+[5.297s] Copying ../../build/imu_publisher/imu_publisher.egg-info to /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages/imu_publisher-0.0.0-py3.10.egg-info
+[5.299s] running install_scripts
+[5.399s] Installing imu_publisher_node script to /home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/imu_publisher
+[5.408s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/imu_publisher/install.log'
+[5.596s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/imu_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/imu_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/imu_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/imu_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/imu_publisher/install.log --single-version-externally-managed install_data

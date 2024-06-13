@@ -1,0 +1,3 @@
+source;share/odometry_publisher/hook/pythonpath.ps1
+source;share/odometry_publisher/hook/pythonpath.dsv
+source;share/odometry_publisher/hook/pythonpath.sh

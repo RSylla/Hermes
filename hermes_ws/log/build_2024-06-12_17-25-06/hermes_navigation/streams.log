@@ -1,0 +1,44 @@
+[0.077s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/hermes_navigation -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/hermes_navigation
+[0.420s] -- The C compiler identification is GNU 11.4.0
+[0.687s] -- The CXX compiler identification is GNU 11.4.0
+[0.715s] -- Detecting C compiler ABI info
+[1.170s] -- Detecting C compiler ABI info - done
+[1.213s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.214s] -- Detecting C compile features
+[1.215s] -- Detecting C compile features - done
+[1.225s] -- Detecting CXX compiler ABI info
+[1.749s] -- Detecting CXX compiler ABI info - done
+[1.777s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.778s] -- Detecting CXX compile features
+[1.780s] -- Detecting CXX compile features - done
+[1.791s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.627s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.137s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.644s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.646s] -- Added test 'lint_cmake' to check CMake code style
+[3.648s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.650s] -- Added test 'xmllint' to check XML markup files
+[3.655s] -- Configuring done
+[3.672s] -- Generating done
+[3.683s] -- Build files have been written to: /home/hermes/Hermes/hermes_ws/build/hermes_navigation
+[3.694s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/hermes_navigation -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/hermes_navigation
+[3.720s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_navigation -- -j6 -l6
+[3.954s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_navigation -- -j6 -l6
+[4.311s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/hermes_navigation
+[4.372s] -- Install configuration: ""
+[4.376s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/ament_index/resource_index/package_run_dependencies/hermes_navigation
+[4.376s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/ament_index/resource_index/parent_prefix_path/hermes_navigation
+[4.377s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/environment/ament_prefix_path.sh
+[4.390s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/environment/ament_prefix_path.dsv
+[4.390s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/environment/path.sh
+[4.391s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/environment/path.dsv
+[4.391s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/local_setup.bash
+[4.391s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/local_setup.sh
+[4.392s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/local_setup.zsh
+[4.392s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/local_setup.dsv
+[4.393s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/package.dsv
+[4.394s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/ament_index/resource_index/packages/hermes_navigation
+[4.411s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/cmake/hermes_navigationConfig.cmake
+[4.412s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/cmake/hermes_navigationConfig-version.cmake
+[4.413s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_navigation/share/hermes_navigation/package.xml
+[4.423s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/nav2_gps_waypoint_follower_demo:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/hermes_navigation

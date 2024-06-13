@@ -1,8 +1,8 @@
-# Install script for directory: /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node
+# Install script for directory: /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aleksmalm/Hermes/hermes_ws/install/ldlidar_node")
+  set(CMAKE_INSTALL_PREFIX "/home/hermes/Hermes/hermes_ws/install/ldlidar_node")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ldlidar_node/ldlidar_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ldlidar_node" TYPE EXECUTABLE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ldlidar_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ldlidar_node" TYPE EXECUTABLE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ldlidar_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ldlidar_node/ldlidar_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ldlidar_node/ldlidar_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ldlidar_node/ldlidar_node"
-         OLD_RPATH "/opt/ros/humble/lib:/home/aleksmalm/Hermes/hermes_ws/install/ldlidar_component/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ldlidar_node/ldlidar_node")
@@ -63,27 +63,27 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE DIRECTORY FILES "/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/params")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE DIRECTORY FILES "/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/params")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE DIRECTORY FILES "/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE DIRECTORY FILES "/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE DIRECTORY FILES "/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/urdf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE DIRECTORY FILES "/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/urdf")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE DIRECTORY FILES "/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE DIRECTORY FILES "/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ldlidar_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ldlidar_node")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ldlidar_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ldlidar_node")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -91,7 +91,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node/environment" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node/environment" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -99,42 +99,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node/environment" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node/environment" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_index/share/ament_index/resource_index/packages/ldlidar_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_index/share/ament_index/resource_index/packages/ldlidar_node")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node/cmake" TYPE FILE FILES
-    "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_core/ldlidar_nodeConfig.cmake"
-    "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_core/ldlidar_nodeConfig-version.cmake"
+    "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_core/ldlidar_nodeConfig.cmake"
+    "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/ament_cmake_core/ldlidar_nodeConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ldlidar_node" TYPE FILE FILES "/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_node/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -145,5 +145,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/aleksmalm/Hermes/hermes_ws/build/ldlidar_node/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hermes/Hermes/hermes_ws/build/ldlidar_node/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf
+CMAKE_SOURCE_DIR = /home/hermes/Hermes/hermes_ws/src/hermes_urdf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf
+CMAKE_BINARY_DIR = /home/hermes/Hermes/hermes_ws/build/hermes_urdf
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf /home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hermes/Hermes/hermes_ws/build/hermes_urdf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hermes/Hermes/hermes_ws/src/hermes_urdf /home/hermes/Hermes/hermes_ws/src/hermes_urdf /home/hermes/Hermes/hermes_ws/build/hermes_urdf /home/hermes/Hermes/hermes_ws/build/hermes_urdf /home/hermes/Hermes/hermes_ws/build/hermes_urdf/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

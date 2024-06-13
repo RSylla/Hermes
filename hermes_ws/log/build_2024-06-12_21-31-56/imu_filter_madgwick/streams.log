@@ -1,0 +1,49 @@
+[0.069s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick -- -j6 -l6
+[0.731s] [ 14%] Built target gtest
+[0.732s] [ 28%] Built target gtest_main
+[0.732s] [ 57%] Built target imu_filter_madgwick
+[0.732s] [ 71%] Built target stateless_orientation_test
+[0.733s] [ 85%] Built target madgwick_test
+[0.733s] [100%] Built target imu_filter_madgwick_node
+[1.332s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick -- -j6 -l6
+[1.433s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick
+[1.472s] -- Install configuration: ""
+[1.472s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so
+[1.472s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/include
+[1.473s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick
+[1.473s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/base_node.hpp
+[1.475s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter_ros.h
+[1.476s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/visibility_control.h
+[1.476s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/world_frame.h
+[1.476s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/stateless_orientation.h
+[1.477s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter.h
+[1.477s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/lib/imu_filter_madgwick/imu_filter_madgwick_node
+[1.477s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/launch
+[1.477s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter_component.launch.py
+[1.478s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter.launch.py
+[1.478s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/config
+[1.478s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/config/imu_filter.yaml
+[1.478s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.sh
+[1.480s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.dsv
+[1.480s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/ament_index/resource_index/package_run_dependencies/imu_filter_madgwick
+[1.484s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/ament_index/resource_index/parent_prefix_path/imu_filter_madgwick
+[1.484s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.sh
+[1.484s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.dsv
+[1.484s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.sh
+[1.485s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.dsv
+[1.485s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.bash
+[1.486s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.sh
+[1.487s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.zsh
+[1.487s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.dsv
+[1.489s] -- Installing: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/package.dsv
+[1.489s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/ament_index/resource_index/packages/imu_filter_madgwick
+[1.489s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/ament_index/resource_index/rclcpp_components/imu_filter_madgwick
+[1.489s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/export_imu_filter_madgwickExport.cmake
+[1.490s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/export_imu_filter_madgwickExport-noconfig.cmake
+[1.491s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.491s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_libraries-extras.cmake
+[1.491s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_targets-extras.cmake
+[1.491s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig.cmake
+[1.493s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig-version.cmake
+[1.493s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/package.xml
+[1.529s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/odometry:/home/hermes/Hermes/hermes_ws/install/imu_publisher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick

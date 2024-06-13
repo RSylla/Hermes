@@ -1,8 +1,6 @@
-source;share/gps_publisher/hook/cmake_prefix_path.ps1
-source;share/gps_publisher/hook/cmake_prefix_path.dsv
-source;share/gps_publisher/hook/cmake_prefix_path.sh
-source;share/gps_publisher/local_setup.bash
-source;share/gps_publisher/local_setup.dsv
-source;share/gps_publisher/local_setup.ps1
-source;share/gps_publisher/local_setup.sh
-source;share/gps_publisher/local_setup.zsh
+source;share/gps_publisher/hook/pythonpath.ps1
+source;share/gps_publisher/hook/pythonpath.dsv
+source;share/gps_publisher/hook/pythonpath.sh
+source;share/gps_publisher/hook/ament_prefix_path.ps1
+source;share/gps_publisher/hook/ament_prefix_path.dsv
+source;share/gps_publisher/hook/ament_prefix_path.sh

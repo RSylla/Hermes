@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'tof_data = tof_publisher.tof_data:main'
+            'interactive_waypoint_follower = tof_publisher.tof_data:main'
         ],
     },
 )
