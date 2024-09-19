@@ -12,7 +12,7 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 install(
- DIRECTORY launch urdf params custom_ground_plane historical_launch_files
+ DIRECTORY launch urdf custom_ground_plane historical_launch_files
  DESTINATION share/${PROJECT_NAME}
 )
 

@@ -119,8 +119,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
+          <lower>-2e+16</lower>
+          <upper>2e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>

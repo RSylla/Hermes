@@ -11,7 +11,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     # Get the launch directory
     bringup_dir = get_package_share_directory('nav2_bringup')
-    gps_wpf_dir = get_package_share_directory("hermes_urdf")
+    gps_wpf_dir = get_package_share_directory("hermes_nav")
     launch_dir = os.path.join(gps_wpf_dir, 'launch')
     params_dir = os.path.join(gps_wpf_dir, "params")
     nav2_params = os.path.join(params_dir, "nav2_no_map_params.yaml")

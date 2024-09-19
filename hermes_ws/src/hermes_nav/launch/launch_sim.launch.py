@@ -14,7 +14,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
-    package_name='hermes_urdf' 
+    package_name='hermes_nav' 
 
     
 

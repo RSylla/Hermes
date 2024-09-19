@@ -13,6 +13,8 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
+      	(os.path.join('share', package_name, 'params'), glob('params/*.yaml')),
+      	(os.path.join('share', package_name, 'nav2_gps_waypoint_follower_demo'), glob('nav2_gps_waypoint_follower_demo/*.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,6 +29,7 @@ setup(
             'gps_waypoint_logger = hermes_nav.gps_waypoint_logger:main',
             'logged_waypoint_follower = hermes_nav.logged_waypoint_follower:main',
             'gps_converter_node = hermes_nav.gps_converter_node:main',
+            'gps_waypoint_follower = hermes_nav.gps_waypoint_follower:main',
         ],
     },
 )

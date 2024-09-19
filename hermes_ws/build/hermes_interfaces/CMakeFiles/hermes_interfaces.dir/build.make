@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hermes/Hermes/hermes_ws/src/hermes_interfaces
+CMAKE_SOURCE_DIR = /home/aleksmalm/Hermes/hermes_ws/src/hermes_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hermes/Hermes/hermes_ws/build/hermes_interfaces
+CMAKE_BINARY_DIR = /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces
 
 # Utility rule file for hermes_interfaces.
 
@@ -66,7 +66,7 @@ include CMakeFiles/hermes_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/hermes_interfaces.dir/progress.make
 
-CMakeFiles/hermes_interfaces: /home/hermes/Hermes/hermes_ws/src/hermes_interfaces/msg/GpsFixed.msg
+CMakeFiles/hermes_interfaces: /home/aleksmalm/Hermes/hermes_ws/src/hermes_interfaces/msg/GpsFixed.msg
 
 hermes_interfaces: CMakeFiles/hermes_interfaces
 hermes_interfaces: CMakeFiles/hermes_interfaces.dir/build.make
@@ -81,6 +81,6 @@ CMakeFiles/hermes_interfaces.dir/clean:
 .PHONY : CMakeFiles/hermes_interfaces.dir/clean
 
 CMakeFiles/hermes_interfaces.dir/depend:
-	cd /home/hermes/Hermes/hermes_ws/build/hermes_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hermes/Hermes/hermes_ws/src/hermes_interfaces /home/hermes/Hermes/hermes_ws/src/hermes_interfaces /home/hermes/Hermes/hermes_ws/build/hermes_interfaces /home/hermes/Hermes/hermes_ws/build/hermes_interfaces /home/hermes/Hermes/hermes_ws/build/hermes_interfaces/CMakeFiles/hermes_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aleksmalm/Hermes/hermes_ws/src/hermes_interfaces /home/aleksmalm/Hermes/hermes_ws/src/hermes_interfaces /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces/CMakeFiles/hermes_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hermes_interfaces.dir/depend
 

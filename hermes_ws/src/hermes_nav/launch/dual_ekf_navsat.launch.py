@@ -22,7 +22,7 @@ import launch.actions
 
 def generate_launch_description():
     gps_wpf_dir = get_package_share_directory(
-        "hermes_urdf")
+        "hermes_nav")
     rl_params_file = os.path.join(
         gps_wpf_dir, "params", "dual_ekf_navsat_params.yaml")
 
