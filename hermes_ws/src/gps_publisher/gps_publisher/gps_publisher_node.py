@@ -13,10 +13,10 @@ class GpsPublisherNode(Node):
 
     def __init__(self):
         super().__init__('Gps_publisher_node')
-        self.publisher_ = self.create_publisher(NavSatFix, 'gps_data', 10)
-        timer_period = 0.05  # seconds
+        self.publisher_ = self.create_publisher(NavSatFix, 'gps/fix', 10)
+        timer_period = 0.1  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.stream = Serial(port="/dev/ttyACM1", baudrate=9600, timeout=0.1)
+        self.stream = Serial(port="/dev/ttyACM0", baudrate=9600, timeout=0.1)
         self.corr_host = "213.168.5.170"
         self.corr_port = 8002
         self.start_time = time()
