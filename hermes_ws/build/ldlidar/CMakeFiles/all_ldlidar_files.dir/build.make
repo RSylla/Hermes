@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar
+CMAKE_SOURCE_DIR = /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hermes/Hermes/hermes_ws/build/ldlidar
+CMAKE_BINARY_DIR = /home/aleksmalm/Hermes/hermes_ws/build/ldlidar
 
 # Utility rule file for all_ldlidar_files.
 
@@ -78,6 +78,6 @@ CMakeFiles/all_ldlidar_files.dir/clean:
 .PHONY : CMakeFiles/all_ldlidar_files.dir/clean
 
 CMakeFiles/all_ldlidar_files.dir/depend:
-	cd /home/hermes/Hermes/hermes_ws/build/ldlidar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar /home/hermes/Hermes/hermes_ws/build/ldlidar /home/hermes/Hermes/hermes_ws/build/ldlidar /home/hermes/Hermes/hermes_ws/build/ldlidar/CMakeFiles/all_ldlidar_files.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aleksmalm/Hermes/hermes_ws/build/ldlidar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar /home/aleksmalm/Hermes/hermes_ws/src/lidar_publisher/ldlidar /home/aleksmalm/Hermes/hermes_ws/build/ldlidar /home/aleksmalm/Hermes/hermes_ws/build/ldlidar /home/aleksmalm/Hermes/hermes_ws/build/ldlidar/CMakeFiles/all_ldlidar_files.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/all_ldlidar_files.dir/depend
 

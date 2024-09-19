@@ -181,6 +181,8 @@
         <origin xyz="0.9483341292917655263 -0.0071774303769965852595 0.6075567520903586427" rpy="2.2686993105948162011e-15 -6.1350116673315255536e-22 -1.5707963267948390484" />
         <axis xyz="0 0 1"/>
         <limit lower="-0.7854" upper="0.7854" effort="100000" velocity="100"/>
+
+        
     </joint>
     
     <joint name="base_joint" type="fixed">
@@ -228,7 +230,7 @@
 
     <link name="gps_link">
     </link>
-
+    
     <gazebo reference="gps_link">
 
         <sensor name="gps" type="gps">
@@ -260,6 +262,33 @@
 
 
     </gazebo>
+    
+    <material name="ld19 color">
+        <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+    </material>
+    
+    <link name="ld19">
+        <inertial>
+            <mass value="2.0"/>
+            <inertia ixx="0.5" ixy="0.0" ixz="0.0" iyy="0.5" iyz="0.0" izz="0.5"/>
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="/home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf/urdf/ld19.stl"/>
+            </geometry>
+            <material name="ld19_material">
+                <color rgba="0.2313725490196078538 0.38039215686274507888 0.7058823529411765163 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="base_lidar_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="ld19"/>
+        <origin xyz="1.039666598485702087 -0.0073333696901138160917 0.99755675209036465123" rpy="1.4644253098708029941e-15 7.9409344339936499792e-23 -1.5707963267948970021" />
+
+    </joint>
     
 </robot>
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hermes/Hermes/hermes_ws/src/hermes_urdf
+CMAKE_SOURCE_DIR = /home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hermes/Hermes/hermes_ws/build/hermes_urdf
+CMAKE_BINARY_DIR = /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf
 
 # Utility rule file for hermes_urdf_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/hermes_urdf_uninstall.dir/compiler_depend.make
 include CMakeFiles/hermes_urdf_uninstall.dir/progress.make
 
 CMakeFiles/hermes_urdf_uninstall:
-	/usr/bin/cmake -P /home/hermes/Hermes/hermes_ws/build/hermes_urdf/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 hermes_urdf_uninstall: CMakeFiles/hermes_urdf_uninstall
 hermes_urdf_uninstall: CMakeFiles/hermes_urdf_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/hermes_urdf_uninstall.dir/clean:
 .PHONY : CMakeFiles/hermes_urdf_uninstall.dir/clean
 
 CMakeFiles/hermes_urdf_uninstall.dir/depend:
-	cd /home/hermes/Hermes/hermes_ws/build/hermes_urdf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hermes/Hermes/hermes_ws/src/hermes_urdf /home/hermes/Hermes/hermes_ws/src/hermes_urdf /home/hermes/Hermes/hermes_ws/build/hermes_urdf /home/hermes/Hermes/hermes_ws/build/hermes_urdf /home/hermes/Hermes/hermes_ws/build/hermes_urdf/CMakeFiles/hermes_urdf_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf /home/aleksmalm/Hermes/hermes_ws/src/hermes_urdf /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf /home/aleksmalm/Hermes/hermes_ws/build/hermes_urdf/CMakeFiles/hermes_urdf_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/hermes_urdf_uninstall.dir/depend
 

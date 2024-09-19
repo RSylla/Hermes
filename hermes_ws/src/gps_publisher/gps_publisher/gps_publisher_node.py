@@ -5,7 +5,6 @@ import socket
 from pynmeagps import NMEAReader, NMEAMessage
 from time import time
 import numpy as np
-
 import pymap3d as pm
 from sensor_msgs.msg import NavSatFix, NavSatStatus
 from std_msgs.msg import Header
@@ -39,7 +38,7 @@ class GpsPublisherNode(Node):
         if time() - self.start_time > 2.5:
             self.send_diff_corrections(self.corr_host, self.corr_port, self.stream)
             self.start_time = time()
-        
+
         msg = NavSatFix()
         header = Header()
         header.stamp = self.get_clock().now().to_msg()
@@ -47,48 +46,55 @@ class GpsPublisherNode(Node):
         msg.header = header
 
         gps_data = self.receive_gps_data(self.stream)
-        
+
         try:
             data = NMEAReader.parse(gps_data)
             self.get_logger().info(f"Parsed GPS data: {data}")
-            
+
             if isinstance(data, NMEAMessage) and data.msgID == "UBX" and data.msgId == "00":
                 msg.status.status = NavSatStatus.STATUS_FIX
                 msg.status.service = NavSatStatus.SERVICE_GPS
 
-                msg.latitude = float(data.lat)
-                msg.longitude = float(data.lon)
-                msg.altitude = float(data.altRef)
+                # Check if the fields are not empty before converting to float
+                if data.lat and data.lon and data.altRef:
+                    msg.latitude = float(data.lat)
+                    msg.longitude = float(data.lon)
+                    msg.altitude = float(data.altRef)
 
-                x, y, z = pm.geodetic2enu(float(data.lat),
-                                          float(data.lon),
-                                          float(data.altRef),
-                                          58.3428685594,
-                                          25.5692475361,
-                                          91.357)
+                    x, y, z = pm.geodetic2enu(float(data.lat),
+                                              float(data.lon),
+                                              float(data.altRef),
+                                              58.3428685594,
+                                              25.5692475361,
+                                              91.357)
 
-                # Create a covariance matrix and ensure it's 3x3
-                covariance_matrix = np.cov(np.array([x, y, z]))
-                if covariance_matrix.shape == (3, 3):
-                    msg.position_covariance = covariance_matrix.flatten().tolist()
+                    # Create a covariance matrix and ensure it's 3x3
+                    covariance_matrix = np.cov(np.array([x, y, z]))
+                    if covariance_matrix.shape == (3, 3):
+                        msg.position_covariance = covariance_matrix.flatten().tolist()
+                    else:
+                        msg.position_covariance = [0.0] * 9  # Default to zero covariance if incorrect shape
+                    msg.position_covariance_type = NavSatFix.COVARIANCE_TYPE_KNOWN
                 else:
-                    msg.position_covariance = [0.0] * 9  # Default to zero covariance if incorrect shape
-                msg.position_covariance_type = NavSatFix.COVARIANCE_TYPE_KNOWN
+                    msg.status.status = NavSatStatus.STATUS_NO_FIX
+                    msg.status.service = 0
+                    msg.position_covariance_type = NavSatFix.COVARIANCE_TYPE_UNKNOWN
+                    msg.position_covariance = [0.0] * 9  # Ensure covariance list has 9 elements
             else:
                 msg.status.status = NavSatStatus.STATUS_NO_FIX
                 msg.status.service = 0
                 msg.position_covariance_type = NavSatFix.COVARIANCE_TYPE_UNKNOWN
                 msg.position_covariance = [0.0] * 9  # Ensure covariance list has 9 elements
-                
+
         except Exception as e:
             self.get_logger().error(f"Error parsing GPS data: {e}")
             msg.status.status = NavSatStatus.STATUS_NO_FIX
             msg.status.service = 0
             msg.position_covariance_type = NavSatFix.COVARIANCE_TYPE_UNKNOWN
             msg.position_covariance = [0.0] * 9  # Ensure covariance list has 9 elements
-            
+
         self.publisher_.publish(msg)
-                
+
 def main(args=None):
     rclpy.init(args=args)
 

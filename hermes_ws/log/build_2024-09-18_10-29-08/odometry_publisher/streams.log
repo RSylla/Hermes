@@ -1,0 +1,21 @@
+[1.659s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/src/odometry_publisher': PYTHONPATH=/home/aleksmalm/Hermes/hermes_ws/build/odometry_publisher/prefix_override:/home/aleksmalm/Hermes/hermes_ws/install/odometry_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry_publisher build --build-base /home/aleksmalm/Hermes/hermes_ws/build/odometry_publisher/build install --record /home/aleksmalm/Hermes/hermes_ws/build/odometry_publisher/install.log --single-version-externally-managed install_data
+[1.989s] running egg_info
+[1.990s] writing ../../build/odometry_publisher/odometry_publisher.egg-info/PKG-INFO
+[1.990s] writing dependency_links to ../../build/odometry_publisher/odometry_publisher.egg-info/dependency_links.txt
+[1.990s] writing entry points to ../../build/odometry_publisher/odometry_publisher.egg-info/entry_points.txt
+[1.991s] writing requirements to ../../build/odometry_publisher/odometry_publisher.egg-info/requires.txt
+[1.991s] writing top-level names to ../../build/odometry_publisher/odometry_publisher.egg-info/top_level.txt
+[1.993s] reading manifest file '../../build/odometry_publisher/odometry_publisher.egg-info/SOURCES.txt'
+[1.995s] writing manifest file '../../build/odometry_publisher/odometry_publisher.egg-info/SOURCES.txt'
+[1.995s] running build
+[1.995s] running build_py
+[1.995s] running install
+[1.995s] running install_lib
+[1.997s] running install_data
+[1.997s] running install_egg_info
+[1.999s] removing '/home/aleksmalm/Hermes/hermes_ws/install/odometry_publisher/lib/python3.10/site-packages/odometry_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[1.999s] Copying ../../build/odometry_publisher/odometry_publisher.egg-info to /home/aleksmalm/Hermes/hermes_ws/install/odometry_publisher/lib/python3.10/site-packages/odometry_publisher-0.0.0-py3.10.egg-info
+[2.000s] running install_scripts
+[2.024s] Installing odometry_publisher script to /home/aleksmalm/Hermes/hermes_ws/install/odometry_publisher/lib/odometry_publisher
+[2.024s] writing list of installed files to '/home/aleksmalm/Hermes/hermes_ws/build/odometry_publisher/install.log'
+[2.167s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/src/odometry_publisher' returned '0': PYTHONPATH=/home/aleksmalm/Hermes/hermes_ws/build/odometry_publisher/prefix_override:/home/aleksmalm/Hermes/hermes_ws/install/odometry_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/odometry_publisher build --build-base /home/aleksmalm/Hermes/hermes_ws/build/odometry_publisher/build install --record /home/aleksmalm/Hermes/hermes_ws/build/odometry_publisher/install.log --single-version-externally-managed install_data

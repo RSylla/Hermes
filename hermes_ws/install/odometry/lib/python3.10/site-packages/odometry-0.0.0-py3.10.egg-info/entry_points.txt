@@ -1,3 +1,0 @@
-[console_scripts]
-odometry_node = odometry.odometry_node:main
-
