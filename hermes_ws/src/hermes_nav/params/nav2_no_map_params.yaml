@@ -10,7 +10,7 @@ bt_navigator:
   ros__parameters:
     use_sim_time: True
     global_frame: map
-    robot_base_frame: base_link_front
+    robot_base_frame: base_footprint
     odom_topic: odom
     bt_loop_duration: 10
     default_server_timeout: 20
@@ -182,7 +182,7 @@ local_costmap:
       update_frequency: 5.0
       publish_frequency: 2.0
       global_frame: odom
-      robot_base_frame: base_link_front
+      robot_base_frame: base_footprint
       rolling_window: true
       width: 10
       height: 10
@@ -224,7 +224,7 @@ global_costmap:
       update_frequency: 1.0
       publish_frequency: 1.0
       global_frame: map
-      robot_base_frame: base_link_front
+      robot_base_frame: base_footprint
       robot_radius: 0.6
       resolution: 0.2
       # When using GPS navigation you will potentially traverse huge environments which are not practical to
@@ -332,7 +332,7 @@ behavior_server:
       plugin: "nav2_behaviors/AssistedTeleop"
     local_frame: odom
     global_frame: map
-    robot_base_frame: base_link
+    robot_base_frame: base_footprint
     transform_tolerance: 0.1
     simulate_ahead_time: 2.0
     max_rotational_vel: 1.0

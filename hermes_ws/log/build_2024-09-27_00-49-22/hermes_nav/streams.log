@@ -1,0 +1,26 @@
+[5.561s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/src/hermes_nav': PYTHONPATH=/home/aleksmalm/Hermes/hermes_ws/build/hermes_nav/prefix_override:/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/hermes_nav build --build-base /home/aleksmalm/Hermes/hermes_ws/build/hermes_nav/build install --record /home/aleksmalm/Hermes/hermes_ws/build/hermes_nav/install.log --single-version-externally-managed install_data
+[6.445s] running egg_info
+[6.447s] writing ../../build/hermes_nav/hermes_nav.egg-info/PKG-INFO
+[6.448s] writing dependency_links to ../../build/hermes_nav/hermes_nav.egg-info/dependency_links.txt
+[6.448s] writing entry points to ../../build/hermes_nav/hermes_nav.egg-info/entry_points.txt
+[6.448s] writing requirements to ../../build/hermes_nav/hermes_nav.egg-info/requires.txt
+[6.449s] writing top-level names to ../../build/hermes_nav/hermes_nav.egg-info/top_level.txt
+[6.454s] reading manifest file '../../build/hermes_nav/hermes_nav.egg-info/SOURCES.txt'
+[6.458s] writing manifest file '../../build/hermes_nav/hermes_nav.egg-info/SOURCES.txt'
+[6.458s] running build
+[6.458s] running build_py
+[6.460s] running install
+[6.461s] running install_lib
+[6.465s] running install_data
+[6.467s] running install_egg_info
+[6.471s] removing '/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav-0.0.0-py3.10.egg-info' (and everything under it)
+[6.471s] Copying ../../build/hermes_nav/hermes_nav.egg-info to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav-0.0.0-py3.10.egg-info
+[6.474s] running install_scripts
+[6.522s] Installing display script to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+[6.523s] Installing gps_converter_node script to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+[6.523s] Installing gps_waypoint_follower script to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+[6.523s] Installing gps_waypoint_logger script to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+[6.523s] Installing interactive_waypoint_follower script to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+[6.524s] Installing logged_waypoint_follower script to /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+[6.525s] writing list of installed files to '/home/aleksmalm/Hermes/hermes_ws/build/hermes_nav/install.log'
+[6.587s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/src/hermes_nav' returned '0': PYTHONPATH=/home/aleksmalm/Hermes/hermes_ws/build/hermes_nav/prefix_override:/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/hermes_nav build --build-base /home/aleksmalm/Hermes/hermes_ws/build/hermes_nav/build install --record /home/aleksmalm/Hermes/hermes_ws/build/hermes_nav/install.log --single-version-externally-managed install_data

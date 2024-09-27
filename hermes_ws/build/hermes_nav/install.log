@@ -23,6 +23,7 @@
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/ament_index/resource_index/packages/hermes_nav
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/package.xml
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch/launch_sim.launch.py
+/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch/display.launch.py
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch/mapviz.launch.py
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch/rsp.launch.py
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch/gazebo_gps_world_hermes.launch.py
@@ -42,6 +43,7 @@
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav-0.0.0-py3.10.egg-info/entry_points.txt
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes_nav-0.0.0-py3.10.egg-info/requires.txt
+/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav/display
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav/gps_converter_node
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav/gps_waypoint_follower
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav/gps_waypoint_logger

@@ -30,6 +30,7 @@ setup(
             'logged_waypoint_follower = hermes_nav.logged_waypoint_follower:main',
             'gps_converter_node = hermes_nav.gps_converter_node:main',
             'gps_waypoint_follower = hermes_nav.gps_waypoint_follower:main',
+            'display = hermes_nav.display:main',
         ],
     },
 )

@@ -13,6 +13,7 @@ hermes_nav/gps_converter_node.py
 hermes_nav/gps_waypoint_logger.py
 hermes_nav/interactive_waypoint_follower.py
 hermes_nav/logged_waypoint_follower.py
+launch/display.launch.py
 launch/dual_ekf_navsat.launch.py
 launch/gazebo_gps_world_hermes.launch.py
 launch/gps_waypoint_follower.launch.py
@@ -28,6 +29,7 @@ nav2_gps_waypoint_follower_demo/utils/gps_utils.py
 params/demo_waypoints.yaml
 params/dual_ekf_navsat_params.yaml
 params/nav2_no_map_params.yaml
+resource/hermes_nav
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

@@ -11,14 +11,15 @@
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/__init__.py
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.stl
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.rviz
+/home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv_tagumine.part
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/liigend.part
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.part
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/my_world.sdf
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv.part
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv.stl
+/home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv_tagumine.stl
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.json
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/kere.stl
-/home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/robot.urdf
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/kere.part
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes_model.urdf
 /home/aleksmalm/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/liigend.stl

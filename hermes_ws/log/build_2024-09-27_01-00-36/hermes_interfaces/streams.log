@@ -1,0 +1,142 @@
+[1.099s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/robot_localization_pkg:/home/aleksmalm/Hermes/hermes_ws/install/path_creator:/home/aleksmalm/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/aleksmalm/Hermes/hermes_ws/install/icm20948_publisher:/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav:/home/aleksmalm/Hermes/hermes_ws/install/gps_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces -- -j12 -l12
+[2.989s] [  3%] Built target hermes_interfaces__cpp
+[2.990s] [ 12%] Built target hermes_interfaces__rosidl_generator_c
+[2.990s] [ 12%] Built target ament_cmake_python_copy_hermes_interfaces
+[2.991s] [ 22%] Built target hermes_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.991s] [ 32%] Built target hermes_interfaces__rosidl_typesupport_cpp
+[2.991s] [ 41%] Built target hermes_interfaces__rosidl_typesupport_introspection_cpp
+[2.991s] [ 51%] Built target hermes_interfaces__rosidl_typesupport_c
+[2.991s] [ 61%] Built target hermes_interfaces__rosidl_typesupport_introspection_c
+[2.991s] [ 70%] Built target hermes_interfaces__rosidl_typesupport_fastrtps_c
+[2.992s] [ 70%] Built target hermes_interfaces
+[2.992s] [ 74%] Built target hermes_interfaces__py
+[2.992s] [ 80%] Built target hermes_interfaces__rosidl_generator_py
+[2.992s] [ 93%] Built target hermes_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.992s] [ 93%] Built target hermes_interfaces__rosidl_typesupport_c__pyext
+[2.992s] [100%] Built target hermes_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.992s] running egg_info
+[2.993s] writing hermes_interfaces.egg-info/PKG-INFO
+[2.993s] writing dependency_links to hermes_interfaces.egg-info/dependency_links.txt
+[2.993s] writing top-level names to hermes_interfaces.egg-info/top_level.txt
+[2.993s] reading manifest file 'hermes_interfaces.egg-info/SOURCES.txt'
+[2.993s] writing manifest file 'hermes_interfaces.egg-info/SOURCES.txt'
+[2.993s] [100%] Built target ament_cmake_python_build_hermes_interfaces_egg
+[3.344s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/robot_localization_pkg:/home/aleksmalm/Hermes/hermes_ws/install/path_creator:/home/aleksmalm/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/aleksmalm/Hermes/hermes_ws/install/icm20948_publisher:/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav:/home/aleksmalm/Hermes/hermes_ws/install/gps_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces -- -j12 -l12
+[3.518s] Invoking command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/robot_localization_pkg:/home/aleksmalm/Hermes/hermes_ws/install/path_creator:/home/aleksmalm/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/aleksmalm/Hermes/hermes_ws/install/icm20948_publisher:/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav:/home/aleksmalm/Hermes/hermes_ws/install/gps_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces
+[3.560s] -- Install configuration: ""
+[3.561s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/ament_index/resource_index/rosidl_interfaces/hermes_interfaces
+[3.561s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces
+[3.561s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg
+[3.561s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail
+[3.561s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__type_support.h
+[3.562s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__struct.h
+[3.562s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__functions.c
+[3.562s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__functions.h
+[3.562s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/gps_fixed.h
+[3.562s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.563s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/environment/library_path.sh
+[3.563s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/environment/library_path.dsv
+[3.563s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/lib/libhermes_interfaces__rosidl_generator_c.so
+[3.571s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces
+[3.571s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg
+[3.572s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.572s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail
+[3.572s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__rosidl_typesupport_fastrtps_c.h
+[3.572s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/lib/libhermes_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.572s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces
+[3.573s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg
+[3.573s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.573s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail
+[3.573s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__rosidl_typesupport_introspection_c.h
+[3.573s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__type_support.c
+[3.574s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/lib/libhermes_interfaces__rosidl_typesupport_introspection_c.so
+[3.574s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/lib/libhermes_interfaces__rosidl_typesupport_c.so
+[3.578s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces
+[3.579s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg
+[3.579s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail
+[3.579s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__traits.hpp
+[3.579s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__struct.hpp
+[3.580s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__builder.hpp
+[3.580s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/gps_fixed.hpp
+[3.580s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces
+[3.580s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg
+[3.580s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.581s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail
+[3.581s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__rosidl_typesupport_fastrtps_cpp.hpp
+[3.581s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/dds_fastrtps
+[3.581s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/lib/libhermes_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.581s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces
+[3.582s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg
+[3.582s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail
+[3.582s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__rosidl_typesupport_introspection_cpp.hpp
+[3.582s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/include/hermes_interfaces/hermes_interfaces/msg/detail/gps_fixed__type_support.cpp
+[3.582s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/lib/libhermes_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.583s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/lib/libhermes_interfaces__rosidl_typesupport_cpp.so
+[3.583s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/environment/pythonpath.sh
+[3.583s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/environment/pythonpath.dsv
+[3.583s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces-0.0.0-py3.10.egg-info
+[3.583s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.584s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[3.584s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[3.584s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.584s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces
+[3.584s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/__init__.py
+[3.585s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/_hermes_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.585s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/hermes_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.585s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/hermes_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.585s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/msg
+[3.585s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/msg/__init__.py
+[3.585s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/msg/_gps_fixed.py
+[3.586s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/msg/_gps_fixed_s.c
+[3.590s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/_hermes_interfaces_s.ep.rosidl_typesupport_c.c
+[3.590s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/_hermes_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.591s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/libhermes_interfaces__rosidl_generator_py.so
+[3.591s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/hermes_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.686s] Listing '/home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces'...
+[3.686s] Listing '/home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/msg'...
+[3.701s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/hermes_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.702s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/hermes_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.703s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages/hermes_interfaces/hermes_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.703s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/lib/libhermes_interfaces__rosidl_generator_py.so
+[3.704s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/msg/GpsFixed.idl
+[3.704s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/msg/GpsFixed.msg
+[3.705s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/ament_index/resource_index/package_run_dependencies/hermes_interfaces
+[3.706s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/ament_index/resource_index/parent_prefix_path/hermes_interfaces
+[3.707s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/environment/ament_prefix_path.sh
+[3.708s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/environment/ament_prefix_path.dsv
+[3.710s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/environment/path.sh
+[3.710s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/environment/path.dsv
+[3.711s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/local_setup.bash
+[3.712s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/local_setup.sh
+[3.712s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/local_setup.zsh
+[3.712s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/local_setup.dsv
+[3.712s] -- Installing: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/package.dsv
+[3.712s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/ament_index/resource_index/packages/hermes_interfaces
+[3.713s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/export_hermes_interfaces__rosidl_generator_cExport.cmake
+[3.713s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/export_hermes_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.713s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/export_hermes_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.713s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/export_hermes_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.713s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/hermes_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.713s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/hermes_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.714s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/hermes_interfaces__rosidl_typesupport_cExport.cmake
+[3.714s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/hermes_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.714s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/export_hermes_interfaces__rosidl_generator_cppExport.cmake
+[3.714s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/export_hermes_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.714s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/export_hermes_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.715s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/hermes_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.715s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/hermes_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.716s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/hermes_interfaces__rosidl_typesupport_cppExport.cmake
+[3.716s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/hermes_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.716s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/export_hermes_interfaces__rosidl_generator_pyExport.cmake
+[3.716s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/export_hermes_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.717s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.717s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.717s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.717s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.718s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.718s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.718s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.718s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/hermes_interfacesConfig.cmake
+[3.718s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/cmake/hermes_interfacesConfig-version.cmake
+[3.719s] -- Up-to-date: /home/aleksmalm/Hermes/hermes_ws/install/hermes_interfaces/share/hermes_interfaces/package.xml
+[4.430s] Invoked command in '/home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksmalm/Hermes/hermes_ws/install/tof_publisher:/home/aleksmalm/Hermes/hermes_ws/install/teleop_control:/home/aleksmalm/Hermes/hermes_ws/install/robot_localization_pkg:/home/aleksmalm/Hermes/hermes_ws/install/path_creator:/home/aleksmalm/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/aleksmalm/Hermes/hermes_ws/install/icm20948_publisher:/home/aleksmalm/Hermes/hermes_ws/install/hermes_nav:/home/aleksmalm/Hermes/hermes_ws/install/gps_publisher:/home/aleksmalm/Hermes/hermes_ws/install/cmd_vel:/home/aleksmalm/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/aleksmalm/Hermes/hermes_ws/build/hermes_interfaces
