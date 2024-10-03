@@ -1,0 +1,35 @@
+[1.776s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/install/path_creator:/home/hermes/Hermes/hermes_ws/install/odometry_publisher:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/hermes_interfaces -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/hermes_interfaces
+[1.806s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.145s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.164s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.176s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.182s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.254s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.110s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.879s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.763s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.828s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.992s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.992s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.992s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[5.088s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.160s] -- Added test 'lint_cmake' to check CMake code style
+[5.175s] -- Added test 'xmllint' to check XML markup files
+[5.182s] -- Configuring done
+[5.426s] -- Generating done
+[5.446s] -- Build files have been written to: /home/hermes/Hermes/hermes_ws/build/hermes_interfaces
+[5.492s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/install/path_creator:/home/hermes/Hermes/hermes_ws/install/odometry_publisher:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/hermes_interfaces -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/hermes_interfaces
+[5.494s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/install/path_creator:/home/hermes/Hermes/hermes_ws/install/odometry_publisher:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_interfaces -- -j6 -l6
+[5.880s] failed to create symbolic link '/home/hermes/Hermes/hermes_ws/build/hermes_interfaces/ament_cmake_python/hermes_interfaces/hermes_interfaces' because existing path cannot be removed: Is a directory
+[5.880s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_hermes_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_hermes_interfaces] Error 1
+[5.880s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_hermes_interfaces.dir/all] Error 2
+[5.880s] gmake[1]: *** Waiting for unfinished jobs....
+[5.883s] [35m[1mConsolidate compiler generated dependencies of target hermes_interfaces__rosidl_generator_c[0m
+[5.883s] [  9%] Built target hermes_interfaces__rosidl_generator_c
+[5.883s] [ 12%] Built target hermes_interfaces__cpp
+[5.883s] [35m[1mConsolidate compiler generated dependencies of target hermes_interfaces__rosidl_typesupport_fastrtps_c[0m
+[5.884s] [35m[1mConsolidate compiler generated dependencies of target hermes_interfaces__rosidl_typesupport_introspection_c[0m
+[5.949s] [ 22%] Built target hermes_interfaces__rosidl_typesupport_introspection_c
+[5.967s] [ 32%] Built target hermes_interfaces__rosidl_typesupport_fastrtps_c
+[5.970s] gmake: *** [Makefile:146: all] Error 2
+[5.990s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/install/path_creator:/home/hermes/Hermes/hermes_ws/install/odometry_publisher:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_interfaces -- -j6 -l6

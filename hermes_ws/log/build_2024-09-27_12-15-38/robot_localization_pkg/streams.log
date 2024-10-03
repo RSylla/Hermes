@@ -1,0 +1,25 @@
+[1.691s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/robot_localization_pkg': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_localization_pkg build --build-base /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/build install --record /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/install.log --single-version-externally-managed install_data
+[2.064s] /home/hermes/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[2.064s]   warnings.warn(msg)
+[2.312s] running egg_info
+[2.353s] writing ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/PKG-INFO
+[2.355s] writing dependency_links to ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/dependency_links.txt
+[2.356s] writing requirements to ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/requires.txt
+[2.356s] writing top-level names to ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/top_level.txt
+[2.444s] reading manifest file '../../build/robot_localization_pkg/robot_localization_pkg.egg-info/SOURCES.txt'
+[2.447s] writing manifest file '../../build/robot_localization_pkg/robot_localization_pkg.egg-info/SOURCES.txt'
+[2.447s] running build
+[2.447s] running build_py
+[2.448s] copying robot_localization_pkg/__init__.py -> /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/build/lib/robot_localization_pkg
+[2.448s] running install
+[2.458s] running install_lib
+[2.502s] running install_data
+[2.503s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/share/robot_localization_pkg
+[2.503s] copying launch/localization.launch.py -> /home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/share/robot_localization_pkg/launch
+[2.504s] copying param/ekf.yaml -> /home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/share/robot_localization_pkg/param
+[2.505s] running install_egg_info
+[2.550s] removing '/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages/robot_localization_pkg-0.0.1-py3.10.egg-info' (and everything under it)
+[2.551s] Copying ../../build/robot_localization_pkg/robot_localization_pkg.egg-info to /home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages/robot_localization_pkg-0.0.1-py3.10.egg-info
+[2.553s] running install_scripts
+[2.891s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/install.log'
+[2.964s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/robot_localization_pkg' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_localization_pkg build --build-base /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/build install --record /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/install.log --single-version-externally-managed install_data

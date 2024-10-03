@@ -1,0 +1,3 @@
+[console_scripts]
+static_tf_broadcaster = my_tf2_broadcaster.static_tf_broadcaster:main
+

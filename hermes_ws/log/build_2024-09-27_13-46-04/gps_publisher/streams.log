@@ -1,0 +1,34 @@
+[4.118s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/gps_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hermes/Hermes/hermes_ws/build/gps_publisher/build --no-deps symlink_data --force
+[4.822s] /home/hermes/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[4.822s]   warnings.warn(msg)
+[5.345s] running develop
+[5.349s] /home/hermes/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[5.349s] !!
+[5.349s] 
+[5.349s]         ********************************************************************************
+[5.349s]         Please avoid running ``setup.py`` and ``easy_install``.
+[5.349s]         Instead, use pypa/build, pypa/installer or other
+[5.349s]         standards-based tools.
+[5.350s] 
+[5.350s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[5.350s]         ********************************************************************************
+[5.350s] 
+[5.350s] !!
+[5.350s]   easy_install.initialize_options(self)
+[6.177s] running egg_info
+[6.229s] writing gps_publisher.egg-info/PKG-INFO
+[6.234s] writing dependency_links to gps_publisher.egg-info/dependency_links.txt
+[6.236s] writing entry points to gps_publisher.egg-info/entry_points.txt
+[6.237s] writing requirements to gps_publisher.egg-info/requires.txt
+[6.239s] writing top-level names to gps_publisher.egg-info/top_level.txt
+[6.342s] reading manifest file 'gps_publisher.egg-info/SOURCES.txt'
+[6.345s] writing manifest file 'gps_publisher.egg-info/SOURCES.txt'
+[6.404s] running build_ext
+[6.405s] Creating /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps-publisher.egg-link (link to .)
+[6.408s] Installing gps_publisher_node script to /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/gps_publisher
+[6.411s] 
+[6.412s] Installed /home/hermes/Hermes/hermes_ws/build/gps_publisher
+[6.412s] running symlink_data
+[6.414s] symbolically linking /home/hermes/Hermes/hermes_ws/build/gps_publisher/resource/gps_publisher -> /home/hermes/Hermes/hermes_ws/install/gps_publisher/share/ament_index/resource_index/packages
+[6.416s] symbolically linking /home/hermes/Hermes/hermes_ws/build/gps_publisher/package.xml -> /home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher
+[7.157s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/gps_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hermes/Hermes/hermes_ws/build/gps_publisher/build --no-deps symlink_data --force

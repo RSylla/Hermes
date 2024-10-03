@@ -1,0 +1,2 @@
+Invoking command in '/home/raivo/Hermes_Latest_version/hermes_ws/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/raivo/Hermes_Latest_version/hermes_ws/build/imu_filter_madgwick -- -j12 -l12
+Invoked command in '/home/raivo/Hermes_Latest_version/hermes_ws/build/imu_filter_madgwick' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/raivo/Hermes_Latest_version/hermes_ws/build/imu_filter_madgwick -- -j12 -l12

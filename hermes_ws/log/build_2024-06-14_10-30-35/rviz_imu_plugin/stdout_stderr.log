@@ -1,0 +1,29 @@
+[ 11%] [34m[1mAutomatic MOC for target rviz_imu_plugin[0m
+[ 11%] Built target rviz_imu_plugin_autogen
+[35m[1mConsolidate compiler generated dependencies of target rviz_imu_plugin[0m
+[100%] Built target rviz_imu_plugin
+-- Install configuration: ""
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/plugin_description.xml
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/library_path.sh
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/library_path.dsv
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/lib/librviz_imu_plugin.so
+-- Set runtime path of "/home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/lib/librviz_imu_plugin.so" to ""
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/ament_index/resource_index/package_run_dependencies/rviz_imu_plugin
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/ament_index/resource_index/parent_prefix_path/rviz_imu_plugin
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/ament_prefix_path.sh
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/ament_prefix_path.dsv
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/path.sh
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/environment/path.dsv
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.bash
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.sh
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.zsh
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/local_setup.dsv
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/package.dsv
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/ament_index/resource_index/packages/rviz_imu_plugin
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/ament_index/resource_index/rviz_common__pluginlib__plugin/rviz_imu_plugin
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/rviz_imu_pluginConfig.cmake
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/cmake/rviz_imu_pluginConfig-version.cmake
+-- Installing: /home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/share/rviz_imu_plugin/package.xml

@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/icm20948_publisher/icm20948_publisher.egg-info
+writing ../../build/icm20948_publisher/icm20948_publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/icm20948_publisher/icm20948_publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/icm20948_publisher/icm20948_publisher.egg-info/entry_points.txt
+writing requirements to ../../build/icm20948_publisher/icm20948_publisher.egg-info/requires.txt
+writing top-level names to ../../build/icm20948_publisher/icm20948_publisher.egg-info/top_level.txt
+writing manifest file '../../build/icm20948_publisher/icm20948_publisher.egg-info/SOURCES.txt'
+reading manifest file '../../build/icm20948_publisher/icm20948_publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/icm20948_publisher/icm20948_publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/raivo/Hermes_Latest_version/hermes_ws/build/icm20948_publisher/build
+creating /home/raivo/Hermes_Latest_version/hermes_ws/build/icm20948_publisher/build/lib
+creating /home/raivo/Hermes_Latest_version/hermes_ws/build/icm20948_publisher/build/lib/icm20948_publisher
+copying icm20948_publisher/icm_imu.py -> /home/raivo/Hermes_Latest_version/hermes_ws/build/icm20948_publisher/build/lib/icm20948_publisher
+copying icm20948_publisher/__init__.py -> /home/raivo/Hermes_Latest_version/hermes_ws/build/icm20948_publisher/build/lib/icm20948_publisher
+running install
+running install_lib
+creating /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages/icm20948_publisher
+copying /home/raivo/Hermes_Latest_version/hermes_ws/build/icm20948_publisher/build/lib/icm20948_publisher/icm_imu.py -> /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages/icm20948_publisher
+copying /home/raivo/Hermes_Latest_version/hermes_ws/build/icm20948_publisher/build/lib/icm20948_publisher/__init__.py -> /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages/icm20948_publisher
+byte-compiling /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages/icm20948_publisher/icm_imu.py to icm_imu.cpython-310.pyc
+byte-compiling /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages/icm20948_publisher/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/share/ament_index
+creating /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/share/ament_index/resource_index
+creating /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/share/ament_index/resource_index/packages
+copying resource/icm20948_publisher -> /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/share/ament_index/resource_index/packages
+copying package.xml -> /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/share/icm20948_publisher
+running install_egg_info
+Copying ../../build/icm20948_publisher/icm20948_publisher.egg-info to /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages/icm20948_publisher-0.0.0-py3.10.egg-info
+running install_scripts
+Installing icm_imu script to /home/raivo/Hermes_Latest_version/hermes_ws/install/icm20948_publisher/lib/icm20948_publisher
+writing list of installed files to '/home/raivo/Hermes_Latest_version/hermes_ws/build/icm20948_publisher/install.log'

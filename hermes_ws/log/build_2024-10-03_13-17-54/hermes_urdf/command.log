@@ -1,0 +1,2 @@
+Invoking command in '/home/raivo/Hermes_Latest_version/hermes_ws/build/hermes_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/raivo/Hermes_Latest_version/hermes_ws/src/hermes_urdf -DCMAKE_INSTALL_PREFIX=/home/raivo/Hermes_Latest_version/hermes_ws/install/hermes_urdf
+Invoked command in '/home/raivo/Hermes_Latest_version/hermes_ws/build/hermes_urdf' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/raivo/Hermes_Latest_version/hermes_ws/src/hermes_urdf -DCMAKE_INSTALL_PREFIX=/home/raivo/Hermes_Latest_version/hermes_ws/install/hermes_urdf

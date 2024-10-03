@@ -1,0 +1,42 @@
+[3.802s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_nav': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/hermes_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/hermes/Hermes/hermes_ws/build/hermes_nav/build --no-deps symlink_data --force
+[4.288s] /home/hermes/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[4.288s]   warnings.warn(msg)
+[4.919s] running develop
+[4.920s] /home/hermes/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[4.920s] !!
+[4.920s] 
+[4.920s]         ********************************************************************************
+[4.920s]         Please avoid running ``setup.py`` and ``easy_install``.
+[4.920s]         Instead, use pypa/build, pypa/installer or other
+[4.921s]         standards-based tools.
+[4.921s] 
+[4.921s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[4.921s]         ********************************************************************************
+[4.921s] 
+[4.921s] !!
+[4.921s]   easy_install.initialize_options(self)
+[5.869s] running egg_info
+[5.922s] writing hermes_nav.egg-info/PKG-INFO
+[5.923s] writing dependency_links to hermes_nav.egg-info/dependency_links.txt
+[5.924s] writing entry points to hermes_nav.egg-info/entry_points.txt
+[5.924s] writing requirements to hermes_nav.egg-info/requires.txt
+[5.925s] writing top-level names to hermes_nav.egg-info/top_level.txt
+[6.022s] reading manifest file 'hermes_nav.egg-info/SOURCES.txt'
+[6.025s] writing manifest file 'hermes_nav.egg-info/SOURCES.txt'
+[6.071s] running build_ext
+[6.073s] Creating /home/hermes/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages/hermes-nav.egg-link (link to .)
+[6.075s] Installing gps_converter_node script to /home/hermes/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+[6.075s] Installing gps_waypoint_logger script to /home/hermes/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+[6.076s] Installing interactive_waypoint_follower script to /home/hermes/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+[6.076s] Installing logged_waypoint_follower script to /home/hermes/Hermes/hermes_ws/install/hermes_nav/lib/hermes_nav
+[6.076s] 
+[6.076s] Installed /home/hermes/Hermes/hermes_ws/build/hermes_nav
+[6.076s] running symlink_data
+[6.077s] symbolically linking /home/hermes/Hermes/hermes_ws/build/hermes_nav/resource/hermes_nav -> /home/hermes/Hermes/hermes_ws/install/hermes_nav/share/ament_index/resource_index/packages
+[6.077s] symbolically linking /home/hermes/Hermes/hermes_ws/build/hermes_nav/package.xml -> /home/hermes/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav
+[6.077s] symbolically linking /home/hermes/Hermes/hermes_ws/build/hermes_nav/launch/launch_sim.launch.py -> /home/hermes/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+[6.078s] symbolically linking /home/hermes/Hermes/hermes_ws/build/hermes_nav/launch/dual_ekf_navsat.launch.py -> /home/hermes/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+[6.079s] symbolically linking /home/hermes/Hermes/hermes_ws/build/hermes_nav/launch/gps_waypoint_follower.launch.py -> /home/hermes/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+[6.079s] symbolically linking /home/hermes/Hermes/hermes_ws/build/hermes_nav/launch/mapviz.launch.py -> /home/hermes/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+[6.079s] symbolically linking /home/hermes/Hermes/hermes_ws/build/hermes_nav/launch/gazebo_gps_world_hermes.launch.py -> /home/hermes/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch
+[6.079s] symbolically linking /home/hermes/Hermes/hermes_ws/build/hermes_nav/launch/rsp.launch.py -> /home/hermes/Hermes/hermes_ws/install/hermes_nav/share/hermes_nav/launch

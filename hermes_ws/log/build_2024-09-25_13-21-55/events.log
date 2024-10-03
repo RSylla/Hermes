@@ -1,0 +1,83 @@
+[0.000000] (-) TimerEvent: {}
+[0.001018] (-) JobUnselected: {'identifier': 'cameras'}
+[0.001317] (-) JobUnselected: {'identifier': 'cmd_vel'}
+[0.001427] (-) JobUnselected: {'identifier': 'hermes_interfaces'}
+[0.001507] (-) JobUnselected: {'identifier': 'hermes_nav'}
+[0.001576] (-) JobUnselected: {'identifier': 'hermes_urdf'}
+[0.001648] (-) JobUnselected: {'identifier': 'icm20948_publisher'}
+[0.001717] (-) JobUnselected: {'identifier': 'ldlidar'}
+[0.001783] (-) JobUnselected: {'identifier': 'ldlidar_component'}
+[0.001849] (-) JobUnselected: {'identifier': 'ldlidar_node'}
+[0.001914] (-) JobUnselected: {'identifier': 'multi_package_launcher'}
+[0.001977] (-) JobUnselected: {'identifier': 'my_tf2_broadcaster'}
+[0.002039] (-) JobUnselected: {'identifier': 'odometry_publisher'}
+[0.002103] (-) JobUnselected: {'identifier': 'path_creator'}
+[0.002165] (-) JobUnselected: {'identifier': 'robot_localization_pkg'}
+[0.002228] (-) JobUnselected: {'identifier': 'teleop_control'}
+[0.002292] (-) JobUnselected: {'identifier': 'tof_publisher'}
+[0.002362] (gps_publisher) JobQueued: {'identifier': 'gps_publisher', 'dependencies': OrderedDict()}
+[0.002436] (gps_publisher) JobStarted: {'identifier': 'gps_publisher'}
+[0.099026] (-) TimerEvent: {}
+[0.199613] (-) TimerEvent: {}
+[0.300212] (-) TimerEvent: {}
+[0.400774] (-) TimerEvent: {}
+[0.501343] (-) TimerEvent: {}
+[0.602557] (-) TimerEvent: {}
+[0.703126] (-) TimerEvent: {}
+[0.803651] (-) TimerEvent: {}
+[0.904236] (-) TimerEvent: {}
+[1.004794] (-) TimerEvent: {}
+[1.105347] (-) TimerEvent: {}
+[1.205920] (-) TimerEvent: {}
+[1.306481] (-) TimerEvent: {}
+[1.407042] (-) TimerEvent: {}
+[1.507601] (-) TimerEvent: {}
+[1.608170] (-) TimerEvent: {}
+[1.708697] (-) TimerEvent: {}
+[1.809287] (-) TimerEvent: {}
+[1.909884] (-) TimerEvent: {}
+[1.937858] (gps_publisher) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gps_publisher', 'build', '--build-base', '/home/hermes/Hermes/hermes_ws/build/gps_publisher/build', 'install', '--record', '/home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/hermes/Hermes/hermes_ws/src/gps_publisher', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'hermes', 'SSH_CLIENT': '10.0.3.62 41106 22', 'LC_TIME': 'et_EE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin/lib:/home/hermes/Hermes/hermes_ws/install/ldlidar_component/lib:/home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick/lib:/home/hermes/Hermes/hermes_ws/install/imu_complementary_filter/lib:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces/lib:/home/hermes/Hermes/hermes_ws/src/install/rviz_imu_plugin/lib:/home/hermes/Hermes/hermes_ws/src/install/ldlidar_component/lib:/home/hermes/Hermes/hermes_ws/src/install/imu_filter_madgwick/lib:/home/hermes/Hermes/hermes_ws/src/install/imu_complementary_filter/lib:/home/hermes/Hermes/hermes_ws/src/install/hermes_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.2/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/hermes', 'OLDPWD': '/home/hermes', 'SSH_TTY': '/dev/pts/5', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'et_EE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/hermes/Hermes/hermes_ws/install:/home/hermes/Hermes/hermes_ws/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'hermes', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '15', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/hermes/.local/bin:/opt/ros/humble/bin:/usr/local/cuda-12.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'et_EE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'et_EE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/imu_tools:/home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/install/path_creator:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick:/home/hermes/Hermes/hermes_ws/install/imu_complementary_filter:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Hermes/hermes_ws/src/install/tof_publisher:/home/hermes/Hermes/hermes_ws/src/install/teleop_control:/home/hermes/Hermes/hermes_ws/src/install/imu_tools:/home/hermes/Hermes/hermes_ws/src/install/rviz_imu_plugin:/home/hermes/Hermes/hermes_ws/src/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/src/install/path_creator:/home/hermes/Hermes/hermes_ws/src/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/src/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/src/install/ldlidar:/home/hermes/Hermes/hermes_ws/src/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/src/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/src/install/imu_filter_madgwick:/home/hermes/Hermes/hermes_ws/src/install/imu_complementary_filter:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/src/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/src/install/hermes_nav:/home/hermes/Hermes/hermes_ws/src/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/src/install/gps_publisher:/home/hermes/Hermes/hermes_ws/src/install/cmd_vel:/home/hermes/Hermes/hermes_ws/src/install/cameras:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'et_EE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'et_EE.UTF-8', 'LC_IDENTIFICATION': 'et_EE.UTF-8', 'PWD': '/home/hermes/Hermes/hermes_ws/build/gps_publisher', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.0.3.62 41106 10.0.3.225 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/odometry_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/build/odometry:/home/hermes/Hermes/hermes_ws/install/odometry/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/multi_package_launcher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces/local/lib/python3.10/dist-packages:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/tof_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/teleop_control/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/robot_localization_pkg/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/path_creator/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/odometry_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/odometry/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/my_tf2_broadcaster/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/multi_package_launcher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/hermes_nav/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/hermes_interfaces/local/lib/python3.10/dist-packages:/home/hermes/Hermes/hermes_ws/src/install/gps_publisher/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/cmd_vel/lib/python3.10/site-packages:/home/hermes/Hermes/hermes_ws/src/install/cameras/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib', 'LC_NUMERIC': 'et_EE.UTF-8', 'LC_PAPER': 'et_EE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/hermes/Hermes/hermes_ws/install/imu_tools:/home/hermes/Hermes/hermes_ws/install/rviz_imu_plugin:/home/hermes/Hermes/hermes_ws/install/ldlidar:/home/hermes/Hermes/hermes_ws/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick:/home/hermes/Hermes/hermes_ws/install/imu_complementary_filter:/home/hermes/Hermes/hermes_ws/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/install/hermes_interfaces:/home/hermes/Hermes/hermes_ws/src/install/imu_tools:/home/hermes/Hermes/hermes_ws/src/install/rviz_imu_plugin:/home/hermes/Hermes/hermes_ws/src/install/ldlidar:/home/hermes/Hermes/hermes_ws/src/install/ldlidar_node:/home/hermes/Hermes/hermes_ws/src/install/ldlidar_component:/home/hermes/Hermes/hermes_ws/src/install/imu_filter_madgwick:/home/hermes/Hermes/hermes_ws/src/install/imu_complementary_filter:/home/hermes/Hermes/hermes_ws/src/install/hermes_urdf:/home/hermes/Hermes/hermes_ws/src/install/hermes_interfaces'}, 'shell': False}
+[2.010035] (-) TimerEvent: {}
+[2.110639] (-) TimerEvent: {}
+[2.211214] (-) TimerEvent: {}
+[2.311799] (-) TimerEvent: {}
+[2.347539] (gps_publisher) StderrLine: {'line': b"/home/hermes/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[2.348083] (gps_publisher) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[2.411938] (-) TimerEvent: {}
+[2.512510] (-) TimerEvent: {}
+[2.607596] (gps_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[2.612597] (-) TimerEvent: {}
+[2.650094] (gps_publisher) StdoutLine: {'line': b'writing ../../build/gps_publisher/gps_publisher.egg-info/PKG-INFO\n'}
+[2.651268] (gps_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/gps_publisher/gps_publisher.egg-info/dependency_links.txt\n'}
+[2.651793] (gps_publisher) StdoutLine: {'line': b'writing entry points to ../../build/gps_publisher/gps_publisher.egg-info/entry_points.txt\n'}
+[2.652355] (gps_publisher) StdoutLine: {'line': b'writing requirements to ../../build/gps_publisher/gps_publisher.egg-info/requires.txt\n'}
+[2.652645] (gps_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/gps_publisher/gps_publisher.egg-info/top_level.txt\n'}
+[2.712757] (-) TimerEvent: {}
+[2.739023] (gps_publisher) StdoutLine: {'line': b"reading manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'\n"}
+[2.742184] (gps_publisher) StdoutLine: {'line': b"writing manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'\n"}
+[2.742584] (gps_publisher) StdoutLine: {'line': b'running build\n'}
+[2.742839] (gps_publisher) StdoutLine: {'line': b'running build_py\n'}
+[2.743370] (gps_publisher) StdoutLine: {'line': b'copying gps_publisher/gps_publisher_node.py -> /home/hermes/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher\n'}
+[2.743984] (gps_publisher) StdoutLine: {'line': b'copying gps_publisher/__init__.py -> /home/hermes/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher\n'}
+[2.744776] (gps_publisher) StdoutLine: {'line': b'running install\n'}
+[2.754422] (gps_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[2.798146] (gps_publisher) StdoutLine: {'line': b'copying /home/hermes/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher/gps_publisher_node.py -> /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher\n'}
+[2.800565] (gps_publisher) StdoutLine: {'line': b'byte-compiling /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher/gps_publisher_node.py to gps_publisher_node.cpython-310.pyc\n'}
+[2.802999] (gps_publisher) StdoutLine: {'line': b'running install_data\n'}
+[2.803882] (gps_publisher) StdoutLine: {'line': b'copying resource/gps_publisher -> /home/hermes/Hermes/hermes_ws/install/gps_publisher/share/ament_index/resource_index/packages\n'}
+[2.804611] (gps_publisher) StdoutLine: {'line': b'copying package.xml -> /home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher\n'}
+[2.804973] (gps_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.812893] (-) TimerEvent: {}
+[2.852890] (gps_publisher) StdoutLine: {'line': b"removing '/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.853574] (gps_publisher) StdoutLine: {'line': b'Copying ../../build/gps_publisher/gps_publisher.egg-info to /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher-0.0.0-py3.10.egg-info\n'}
+[2.855863] (gps_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[2.913054] (-) TimerEvent: {}
+[3.013634] (-) TimerEvent: {}
+[3.114217] (-) TimerEvent: {}
+[3.205462] (gps_publisher) StdoutLine: {'line': b'Installing gps_publisher_node script to /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/gps_publisher\n'}
+[3.206630] (gps_publisher) StdoutLine: {'line': b"writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log'\n"}
+[3.214390] (-) TimerEvent: {}
+[3.279665] (gps_publisher) CommandEnded: {'returncode': 0}
+[3.314691] (-) TimerEvent: {}
+[3.327859] (gps_publisher) JobEnded: {'identifier': 'gps_publisher', 'rc': 0}
+[3.330405] (-) EventReactorShutdown: {}

@@ -1,0 +1,29 @@
+[1.938s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/gps_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gps_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/gps_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log --single-version-externally-managed install_data
+[2.345s] /home/hermes/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[2.346s]   warnings.warn(msg)
+[2.606s] running egg_info
+[2.648s] writing ../../build/gps_publisher/gps_publisher.egg-info/PKG-INFO
+[2.649s] writing dependency_links to ../../build/gps_publisher/gps_publisher.egg-info/dependency_links.txt
+[2.649s] writing entry points to ../../build/gps_publisher/gps_publisher.egg-info/entry_points.txt
+[2.650s] writing requirements to ../../build/gps_publisher/gps_publisher.egg-info/requires.txt
+[2.650s] writing top-level names to ../../build/gps_publisher/gps_publisher.egg-info/top_level.txt
+[2.737s] reading manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'
+[2.740s] writing manifest file '../../build/gps_publisher/gps_publisher.egg-info/SOURCES.txt'
+[2.740s] running build
+[2.741s] running build_py
+[2.741s] copying gps_publisher/gps_publisher_node.py -> /home/hermes/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher
+[2.742s] copying gps_publisher/__init__.py -> /home/hermes/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher
+[2.742s] running install
+[2.752s] running install_lib
+[2.796s] copying /home/hermes/Hermes/hermes_ws/build/gps_publisher/build/lib/gps_publisher/gps_publisher_node.py -> /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher
+[2.798s] byte-compiling /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher/gps_publisher_node.py to gps_publisher_node.cpython-310.pyc
+[2.801s] running install_data
+[2.802s] copying resource/gps_publisher -> /home/hermes/Hermes/hermes_ws/install/gps_publisher/share/ament_index/resource_index/packages
+[2.802s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/gps_publisher/share/gps_publisher
+[2.803s] running install_egg_info
+[2.851s] removing '/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[2.851s] Copying ../../build/gps_publisher/gps_publisher.egg-info to /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages/gps_publisher-0.0.0-py3.10.egg-info
+[2.853s] running install_scripts
+[3.203s] Installing gps_publisher_node script to /home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/gps_publisher
+[3.204s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log'
+[3.278s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/gps_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/gps_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/gps_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/gps_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/gps_publisher/install.log --single-version-externally-managed install_data

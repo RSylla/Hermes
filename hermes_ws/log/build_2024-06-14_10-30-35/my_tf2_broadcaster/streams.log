@@ -1,0 +1,37 @@
+[3.052s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/my_tf2_broadcaster': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/prefix_override:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_tf2_broadcaster build --build-base /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/build install --record /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/install.log --single-version-externally-managed install_data
+[3.743s] running egg_info
+[3.743s] creating ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info
+[3.743s] writing ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/PKG-INFO
+[3.743s] writing dependency_links to ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/dependency_links.txt
+[3.744s] writing entry points to ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/entry_points.txt
+[3.744s] writing requirements to ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/requires.txt
+[3.744s] writing top-level names to ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/top_level.txt
+[3.745s] writing manifest file '../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/SOURCES.txt'
+[3.746s] reading manifest file '../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/SOURCES.txt'
+[3.747s] writing manifest file '../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/SOURCES.txt'
+[3.748s] running build
+[3.748s] running build_py
+[3.749s] creating /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/build
+[3.749s] creating /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/build/lib
+[3.749s] creating /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/build/lib/my_tf2_broadcaster
+[3.749s] copying my_tf2_broadcaster/__init__.py -> /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/build/lib/my_tf2_broadcaster
+[3.749s] copying my_tf2_broadcaster/static_tf_broadcaster.py -> /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/build/lib/my_tf2_broadcaster
+[3.749s] running install
+[3.750s] running install_lib
+[3.750s] creating /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages/my_tf2_broadcaster
+[3.750s] copying /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/build/lib/my_tf2_broadcaster/__init__.py -> /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages/my_tf2_broadcaster
+[3.750s] copying /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/build/lib/my_tf2_broadcaster/static_tf_broadcaster.py -> /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages/my_tf2_broadcaster
+[3.750s] byte-compiling /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages/my_tf2_broadcaster/__init__.py to __init__.cpython-310.pyc
+[3.750s] byte-compiling /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages/my_tf2_broadcaster/static_tf_broadcaster.py to static_tf_broadcaster.cpython-310.pyc
+[3.750s] running install_data
+[3.750s] creating /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/share/ament_index
+[3.751s] creating /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/share/ament_index/resource_index
+[3.751s] creating /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/share/ament_index/resource_index/packages
+[3.751s] copying resource/my_tf2_broadcaster -> /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/share/ament_index/resource_index/packages
+[3.751s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/share/my_tf2_broadcaster
+[3.751s] running install_egg_info
+[3.751s] Copying ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info to /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages/my_tf2_broadcaster-0.0.0-py3.10.egg-info
+[3.751s] running install_scripts
+[3.752s] Installing static_tf_broadcaster script to /home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/my_tf2_broadcaster
+[3.753s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/install.log'
+[4.498s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/my_tf2_broadcaster' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/prefix_override:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_tf2_broadcaster build --build-base /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/build install --record /home/hermes/Hermes/hermes_ws/build/my_tf2_broadcaster/install.log --single-version-externally-managed install_data

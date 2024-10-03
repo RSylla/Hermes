@@ -1,0 +1,2 @@
+Invoking command in '/home/hermes/Hermes/hermes_ws/build/odometry_publisher': /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/odometry_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/odometry_publisher
+Invoked command in '/home/hermes/Hermes/hermes_ws/build/odometry_publisher' returned '1': /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/odometry_publisher -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/odometry_publisher

@@ -1,0 +1,22 @@
+[1.845s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/teleop_control': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_control build --build-base /home/hermes/Hermes/hermes_ws/build/teleop_control/build install --record /home/hermes/Hermes/hermes_ws/build/teleop_control/install.log --single-version-externally-managed install_data
+[2.461s] running egg_info
+[2.463s] writing ../../build/teleop_control/teleop_control.egg-info/PKG-INFO
+[2.464s] writing dependency_links to ../../build/teleop_control/teleop_control.egg-info/dependency_links.txt
+[2.464s] writing entry points to ../../build/teleop_control/teleop_control.egg-info/entry_points.txt
+[2.464s] writing requirements to ../../build/teleop_control/teleop_control.egg-info/requires.txt
+[2.464s] writing top-level names to ../../build/teleop_control/teleop_control.egg-info/top_level.txt
+[2.468s] reading manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'
+[2.469s] adding license file 'LICENSE'
+[2.471s] writing manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'
+[2.471s] running build
+[2.471s] running build_py
+[2.472s] running install
+[2.472s] running install_lib
+[2.476s] running install_data
+[2.476s] running install_egg_info
+[2.484s] removing '/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control-0.0.0-py3.10.egg-info' (and everything under it)
+[2.484s] Copying ../../build/teleop_control/teleop_control.egg-info to /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control-0.0.0-py3.10.egg-info
+[2.486s] running install_scripts
+[2.537s] Installing teleop_control_node script to /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/teleop_control
+[2.538s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/teleop_control/install.log'
+[2.614s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/teleop_control' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_control build --build-base /home/hermes/Hermes/hermes_ws/build/teleop_control/build install --record /home/hermes/Hermes/hermes_ws/build/teleop_control/install.log --single-version-externally-managed install_data

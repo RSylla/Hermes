@@ -1,0 +1,3 @@
+[console_scripts]
+path_creator_node = path_creator.path_creator_node:main
+

@@ -1,0 +1,78 @@
+[0.082s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/install/path_creator:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Hermes/hermes_ws/src/install/tof_publisher:/home/hermes/Hermes/hermes_ws/src/install/teleop_control:/home/hermes/Hermes/hermes_ws/src/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/src/install/path_creator:/home/hermes/Hermes/hermes_ws/src/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/src/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/src/install/hermes_nav:/home/hermes/Hermes/hermes_ws/src/install/gps_publisher:/home/hermes/Hermes/hermes_ws/src/install/cmd_vel:/home/hermes/Hermes/hermes_ws/src/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_urdf -- -j6 -l6
+[0.487s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.015s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.339s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.342s] -- Added test 'lint_cmake' to check CMake code style
+[1.344s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.349s] -- Added test 'xmllint' to check XML markup files
+[1.355s] -- Configuring done
+[1.381s] -- Generating done
+[1.394s] -- Build files have been written to: /home/hermes/Hermes/hermes_ws/build/hermes_urdf
+[1.572s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/install/path_creator:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Hermes/hermes_ws/src/install/tof_publisher:/home/hermes/Hermes/hermes_ws/src/install/teleop_control:/home/hermes/Hermes/hermes_ws/src/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/src/install/path_creator:/home/hermes/Hermes/hermes_ws/src/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/src/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/src/install/hermes_nav:/home/hermes/Hermes/hermes_ws/src/install/gps_publisher:/home/hermes/Hermes/hermes_ws/src/install/cmd_vel:/home/hermes/Hermes/hermes_ws/src/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_urdf -- -j6 -l6
+[2.245s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/install/path_creator:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Hermes/hermes_ws/src/install/tof_publisher:/home/hermes/Hermes/hermes_ws/src/install/teleop_control:/home/hermes/Hermes/hermes_ws/src/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/src/install/path_creator:/home/hermes/Hermes/hermes_ws/src/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/src/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/src/install/hermes_nav:/home/hermes/Hermes/hermes_ws/src/install/gps_publisher:/home/hermes/Hermes/hermes_ws/src/install/cmd_vel:/home/hermes/Hermes/hermes_ws/src/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/hermes_urdf
+[2.821s] -- Install configuration: ""
+[2.821s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch
+[2.821s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/interactive_waypoint_follower.py
+[2.821s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/launch_sim.launch.py
+[2.821s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/dual_ekf_navsat.launch.py
+[2.821s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/gps_waypoint_follower.launch.py
+[2.822s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/mapviz.launch.py
+[2.822s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/logged_waypoint_follower.py
+[2.822s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/gazebo_gps_world_hermes.launch.py
+[2.822s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/rsp.launch.py
+[2.822s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/launch/gps_waypoint_logger.py
+[2.822s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf
+[2.822s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/kere.stl
+[2.822s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes.urdf
+[2.823s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.stl
+[2.823s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv.part
+[2.823s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/ld19.part
+[2.823s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.rviz
+[2.823s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes_model.sdf
+[2.823s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/.robot.urdf.swp
+[2.823s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/kere.part
+[2.823s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/liigend.stl
+[2.824s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/rehv.stl
+[2.824s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/config.json
+[2.824s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/__init__.py
+[2.824s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/gazebo.material
+[2.824s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/my_world.sdf
+[2.824s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/robot.urdf
+[2.824s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/liigend.part
+[2.824s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/urdf/hermes_model.urdf
+[2.825s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/params
+[2.825s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/params/dual_ekf_navsat_params.yaml
+[2.825s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/params/demo_waypoints.yaml
+[2.825s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/params/test.mvc
+[2.825s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/params/gps_wpf_demo.mvc
+[2.825s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/params/nav2_no_map_params.yaml
+[2.825s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/custom_ground_plane
+[2.826s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/custom_ground_plane/image_png.config
+[2.826s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/custom_ground_plane/materials
+[2.826s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/custom_ground_plane/materials/scripts
+[2.826s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/custom_ground_plane/materials/scripts/ground.material
+[2.826s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/custom_ground_plane/materials/textures
+[2.826s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/custom_ground_plane/materials/textures/image.png
+[2.826s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/custom_ground_plane/my_world.config
+[2.826s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/custom_ground_plane/image_png.sdf
+[2.827s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/custom_ground_plane/my_world.sdf
+[2.827s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/historical_launch_files
+[2.827s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/historical_launch_files/gazebo_world.launch.py
+[2.827s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/historical_launch_files/hermes_launch.py
+[2.827s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/historical_launch_files/gazebo_model.launch.py
+[2.827s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/package_run_dependencies/hermes_urdf
+[2.827s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/parent_prefix_path/hermes_urdf
+[2.827s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/ament_prefix_path.sh
+[2.828s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/ament_prefix_path.dsv
+[2.828s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/path.sh
+[2.828s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/environment/path.dsv
+[2.828s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.bash
+[2.828s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.sh
+[2.828s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.zsh
+[2.828s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/local_setup.dsv
+[2.829s] -- Installing: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/package.dsv
+[2.829s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/ament_index/resource_index/packages/hermes_urdf
+[2.829s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/cmake/hermes_urdfConfig.cmake
+[2.829s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/cmake/hermes_urdfConfig-version.cmake
+[2.829s] -- Up-to-date: /home/hermes/Hermes/hermes_ws/install/hermes_urdf/share/hermes_urdf/package.xml
+[2.867s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hermes/Hermes/hermes_ws/install/tof_publisher:/home/hermes/Hermes/hermes_ws/install/teleop_control:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/install/path_creator:/home/hermes/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/install/hermes_nav:/home/hermes/Hermes/hermes_ws/install/gps_publisher:/home/hermes/Hermes/hermes_ws/install/cmd_vel:/home/hermes/Hermes/hermes_ws/install/cameras:/home/hermes/Hermes/hermes_ws/src/install/tof_publisher:/home/hermes/Hermes/hermes_ws/src/install/teleop_control:/home/hermes/Hermes/hermes_ws/src/install/robot_localization_pkg:/home/hermes/Hermes/hermes_ws/src/install/path_creator:/home/hermes/Hermes/hermes_ws/src/install/my_tf2_broadcaster:/home/hermes/Hermes/hermes_ws/src/install/multi_package_launcher:/home/hermes/Hermes/hermes_ws/src/install/icm20948_publisher:/home/hermes/Hermes/hermes_ws/src/install/hermes_nav:/home/hermes/Hermes/hermes_ws/src/install/gps_publisher:/home/hermes/Hermes/hermes_ws/src/install/cmd_vel:/home/hermes/Hermes/hermes_ws/src/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/hermes/Hermes/hermes_ws/build/hermes_urdf

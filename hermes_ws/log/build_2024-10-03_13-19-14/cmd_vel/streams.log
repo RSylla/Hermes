@@ -1,0 +1,37 @@
+[1.940s] Invoking command in '/home/raivo/Hermes_Latest_version/hermes_ws/src/cmd_vel': PYTHONPATH=/home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/prefix_override:/home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_vel build --build-base /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/build install --record /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/install.log --single-version-externally-managed install_data
+[2.283s] running egg_info
+[2.283s] creating ../../build/cmd_vel/cmd_vel.egg-info
+[2.283s] writing ../../build/cmd_vel/cmd_vel.egg-info/PKG-INFO
+[2.283s] writing dependency_links to ../../build/cmd_vel/cmd_vel.egg-info/dependency_links.txt
+[2.284s] writing entry points to ../../build/cmd_vel/cmd_vel.egg-info/entry_points.txt
+[2.284s] writing requirements to ../../build/cmd_vel/cmd_vel.egg-info/requires.txt
+[2.284s] writing top-level names to ../../build/cmd_vel/cmd_vel.egg-info/top_level.txt
+[2.284s] writing manifest file '../../build/cmd_vel/cmd_vel.egg-info/SOURCES.txt'
+[2.288s] reading manifest file '../../build/cmd_vel/cmd_vel.egg-info/SOURCES.txt'
+[2.295s] writing manifest file '../../build/cmd_vel/cmd_vel.egg-info/SOURCES.txt'
+[2.295s] running build
+[2.295s] running build_py
+[2.295s] creating /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/build
+[2.295s] creating /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/build/lib
+[2.295s] creating /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/build/lib/cmd_vel
+[2.296s] copying cmd_vel/__init__.py -> /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/build/lib/cmd_vel
+[2.296s] copying cmd_vel/cmd_vel_controll.py -> /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/build/lib/cmd_vel
+[2.298s] running install
+[2.298s] running install_lib
+[2.299s] creating /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel
+[2.299s] copying /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/build/lib/cmd_vel/__init__.py -> /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel
+[2.299s] copying /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/build/lib/cmd_vel/cmd_vel_controll.py -> /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel
+[2.300s] byte-compiling /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel/__init__.py to __init__.cpython-310.pyc
+[2.300s] byte-compiling /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel/cmd_vel_controll.py to cmd_vel_controll.cpython-310.pyc
+[2.301s] running install_data
+[2.301s] creating /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/share/ament_index
+[2.301s] creating /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/share/ament_index/resource_index
+[2.305s] creating /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/share/ament_index/resource_index/packages
+[2.305s] copying resource/cmd_vel -> /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/share/ament_index/resource_index/packages
+[2.305s] copying package.xml -> /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/share/cmd_vel
+[2.305s] running install_egg_info
+[2.313s] Copying ../../build/cmd_vel/cmd_vel.egg-info to /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel-0.0.0-py3.10.egg-info
+[2.313s] running install_scripts
+[2.327s] Installing cmd_vel_controll script to /home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/lib/cmd_vel
+[2.327s] writing list of installed files to '/home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/install.log'
+[2.402s] Invoked command in '/home/raivo/Hermes_Latest_version/hermes_ws/src/cmd_vel' returned '0': PYTHONPATH=/home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/prefix_override:/home/raivo/Hermes_Latest_version/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_vel build --build-base /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/build install --record /home/raivo/Hermes_Latest_version/hermes_ws/build/cmd_vel/install.log --single-version-externally-managed install_data

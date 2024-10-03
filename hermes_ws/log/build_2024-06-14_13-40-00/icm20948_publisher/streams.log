@@ -1,0 +1,21 @@
+[1.818s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/icm20948_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/icm20948_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/icm20948_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/icm20948_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/icm20948_publisher/install.log --single-version-externally-managed install_data
+[2.420s] running egg_info
+[2.422s] writing ../../build/icm20948_publisher/icm20948_publisher.egg-info/PKG-INFO
+[2.423s] writing dependency_links to ../../build/icm20948_publisher/icm20948_publisher.egg-info/dependency_links.txt
+[2.424s] writing entry points to ../../build/icm20948_publisher/icm20948_publisher.egg-info/entry_points.txt
+[2.424s] writing requirements to ../../build/icm20948_publisher/icm20948_publisher.egg-info/requires.txt
+[2.424s] writing top-level names to ../../build/icm20948_publisher/icm20948_publisher.egg-info/top_level.txt
+[2.429s] reading manifest file '../../build/icm20948_publisher/icm20948_publisher.egg-info/SOURCES.txt'
+[2.431s] writing manifest file '../../build/icm20948_publisher/icm20948_publisher.egg-info/SOURCES.txt'
+[2.431s] running build
+[2.432s] running build_py
+[2.433s] running install
+[2.433s] running install_lib
+[2.437s] running install_data
+[2.437s] running install_egg_info
+[2.444s] removing '/home/hermes/Hermes/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages/icm20948_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[2.445s] Copying ../../build/icm20948_publisher/icm20948_publisher.egg-info to /home/hermes/Hermes/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages/icm20948_publisher-0.0.0-py3.10.egg-info
+[2.447s] running install_scripts
+[2.497s] Installing icm_imu script to /home/hermes/Hermes/hermes_ws/install/icm20948_publisher/lib/icm20948_publisher
+[2.498s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/icm20948_publisher/install.log'
+[3.232s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/icm20948_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/icm20948_publisher/prefix_override:/home/hermes/Hermes/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/icm20948_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/icm20948_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/icm20948_publisher/install.log --single-version-externally-managed install_data

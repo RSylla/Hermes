@@ -1,0 +1,27 @@
+[4.140s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/cmd_vel': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cmd_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_vel build --build-base /home/hermes/Hermes/hermes_ws/build/cmd_vel/build install --record /home/hermes/Hermes/hermes_ws/build/cmd_vel/install.log --single-version-externally-managed install_data
+[4.902s] /home/hermes/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[4.902s]   warnings.warn(msg)
+[5.384s] running egg_info
+[5.436s] writing ../../build/cmd_vel/cmd_vel.egg-info/PKG-INFO
+[5.439s] writing dependency_links to ../../build/cmd_vel/cmd_vel.egg-info/dependency_links.txt
+[5.440s] writing entry points to ../../build/cmd_vel/cmd_vel.egg-info/entry_points.txt
+[5.442s] writing requirements to ../../build/cmd_vel/cmd_vel.egg-info/requires.txt
+[5.443s] writing top-level names to ../../build/cmd_vel/cmd_vel.egg-info/top_level.txt
+[5.549s] reading manifest file '../../build/cmd_vel/cmd_vel.egg-info/SOURCES.txt'
+[5.558s] writing manifest file '../../build/cmd_vel/cmd_vel.egg-info/SOURCES.txt'
+[5.559s] running build
+[5.559s] running build_py
+[5.561s] copying cmd_vel/cmd_vel_controll.py -> /home/hermes/Hermes/hermes_ws/build/cmd_vel/build/lib/cmd_vel
+[5.562s] copying cmd_vel/__init__.py -> /home/hermes/Hermes/hermes_ws/build/cmd_vel/build/lib/cmd_vel
+[5.562s] running install
+[5.571s] running install_lib
+[5.622s] running install_data
+[5.624s] copying resource/cmd_vel -> /home/hermes/Hermes/hermes_ws/install/cmd_vel/share/ament_index/resource_index/packages
+[5.625s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/cmd_vel/share/cmd_vel
+[5.625s] running install_egg_info
+[5.675s] removing '/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel-0.0.0-py3.10.egg-info' (and everything under it)
+[5.684s] Copying ../../build/cmd_vel/cmd_vel.egg-info to /home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages/cmd_vel-0.0.0-py3.10.egg-info
+[5.691s] running install_scripts
+[6.538s] Installing cmd_vel_controll script to /home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/cmd_vel
+[6.543s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/cmd_vel/install.log'
+[6.686s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/cmd_vel' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/cmd_vel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_vel build --build-base /home/hermes/Hermes/hermes_ws/build/cmd_vel/build install --record /home/hermes/Hermes/hermes_ws/build/cmd_vel/install.log --single-version-externally-managed install_data

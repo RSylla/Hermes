@@ -1,0 +1,41 @@
+[1.952s] Invoking command in '/home/raivo/Hermes_Latest_version/hermes_ws/src/cameras': PYTHONPATH=/home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/prefix_override:/home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cameras build --build-base /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build install --record /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/install.log --single-version-externally-managed install_data
+[2.301s] running egg_info
+[2.301s] creating ../../build/cameras/cameras.egg-info
+[2.302s] writing ../../build/cameras/cameras.egg-info/PKG-INFO
+[2.302s] writing dependency_links to ../../build/cameras/cameras.egg-info/dependency_links.txt
+[2.303s] writing entry points to ../../build/cameras/cameras.egg-info/entry_points.txt
+[2.303s] writing requirements to ../../build/cameras/cameras.egg-info/requires.txt
+[2.303s] writing top-level names to ../../build/cameras/cameras.egg-info/top_level.txt
+[2.303s] writing manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+[2.308s] reading manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+[2.308s] adding license file 'LICENSE'
+[2.312s] writing manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+[2.313s] running build
+[2.314s] running build_py
+[2.314s] creating /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build
+[2.314s] creating /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build/lib
+[2.314s] creating /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build/lib/cameras
+[2.314s] copying cameras/__init__.py -> /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build/lib/cameras
+[2.314s] copying cameras/camera_stream.py -> /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build/lib/cameras
+[2.314s] copying cameras/camera.py -> /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build/lib/cameras
+[2.314s] running install
+[2.314s] running install_lib
+[2.314s] creating /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras
+[2.314s] copying /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build/lib/cameras/__init__.py -> /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras
+[2.314s] copying /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build/lib/cameras/camera_stream.py -> /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras
+[2.314s] copying /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build/lib/cameras/camera.py -> /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras
+[2.319s] byte-compiling /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras/__init__.py to __init__.cpython-310.pyc
+[2.319s] byte-compiling /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras/camera_stream.py to camera_stream.cpython-310.pyc
+[2.319s] byte-compiling /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras/camera.py to camera.cpython-310.pyc
+[2.319s] running install_data
+[2.319s] creating /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/share/ament_index
+[2.319s] creating /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/share/ament_index/resource_index
+[2.319s] creating /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/share/ament_index/resource_index/packages
+[2.319s] copying resource/cameras -> /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/share/ament_index/resource_index/packages
+[2.319s] copying package.xml -> /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/share/cameras
+[2.319s] running install_egg_info
+[2.320s] Copying ../../build/cameras/cameras.egg-info to /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras-0.0.0-py3.10.egg-info
+[2.320s] running install_scripts
+[2.341s] Installing cameras_node script to /home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/cameras
+[2.341s] writing list of installed files to '/home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/install.log'
+[2.428s] Invoked command in '/home/raivo/Hermes_Latest_version/hermes_ws/src/cameras' returned '0': PYTHONPATH=/home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/prefix_override:/home/raivo/Hermes_Latest_version/hermes_ws/install/cameras/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cameras build --build-base /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/build install --record /home/raivo/Hermes_Latest_version/hermes_ws/build/cameras/install.log --single-version-externally-managed install_data
