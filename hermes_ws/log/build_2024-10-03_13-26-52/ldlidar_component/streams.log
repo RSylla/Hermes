@@ -1,0 +1,52 @@
+[0.032s] Invoking command in '/home/raivo/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/raivo/Hermes/hermes_ws/build/ldlidar_component -- -j12 -l12
+[1.152s] [35m[1mConsolidate compiler generated dependencies of target ldlidar[0m
+[1.153s] [ 70%] Built target ldlidar
+[1.153s] [35m[1mConsolidate compiler generated dependencies of target ldlidar_component[0m
+[1.153s] [100%] Built target ldlidar_component
+[1.153s] [0mCMake Error: The current CMakeCache.txt directory /home/raivo/Hermes/hermes_ws/build/ldlidar_component/CMakeCache.txt is different than the directory /home/raivo/Hermes_Latest_version/hermes_ws/build/ldlidar_component where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[1.294s] Invoked command in '/home/raivo/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/raivo/Hermes/hermes_ws/build/ldlidar_component -- -j12 -l12
+[1.328s] Invoking command in '/home/raivo/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/raivo/Hermes/hermes_ws/build/ldlidar_component
+[1.344s] -- Install configuration: "Release"
+[1.344s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/lib/libldlidar_component.so
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//defines.hpp
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_component.hpp
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_tools.hpp
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//visibility_control.hpp
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_driver.h
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_datatype.h
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//lipkg.h
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//tofbf.h
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[1.345s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//log_module.h
+[1.346s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[1.346s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//network_socket_interface_linux.h
+[1.346s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component/
+[1.346s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/include/ldlidar_component//serial_interface_linux.h
+[1.346s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/library_path.sh
+[1.346s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/library_path.dsv
+[1.346s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/package_run_dependencies/ldlidar_component
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/parent_prefix_path/ldlidar_component
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.sh
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.dsv
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/path.sh
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/path.dsv
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.bash
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.sh
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.zsh
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.dsv
+[1.347s] -- Installing: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.dsv
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/packages/ldlidar_component
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/rclcpp_components/ldlidar_component
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_libraries-extras.cmake
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig.cmake
+[1.347s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig-version.cmake
+[1.348s] -- Up-to-date: /home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.xml
+[1.362s] Invoked command in '/home/raivo/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/raivo/Hermes/hermes_ws/build/ldlidar_component

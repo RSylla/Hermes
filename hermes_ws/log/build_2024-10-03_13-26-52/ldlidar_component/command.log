@@ -1,0 +1,4 @@
+Invoking command in '/home/raivo/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/raivo/Hermes/hermes_ws/build/ldlidar_component -- -j12 -l12
+Invoked command in '/home/raivo/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/raivo/Hermes/hermes_ws/build/ldlidar_component -- -j12 -l12
+Invoking command in '/home/raivo/Hermes/hermes_ws/build/ldlidar_component': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/raivo/Hermes/hermes_ws/build/ldlidar_component
+Invoked command in '/home/raivo/Hermes/hermes_ws/build/ldlidar_component' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/raivo/Hermes/hermes_ws/build/ldlidar_component

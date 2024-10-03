@@ -1,3 +1,3 @@
 import sys
 sys.real_prefix = sys.prefix
-sys.prefix = sys.exec_prefix = '/home/raivo/Hermes_Latest_version/hermes_ws/install/path_creator'
+sys.prefix = sys.exec_prefix = '/home/raivo/Hermes/hermes_ws/install/path_creator'
