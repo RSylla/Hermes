@@ -1,3 +1,0 @@
-[console_scripts]
-tof_data = tof_publisher.tof_data:maininteractive_waypoint_follower = tof_publisher.tof_data:main
-
