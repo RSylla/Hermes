@@ -1,3 +1,0 @@
-[console_scripts]
-cmd_vel_controll = cmd_vel.cmd_vel_controll:main
-
