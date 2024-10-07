@@ -9,7 +9,7 @@ class YOLOObjectDetectionNode(Node):
         super().__init__('yolo_object_detection_node')
         
         # Initialize YOLO model (e.g., yolov8n.pt)
-        self.model = YOLO('yolo11n.pt')  # You can change the model here.
+        self.model = YOLO('src/object_detection/object_detection/yolov11n.pt')  # You can change the model here.
 
         # Publisher for detected objects
         self.publisher_ = self.create_publisher(String, 'detected_objects', 10)
