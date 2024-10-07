@@ -1,0 +1,26 @@
+[1.935s] Invoking command in '/home/raivo/Hermes/hermes_ws/src/path_creator': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/path_creator/prefix_override:/home/raivo/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/path_creator build --build-base /home/raivo/Hermes/hermes_ws/build/path_creator/build install --record /home/raivo/Hermes/hermes_ws/build/path_creator/install.log --single-version-externally-managed install_data
+[2.259s] running egg_info
+[2.259s] writing ../../build/path_creator/path_creator.egg-info/PKG-INFO
+[2.259s] writing dependency_links to ../../build/path_creator/path_creator.egg-info/dependency_links.txt
+[2.260s] writing entry points to ../../build/path_creator/path_creator.egg-info/entry_points.txt
+[2.260s] writing requirements to ../../build/path_creator/path_creator.egg-info/requires.txt
+[2.260s] writing top-level names to ../../build/path_creator/path_creator.egg-info/top_level.txt
+[2.262s] reading manifest file '../../build/path_creator/path_creator.egg-info/SOURCES.txt'
+[2.263s] writing manifest file '../../build/path_creator/path_creator.egg-info/SOURCES.txt'
+[2.263s] running build
+[2.263s] running build_py
+[2.263s] creating /home/raivo/Hermes/hermes_ws/build/path_creator/build
+[2.263s] creating /home/raivo/Hermes/hermes_ws/build/path_creator/build/lib
+[2.263s] creating /home/raivo/Hermes/hermes_ws/build/path_creator/build/lib/path_creator
+[2.264s] copying path_creator/__init__.py -> /home/raivo/Hermes/hermes_ws/build/path_creator/build/lib/path_creator
+[2.264s] copying path_creator/path_creator_node.py -> /home/raivo/Hermes/hermes_ws/build/path_creator/build/lib/path_creator
+[2.264s] running install
+[2.264s] running install_lib
+[2.266s] running install_data
+[2.266s] running install_egg_info
+[2.269s] removing '/home/raivo/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages/path_creator-0.0.0-py3.10.egg-info' (and everything under it)
+[2.269s] Copying ../../build/path_creator/path_creator.egg-info to /home/raivo/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages/path_creator-0.0.0-py3.10.egg-info
+[2.271s] running install_scripts
+[2.296s] Installing path_creator_node script to /home/raivo/Hermes/hermes_ws/install/path_creator/lib/path_creator
+[2.297s] writing list of installed files to '/home/raivo/Hermes/hermes_ws/build/path_creator/install.log'
+[2.373s] Invoked command in '/home/raivo/Hermes/hermes_ws/src/path_creator' returned '0': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/path_creator/prefix_override:/home/raivo/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/path_creator build --build-base /home/raivo/Hermes/hermes_ws/build/path_creator/build install --record /home/raivo/Hermes/hermes_ws/build/path_creator/install.log --single-version-externally-managed install_data

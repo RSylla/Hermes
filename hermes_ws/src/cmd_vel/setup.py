@@ -17,7 +17,6 @@ setup(
     maintainer_email='aleks.malm11@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
 		'cmd_vel_controll = cmd_vel.cmd_vel_controll:main'

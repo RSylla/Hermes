@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/component/src/ldlidar_component.cpp" "CMakeFiles/ldlidar_component.dir/component/src/ldlidar_component.cpp.o" "gcc" "CMakeFiles/ldlidar_component.dir/component/src/ldlidar_component.cpp.o.d"
-  "/home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/tools/src/ldlidar_tools.cpp" "CMakeFiles/ldlidar_component.dir/tools/src/ldlidar_tools.cpp.o" "gcc" "CMakeFiles/ldlidar_component.dir/tools/src/ldlidar_tools.cpp.o.d"
+  "/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/component/src/ldlidar_component.cpp" "CMakeFiles/ldlidar_component.dir/component/src/ldlidar_component.cpp.o" "gcc" "CMakeFiles/ldlidar_component.dir/component/src/ldlidar_component.cpp.o.d"
+  "/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/tools/src/ldlidar_tools.cpp" "CMakeFiles/ldlidar_component.dir/tools/src/ldlidar_tools.cpp.o" "gcc" "CMakeFiles/ldlidar_component.dir/tools/src/ldlidar_tools.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/raivo/Hermes_Latest_version/hermes_ws/build/ldlidar_component/ldlidar_driver/CMakeFiles/ldlidar.dir/DependInfo.cmake"
+  "/home/raivo/Hermes/hermes_ws/build/ldlidar_component/ldlidar_driver/CMakeFiles/ldlidar.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

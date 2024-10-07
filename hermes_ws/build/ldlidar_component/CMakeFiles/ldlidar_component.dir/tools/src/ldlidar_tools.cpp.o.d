@@ -1,7 +1,7 @@
 CMakeFiles/ldlidar_component.dir/tools/src/ldlidar_tools.cpp.o: \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/tools/src/ldlidar_tools.cpp \
+ /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/tools/src/ldlidar_tools.cpp \
  /usr/include/stdc-predef.h \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/tools/include/ldlidar_tools.hpp \
+ /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/tools/include/ldlidar_tools.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

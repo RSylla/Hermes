@@ -11,13 +11,11 @@ param_files = [os.path.join('param', 'ekf.yaml')]  # Update this if there are mo
 setup(
     name=package_name,
     version='0.0.1',
-    packages=find_packages(exclude=['test']),  # Automatically find and include all packages
+    packages=find_packages(exclude=['test']),  # Automatically find and include all packages       
     data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        # Include all launch files
-        (os.path.join('share', package_name, 'launch'), launch_files),
-        # Include all parameter files
-        (os.path.join('share', package_name, 'param'), param_files),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,7 +23,6 @@ setup(
     maintainer_email='your_email@example.com',
     description='A ROS 2 package for robot localization.',
     license='Apache License 2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             # Example: 'executable_name = package_name.module_name:function_name'

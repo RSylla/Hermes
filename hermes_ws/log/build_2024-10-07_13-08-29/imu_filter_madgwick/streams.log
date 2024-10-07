@@ -1,0 +1,51 @@
+[0.698s] Invoking command in '/home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/raivo/Hermes/hermes_ws/install/tof_publisher:/home/raivo/Hermes/hermes_ws/install/teleop_control:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg:/home/raivo/Hermes/hermes_ws/install/path_creator:/home/raivo/Hermes/hermes_ws/install/odometry_publisher:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher:/home/raivo/Hermes/hermes_ws/install/hermes_nav:/home/raivo/Hermes/hermes_ws/install/gps_publisher:/home/raivo/Hermes/hermes_ws/install/cmd_vel:/home/raivo/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick -- -j12 -l12
+[1.231s] [ 28%] Built target gtest
+[1.231s] [ 28%] Built target gtest_main
+[1.231s] [ 57%] Built target imu_filter_madgwick
+[1.231s] [ 71%] Built target stateless_orientation_test
+[1.231s] [ 85%] Built target madgwick_test
+[1.231s] [100%] Built target imu_filter_madgwick_node
+[1.233s] Invoked command in '/home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/raivo/Hermes/hermes_ws/install/tof_publisher:/home/raivo/Hermes/hermes_ws/install/teleop_control:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg:/home/raivo/Hermes/hermes_ws/install/path_creator:/home/raivo/Hermes/hermes_ws/install/odometry_publisher:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher:/home/raivo/Hermes/hermes_ws/install/hermes_nav:/home/raivo/Hermes/hermes_ws/install/gps_publisher:/home/raivo/Hermes/hermes_ws/install/cmd_vel:/home/raivo/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --build /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick -- -j12 -l12
+[1.264s] Invoking command in '/home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/raivo/Hermes/hermes_ws/install/tof_publisher:/home/raivo/Hermes/hermes_ws/install/teleop_control:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg:/home/raivo/Hermes/hermes_ws/install/path_creator:/home/raivo/Hermes/hermes_ws/install/odometry_publisher:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher:/home/raivo/Hermes/hermes_ws/install/hermes_nav:/home/raivo/Hermes/hermes_ws/install/gps_publisher:/home/raivo/Hermes/hermes_ws/install/cmd_vel:/home/raivo/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick
+[1.276s] -- Install configuration: ""
+[1.279s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so
+[1.279s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/include
+[1.280s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick
+[1.280s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter_ros.h
+[1.280s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/base_node.hpp
+[1.280s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/stateless_orientation.h
+[1.280s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter.h
+[1.280s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/world_frame.h
+[1.280s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/include/imu_filter_madgwick/visibility_control.h
+[1.281s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/lib/imu_filter_madgwick/imu_filter_madgwick_node
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/launch
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter_component.launch.py
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter.launch.py
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/__pycache__
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/__pycache__/imu_filter.launch.cpython-310.pyc
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/config
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/config/imu_filter.yaml
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.sh
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.dsv
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/ament_index/resource_index/package_run_dependencies/imu_filter_madgwick
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/ament_index/resource_index/parent_prefix_path/imu_filter_madgwick
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.sh
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.dsv
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.sh
+[1.282s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.dsv
+[1.283s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.bash
+[1.283s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.sh
+[1.283s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.zsh
+[1.283s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.dsv
+[1.283s] -- Installing: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/package.dsv
+[1.283s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/ament_index/resource_index/packages/imu_filter_madgwick
+[1.283s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/ament_index/resource_index/rclcpp_components/imu_filter_madgwick
+[1.283s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/export_imu_filter_madgwickExport.cmake
+[1.284s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/export_imu_filter_madgwickExport-noconfig.cmake
+[1.284s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.284s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_libraries-extras.cmake
+[1.284s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_targets-extras.cmake
+[1.284s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig.cmake
+[1.284s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig-version.cmake
+[1.284s] -- Up-to-date: /home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/share/imu_filter_madgwick/package.xml
+[1.303s] Invoked command in '/home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/raivo/Hermes/hermes_ws/install/tof_publisher:/home/raivo/Hermes/hermes_ws/install/teleop_control:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg:/home/raivo/Hermes/hermes_ws/install/path_creator:/home/raivo/Hermes/hermes_ws/install/odometry_publisher:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher:/home/raivo/Hermes/hermes_ws/install/hermes_nav:/home/raivo/Hermes/hermes_ws/install/gps_publisher:/home/raivo/Hermes/hermes_ws/install/cmd_vel:/home/raivo/Hermes/hermes_ws/install/cameras:/opt/ros/humble /usr/bin/cmake --install /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick

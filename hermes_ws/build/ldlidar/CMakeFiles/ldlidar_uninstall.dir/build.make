@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar
+CMAKE_SOURCE_DIR = /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raivo/Hermes_Latest_version/hermes_ws/build/ldlidar
+CMAKE_BINARY_DIR = /home/raivo/Hermes/hermes_ws/build/ldlidar
 
 # Utility rule file for ldlidar_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ldlidar_uninstall.dir/compiler_depend.make
 include CMakeFiles/ldlidar_uninstall.dir/progress.make
 
 CMakeFiles/ldlidar_uninstall:
-	/usr/bin/cmake -P /home/raivo/Hermes_Latest_version/hermes_ws/build/ldlidar/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/raivo/Hermes/hermes_ws/build/ldlidar/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ldlidar_uninstall: CMakeFiles/ldlidar_uninstall
 ldlidar_uninstall: CMakeFiles/ldlidar_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ldlidar_uninstall.dir/clean:
 .PHONY : CMakeFiles/ldlidar_uninstall.dir/clean
 
 CMakeFiles/ldlidar_uninstall.dir/depend:
-	cd /home/raivo/Hermes_Latest_version/hermes_ws/build/ldlidar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar /home/raivo/Hermes_Latest_version/hermes_ws/build/ldlidar /home/raivo/Hermes_Latest_version/hermes_ws/build/ldlidar /home/raivo/Hermes_Latest_version/hermes_ws/build/ldlidar/CMakeFiles/ldlidar_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/raivo/Hermes/hermes_ws/build/ldlidar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar /home/raivo/Hermes/hermes_ws/build/ldlidar /home/raivo/Hermes/hermes_ws/build/ldlidar /home/raivo/Hermes/hermes_ws/build/ldlidar/CMakeFiles/ldlidar_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ldlidar_uninstall.dir/depend
 

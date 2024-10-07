@@ -1,7 +1,7 @@
 ldlidar_driver/CMakeFiles/ldlidar.dir/src/serialcom/serial_interface_linux.cpp.o: \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/src/serialcom/serial_interface_linux.cpp \
+ /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/src/serialcom/serial_interface_linux.cpp \
  /usr/include/stdc-predef.h \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/serialcom/serial_interface_linux.h \
+ /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/serialcom/serial_interface_linux.h \
  /usr/include/inttypes.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -226,5 +226,5 @@ ldlidar_driver/CMakeFiles/ldlidar.dir/src/serialcom/serial_interface_linux.cpp.o
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/logger/log_module.h \
+ /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/logger/log_module.h \
  /usr/include/c++/11/stdlib.h

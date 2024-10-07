@@ -17,7 +17,6 @@ setup(
     maintainer_email='your_email@example.com',
     description='Path creator package',
     license='Apache License 2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'path_creator_node = path_creator.path_creator_node:main',

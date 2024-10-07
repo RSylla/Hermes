@@ -1,0 +1,40 @@
+[2.856s] Invoking command in '/home/raivo/Hermes/hermes_ws/src/path_creator': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/path_creator/prefix_override:/home/raivo/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/path_creator build --build-base /home/raivo/Hermes/hermes_ws/build/path_creator/build install --record /home/raivo/Hermes/hermes_ws/build/path_creator/install.log --single-version-externally-managed install_data
+[3.148s] /home/raivo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[3.148s]   warnings.warn(msg)
+[3.278s] running egg_info
+[3.299s] writing ../../build/path_creator/path_creator.egg-info/PKG-INFO
+[3.300s] writing dependency_links to ../../build/path_creator/path_creator.egg-info/dependency_links.txt
+[3.304s] writing entry points to ../../build/path_creator/path_creator.egg-info/entry_points.txt
+[3.304s] writing requirements to ../../build/path_creator/path_creator.egg-info/requires.txt
+[3.304s] writing top-level names to ../../build/path_creator/path_creator.egg-info/top_level.txt
+[3.348s] reading manifest file '../../build/path_creator/path_creator.egg-info/SOURCES.txt'
+[3.348s] Traceback (most recent call last):
+[3.348s]   File "/home/raivo/Hermes/hermes_ws/src/path_creator/setup.py", line 5, in <module>
+[3.348s]     setup(
+[3.348s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 117, in setup
+[3.349s]     return distutils.core.setup(**attrs)
+[3.349s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 183, in setup
+[3.349s]     return run_commands(dist)
+[3.349s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 199, in run_commands
+[3.349s]     dist.run_commands()
+[3.349s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 954, in run_commands
+[3.349s]     self.run_command(cmd)
+[3.349s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/dist.py", line 950, in run_command
+[3.349s]     super().run_command(command)
+[3.349s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 973, in run_command
+[3.349s]     cmd_obj.run()
+[3.349s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 311, in run
+[3.349s]     self.find_sources()
+[3.349s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 319, in find_sources
+[3.349s]     mm.run()
+[3.349s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/command/egg_info.py", line 545, in run
+[3.350s]     self.prune_file_list()
+[3.350s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/command/sdist.py", line 161, in prune_file_list
+[3.350s]     super().prune_file_list()
+[3.350s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/_distutils/command/sdist.py", line 380, in prune_file_list
+[3.350s]     base_dir = self.distribution.get_fullname()
+[3.350s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 267, in get_fullname
+[3.350s]     return _distribution_fullname(self.get_name(), self.get_version())
+[3.350s]   File "/home/raivo/.local/lib/python3.10/site-packages/setuptools/_core_metadata.py", line 285, in _distribution_fullname
+[3.350s]     canonicalize_version(version, strip_trailing_zero=False),
+[3.350s] TypeError: canonicalize_version() got an unexpected keyword argument 'strip_trailing_zero'

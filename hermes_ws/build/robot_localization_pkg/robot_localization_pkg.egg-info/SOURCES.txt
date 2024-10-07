@@ -8,8 +8,7 @@ setup.py
 ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/requires.txt
 ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/top_level.txt
 ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/zip-safe
-launch/localization.launch.py
-param/ekf.yaml
+resource/robot_localization_pkg
 robot_localization_pkg/__init__.py
 test/test_copyright.py
 test/test_flake8.py

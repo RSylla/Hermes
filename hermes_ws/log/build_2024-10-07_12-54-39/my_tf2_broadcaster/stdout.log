@@ -1,0 +1,9 @@
+running egg_info
+creating ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info
+writing ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/dependency_links.txt
+writing entry points to ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/entry_points.txt
+writing requirements to ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/requires.txt
+writing top-level names to ../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/top_level.txt
+writing manifest file '../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_tf2_broadcaster/my_tf2_broadcaster.egg-info/SOURCES.txt'

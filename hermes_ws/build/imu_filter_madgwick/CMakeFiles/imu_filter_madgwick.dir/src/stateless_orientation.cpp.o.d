@@ -1,7 +1,7 @@
 CMakeFiles/imu_filter_madgwick.dir/src/stateless_orientation.cpp.o: \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/imu_filter_madgwick/src/stateless_orientation.cpp \
+ /home/raivo/Hermes/hermes_ws/src/imu_filter_madgwick/src/stateless_orientation.cpp \
  /usr/include/stdc-predef.h \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/imu_filter_madgwick/include/imu_filter_madgwick/stateless_orientation.h \
+ /home/raivo/Hermes/hermes_ws/src/imu_filter_madgwick/include/imu_filter_madgwick/stateless_orientation.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
@@ -203,7 +203,7 @@ CMakeFiles/imu_filter_madgwick.dir/src/stateless_orientation.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/imu_filter_madgwick/include/imu_filter_madgwick/world_frame.h \
+ /home/raivo/Hermes/hermes_ws/src/imu_filter_madgwick/include/imu_filter_madgwick/world_frame.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.h \

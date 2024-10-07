@@ -1,0 +1,221 @@
+[0.000000] (-) TimerEvent: {}
+[0.000345] (-) JobUnselected: {'identifier': 'cameras'}
+[0.000372] (-) JobUnselected: {'identifier': 'cmd_vel'}
+[0.000391] (-) JobUnselected: {'identifier': 'gps_publisher'}
+[0.000409] (-) JobUnselected: {'identifier': 'hermes_nav'}
+[0.000426] (-) JobUnselected: {'identifier': 'hermes_urdf'}
+[0.000476] (-) JobUnselected: {'identifier': 'icm20948_publisher'}
+[0.000495] (-) JobUnselected: {'identifier': 'imu_filter_madgwick'}
+[0.000503] (-) JobUnselected: {'identifier': 'ldlidar'}
+[0.000511] (-) JobUnselected: {'identifier': 'ldlidar_node'}
+[0.000521] (-) JobUnselected: {'identifier': 'multi_package_launcher'}
+[0.000527] (-) JobUnselected: {'identifier': 'my_tf2_broadcaster'}
+[0.000534] (-) JobUnselected: {'identifier': 'odometry_publisher'}
+[0.000540] (-) JobUnselected: {'identifier': 'path_creator'}
+[0.000547] (-) JobUnselected: {'identifier': 'robot_localization_pkg'}
+[0.000554] (-) JobUnselected: {'identifier': 'teleop_control'}
+[0.000560] (-) JobUnselected: {'identifier': 'tof_publisher'}
+[0.000568] (ldlidar_component) JobQueued: {'identifier': 'ldlidar_component', 'dependencies': OrderedDict()}
+[0.000577] (ldlidar_component) JobStarted: {'identifier': 'ldlidar_component'}
+[0.006453] (ldlidar_component) JobProgress: {'identifier': 'ldlidar_component', 'progress': 'cmake'}
+[0.006693] (ldlidar_component) Command: {'cmd': ['/usr/bin/cmake', '/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component', '-DCMAKE_INSTALL_PREFIX=/home/raivo/Hermes/hermes_ws/install/ldlidar_component'], 'cwd': '/home/raivo/Hermes/hermes_ws/build/ldlidar_component', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'raivo'), ('LC_TIME', 'et_EE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/raivo/Hermes/hermes_ws/install/ldlidar_component/lib:/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/raivo'), ('OLDPWD', '/home/raivo/Hermes/hermes_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'et_EE.UTF-8'), ('SYSTEMD_EXEC_PID', '1235'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/raivo/Hermes/hermes_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'raivo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'raivo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/raivo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/raivo/.local/bin'), ('SESSION_MANAGER', 'local/raivo-Latitude-5430:@/tmp/.ICE-unix/1202,unix/raivo-Latitude-5430:/tmp/.ICE-unix/1202'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'et_EE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac529a57_9c90_4ece_9bd5_48c3271817dc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'et_EE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RP08U2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.197'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/raivo/Hermes/hermes_ws/install/tof_publisher:/home/raivo/Hermes/hermes_ws/install/teleop_control:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg:/home/raivo/Hermes/hermes_ws/install/path_creator:/home/raivo/Hermes/hermes_ws/install/odometry_publisher:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher:/home/raivo/Hermes/hermes_ws/install/ldlidar:/home/raivo/Hermes/hermes_ws/install/ldlidar_node:/home/raivo/Hermes/hermes_ws/install/ldlidar_component:/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher:/home/raivo/Hermes/hermes_ws/install/hermes_urdf:/home/raivo/Hermes/hermes_ws/install/hermes_nav:/home/raivo/Hermes/hermes_ws/install/gps_publisher:/home/raivo/Hermes/hermes_ws/install/cmd_vel:/home/raivo/Hermes/hermes_ws/install/cameras:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'et_EE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'et_EE.UTF-8'), ('LC_IDENTIFICATION', 'et_EE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/raivo/Hermes/hermes_ws/build/ldlidar_component'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/raivo/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/odometry_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'et_EE.UTF-8'), ('LC_PAPER', 'et_EE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/raivo/Hermes/hermes_ws/install/ldlidar:/home/raivo/Hermes/hermes_ws/install/ldlidar_node:/home/raivo/Hermes/hermes_ws/install/ldlidar_component:/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick:/home/raivo/Hermes/hermes_ws/install/hermes_urdf:/home/raivo/Hermes/hermes_ws/install/tof_publisher:/home/raivo/Hermes/hermes_ws/install/teleop_control:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg:/home/raivo/Hermes/hermes_ws/install/path_creator:/home/raivo/Hermes/hermes_ws/install/odometry_publisher:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher:/home/raivo/Hermes/hermes_ws/install/hermes_nav:/home/raivo/Hermes/hermes_ws/install/gps_publisher:/home/raivo/Hermes/hermes_ws/install/cmd_vel:/home/raivo/Hermes/hermes_ws/install/cameras:/opt/ros/humble')]), 'shell': False}
+[0.052967] (ldlidar_component) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.089716] (ldlidar_component) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.095344] (ldlidar_component) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099528] (-) TimerEvent: {}
+[0.147939] (ldlidar_component) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.154186] (ldlidar_component) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.154356] (ldlidar_component) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.154585] (ldlidar_component) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.156295] (ldlidar_component) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199664] (-) TimerEvent: {}
+[0.210026] (ldlidar_component) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.217638] (ldlidar_component) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.217851] (ldlidar_component) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.218274] (ldlidar_component) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.218794] (ldlidar_component) StdoutLine: {'line': b'--  * Release Mode\n'}
+[0.218906] (ldlidar_component) StdoutLine: {'line': b'-- * Found ROS2 humble\n'}
+[0.218967] (ldlidar_component) StdoutLine: {'line': b'-- * ROS2 humble is officially supported by this package.\n'}
+[0.221816] (ldlidar_component) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299745] (-) TimerEvent: {}
+[0.400054] (-) TimerEvent: {}
+[0.472786] (ldlidar_component) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500170] (-) TimerEvent: {}
+[0.545102] (ldlidar_component) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.9 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[0.577965] (ldlidar_component) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.581743] (ldlidar_component) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.587606] (ldlidar_component) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.596604] (ldlidar_component) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600294] (-) TimerEvent: {}
+[0.609488] (ldlidar_component) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.655655] (ldlidar_component) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.657894] (ldlidar_component) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700520] (-) TimerEvent: {}
+[0.733662] (ldlidar_component) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.757424] (ldlidar_component) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.794662] (ldlidar_component) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.800672] (-) TimerEvent: {}
+[0.801794] (ldlidar_component) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.857390] (ldlidar_component) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.857566] (ldlidar_component) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.900806] (-) TimerEvent: {}
+[0.916629] (ldlidar_component) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.917689] (ldlidar_component) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.000955] (-) TimerEvent: {}
+[1.041755] (ldlidar_component) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.9 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[1.082986] (ldlidar_component) StdoutLine: {'line': b'-- Found nav2_util: 1.1.15 (/opt/ros/humble/share/nav2_util/cmake)\n'}
+[1.101178] (-) TimerEvent: {}
+[1.201626] (-) TimerEvent: {}
+[1.301967] (-) TimerEvent: {}
+[1.402340] (-) TimerEvent: {}
+[1.452812] (ldlidar_component) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.453674] (ldlidar_component) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.453822] (ldlidar_component) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.502559] (-) TimerEvent: {}
+[1.565189] (ldlidar_component) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.602689] (-) TimerEvent: {}
+[1.613716] (ldlidar_component) StdoutLine: {'line': b'-- Found diagnostic_msgs: 4.2.4 (/opt/ros/humble/share/diagnostic_msgs/cmake)\n'}
+[1.639822] (ldlidar_component) StdoutLine: {'line': b'-- Found diagnostic_updater: 3.1.2 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[1.702920] (-) TimerEvent: {}
+[1.803265] (-) TimerEvent: {}
+[1.903641] (-) TimerEvent: {}
+[1.938692] (ldlidar_component) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.999718] (ldlidar_component) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.001100] (ldlidar_component) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.001705] (ldlidar_component) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/include;/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/tools/include;/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/component/include;/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/core;/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/dataprocess;/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/filter;/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/logger;/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/networkcom;/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/serialcom\n'}
+[2.001821] (ldlidar_component) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.003039] (ldlidar_component) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.003136] (ldlidar_component) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.003653] (ldlidar_component) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.003724] (-) TimerEvent: {}
+[2.005098] (ldlidar_component) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.005196] (ldlidar_component) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.005436] (ldlidar_component) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.006868] (ldlidar_component) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.022354] (ldlidar_component) StdoutLine: {'line': b'-- Generating done\n'}
+[2.023604] (ldlidar_component) StdoutLine: {'line': b'-- Build files have been written to: /home/raivo/Hermes/hermes_ws/build/ldlidar_component\n'}
+[2.030767] (ldlidar_component) CommandEnded: {'returncode': 0}
+[2.033261] (ldlidar_component) JobProgress: {'identifier': 'ldlidar_component', 'progress': 'build'}
+[2.033312] (ldlidar_component) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/raivo/Hermes/hermes_ws/build/ldlidar_component', '--', '-j12', '-l12'], 'cwd': '/home/raivo/Hermes/hermes_ws/build/ldlidar_component', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'raivo'), ('LC_TIME', 'et_EE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/raivo/Hermes/hermes_ws/install/ldlidar_component/lib:/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/raivo'), ('OLDPWD', '/home/raivo/Hermes/hermes_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'et_EE.UTF-8'), ('SYSTEMD_EXEC_PID', '1235'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/raivo/Hermes/hermes_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'raivo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'raivo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/raivo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/raivo/.local/bin'), ('SESSION_MANAGER', 'local/raivo-Latitude-5430:@/tmp/.ICE-unix/1202,unix/raivo-Latitude-5430:/tmp/.ICE-unix/1202'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'et_EE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac529a57_9c90_4ece_9bd5_48c3271817dc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'et_EE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RP08U2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.197'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/raivo/Hermes/hermes_ws/install/tof_publisher:/home/raivo/Hermes/hermes_ws/install/teleop_control:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg:/home/raivo/Hermes/hermes_ws/install/path_creator:/home/raivo/Hermes/hermes_ws/install/odometry_publisher:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher:/home/raivo/Hermes/hermes_ws/install/ldlidar:/home/raivo/Hermes/hermes_ws/install/ldlidar_node:/home/raivo/Hermes/hermes_ws/install/ldlidar_component:/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher:/home/raivo/Hermes/hermes_ws/install/hermes_urdf:/home/raivo/Hermes/hermes_ws/install/hermes_nav:/home/raivo/Hermes/hermes_ws/install/gps_publisher:/home/raivo/Hermes/hermes_ws/install/cmd_vel:/home/raivo/Hermes/hermes_ws/install/cameras:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'et_EE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'et_EE.UTF-8'), ('LC_IDENTIFICATION', 'et_EE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/raivo/Hermes/hermes_ws/build/ldlidar_component'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/raivo/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/odometry_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'et_EE.UTF-8'), ('LC_PAPER', 'et_EE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/raivo/Hermes/hermes_ws/install/ldlidar:/home/raivo/Hermes/hermes_ws/install/ldlidar_node:/home/raivo/Hermes/hermes_ws/install/ldlidar_component:/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick:/home/raivo/Hermes/hermes_ws/install/hermes_urdf:/home/raivo/Hermes/hermes_ws/install/tof_publisher:/home/raivo/Hermes/hermes_ws/install/teleop_control:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg:/home/raivo/Hermes/hermes_ws/install/path_creator:/home/raivo/Hermes/hermes_ws/install/odometry_publisher:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher:/home/raivo/Hermes/hermes_ws/install/hermes_nav:/home/raivo/Hermes/hermes_ws/install/gps_publisher:/home/raivo/Hermes/hermes_ws/install/cmd_vel:/home/raivo/Hermes/hermes_ws/install/cameras:/opt/ros/humble')]), 'shell': False}
+[2.068572] (ldlidar_component) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/dataprocess/lipkg.cpp.o\x1b[0m\n'}
+[2.070922] (ldlidar_component) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/core/ldlidar_driver.cpp.o\x1b[0m\n'}
+[2.071112] (ldlidar_component) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/filter/tofbf.cpp.o\x1b[0m\n'}
+[2.071221] (ldlidar_component) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/logger/log_module.cpp.o\x1b[0m\n'}
+[2.071323] (ldlidar_component) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/networkcom/network_socket_interface_linux.cpp.o\x1b[0m\n'}
+[2.071712] (ldlidar_component) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object ldlidar_driver/CMakeFiles/ldlidar.dir/src/serialcom/serial_interface_linux.cpp.o\x1b[0m\n'}
+[2.103877] (-) TimerEvent: {}
+[2.204211] (-) TimerEvent: {}
+[2.304528] (-) TimerEvent: {}
+[2.404815] (-) TimerEvent: {}
+[2.505196] (-) TimerEvent: {}
+[2.605555] (-) TimerEvent: {}
+[2.684627] (ldlidar_component) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX static library libldlidar.a\x1b[0m\n'}
+[2.705659] (-) TimerEvent: {}
+[2.709395] (ldlidar_component) StdoutLine: {'line': b'[ 70%] Built target ldlidar\n'}
+[2.727213] (ldlidar_component) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_component.dir/tools/src/ldlidar_tools.cpp.o\x1b[0m\n'}
+[2.728565] (ldlidar_component) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/ldlidar_component.dir/component/src/ldlidar_component.cpp.o\x1b[0m\n'}
+[2.805885] (-) TimerEvent: {}
+[2.906268] (-) TimerEvent: {}
+[3.006631] (-) TimerEvent: {}
+[3.107013] (-) TimerEvent: {}
+[3.207389] (-) TimerEvent: {}
+[3.307777] (-) TimerEvent: {}
+[3.408160] (-) TimerEvent: {}
+[3.508544] (-) TimerEvent: {}
+[3.608919] (-) TimerEvent: {}
+[3.709322] (-) TimerEvent: {}
+[3.809712] (-) TimerEvent: {}
+[3.910106] (-) TimerEvent: {}
+[4.010500] (-) TimerEvent: {}
+[4.110879] (-) TimerEvent: {}
+[4.211254] (-) TimerEvent: {}
+[4.311639] (-) TimerEvent: {}
+[4.412026] (-) TimerEvent: {}
+[4.512393] (-) TimerEvent: {}
+[4.612799] (-) TimerEvent: {}
+[4.713170] (-) TimerEvent: {}
+[4.813550] (-) TimerEvent: {}
+[4.913932] (-) TimerEvent: {}
+[5.014299] (-) TimerEvent: {}
+[5.114676] (-) TimerEvent: {}
+[5.215047] (-) TimerEvent: {}
+[5.315416] (-) TimerEvent: {}
+[5.415796] (-) TimerEvent: {}
+[5.516172] (-) TimerEvent: {}
+[5.616560] (-) TimerEvent: {}
+[5.716927] (-) TimerEvent: {}
+[5.817313] (-) TimerEvent: {}
+[5.917703] (-) TimerEvent: {}
+[6.018063] (-) TimerEvent: {}
+[6.118424] (-) TimerEvent: {}
+[6.218796] (-) TimerEvent: {}
+[6.319048] (-) TimerEvent: {}
+[6.419356] (-) TimerEvent: {}
+[6.519601] (-) TimerEvent: {}
+[6.619812] (-) TimerEvent: {}
+[6.720052] (-) TimerEvent: {}
+[6.820370] (-) TimerEvent: {}
+[6.920609] (-) TimerEvent: {}
+[7.020825] (-) TimerEvent: {}
+[7.121073] (-) TimerEvent: {}
+[7.221390] (-) TimerEvent: {}
+[7.321612] (-) TimerEvent: {}
+[7.421827] (-) TimerEvent: {}
+[7.522064] (-) TimerEvent: {}
+[7.622376] (-) TimerEvent: {}
+[7.722585] (-) TimerEvent: {}
+[7.822900] (-) TimerEvent: {}
+[7.873911] (ldlidar_component) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libldlidar_component.so\x1b[0m\n'}
+[7.923010] (-) TimerEvent: {}
+[7.995896] (ldlidar_component) StdoutLine: {'line': b'[100%] Built target ldlidar_component\n'}
+[8.003355] (ldlidar_component) CommandEnded: {'returncode': 0}
+[8.023080] (-) TimerEvent: {}
+[8.026814] (ldlidar_component) JobProgress: {'identifier': 'ldlidar_component', 'progress': 'install'}
+[8.032109] (ldlidar_component) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/raivo/Hermes/hermes_ws/build/ldlidar_component'], 'cwd': '/home/raivo/Hermes/hermes_ws/build/ldlidar_component', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'raivo'), ('LC_TIME', 'et_EE.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/raivo/Hermes/hermes_ws/install/ldlidar_component/lib:/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/raivo'), ('OLDPWD', '/home/raivo/Hermes/hermes_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'et_EE.UTF-8'), ('SYSTEMD_EXEC_PID', '1235'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/raivo/Hermes/hermes_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'raivo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'raivo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/raivo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/raivo/.local/bin'), ('SESSION_MANAGER', 'local/raivo-Latitude-5430:@/tmp/.ICE-unix/1202,unix/raivo-Latitude-5430:/tmp/.ICE-unix/1202'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'et_EE.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac529a57_9c90_4ece_9bd5_48c3271817dc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'et_EE.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RP08U2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.197'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/raivo/Hermes/hermes_ws/install/tof_publisher:/home/raivo/Hermes/hermes_ws/install/teleop_control:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg:/home/raivo/Hermes/hermes_ws/install/path_creator:/home/raivo/Hermes/hermes_ws/install/odometry_publisher:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher:/home/raivo/Hermes/hermes_ws/install/ldlidar:/home/raivo/Hermes/hermes_ws/install/ldlidar_node:/home/raivo/Hermes/hermes_ws/install/ldlidar_component:/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher:/home/raivo/Hermes/hermes_ws/install/hermes_urdf:/home/raivo/Hermes/hermes_ws/install/hermes_nav:/home/raivo/Hermes/hermes_ws/install/gps_publisher:/home/raivo/Hermes/hermes_ws/install/cmd_vel:/home/raivo/Hermes/hermes_ws/install/cameras:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'et_EE.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'et_EE.UTF-8'), ('LC_IDENTIFICATION', 'et_EE.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/raivo/Hermes/hermes_ws/build/ldlidar_component'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/raivo/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/path_creator/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/odometry_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/hermes_nav/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/gps_publisher/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/cmd_vel/lib/python3.10/site-packages:/home/raivo/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'et_EE.UTF-8'), ('LC_PAPER', 'et_EE.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/raivo/Hermes/hermes_ws/install/ldlidar:/home/raivo/Hermes/hermes_ws/install/ldlidar_node:/home/raivo/Hermes/hermes_ws/install/ldlidar_component:/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick:/home/raivo/Hermes/hermes_ws/install/hermes_urdf:/home/raivo/Hermes/hermes_ws/install/tof_publisher:/home/raivo/Hermes/hermes_ws/install/teleop_control:/home/raivo/Hermes/hermes_ws/install/robot_localization_pkg:/home/raivo/Hermes/hermes_ws/install/path_creator:/home/raivo/Hermes/hermes_ws/install/odometry_publisher:/home/raivo/Hermes/hermes_ws/install/my_tf2_broadcaster:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher:/home/raivo/Hermes/hermes_ws/install/icm20948_publisher:/home/raivo/Hermes/hermes_ws/install/hermes_nav:/home/raivo/Hermes/hermes_ws/install/gps_publisher:/home/raivo/Hermes/hermes_ws/install/cmd_vel:/home/raivo/Hermes/hermes_ws/install/cameras:/opt/ros/humble')]), 'shell': False}
+[8.036681] (ldlidar_component) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[8.036810] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/lib/libldlidar_component.so\n'}
+[8.037211] (ldlidar_component) StdoutLine: {'line': b'-- Set runtime path of "/home/raivo/Hermes/hermes_ws/install/ldlidar_component/lib/libldlidar_component.so" to ""\n'}
+[8.037344] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/\n'}
+[8.037443] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//defines.hpp\n'}
+[8.037536] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_component.hpp\n'}
+[8.037630] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/\n'}
+[8.037695] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_tools.hpp\n'}
+[8.037780] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/\n'}
+[8.037863] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//visibility_control.hpp\n'}
+[8.037939] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/\n'}
+[8.038002] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_driver.h\n'}
+[8.038084] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//ldlidar_datatype.h\n'}
+[8.038146] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/\n'}
+[8.038234] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//lipkg.h\n'}
+[8.038307] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/\n'}
+[8.038370] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//tofbf.h\n'}
+[8.038432] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/\n'}
+[8.038692] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//log_module.h\n'}
+[8.038764] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/\n'}
+[8.038801] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//network_socket_interface_linux.h\n'}
+[8.038832] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component/\n'}
+[8.038860] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/include/ldlidar_component//serial_interface_linux.h\n'}
+[8.038886] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/library_path.sh\n'}
+[8.038912] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/library_path.dsv\n'}
+[8.038938] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/package_run_dependencies/ldlidar_component\n'}
+[8.038963] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/parent_prefix_path/ldlidar_component\n'}
+[8.038989] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.sh\n'}
+[8.039015] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/ament_prefix_path.dsv\n'}
+[8.039042] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/path.sh\n'}
+[8.039066] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/environment/path.dsv\n'}
+[8.039090] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.bash\n'}
+[8.039114] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.sh\n'}
+[8.039137] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.zsh\n'}
+[8.039163] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/local_setup.dsv\n'}
+[8.039191] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.dsv\n'}
+[8.039217] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/packages/ldlidar_component\n'}
+[8.039243] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ament_index/resource_index/rclcpp_components/ldlidar_component\n'}
+[8.039269] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.039296] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.039321] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.039346] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig.cmake\n'}
+[8.039371] (ldlidar_component) StdoutLine: {'line': b'-- Installing: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/cmake/ldlidar_componentConfig-version.cmake\n'}
+[8.039398] (ldlidar_component) StdoutLine: {'line': b'-- Up-to-date: /home/raivo/Hermes/hermes_ws/install/ldlidar_component/share/ldlidar_component/package.xml\n'}
+[8.040338] (ldlidar_component) CommandEnded: {'returncode': 0}
+[8.078086] (ldlidar_component) JobEnded: {'identifier': 'ldlidar_component', 'rc': 0}
+[8.078515] (-) EventReactorShutdown: {}

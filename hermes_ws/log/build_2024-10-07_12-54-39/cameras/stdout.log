@@ -1,0 +1,10 @@
+running egg_info
+creating ../../build/cameras/cameras.egg-info
+writing ../../build/cameras/cameras.egg-info/PKG-INFO
+writing dependency_links to ../../build/cameras/cameras.egg-info/dependency_links.txt
+writing entry points to ../../build/cameras/cameras.egg-info/entry_points.txt
+writing requirements to ../../build/cameras/cameras.egg-info/requires.txt
+writing top-level names to ../../build/cameras/cameras.egg-info/top_level.txt
+writing manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+reading manifest file '../../build/cameras/cameras.egg-info/SOURCES.txt'
+adding license file 'LICENSE'

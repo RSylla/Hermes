@@ -17,7 +17,6 @@ setup(
     maintainer_email='raivo@todo.todo',
     description='TODO: Package description',
     license='Apache-2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'cameras_node = cameras.cameras_node:main'

@@ -1,8 +1,8 @@
-# Install script for directory: /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver
+# Install script for directory: /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/raivo/Hermes_Latest_version/hermes_ws/install/ldlidar_component")
+  set(CMAKE_INSTALL_PREFIX "/home/raivo/Hermes/hermes_ws/install/ldlidar_component")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -20,9 +20,6 @@ setup(
     maintainer_email='your_email@example.com',
     description='Odometry publisher from wheel ticks.',
     license='Apache License 2.0',
-    extras_require={
-        'test': ['pytest'],
-    },
     entry_points={
         'console_scripts': [
             'odometry_publisher_node = odometry_publisher.odometry_publisher_node:main',

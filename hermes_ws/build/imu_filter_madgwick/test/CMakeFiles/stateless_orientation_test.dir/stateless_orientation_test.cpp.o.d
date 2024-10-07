@@ -1,7 +1,7 @@
 test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.o: \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/imu_filter_madgwick/test/stateless_orientation_test.cpp \
+ /home/raivo/Hermes/hermes_ws/src/imu_filter_madgwick/test/stateless_orientation_test.cpp \
  /usr/include/stdc-predef.h \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/imu_filter_madgwick/include/imu_filter_madgwick/stateless_orientation.h \
+ /home/raivo/Hermes/hermes_ws/src/imu_filter_madgwick/include/imu_filter_madgwick/stateless_orientation.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
@@ -203,8 +203,8 @@ test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.o:
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/imu_filter_madgwick/include/imu_filter_madgwick/world_frame.h \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/imu_filter_madgwick/test/test_helpers.h \
+ /home/raivo/Hermes/hermes_ws/src/imu_filter_madgwick/include/imu_filter_madgwick/world_frame.h \
+ /home/raivo/Hermes/hermes_ws/src/imu_filter_madgwick/test/test_helpers.h \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest.h \
  /usr/include/c++/11/cstddef /usr/include/c++/11/limits \
  /opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-internal.h \

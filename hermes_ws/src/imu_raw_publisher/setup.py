@@ -17,7 +17,6 @@ setup(
     maintainer_email='your_email@example.com',
     description='Example package for ICM20948 IMU',
     license='Apache License 2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'icm_imu = icm20948_publisher.icm_imu:main'

@@ -1,7 +1,7 @@
 ldlidar_driver/CMakeFiles/ldlidar.dir/src/networkcom/network_socket_interface_linux.cpp.o: \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp \
+ /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/src/networkcom/network_socket_interface_linux.cpp \
  /usr/include/stdc-predef.h \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/networkcom/network_socket_interface_linux.h \
+ /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/networkcom/network_socket_interface_linux.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -207,4 +207,4 @@ ldlidar_driver/CMakeFiles/ldlidar.dir/src/networkcom/network_socket_interface_li
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/logger/log_module.h
+ /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/logger/log_module.h

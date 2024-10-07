@@ -1,0 +1,20 @@
+[2.136s] Invoking command in '/home/raivo/Hermes/hermes_ws/src/multi_package_launcher': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/multi_package_launcher/prefix_override:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/multi_package_launcher build --build-base /home/raivo/Hermes/hermes_ws/build/multi_package_launcher/build install --record /home/raivo/Hermes/hermes_ws/build/multi_package_launcher/install.log --single-version-externally-managed install_data
+[2.446s] running egg_info
+[2.447s] writing ../../build/multi_package_launcher/multi_package_launcher.egg-info/PKG-INFO
+[2.447s] writing dependency_links to ../../build/multi_package_launcher/multi_package_launcher.egg-info/dependency_links.txt
+[2.447s] writing entry points to ../../build/multi_package_launcher/multi_package_launcher.egg-info/entry_points.txt
+[2.447s] writing requirements to ../../build/multi_package_launcher/multi_package_launcher.egg-info/requires.txt
+[2.447s] writing top-level names to ../../build/multi_package_launcher/multi_package_launcher.egg-info/top_level.txt
+[2.450s] reading manifest file '../../build/multi_package_launcher/multi_package_launcher.egg-info/SOURCES.txt'
+[2.451s] writing manifest file '../../build/multi_package_launcher/multi_package_launcher.egg-info/SOURCES.txt'
+[2.451s] running build
+[2.451s] running build_py
+[2.452s] running install
+[2.452s] running install_lib
+[2.453s] running install_data
+[2.453s] running install_egg_info
+[2.456s] removing '/home/raivo/Hermes/hermes_ws/install/multi_package_launcher/lib/python3.10/site-packages/multi_package_launcher-0.0.0-py3.10.egg-info' (and everything under it)
+[2.456s] Copying ../../build/multi_package_launcher/multi_package_launcher.egg-info to /home/raivo/Hermes/hermes_ws/install/multi_package_launcher/lib/python3.10/site-packages/multi_package_launcher-0.0.0-py3.10.egg-info
+[2.458s] running install_scripts
+[2.483s] writing list of installed files to '/home/raivo/Hermes/hermes_ws/build/multi_package_launcher/install.log'
+[2.559s] Invoked command in '/home/raivo/Hermes/hermes_ws/src/multi_package_launcher' returned '0': PYTHONPATH=/home/raivo/Hermes/hermes_ws/build/multi_package_launcher/prefix_override:/home/raivo/Hermes/hermes_ws/install/multi_package_launcher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/multi_package_launcher build --build-base /home/raivo/Hermes/hermes_ws/build/multi_package_launcher/build install --record /home/raivo/Hermes/hermes_ws/build/multi_package_launcher/install.log --single-version-externally-managed install_data

@@ -1,7 +1,7 @@
 ldlidar_driver/CMakeFiles/ldlidar.dir/src/logger/log_module.cpp.o: \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/src/logger/log_module.cpp \
+ /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/src/logger/log_module.cpp \
  /usr/include/stdc-predef.h \
- /home/raivo/Hermes_Latest_version/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/logger/log_module.h \
+ /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component/ldlidar_driver/include/logger/log_module.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

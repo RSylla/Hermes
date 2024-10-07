@@ -22,7 +22,6 @@ setup(
     maintainer_email='aleks.malm11@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'interactive_waypoint_follower = hermes_nav.interactive_waypoint_follower:main',
