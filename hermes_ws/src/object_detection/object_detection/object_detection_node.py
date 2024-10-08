@@ -34,6 +34,7 @@ class YOLOObjectDetectionNode(Node):
         # Run YOLO model on the captured frame
         results = self.model(frame)
         obj_names = results[0].names
+        print(obj_names)
         # Process the results and extract object information
         detected_objects = []
         for result in results:
