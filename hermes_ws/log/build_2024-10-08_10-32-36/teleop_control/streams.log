@@ -1,0 +1,44 @@
+[3.807s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/teleop_control': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_control build --build-base /home/hermes/Hermes/hermes_ws/build/teleop_control/build install --record /home/hermes/Hermes/hermes_ws/build/teleop_control/install.log --single-version-externally-managed install_data
+[4.867s] running egg_info
+[4.868s] creating ../../build/teleop_control/teleop_control.egg-info
+[4.869s] writing ../../build/teleop_control/teleop_control.egg-info/PKG-INFO
+[4.869s] writing dependency_links to ../../build/teleop_control/teleop_control.egg-info/dependency_links.txt
+[4.870s] writing entry points to ../../build/teleop_control/teleop_control.egg-info/entry_points.txt
+[4.870s] writing requirements to ../../build/teleop_control/teleop_control.egg-info/requires.txt
+[4.870s] writing top-level names to ../../build/teleop_control/teleop_control.egg-info/top_level.txt
+[4.870s] writing manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'
+[4.875s] reading manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'
+[4.875s] adding license file 'LICENSE'
+[4.876s] writing manifest file '../../build/teleop_control/teleop_control.egg-info/SOURCES.txt'
+[4.877s] running build
+[4.877s] running build_py
+[4.877s] creating /home/hermes/Hermes/hermes_ws/build/teleop_control/build
+[4.877s] creating /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib
+[4.877s] creating /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control
+[4.878s] copying teleop_control/joytopub.py -> /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control
+[4.883s] copying teleop_control/teleop_control_node.py -> /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control
+[4.883s] copying teleop_control/keyboard_teleop.py -> /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control
+[4.883s] copying teleop_control/__init__.py -> /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control
+[4.884s] copying teleop_control/joytorec.py -> /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control
+[4.884s] running install
+[4.885s] running install_lib
+[4.897s] copying /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control/joytopub.py -> /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control
+[4.898s] copying /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control/teleop_control_node.py -> /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control
+[4.898s] copying /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control/keyboard_teleop.py -> /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control
+[4.898s] copying /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control/__init__.py -> /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control
+[4.898s] copying /home/hermes/Hermes/hermes_ws/build/teleop_control/build/lib/teleop_control/joytorec.py -> /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control
+[4.901s] byte-compiling /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control/joytopub.py to joytopub.cpython-310.pyc
+[4.903s] byte-compiling /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control/teleop_control_node.py to teleop_control_node.cpython-310.pyc
+[4.903s] byte-compiling /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control/keyboard_teleop.py to keyboard_teleop.cpython-310.pyc
+[4.904s] byte-compiling /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control/__init__.py to __init__.cpython-310.pyc
+[4.905s] byte-compiling /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control/joytorec.py to joytorec.cpython-310.pyc
+[4.906s] running install_data
+[4.917s] copying resource/teleop_control -> /home/hermes/Hermes/hermes_ws/install/teleop_control/share/ament_index/resource_index/packages
+[4.918s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/teleop_control/share/teleop_control
+[4.918s] running install_egg_info
+[4.923s] removing '/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control-0.0.0-py3.10.egg-info' (and everything under it)
+[4.924s] Copying ../../build/teleop_control/teleop_control.egg-info to /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages/teleop_control-0.0.0-py3.10.egg-info
+[4.926s] running install_scripts
+[5.029s] Installing teleop_control_node script to /home/hermes/Hermes/hermes_ws/install/teleop_control/lib/teleop_control
+[5.046s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/teleop_control/install.log'
+[5.362s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/teleop_control' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/teleop_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/teleop_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/teleop_control build --build-base /home/hermes/Hermes/hermes_ws/build/teleop_control/build install --record /home/hermes/Hermes/hermes_ws/build/teleop_control/install.log --single-version-externally-managed install_data

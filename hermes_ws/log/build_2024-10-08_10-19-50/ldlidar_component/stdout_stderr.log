@@ -1,0 +1,12 @@
+[33mCMake Warning at CMakeLists.txt:52 (message):
+  * ROS2 distro variable not set.  Trying to figure it out...
+
+[0m
+[31mCMake Error at CMakeLists.txt:75 (message):
+  *** WARNING *** ROS2 distro is unknown.  This package could not work
+  correctly.
+
+[0m
+--  * Release Mode
+-- Configuring incomplete, errors occurred!
+See also "/home/hermes/Hermes/hermes_ws/build/ldlidar_component/CMakeFiles/CMakeOutput.log".

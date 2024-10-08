@@ -1,0 +1,2 @@
+Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_urdf -- -j6 -l6
+Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf' returned '2': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_urdf -- -j6 -l6

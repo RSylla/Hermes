@@ -1,8 +1,8 @@
-# Install script for directory: /home/raivo/Hermes/hermes_ws/src/imu_filter_madgwick/test
+# Install script for directory: /home/hermes/Hermes/hermes_ws/src/imu_filter_madgwick/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick")
+  set(CMAKE_INSTALL_PREFIX "/home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick/gtest/cmake_install.cmake")
+  include("/home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick/gtest/cmake_install.cmake")
 
 endif()
 

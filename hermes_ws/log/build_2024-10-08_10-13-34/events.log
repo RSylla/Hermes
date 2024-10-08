@@ -1,0 +1,130 @@
+[0.000000] (-) TimerEvent: {}
+[0.000596] (cameras) JobQueued: {'identifier': 'cameras', 'dependencies': OrderedDict()}
+[0.001414] (cmd_vel) JobQueued: {'identifier': 'cmd_vel', 'dependencies': OrderedDict()}
+[0.001723] (gps_publisher) JobQueued: {'identifier': 'gps_publisher', 'dependencies': OrderedDict()}
+[0.001944] (hermes_nav) JobQueued: {'identifier': 'hermes_nav', 'dependencies': OrderedDict()}
+[0.002041] (hermes_urdf) JobQueued: {'identifier': 'hermes_urdf', 'dependencies': OrderedDict()}
+[0.002182] (icm20948_publisher) JobQueued: {'identifier': 'icm20948_publisher', 'dependencies': OrderedDict()}
+[0.002258] (imu_filter_madgwick) JobQueued: {'identifier': 'imu_filter_madgwick', 'dependencies': OrderedDict()}
+[0.002332] (ldlidar_component) JobQueued: {'identifier': 'ldlidar_component', 'dependencies': OrderedDict()}
+[0.002378] (multi_package_launcher) JobQueued: {'identifier': 'multi_package_launcher', 'dependencies': OrderedDict()}
+[0.002434] (my_tf2_broadcaster) JobQueued: {'identifier': 'my_tf2_broadcaster', 'dependencies': OrderedDict()}
+[0.002782] (object_detection) JobQueued: {'identifier': 'object_detection', 'dependencies': OrderedDict()}
+[0.002859] (odometry_publisher) JobQueued: {'identifier': 'odometry_publisher', 'dependencies': OrderedDict()}
+[0.002974] (path_creator) JobQueued: {'identifier': 'path_creator', 'dependencies': OrderedDict()}
+[0.003040] (robot_localization_pkg) JobQueued: {'identifier': 'robot_localization_pkg', 'dependencies': OrderedDict()}
+[0.003083] (teleop_control) JobQueued: {'identifier': 'teleop_control', 'dependencies': OrderedDict()}
+[0.003122] (tof_publisher) JobQueued: {'identifier': 'tof_publisher', 'dependencies': OrderedDict()}
+[0.003164] (ldlidar_node) JobQueued: {'identifier': 'ldlidar_node', 'dependencies': OrderedDict([('ldlidar_component', '/home/hermes/Hermes/hermes_ws/install/ldlidar_component')])}
+[0.003212] (ldlidar) JobQueued: {'identifier': 'ldlidar', 'dependencies': OrderedDict([('ldlidar_component', '/home/hermes/Hermes/hermes_ws/install/ldlidar_component'), ('ldlidar_node', '/home/hermes/Hermes/hermes_ws/install/ldlidar_node')])}
+[0.003261] (ldlidar_component) JobStarted: {'identifier': 'ldlidar_component'}
+[0.010876] (cameras) JobStarted: {'identifier': 'cameras'}
+[0.018485] (cmd_vel) JobStarted: {'identifier': 'cmd_vel'}
+[0.024792] (gps_publisher) JobStarted: {'identifier': 'gps_publisher'}
+[0.030777] (hermes_nav) JobStarted: {'identifier': 'hermes_nav'}
+[0.036821] (hermes_urdf) JobStarted: {'identifier': 'hermes_urdf'}
+[0.044144] (ldlidar_component) JobProgress: {'identifier': 'ldlidar_component', 'progress': 'cmake'}
+[0.044577] (ldlidar_component) Command: {'cmd': ['/usr/bin/cmake', '/home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component', '-DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/ldlidar_component'], 'cwd': '/home/hermes/Hermes/hermes_ws/build/ldlidar_component', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'hermes'), ('SSH_CLIENT', '10.0.3.61 52580 22'), ('LC_TIME', 'et_EE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hermes/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.4/lib64:/usr/local/cuda-12.4/lib64:'), ('BROWSER', '/home/hermes/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hermes'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/hermes/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.94.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c719572c-7c68-401e-815a-e99cdfd28f96.sock'), ('JETSON_L4T', '36.4.0'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hermes/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'et_EE.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hermes/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('LOGNAME', 'hermes'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421823044116'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '40'), ('_CE_CONDA', ''), ('PATH', '/root/archiconda3/bin:/usr/local/cuda-12.4/bin:/home/hermes/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/bin/remote-cli:/home/hermes/.local/bin:/home/hermes/miniconda3/bin:/home/hermes/miniconda3/condabin:/root/archiconda3/bin:/usr/local/cuda-12.4/bin:/home/hermes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'et_EE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'et_EE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c0b6dea428.sock'), ('TERM_PROGRAM', 'vscode'), ('CONDA_PYTHON_EXE', '/home/hermes/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'et_EE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'et_EE.UTF-8'), ('LC_IDENTIFICATION', 'et_EE.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/hermes/Hermes/hermes_ws/build/ldlidar_component'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/hermes/miniconda3/bin/conda'), ('SSH_CONNECTION', '10.0.3.61 52580 10.0.3.225 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'et_EE.UTF-8'), ('CONDA_PREFIX', '/home/hermes/miniconda3'), ('LC_PAPER', 'et_EE.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.1'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099413] (-) TimerEvent: {}
+[0.200062] (-) TimerEvent: {}
+[0.300768] (-) TimerEvent: {}
+[0.401493] (-) TimerEvent: {}
+[0.502540] (-) TimerEvent: {}
+[0.603388] (-) TimerEvent: {}
+[0.704038] (-) TimerEvent: {}
+[0.804940] (-) TimerEvent: {}
+[0.905695] (-) TimerEvent: {}
+[1.006406] (-) TimerEvent: {}
+[1.107073] (-) TimerEvent: {}
+[1.207735] (-) TimerEvent: {}
+[1.308396] (-) TimerEvent: {}
+[1.409178] (-) TimerEvent: {}
+[1.510419] (-) TimerEvent: {}
+[1.611115] (-) TimerEvent: {}
+[1.711776] (-) TimerEvent: {}
+[1.812455] (-) TimerEvent: {}
+[1.837209] (hermes_urdf) JobProgress: {'identifier': 'hermes_urdf', 'progress': 'cmake'}
+[1.838599] (hermes_urdf) Command: {'cmd': ['/usr/bin/cmake', '/home/hermes/Hermes/hermes_ws/src/hermes_urdf', '-DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/hermes_urdf'], 'cwd': '/home/hermes/Hermes/hermes_ws/build/hermes_urdf', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'hermes'), ('SSH_CLIENT', '10.0.3.61 52580 22'), ('LC_TIME', 'et_EE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hermes/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.4/lib64:/usr/local/cuda-12.4/lib64:'), ('BROWSER', '/home/hermes/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hermes'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/hermes/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.94.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c719572c-7c68-401e-815a-e99cdfd28f96.sock'), ('JETSON_L4T', '36.4.0'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Developer Kit'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hermes/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'et_EE.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hermes/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('LOGNAME', 'hermes'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421823044116'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '40'), ('_CE_CONDA', ''), ('PATH', '/root/archiconda3/bin:/usr/local/cuda-12.4/bin:/home/hermes/.vscode-server/cli/servers/Stable-d78a74bcdfad14d5d3b1b782f87255d802b57511/server/bin/remote-cli:/home/hermes/.local/bin:/home/hermes/miniconda3/bin:/home/hermes/miniconda3/condabin:/root/archiconda3/bin:/usr/local/cuda-12.4/bin:/home/hermes/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'et_EE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'et_EE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c0b6dea428.sock'), ('TERM_PROGRAM', 'vscode'), ('CONDA_PYTHON_EXE', '/home/hermes/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'et_EE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'et_EE.UTF-8'), ('LC_IDENTIFICATION', 'et_EE.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/hermes/Hermes/hermes_ws/build/hermes_urdf'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/hermes/miniconda3/bin/conda'), ('SSH_CONNECTION', '10.0.3.61 52580 10.0.3.225 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'et_EE.UTF-8'), ('CONDA_PREFIX', '/home/hermes/miniconda3'), ('LC_PAPER', 'et_EE.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', '6.1'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[1.844369] (ldlidar_component) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.845013] (ldlidar_component) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.845351] (ldlidar_component) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.845507] (ldlidar_component) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.845647] (ldlidar_component) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.845781] (ldlidar_component) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.845926] (ldlidar_component) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.846058] (ldlidar_component) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.846183] (ldlidar_component) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.846306] (ldlidar_component) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.846431] (ldlidar_component) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.846552] (ldlidar_component) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.846675] (ldlidar_component) StdoutLine: {'line': b'--  * Release Mode\n'}
+[1.846799] (ldlidar_component) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.846921] (ldlidar_component) StdoutLine: {'line': b'See also "/home/hermes/Hermes/hermes_ws/build/ldlidar_component/CMakeFiles/CMakeOutput.log".\n'}
+[1.847047] (ldlidar_component) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:52 (message):\n'}
+[1.847217] (ldlidar_component) StderrLine: {'line': b'  * ROS2 distro variable not set.  Trying to figure it out...\n'}
+[1.847351] (ldlidar_component) StderrLine: {'line': b'\n'}
+[1.847476] (ldlidar_component) StderrLine: {'line': b'\x1b[0m\n'}
+[1.847599] (ldlidar_component) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:75 (message):\n'}
+[1.847722] (ldlidar_component) StderrLine: {'line': b'  *** WARNING *** ROS2 distro is unknown.  This package could not work\n'}
+[1.847848] (ldlidar_component) StderrLine: {'line': b'  correctly.\n'}
+[1.847970] (ldlidar_component) StderrLine: {'line': b'\n'}
+[1.848091] (ldlidar_component) StderrLine: {'line': b'\x1b[0m\n'}
+[1.850712] (ldlidar_component) CommandEnded: {'returncode': 1}
+[1.943803] (-) TimerEvent: {}
+[1.956199] (ldlidar_component) JobEnded: {'identifier': 'ldlidar_component', 'rc': 1}
+[1.963768] (hermes_urdf) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.043988] (-) TimerEvent: {}
+[2.088191] (hermes_urdf) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.101904] (hermes_urdf) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.144152] (-) TimerEvent: {}
+[2.244829] (-) TimerEvent: {}
+[2.258373] (hermes_urdf) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.271578] (hermes_urdf) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.272135] (hermes_urdf) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.272868] (hermes_urdf) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.279151] (hermes_urdf) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.344999] (-) TimerEvent: {}
+[2.445718] (-) TimerEvent: {}
+[2.489329] (hermes_urdf) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.501714] (hermes_urdf) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.502250] (hermes_urdf) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.502434] (hermes_urdf) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.519660] (hermes_urdf) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[2.520175] (hermes_urdf) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.520343] (hermes_urdf) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.520491] (hermes_urdf) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.520628] (hermes_urdf) StderrLine: {'line': b'\n'}
+[2.520758] (hermes_urdf) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.520889] (hermes_urdf) StderrLine: {'line': b'  any of the following names:\n'}
+[2.521017] (hermes_urdf) StderrLine: {'line': b'\n'}
+[2.521169] (hermes_urdf) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.521300] (hermes_urdf) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.521425] (hermes_urdf) StderrLine: {'line': b'\n'}
+[2.521546] (hermes_urdf) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.521669] (hermes_urdf) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.521795] (hermes_urdf) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.521914] (hermes_urdf) StderrLine: {'line': b'  has been installed.\n'}
+[2.522034] (hermes_urdf) StderrLine: {'line': b'\n'}
+[2.522345] (hermes_urdf) StderrLine: {'line': b'\x1b[0m\n'}
+[2.525244] (hermes_urdf) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.525516] (hermes_urdf) StdoutLine: {'line': b'See also "/home/hermes/Hermes/hermes_ws/build/hermes_urdf/CMakeFiles/CMakeOutput.log".\n'}
+[2.533772] (hermes_urdf) JobEnded: {'identifier': 'hermes_urdf', 'rc': 'SIGINT'}
+[2.545877] (-) TimerEvent: {}
+[2.618001] (cmd_vel) JobEnded: {'identifier': 'cmd_vel', 'rc': 'SIGINT'}
+[2.647163] (-) TimerEvent: {}
+[2.677131] (cameras) JobEnded: {'identifier': 'cameras', 'rc': 'SIGINT'}
+[2.680596] (gps_publisher) JobEnded: {'identifier': 'gps_publisher', 'rc': 'SIGINT'}
+[2.688584] (hermes_nav) JobEnded: {'identifier': 'hermes_nav', 'rc': 'SIGINT'}
+[2.700306] (icm20948_publisher) JobSkipped: {'identifier': 'icm20948_publisher'}
+[2.700697] (imu_filter_madgwick) JobSkipped: {'identifier': 'imu_filter_madgwick'}
+[2.700812] (multi_package_launcher) JobSkipped: {'identifier': 'multi_package_launcher'}
+[2.700898] (my_tf2_broadcaster) JobSkipped: {'identifier': 'my_tf2_broadcaster'}
+[2.700973] (object_detection) JobSkipped: {'identifier': 'object_detection'}
+[2.701045] (odometry_publisher) JobSkipped: {'identifier': 'odometry_publisher'}
+[2.701149] (path_creator) JobSkipped: {'identifier': 'path_creator'}
+[2.701226] (robot_localization_pkg) JobSkipped: {'identifier': 'robot_localization_pkg'}
+[2.701293] (teleop_control) JobSkipped: {'identifier': 'teleop_control'}
+[2.701361] (tof_publisher) JobSkipped: {'identifier': 'tof_publisher'}
+[2.701428] (ldlidar_node) JobSkipped: {'identifier': 'ldlidar_node'}
+[2.701493] (ldlidar) JobSkipped: {'identifier': 'ldlidar'}
+[2.701564] (-) EventReactorShutdown: {}

@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/opt/ros/humble/src/gtest_vendor")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

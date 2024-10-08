@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raivo/Hermes/hermes_ws/src/imu_filter_madgwick
+CMAKE_SOURCE_DIR = /home/hermes/Hermes/hermes_ws/src/imu_filter_madgwick
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick
+CMAKE_BINARY_DIR = /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(CMAKE_COMMAND) -E cmake_progress_start /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick/CMakeFiles /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick/test//CMakeFiles/progress.marks
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick/CMakeFiles 0
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(CMAKE_COMMAND) -E cmake_progress_start /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick/CMakeFiles /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick/test//CMakeFiles/progress.marks
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/madgwick_test.dir/rule:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/madgwick_test.dir/rule
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/madgwick_test.dir/rule
 .PHONY : test/CMakeFiles/madgwick_test.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ madgwick_test: test/CMakeFiles/madgwick_test.dir/rule
 
 # fast build rule for target.
 madgwick_test/fast:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/madgwick_test.dir/build.make test/CMakeFiles/madgwick_test.dir/build
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/madgwick_test.dir/build.make test/CMakeFiles/madgwick_test.dir/build
 .PHONY : madgwick_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/stateless_orientation_test.dir/rule:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/stateless_orientation_test.dir/rule
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/stateless_orientation_test.dir/rule
 .PHONY : test/CMakeFiles/stateless_orientation_test.dir/rule
 
 # Convenience name for target.
@@ -196,7 +196,7 @@ stateless_orientation_test: test/CMakeFiles/stateless_orientation_test.dir/rule
 
 # fast build rule for target.
 stateless_orientation_test/fast:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/stateless_orientation_test.dir/build.make test/CMakeFiles/stateless_orientation_test.dir/build
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/stateless_orientation_test.dir/build.make test/CMakeFiles/stateless_orientation_test.dir/build
 .PHONY : stateless_orientation_test/fast
 
 madgwick_test.o: madgwick_test.cpp.o
@@ -204,7 +204,7 @@ madgwick_test.o: madgwick_test.cpp.o
 
 # target to build an object file
 madgwick_test.cpp.o:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/madgwick_test.dir/build.make test/CMakeFiles/madgwick_test.dir/madgwick_test.cpp.o
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/madgwick_test.dir/build.make test/CMakeFiles/madgwick_test.dir/madgwick_test.cpp.o
 .PHONY : madgwick_test.cpp.o
 
 madgwick_test.i: madgwick_test.cpp.i
@@ -212,7 +212,7 @@ madgwick_test.i: madgwick_test.cpp.i
 
 # target to preprocess a source file
 madgwick_test.cpp.i:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/madgwick_test.dir/build.make test/CMakeFiles/madgwick_test.dir/madgwick_test.cpp.i
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/madgwick_test.dir/build.make test/CMakeFiles/madgwick_test.dir/madgwick_test.cpp.i
 .PHONY : madgwick_test.cpp.i
 
 madgwick_test.s: madgwick_test.cpp.s
@@ -220,7 +220,7 @@ madgwick_test.s: madgwick_test.cpp.s
 
 # target to generate assembly for a file
 madgwick_test.cpp.s:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/madgwick_test.dir/build.make test/CMakeFiles/madgwick_test.dir/madgwick_test.cpp.s
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/madgwick_test.dir/build.make test/CMakeFiles/madgwick_test.dir/madgwick_test.cpp.s
 .PHONY : madgwick_test.cpp.s
 
 stateless_orientation_test.o: stateless_orientation_test.cpp.o
@@ -228,7 +228,7 @@ stateless_orientation_test.o: stateless_orientation_test.cpp.o
 
 # target to build an object file
 stateless_orientation_test.cpp.o:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/stateless_orientation_test.dir/build.make test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.o
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/stateless_orientation_test.dir/build.make test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.o
 .PHONY : stateless_orientation_test.cpp.o
 
 stateless_orientation_test.i: stateless_orientation_test.cpp.i
@@ -236,7 +236,7 @@ stateless_orientation_test.i: stateless_orientation_test.cpp.i
 
 # target to preprocess a source file
 stateless_orientation_test.cpp.i:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/stateless_orientation_test.dir/build.make test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.i
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/stateless_orientation_test.dir/build.make test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.i
 .PHONY : stateless_orientation_test.cpp.i
 
 stateless_orientation_test.s: stateless_orientation_test.cpp.s
@@ -244,7 +244,7 @@ stateless_orientation_test.s: stateless_orientation_test.cpp.s
 
 # target to generate assembly for a file
 stateless_orientation_test.cpp.s:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/stateless_orientation_test.dir/build.make test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.s
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/stateless_orientation_test.dir/build.make test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.s
 .PHONY : stateless_orientation_test.cpp.s
 
 # Help Target
@@ -279,6 +279,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raivo/Hermes/hermes_ws/build/imu_filter_madgwick && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hermes/Hermes/hermes_ws/build/imu_filter_madgwick && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

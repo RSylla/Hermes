@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component
+CMAKE_SOURCE_DIR = /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raivo/Hermes/hermes_ws/build/ldlidar_component
+CMAKE_BINARY_DIR = /home/hermes/Hermes/hermes_ws/build/ldlidar_component
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,8 +77,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(CMAKE_COMMAND) -E cmake_progress_start /home/raivo/Hermes/hermes_ws/build/ldlidar_component/CMakeFiles /home/raivo/Hermes/hermes_ws/build/ldlidar_component/ldlidar_driver//CMakeFiles/progress.marks
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ldlidar_driver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raivo/Hermes/hermes_ws/build/ldlidar_component/CMakeFiles 0
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(CMAKE_COMMAND) -E cmake_progress_start /home/hermes/Hermes/hermes_ws/build/ldlidar_component/CMakeFiles /home/hermes/Hermes/hermes_ws/build/ldlidar_component/ldlidar_driver//CMakeFiles/progress.marks
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ldlidar_driver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hermes/Hermes/hermes_ws/build/ldlidar_component/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ldlidar_driver/clean
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ldlidar_driver/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ldlidar_driver/preinstall
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ldlidar_driver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ldlidar_driver/preinstall
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ldlidar_driver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ldlidar_driver/CMakeFiles/ldlidar.dir/rule:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ldlidar_driver/CMakeFiles/ldlidar.dir/rule
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ldlidar_driver/CMakeFiles/ldlidar.dir/rule
 .PHONY : ldlidar_driver/CMakeFiles/ldlidar.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ ldlidar: ldlidar_driver/CMakeFiles/ldlidar.dir/rule
 
 # fast build rule for target.
 ldlidar/fast:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/build
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/build
 .PHONY : ldlidar/fast
 
 src/core/ldlidar_driver.o: src/core/ldlidar_driver.cpp.o
@@ -190,7 +190,7 @@ src/core/ldlidar_driver.o: src/core/ldlidar_driver.cpp.o
 
 # target to build an object file
 src/core/ldlidar_driver.cpp.o:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/core/ldlidar_driver.cpp.o
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/core/ldlidar_driver.cpp.o
 .PHONY : src/core/ldlidar_driver.cpp.o
 
 src/core/ldlidar_driver.i: src/core/ldlidar_driver.cpp.i
@@ -198,7 +198,7 @@ src/core/ldlidar_driver.i: src/core/ldlidar_driver.cpp.i
 
 # target to preprocess a source file
 src/core/ldlidar_driver.cpp.i:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/core/ldlidar_driver.cpp.i
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/core/ldlidar_driver.cpp.i
 .PHONY : src/core/ldlidar_driver.cpp.i
 
 src/core/ldlidar_driver.s: src/core/ldlidar_driver.cpp.s
@@ -206,7 +206,7 @@ src/core/ldlidar_driver.s: src/core/ldlidar_driver.cpp.s
 
 # target to generate assembly for a file
 src/core/ldlidar_driver.cpp.s:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/core/ldlidar_driver.cpp.s
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/core/ldlidar_driver.cpp.s
 .PHONY : src/core/ldlidar_driver.cpp.s
 
 src/dataprocess/lipkg.o: src/dataprocess/lipkg.cpp.o
@@ -214,7 +214,7 @@ src/dataprocess/lipkg.o: src/dataprocess/lipkg.cpp.o
 
 # target to build an object file
 src/dataprocess/lipkg.cpp.o:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/dataprocess/lipkg.cpp.o
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/dataprocess/lipkg.cpp.o
 .PHONY : src/dataprocess/lipkg.cpp.o
 
 src/dataprocess/lipkg.i: src/dataprocess/lipkg.cpp.i
@@ -222,7 +222,7 @@ src/dataprocess/lipkg.i: src/dataprocess/lipkg.cpp.i
 
 # target to preprocess a source file
 src/dataprocess/lipkg.cpp.i:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/dataprocess/lipkg.cpp.i
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/dataprocess/lipkg.cpp.i
 .PHONY : src/dataprocess/lipkg.cpp.i
 
 src/dataprocess/lipkg.s: src/dataprocess/lipkg.cpp.s
@@ -230,7 +230,7 @@ src/dataprocess/lipkg.s: src/dataprocess/lipkg.cpp.s
 
 # target to generate assembly for a file
 src/dataprocess/lipkg.cpp.s:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/dataprocess/lipkg.cpp.s
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/dataprocess/lipkg.cpp.s
 .PHONY : src/dataprocess/lipkg.cpp.s
 
 src/filter/tofbf.o: src/filter/tofbf.cpp.o
@@ -238,7 +238,7 @@ src/filter/tofbf.o: src/filter/tofbf.cpp.o
 
 # target to build an object file
 src/filter/tofbf.cpp.o:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/filter/tofbf.cpp.o
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/filter/tofbf.cpp.o
 .PHONY : src/filter/tofbf.cpp.o
 
 src/filter/tofbf.i: src/filter/tofbf.cpp.i
@@ -246,7 +246,7 @@ src/filter/tofbf.i: src/filter/tofbf.cpp.i
 
 # target to preprocess a source file
 src/filter/tofbf.cpp.i:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/filter/tofbf.cpp.i
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/filter/tofbf.cpp.i
 .PHONY : src/filter/tofbf.cpp.i
 
 src/filter/tofbf.s: src/filter/tofbf.cpp.s
@@ -254,7 +254,7 @@ src/filter/tofbf.s: src/filter/tofbf.cpp.s
 
 # target to generate assembly for a file
 src/filter/tofbf.cpp.s:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/filter/tofbf.cpp.s
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/filter/tofbf.cpp.s
 .PHONY : src/filter/tofbf.cpp.s
 
 src/logger/log_module.o: src/logger/log_module.cpp.o
@@ -262,7 +262,7 @@ src/logger/log_module.o: src/logger/log_module.cpp.o
 
 # target to build an object file
 src/logger/log_module.cpp.o:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/logger/log_module.cpp.o
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/logger/log_module.cpp.o
 .PHONY : src/logger/log_module.cpp.o
 
 src/logger/log_module.i: src/logger/log_module.cpp.i
@@ -270,7 +270,7 @@ src/logger/log_module.i: src/logger/log_module.cpp.i
 
 # target to preprocess a source file
 src/logger/log_module.cpp.i:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/logger/log_module.cpp.i
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/logger/log_module.cpp.i
 .PHONY : src/logger/log_module.cpp.i
 
 src/logger/log_module.s: src/logger/log_module.cpp.s
@@ -278,7 +278,7 @@ src/logger/log_module.s: src/logger/log_module.cpp.s
 
 # target to generate assembly for a file
 src/logger/log_module.cpp.s:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/logger/log_module.cpp.s
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/logger/log_module.cpp.s
 .PHONY : src/logger/log_module.cpp.s
 
 src/networkcom/network_socket_interface_linux.o: src/networkcom/network_socket_interface_linux.cpp.o
@@ -286,7 +286,7 @@ src/networkcom/network_socket_interface_linux.o: src/networkcom/network_socket_i
 
 # target to build an object file
 src/networkcom/network_socket_interface_linux.cpp.o:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/networkcom/network_socket_interface_linux.cpp.o
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/networkcom/network_socket_interface_linux.cpp.o
 .PHONY : src/networkcom/network_socket_interface_linux.cpp.o
 
 src/networkcom/network_socket_interface_linux.i: src/networkcom/network_socket_interface_linux.cpp.i
@@ -294,7 +294,7 @@ src/networkcom/network_socket_interface_linux.i: src/networkcom/network_socket_i
 
 # target to preprocess a source file
 src/networkcom/network_socket_interface_linux.cpp.i:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/networkcom/network_socket_interface_linux.cpp.i
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/networkcom/network_socket_interface_linux.cpp.i
 .PHONY : src/networkcom/network_socket_interface_linux.cpp.i
 
 src/networkcom/network_socket_interface_linux.s: src/networkcom/network_socket_interface_linux.cpp.s
@@ -302,7 +302,7 @@ src/networkcom/network_socket_interface_linux.s: src/networkcom/network_socket_i
 
 # target to generate assembly for a file
 src/networkcom/network_socket_interface_linux.cpp.s:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/networkcom/network_socket_interface_linux.cpp.s
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/networkcom/network_socket_interface_linux.cpp.s
 .PHONY : src/networkcom/network_socket_interface_linux.cpp.s
 
 src/serialcom/serial_interface_linux.o: src/serialcom/serial_interface_linux.cpp.o
@@ -310,7 +310,7 @@ src/serialcom/serial_interface_linux.o: src/serialcom/serial_interface_linux.cpp
 
 # target to build an object file
 src/serialcom/serial_interface_linux.cpp.o:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/serialcom/serial_interface_linux.cpp.o
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/serialcom/serial_interface_linux.cpp.o
 .PHONY : src/serialcom/serial_interface_linux.cpp.o
 
 src/serialcom/serial_interface_linux.i: src/serialcom/serial_interface_linux.cpp.i
@@ -318,7 +318,7 @@ src/serialcom/serial_interface_linux.i: src/serialcom/serial_interface_linux.cpp
 
 # target to preprocess a source file
 src/serialcom/serial_interface_linux.cpp.i:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/serialcom/serial_interface_linux.cpp.i
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/serialcom/serial_interface_linux.cpp.i
 .PHONY : src/serialcom/serial_interface_linux.cpp.i
 
 src/serialcom/serial_interface_linux.s: src/serialcom/serial_interface_linux.cpp.s
@@ -326,7 +326,7 @@ src/serialcom/serial_interface_linux.s: src/serialcom/serial_interface_linux.cpp
 
 # target to generate assembly for a file
 src/serialcom/serial_interface_linux.cpp.s:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/serialcom/serial_interface_linux.cpp.s
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(MAKE) $(MAKESILENT) -f ldlidar_driver/CMakeFiles/ldlidar.dir/build.make ldlidar_driver/CMakeFiles/ldlidar.dir/src/serialcom/serial_interface_linux.cpp.s
 .PHONY : src/serialcom/serial_interface_linux.cpp.s
 
 # Help Target
@@ -372,6 +372,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/raivo/Hermes/hermes_ws/build/ldlidar_component && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hermes/Hermes/hermes_ws/build/ldlidar_component && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

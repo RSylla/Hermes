@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/raivo/Hermes/hermes_ws/install/imu_filter_madgwick")
+  set(CMAKE_INSTALL_PREFIX "/home/hermes/Hermes/hermes_ws/install/imu_filter_madgwick")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

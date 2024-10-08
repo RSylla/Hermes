@@ -1,0 +1,30 @@
+[4.983s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/robot_localization_pkg': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_localization_pkg build --build-base /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/build install --record /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/install.log --single-version-externally-managed install_data
+[6.557s] running egg_info
+[6.559s] creating ../../build/robot_localization_pkg/robot_localization_pkg.egg-info
+[6.559s] writing ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/PKG-INFO
+[6.560s] writing dependency_links to ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/dependency_links.txt
+[6.566s] writing entry points to ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/entry_points.txt
+[6.567s] writing requirements to ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/requires.txt
+[6.567s] writing top-level names to ../../build/robot_localization_pkg/robot_localization_pkg.egg-info/top_level.txt
+[6.567s] writing manifest file '../../build/robot_localization_pkg/robot_localization_pkg.egg-info/SOURCES.txt'
+[6.573s] reading manifest file '../../build/robot_localization_pkg/robot_localization_pkg.egg-info/SOURCES.txt'
+[6.575s] writing manifest file '../../build/robot_localization_pkg/robot_localization_pkg.egg-info/SOURCES.txt'
+[6.581s] running build
+[6.581s] running build_py
+[6.581s] creating /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/build
+[6.582s] creating /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/build/lib
+[6.582s] creating /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/build/lib/robot_localization_pkg
+[6.582s] copying robot_localization_pkg/__init__.py -> /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/build/lib/robot_localization_pkg
+[6.590s] running install
+[6.591s] running install_lib
+[6.594s] copying /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/build/lib/robot_localization_pkg/__init__.py -> /home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages/robot_localization_pkg
+[6.616s] byte-compiling /home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages/robot_localization_pkg/__init__.py to __init__.cpython-310.pyc
+[6.617s] running install_data
+[6.626s] copying resource/robot_localization_pkg -> /home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/share/ament_index/resource_index/packages
+[6.626s] copying package.xml -> /home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/share/robot_localization_pkg
+[6.630s] running install_egg_info
+[6.632s] removing '/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages/robot_localization_pkg-0.0.1-py3.10.egg-info' (and everything under it)
+[6.633s] Copying ../../build/robot_localization_pkg/robot_localization_pkg.egg-info to /home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages/robot_localization_pkg-0.0.1-py3.10.egg-info
+[6.636s] running install_scripts
+[6.689s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/install.log'
+[7.326s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/robot_localization_pkg' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/robot_localization_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_localization_pkg build --build-base /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/build install --record /home/hermes/Hermes/hermes_ws/build/robot_localization_pkg/install.log --single-version-externally-managed install_data
