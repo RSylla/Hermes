@@ -1,1 +1,0 @@
-[0mCMake Error: The current CMakeCache.txt directory /home/raivo/Hermes/hermes_ws/build/ldlidar/CMakeCache.txt is different than the directory /home/raivo/Hermes_Latest_version/hermes_ws/build/ldlidar where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m

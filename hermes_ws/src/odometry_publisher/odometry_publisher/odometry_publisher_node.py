@@ -24,10 +24,10 @@ class OdometryPublisherNode(Node):
         self.last_ticks_right = 0
 
         # ROS2 Publishers, Subscribers, and Timers
-        self.odom_pub = self.create_publisher(Odometry, 'odom', 10)
+        self.odom_pub = self.create_publisher(Odometry, 'odom', 50)
         self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
-        self.create_subscription(Int16, '/left_wheel_ticks', self.left_ticks_callback, 10)
-        self.create_subscription(Int16, '/right_wheel_ticks', self.right_ticks_callback, 10)
+        self.create_subscription(Int16, '/left_wheel_ticks', self.left_ticks_callback, 50)
+        self.create_subscription(Int16, '/right_wheel_ticks', self.right_ticks_callback, 50)
 
         self.timer = self.create_timer(0.1, self.publish_odometry)  # 10 Hz
 
@@ -62,7 +62,7 @@ class OdometryPublisherNode(Node):
         odom_msg = Odometry()
         odom_msg.header.stamp = self.get_clock().now().to_msg()
         odom_msg.header.frame_id = "odom"
-        odom_msg.child_frame_id = "base_link"
+        odom_msg.child_frame_id = "base_footprint"
 
         odom_msg.pose.pose.position.x = self.x
         odom_msg.pose.pose.position.y = self.y
@@ -76,7 +76,7 @@ class OdometryPublisherNode(Node):
         transform = TransformStamped()
         transform.header.stamp = odom_msg.header.stamp
         transform.header.frame_id = "odom"
-        transform.child_frame_id = "base_link"
+        transform.child_frame_id = "base_footprint"
         transform.transform.translation.x = self.x
         transform.transform.translation.y = self.y
         transform.transform.translation.z = 0.0

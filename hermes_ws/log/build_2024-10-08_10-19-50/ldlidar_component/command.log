@@ -1,2 +1,0 @@
-Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/ldlidar_component
-Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component' returned '1': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/ldlidar_component

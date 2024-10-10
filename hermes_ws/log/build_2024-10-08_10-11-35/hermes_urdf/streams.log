@@ -1,6 +1,0 @@
-[1.865s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_urdf -- -j6 -l6
-[1.883s] [0mCMake Error: The current CMakeCache.txt directory /home/hermes/Hermes/hermes_ws/build/hermes_urdf/CMakeCache.txt is different than the directory /home/raivo/Hermes/hermes_ws/build/hermes_urdf where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[1.903s] [0mCMake Error: The source directory "/home/raivo/Hermes/hermes_ws/src/hermes_urdf" does not exist.
-[1.904s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[1.907s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
-[1.927s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf' returned '2': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/hermes_urdf -- -j6 -l6

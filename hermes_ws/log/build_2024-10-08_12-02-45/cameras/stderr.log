@@ -1,5 +1,0 @@
-  File "/home/hermes/Hermes/hermes_ws/install/cameras/lib/python3.10/site-packages/cameras/cameras_node.py", line 6
-    def main()
-              ^
-SyntaxError: expected ':'
-

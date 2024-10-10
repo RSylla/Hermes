@@ -1,6 +1,0 @@
-[0.068s] Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_component -- -j6 -l6
-[1.916s] [0mCMake Error: The current CMakeCache.txt directory /home/hermes/Hermes/hermes_ws/build/ldlidar_component/CMakeCache.txt is different than the directory /home/raivo/Hermes/hermes_ws/build/ldlidar_component where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[1.917s] [0mCMake Error: The source directory "/home/raivo/Hermes/hermes_ws/src/lidar_publisher/ldlidar_component" does not exist.
-[1.917s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[1.917s] gmake: *** [Makefile:322: cmake_check_build_system] Error 1
-[1.931s] Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component' returned '2': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_component -- -j6 -l6

@@ -1,1 +1,0 @@
-Invoking command in '/home/hermes/Hermes/hermes_ws/build/hermes_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/hermes/Hermes/hermes_ws/src/hermes_urdf -DCMAKE_INSTALL_PREFIX=/home/hermes/Hermes/hermes_ws/install/hermes_urdf

@@ -1,2 +1,0 @@
-Invoking command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_component -- -j6 -l6
-Invoked command in '/home/hermes/Hermes/hermes_ws/build/ldlidar_component' returned '2': CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/hermes/Hermes/hermes_ws/build/ldlidar_component -- -j6 -l6
