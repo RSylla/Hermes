@@ -1,0 +1,21 @@
+[2.435s] Invoking command in '/home/hermes/Hermes/hermes_ws/src/tof_publisher': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/tof_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tof_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/tof_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/tof_publisher/install.log --single-version-externally-managed install_data
+[3.027s] running egg_info
+[3.028s] writing ../../build/tof_publisher/tof_publisher.egg-info/PKG-INFO
+[3.029s] writing dependency_links to ../../build/tof_publisher/tof_publisher.egg-info/dependency_links.txt
+[3.029s] writing entry points to ../../build/tof_publisher/tof_publisher.egg-info/entry_points.txt
+[3.030s] writing requirements to ../../build/tof_publisher/tof_publisher.egg-info/requires.txt
+[3.030s] writing top-level names to ../../build/tof_publisher/tof_publisher.egg-info/top_level.txt
+[3.034s] reading manifest file '../../build/tof_publisher/tof_publisher.egg-info/SOURCES.txt'
+[3.036s] writing manifest file '../../build/tof_publisher/tof_publisher.egg-info/SOURCES.txt'
+[3.036s] running build
+[3.036s] running build_py
+[3.037s] running install
+[3.038s] running install_lib
+[3.041s] running install_data
+[3.041s] running install_egg_info
+[3.046s] removing '/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages/tof_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[3.047s] Copying ../../build/tof_publisher/tof_publisher.egg-info to /home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages/tof_publisher-0.0.0-py3.10.egg-info
+[3.049s] running install_scripts
+[3.094s] Installing tof_data = tof_publisher.tof_data:maininteractive_waypoint_follower script to /home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/tof_publisher
+[3.095s] writing list of installed files to '/home/hermes/Hermes/hermes_ws/build/tof_publisher/install.log'
+[3.171s] Invoked command in '/home/hermes/Hermes/hermes_ws/src/tof_publisher' returned '0': PYTHONPATH=/home/hermes/Hermes/hermes_ws/build/tof_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hermes/Hermes/hermes_ws/install/tof_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/tof_publisher build --build-base /home/hermes/Hermes/hermes_ws/build/tof_publisher/build install --record /home/hermes/Hermes/hermes_ws/build/tof_publisher/install.log --single-version-externally-managed install_data

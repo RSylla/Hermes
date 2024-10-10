@@ -31,7 +31,7 @@ gst_pipeline = Gst.parse_launch(gst_pipeline_str)
 appsrc = gst_pipeline.get_by_name("source")
 
 # Set appsrc properties
-caps = Gst.Caps.from_string("video/x-raw,format=BGR,width=1280,height=720,framerate=30/1")
+caps = Gst.Caps.from_string("video/x-raw,format=BGR,width=1280,height=720,framerate=60/1")
 appsrc.set_property("caps", caps)
 
 gst_pipeline.set_state(Gst.State.PLAYING)

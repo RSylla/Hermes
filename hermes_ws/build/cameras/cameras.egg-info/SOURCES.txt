@@ -12,6 +12,7 @@ setup.py
 cameras/__init__.py
 cameras/camera.py
 cameras/camera_stream.py
+cameras/cameras_node.py
 resource/cameras
 test/test_copyright.py
 test/test_flake8.py

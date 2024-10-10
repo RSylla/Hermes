@@ -17,9 +17,9 @@ setup(
     maintainer_email='raivo.sylla@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'object_detection_node = object_detection.object_detection_node:main'
         ],
     },
 )
