@@ -4,6 +4,13 @@ from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, ExecuteProcess, SetEnvironmentVariable
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
+import launch
+from launch.substitutions import Command, LaunchConfiguration
+import launch_ros
+import os
+from launch.actions import DeclareLaunchArgument
+from launch.conditions import IfCondition, UnlessCondition
+
 
 def generate_launch_description():
     package_name = 'hermes_urdf'
@@ -47,7 +54,7 @@ def generate_launch_description():
         executable='robot_state_publisher',
         name='robot_state_publisher',
         output='screen',
-        parameters=[{'robot_description': robot_description, 'use_sim_time': True}]
+        parameters=[{'robot_description': robot_description, 'use_sim_time': False}]
     )
 
     # Static transforms
@@ -64,12 +71,14 @@ def generate_launch_description():
         name='odom_to_base_footprint',
         arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_footprint']
     )
-    static_transform_base_link_to_liigend = Node(
-    package='tf2_ros',
-    executable='static_transform_publisher',
-    name='base_link_to_liigend',
-    arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'liigend']
+    
+    joint_state_publisher = launch_ros.actions.Node(
+            package='joint_state_publisher',
+            executable='joint_state_publisher',
+            name='joint_state_publisher'
     )
+    
+    
 
 
     # Create the launch description and populate
@@ -90,7 +99,7 @@ def generate_launch_description():
     # Static transforms
     ld.add_action(static_transform_map_to_odom)
     ld.add_action(static_transform_odom_to_base_footprint)
-    #ld.add_action(static_transform_base_link_to_liigend)
+    ld.add_action(joint_state_publisher)
 
     return ld
 

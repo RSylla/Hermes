@@ -64,12 +64,7 @@ def generate_launch_description():
         name='odom_to_base_footprint',
         arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_footprint']
     )
-    static_transform_base_link_to_liigend = Node(
-    package='tf2_ros',
-    executable='static_transform_publisher',
-    name='base_link_to_liigend',
-    arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'liigend']
-    )
+    
 
 
     # Create the launch description and populate

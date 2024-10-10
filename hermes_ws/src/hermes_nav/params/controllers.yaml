@@ -1,0 +1,14 @@
+ros__parameters:
+  controller_manager:
+    update_rate: 100.0
+
+  diff_drive_controller:
+    type: diff_drive_controller/DiffDriveController
+    left_wheel_names: ["base_rear_left_wheel_joint"]
+    right_wheel_names: ["base_rear_right_wheel_joint"]
+    publish_rate: 50
+    command_interfaces: ["velocity"]
+    odometry_frame: "odom"
+    robot_base_frame: "base_footprint"
+    enable_odom_tf: true
+
