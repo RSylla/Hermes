@@ -1,0 +1,18 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100.0
+    use_sim_time: false  # This can be set to false if you're working with real hardware
+
+    joint_broad:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    diff_drive_controller:
+      publish_rate: 100.0 
+      base_frame_id: base_link
+      type: "diff_drive_controller/DiffDriveController"
+      left_wheel: "front_left_wheel_joint"
+      right_wheel: "front_right_wheel_joint"
+      wheel_separation: 0.530
+      wheel_radius: 0.135
+      cmd_vel_timeout: 0.25
+
