@@ -29,68 +29,132 @@ class OdometryPublisherNode(Node):
         self.create_subscription(Int16, '/left_wheel_ticks', self.left_ticks_callback, 50)
         self.create_subscription(Int16, '/right_wheel_ticks', self.right_ticks_callback, 50)
 
-        self.timer = self.create_timer(0.1, self.publish_odometry)  # 10 Hz
+        self.timer = self.create_timer(0.02, self.publish_odometry)  # 50 Hz
 
         self.ticks_left = 0
         self.ticks_right = 0
 
+        # Velocity tracking
+        self.linear_velocity = 0.0
+        self.angular_velocity = 0.0
+
+        # Initialize time for velocity calculation
+        self.previous_time = self.get_clock().now()
+
     def left_ticks_callback(self, msg):
         self.ticks_left = msg.data
+        self.get_logger().debug(f"Left ticks received: {self.ticks_left}")
 
     def right_ticks_callback(self, msg):
         self.ticks_right = msg.data
+        self.get_logger().debug(f"Right ticks received: {self.ticks_right}")
 
-    def calculate_odometry(self):
+    def calculate_odometry(self, dt):
         """Calculate the new position of the robot based on wheel tick counts."""
         d_per_tick = math.pi * self.wheel_diameter / self.encoder_resolution
         d_left = (self.ticks_left - self.last_ticks_left) * d_per_tick
         d_right = (self.ticks_right - self.last_ticks_right) * d_per_tick
         self.last_ticks_left, self.last_ticks_right = self.ticks_left, self.ticks_right
 
-        d_center = (d_left + d_right) / 2
+        d_center = (d_left + d_right) / 2.0
         d_theta = (d_right - d_left) / self.wheel_base
 
         self.theta += d_theta
         self.x += d_center * math.cos(self.theta)
         self.y += d_center * math.sin(self.theta)
 
+        # Compute velocities
+        self.linear_velocity = d_center / dt
+        self.angular_velocity = d_theta / dt
+
+        self.get_logger().debug(f"Delta left: {d_left:.4f} m, Delta right: {d_right:.4f} m")
+        self.get_logger().debug(f"Updated position: x={self.x:.4f}, y={self.y:.4f}, theta={self.theta:.4f} rad")
+        self.get_logger().debug(f"Computed velocities: linear={self.linear_velocity:.4f} m/s, angular={self.angular_velocity:.4f} rad/s")
+
     def publish_odometry(self):
         """Calculate odometry and publish the Odometry message."""
-        self.calculate_odometry()
+        current_time = self.get_clock().now()
+        dt = (current_time - self.previous_time).nanoseconds / 1e9  # Time interval in seconds
+        self.previous_time = current_time
 
-        # Create and publish the Odometry message
+        if dt <= 0.0:
+            self.get_logger().warn("Non-positive dt detected. Skipping odometry calculation.")
+            return
+
+        self.calculate_odometry(dt)
+
+        # Create and populate the Odometry message
         odom_msg = Odometry()
-        odom_msg.header.stamp = self.get_clock().now().to_msg()
+        odom_msg.header.stamp = current_time.to_msg()
         odom_msg.header.frame_id = "odom"
-        odom_msg.child_frame_id = "base_footprint"
+        odom_msg.child_frame_id = "base_link"
 
+        # Set the position
         odom_msg.pose.pose.position.x = self.x
         odom_msg.pose.pose.position.y = self.y
         odom_msg.pose.pose.position.z = 0.0
+
+        # Set the orientation
         quat = quaternion_from_euler(0, 0, self.theta)
         odom_msg.pose.pose.orientation = Quaternion(x=quat[0], y=quat[1], z=quat[2], w=quat[3])
 
-        self.odom_pub.publish(odom_msg)
+        # Set the velocity
+        odom_msg.twist.twist.linear.x = self.linear_velocity
+        odom_msg.twist.twist.linear.y = 0.0
+        odom_msg.twist.twist.linear.z = 0.0
+        odom_msg.twist.twist.angular.x = 0.0
+        odom_msg.twist.twist.angular.y = 0.0
+        odom_msg.twist.twist.angular.z = self.angular_velocity
 
-        # Broadcast the transform
+        # Optionally, set covariance matrices
+        # Example: Assuming some uncertainty, you can set non-zero values
+        # Here, they are set to zero; adjust as necessary
+        odom_msg.pose.covariance = [
+            0.001, 0.0,   0.0, 0.0, 0.0, 0.0,
+            0.0,   0.001, 0.0, 0.0, 0.0, 0.0,
+            0.0,   0.0,   0.001, 0.0, 0.0, 0.0,
+            0.0,   0.0,   0.0,   0.001, 0.0, 0.0,
+            0.0,   0.0,   0.0,   0.0,   0.001, 0.0,
+            0.0,   0.0,   0.0,   0.0,   0.0,   0.001
+        ]
+        odom_msg.twist.covariance = [
+            0.001, 0.0,   0.0, 0.0, 0.0, 0.0,
+            0.0,   0.001, 0.0, 0.0, 0.0, 0.0,
+            0.0,   0.0,   0.001, 0.0, 0.0, 0.0,
+            0.0,   0.0,   0.0,   0.001, 0.0, 0.0,
+            0.0,   0.0,   0.0,   0.0,   0.001, 0.0,
+            0.0,   0.0,   0.0,   0.0,   0.0,   0.001
+        ]
+
+        # Publish the Odometry message
+        self.odom_pub.publish(odom_msg)
+        self.get_logger().debug("Odometry message published.")
+
+        # Create and send the transform
         transform = TransformStamped()
-        transform.header.stamp = odom_msg.header.stamp
+        transform.header.stamp = current_time.to_msg()
         transform.header.frame_id = "odom"
-        transform.child_frame_id = "base_footprint"
+        transform.child_frame_id = "base_link"
         transform.transform.translation.x = self.x
         transform.transform.translation.y = self.y
         transform.transform.translation.z = 0.0
         transform.transform.rotation = odom_msg.pose.pose.orientation
 
         self.tf_broadcaster.sendTransform(transform)
+        self.get_logger().debug("Transform broadcasted.")
 
 def main(args=None):
     rclpy.init(args=args)
     odometry_publisher = OdometryPublisherNode()
-    rclpy.spin(odometry_publisher)
-    odometry_publisher.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(odometry_publisher)
+    except KeyboardInterrupt:
+        odometry_publisher.get_logger().info("Odometry publisher node stopped cleanly")
+    except Exception as e:
+        odometry_publisher.get_logger().error(f"Exception in odometry publisher node: {e}")
+    finally:
+        odometry_publisher.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-

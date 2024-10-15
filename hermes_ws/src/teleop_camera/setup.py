@@ -17,7 +17,6 @@ setup(
     maintainer_email='raivo.sylla@gmail.com',
     description='TODO: Package description',
     license='Apache-2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'teleop_camera_node = teleop_camera.teleop_camera_node:main'

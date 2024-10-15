@@ -3,56 +3,93 @@ from rclpy.node import Node
 import pyrealsense2 as rs
 import numpy as np
 import cv2
-from sensor_msgs.msg import Image
-from cv_bridge import CvBridge
+import torch
 
-class RealSenseCameraNode(Node):
+class RealSenseYOLOv5(Node):
     def __init__(self):
-        super().__init__('realsense_camera_node')
-        self.publisher_ = self.create_publisher(Image, '/camera/image_raw', 10)
-        self.bridge = CvBridge()
+        super().__init__('realsense_yolov5')
 
         # Configure RealSense pipeline
         self.pipeline = rs.pipeline()
-        self.config = rs.config()
-        self.config.enable_stream(rs.stream.color, 1280, 720, rs.format.bgr8, 30)
+        config = rs.config()
 
-        # Start RealSense streaming
-        self.pipeline.start(self.config)
+        # Configure the color and depth streams
+        config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
+        config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
 
-        self.timer = self.create_timer(0.03, self.publish_frame)  # 30 FPS (0.03 seconds per frame)
+        # Start streaming
+        self.pipeline.start(config)
 
-    def publish_frame(self):
-        # Wait for a coherent pair of frames
+        # Load YOLOv5 model
+        # self.model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5n.pt')
+        self.model = torch.hub.load('ultralytics/yolov5',
+                                    'custom', 
+                                    path="/home/hermes/Hermes/hermes_ws/src/cameras/cameras/yolov5m_Objects365.pt", 
+                                    force_reload=True)
+        self.model.eval()  # Set the model to evaluation mode
+
+        # Timer to periodically show images
+        self.timer = self.create_timer(0.1, self.process_frames)
+
+    def process_frames(self):
+        # Get frames from the RealSense pipeline
         frames = self.pipeline.wait_for_frames()
+
+        # Get the color and depth frames
         color_frame = frames.get_color_frame()
-        if not color_frame:
+        depth_frame = frames.get_depth_frame()
+
+        if not color_frame or not depth_frame:
             return
 
-        # Convert images to numpy array
+        # Convert frames to numpy arrays
         color_image = np.asanyarray(color_frame.get_data())
+        depth_image = np.asanyarray(depth_frame.get_data())
 
-        # Convert OpenCV image to ROS2 Image message
-        image_message = self.bridge.cv2_to_imgmsg(color_image, encoding="bgr8")
+        # Run YOLOv5 object detection on the color image
+        results = self.model(color_image)
 
-        # Publish the image message
-        self.publisher_.publish(image_message)
-        self.get_logger().info('Published an image frame.')
+        # Extract bounding boxes, labels, and confidences
+        detections = results.xyxy[0].cpu().numpy()  # Format: [x1, y1, x2, y2, confidence, class]
 
-    def stop_camera(self):
-        self.pipeline.stop()
+        # Iterate through detections and add bounding boxes to color image
+        for *box, conf, cls in detections:
+            x1, y1, x2, y2 = map(int, box)
+            class_name = self.model.names[int(cls)]
+            confidence = conf
+
+            # Calculate the distance from the depth image
+            center_x = (x1 + x2) // 2
+            center_y = (y1 + y2) // 2
+            distance = depth_image[center_y, center_x] * 0.001  # Convert depth from mm to meters
+
+            # Draw bounding box on color image
+            cv2.rectangle(color_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+            label = f'{class_name} {confidence:.2f} Distance: {distance:.2f}m'
+            cv2.putText(color_image, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+
+        # Display the color image with bounding boxes
+        cv2.imshow('YOLOv5 Detection with Distance', color_image)
+
+        # Wait for a key press for 1ms to allow OpenCV to process the display
+        if cv2.waitKey(1) == 27:  # Press 'ESC' to exit
+            self.pipeline.stop()
+            cv2.destroyAllWindows()
+            self.destroy_node()
+            rclpy.shutdown()
 
 def main(args=None):
     rclpy.init(args=args)
-    node = RealSenseCameraNode()
+    realsense_yolov5 = RealSenseYOLOv5()
 
     try:
-        rclpy.spin(node)
+        rclpy.spin(realsense_yolov5)
     except KeyboardInterrupt:
         pass
     finally:
-        node.stop_camera()
-        node.destroy_node()
+        # Stop the RealSense pipeline
+        realsense_yolov5.pipeline.stop()
+        realsense_yolov5.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':
