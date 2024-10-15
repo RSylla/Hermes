@@ -1,115 +1,118 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String  # ROS2 message type for publishing objects
-import pyrealsense2 as rs
-import numpy as np
+from sensor_msgs.msg import CompressedImage
 import cv2
-import torch
+import numpy as np
+import gi
 
-class RealSenseYOLOv5(Node):
+# GStreamer RTSP server
+gi.require_version('Gst', '1.0')
+gi.require_version('GstRtspServer', '1.0')
+from gi.repository import Gst, GstRtspServer, GObject
+
+class MyFactory(GstRtspServer.RTSPMediaFactory):
+    def __init__(self, node):
+        super(MyFactory, self).__init__()
+        self.node = node
+
+        # Connect the 'media-configure' signal to the method 'on_media_configure'
+        self.connect("media-configure", self.on_media_configure)
+
+    def do_create_element(self, url):
+        # Modify the pipeline to use udpsink for streaming over UDP
+        pipeline_str = (
+            "appsrc name=source is-live=true block=true format=3 ! "
+            "image/jpeg,width=1280,height=720,framerate=30/1 ! "
+            "jpegdec ! videoconvert ! "
+            "x264enc tune=zerolatency bitrate=1500 speed-preset=ultrafast ! "
+            "rtph264pay config-interval=1 name=pay0 pt=96"
+        )
+        return Gst.parse_launch(pipeline_str)
+
+    def on_media_configure(self, factory, rtsp_media):
+        # Directly get the pipeline from the media object
+        pipeline = rtsp_media.get_element()
+
+        # Access the appsrc element by name from the pipeline
+        appsrc = pipeline.get_by_name("source")
+
+        # Connect the "need-data" signal from appsrc to push new data
+        if appsrc:
+            self.appsrc = appsrc
+            self.appsrc.connect("need-data", self.need_data)
+
+    def need_data(self, src, length):
+        if self.node.latest_frame is not None:
+            buffer = Gst.Buffer.new_wrapped(self.node.latest_frame)
+            src.emit("push-buffer", buffer)
+
+class CameraStream(Node):
     def __init__(self):
-        super().__init__('realsense_yolov5')
+        super().__init__('camera_stream_node')
+        
+        # Create a subscription to the CompressedImage topic
+        self.subscription = self.create_subscription(
+            CompressedImage,
+            '/compressed_image',
+            self.image_callback,
+            10)
+        
+        # Store the latest frame for GStreamer RTSP server
+        self.latest_frame = None
+        self.hosting_ip = "10.0.3.225"
+        
+        # Initialize GStreamer RTSP Server
+        Gst.init(None)
+        self.server = GstRtspServer.RTSPServer()
 
-        # Configure RealSense pipeline
-        self.pipeline = rs.pipeline()
-        config = rs.config()
+        # Set the RTSP server address to external IP and the port to 5000
+        self.server.set_address(self.hosting_ip)  # External IP address
+        self.server.set_service("5000")  # Set the RTSP port to 5000
 
-        # Configure the color and depth streams
-        config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
-        config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
+        # Use custom factory
+        self.factory = MyFactory(self)
+        self.factory.set_shared(True)
 
-        # Start streaming
-        self.pipeline.start(config)
+        # Attach the factory to the RTSP server
+        self.mount_points = self.server.get_mount_points()
+        self.mount_points.add_factory("/stream", self.factory)
+        self.server.attach(None)
 
-        # Load YOLOv5 model with CUDA enabled
-        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        self.model = torch.hub.load('ultralytics/yolov5', 
-                                    'custom', 
-                                    path="/home/hermes/Hermes/hermes_ws/src/cameras/cameras/yolov5m_Objects365.pt", 
-                                    force_reload=True).to(self.device)
-        self.model.eval()  # Set model to evaluation mode
+        self.get_logger().info(f"RTSP server is running at rtsp://{self.hosting_ip}:5000/stream")
 
-        # Publisher for detected objects with distance
-        self.objects_publisher = self.create_publisher(String, 'objects', 10)
+        # Start the GStreamer loop in a separate thread
+        GObject.threads_init()
+        self.loop = GObject.MainLoop()
+        self.loop_thread = self.create_thread(self.loop.run)
 
-        # Timer to periodically process frames
-        self.timer = self.create_timer(0.1, self.process_frames)
+    def image_callback(self, msg):
+        # Convert ROS CompressedImage message to an OpenCV image
+        np_arr = np.frombuffer(msg.data, np.uint8)
+        cv_image = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
 
-    def process_frames(self):
-        # Get frames from the RealSense pipeline
-        frames = self.pipeline.wait_for_frames()
+        # Convert OpenCV image to GStreamer buffer
+        success, buffer = cv2.imencode(".jpg", cv_image)
+        if success:
+            self.latest_frame = buffer.tobytes()
 
-        # Get the color and depth frames
-        color_frame = frames.get_color_frame()
-        depth_frame = frames.get_depth_frame()
-
-        if not color_frame or not depth_frame:
-            return
-
-        # Convert frames to numpy arrays
-        color_image = np.asanyarray(color_frame.get_data())
-        depth_image = np.asanyarray(depth_frame.get_data())
-
-        # Convert the color image to a torch tensor, move it to CUDA, and add a batch dimension
-        color_image_tensor = torch.from_numpy(color_image).to(self.device).permute(2, 0, 1).unsqueeze(0).float() / 255.0
-
-        # Run YOLOv5 object detection on the color image (tensor is already on CUDA)
-        results = self.model(color_image_tensor)
-
-        # Extract bounding boxes, labels, confidences, and calculate distances
-        detections = []
-        for *box, conf, cls in results.xyxy[0].cpu().numpy():  # Format: [x1, y1, x2, y2, confidence, class]
-            x1, y1, x2, y2 = map(int, box)
-            class_name = self.model.names[int(cls)]
-            confidence = conf
-
-            # Calculate the distance from the depth image
-            center_x = (x1 + x2) // 2
-            center_y = (y1 + y2) // 2
-            distance = depth_image[center_y, center_x] * 0.001  # Convert depth from mm to meters
-
-            # Store detection with distance
-            detections.append((class_name, confidence, distance, (x1, y1, x2, y2)))
-
-        # Sort detections by nearest distance first
-        detections.sort(key=lambda x: x[2])
-
-        # Publish sorted objects to the 'objects' topic
-        objects_msg = String()
-        objects_data = []
-        for class_name, confidence, distance, box in detections:
-            objects_data.append(f"{class_name} {confidence:.2f} Distance: {distance:.2f}m")
-        objects_msg.data = ', '.join(objects_data)
-        self.objects_publisher.publish(objects_msg)
-
-        # Display the color image with bounding boxes
-        for class_name, confidence, distance, (x1, y1, x2, y2) in detections:
-            # Draw bounding box on color image
-            cv2.rectangle(color_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
-            label = f'{class_name} {confidence:.2f} Distance: {distance:.2f}m'
-            cv2.putText(color_image, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
-
-        cv2.imshow('YOLOv5 Detection with Distance', color_image)
-
-        # Wait for a key press for 1ms to allow OpenCV to process the display
-        if cv2.waitKey(1) == 27:  # Press 'ESC' to exit
-            self.pipeline.stop()
-            cv2.destroyAllWindows()
-            self.destroy_node()
-            rclpy.shutdown()
+    def create_thread(self, target):
+        # Helper function to start the GStreamer loop in a new thread
+        import threading
+        thread = threading.Thread(target=target, daemon=True)
+        thread.start()
+        return thread
 
 def main(args=None):
     rclpy.init(args=args)
-    realsense_yolov5 = RealSenseYOLOv5()
 
+    node = CameraStream()
+    
     try:
-        rclpy.spin(realsense_yolov5)
+        rclpy.spin(node)
     except KeyboardInterrupt:
-        pass
+        node.get_logger().info("Shutting down RTSP server.")
     finally:
-        # Stop the RealSense pipeline
-        realsense_yolov5.pipeline.stop()
-        realsense_yolov5.destroy_node()
+        node.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':

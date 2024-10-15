@@ -56,20 +56,27 @@ class RealSenseYOLOv5(Node):
         # Run YOLOv5 object detection on the color image (use CUDA)
         results = self.model(color_image)
 
+        traffic_safety_classes = ["Person", "Car", "Bus", "Bicycle", "Motorcycle", "Traffic light",
+                                  "Stop sign", "Ambulance", "Firetruck", "Police car", "Taxi", "Truck",
+                                  "Van", "Helmet", "Traffic cone", "Street sign", "Barrier", "Crosswalk",
+                                  "Pedestrian", "Road", "Bridge"]
+
+        
         # Extract bounding boxes, labels, confidences, and calculate distances
         detections = []
         for *box, conf, cls in results.xyxy[0].cpu().numpy():  # Format: [x1, y1, x2, y2, confidence, class]
-            x1, y1, x2, y2 = map(int, box)
             class_name = self.model.names[int(cls)]
-            confidence = conf
+            if class_name in traffic_safety_classes:
+                x1, y1, x2, y2 = map(int, box)
+                confidence = conf
 
-            # Calculate the distance from the depth image
-            center_x = (x1 + x2) // 2
-            center_y = (y1 + y2) // 2
-            distance = depth_image[center_y, center_x] * 0.001  # Convert depth from mm to meters
+                # Calculate the distance from the depth image
+                center_x = (x1 + x2) // 2
+                center_y = (y1 + y2) // 2
+                distance = depth_image[center_y, center_x] * 0.001  # Convert depth from mm to meters
 
-            # Store detection with distance
-            detections.append((class_name, confidence, distance, (x1, y1, x2, y2)))
+                # Store detection with distance
+                detections.append((class_name, confidence, distance, (x1, y1, x2, y2)))
 
         # Sort detections by nearest distance first
         detections.sort(key=lambda x: x[2])
