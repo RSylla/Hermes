@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String  # ROS2 message type for publishing objects
+from std_msgs.msg import String
+from sensor_msgs.msg import CompressedImage  # Import compressed image message type
 import pyrealsense2 as rs
 import numpy as np
 import cv2
@@ -31,6 +32,8 @@ class RealSenseYOLOv5(Node):
 
         # Publisher for detected objects with distance
         self.objects_publisher = self.create_publisher(String, 'objects', 10)
+        # Publisher for compressed images with annotations
+        self.image_publisher = self.create_publisher(CompressedImage, 'compressed_image', 10)
 
         # Timer to periodically process frames
         self.timer = self.create_timer(0.1, self.process_frames)
@@ -51,7 +54,7 @@ class RealSenseYOLOv5(Node):
         depth_image = np.asanyarray(depth_frame.get_data())
 
         # Run YOLOv5 object detection on the color image (use CUDA)
-        results = self.model(color_image, device='cuda')
+        results = self.model(color_image)
 
         # Extract bounding boxes, labels, confidences, and calculate distances
         detections = []
@@ -79,16 +82,29 @@ class RealSenseYOLOv5(Node):
         objects_msg.data = ', '.join(objects_data)
         self.objects_publisher.publish(objects_msg)
 
-        # Display the color image with bounding boxes
+        # Draw bounding boxes on the color image
         for class_name, confidence, distance, (x1, y1, x2, y2) in detections:
             # Draw bounding box on color image
             cv2.rectangle(color_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
             label = f'{class_name} {confidence:.2f} Distance: {distance:.2f}m'
             cv2.putText(color_image, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
 
-        cv2.imshow('YOLOv5 Detection with Distance', color_image)
+        # Compress the image
+        success, compressed_image = cv2.imencode('.jpg', color_image)
+        if success:
+            # Create a CompressedImage message
+            compressed_msg = CompressedImage()
+            compressed_msg.header.stamp = self.get_clock().now().to_msg()
+            compressed_msg.format = "jpeg"
+            compressed_msg.data = np.array(compressed_image).tobytes()
 
-        # Wait for a key press for 1ms to allow OpenCV to process the display
+            # Publish the compressed image
+            self.image_publisher.publish(compressed_msg)
+
+        # # Display the color image with bounding boxes (optional)
+        # cv2.imshow('YOLOv5 Detection with Distance', color_image)
+
+        # # Wait for a key press for 1ms to allow OpenCV to process the display
         if cv2.waitKey(1) == 27:  # Press 'ESC' to exit
             self.pipeline.stop()
             cv2.destroyAllWindows()

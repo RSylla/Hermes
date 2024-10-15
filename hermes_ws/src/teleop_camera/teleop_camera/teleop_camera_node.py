@@ -1,10 +1,10 @@
 import rclpy
 from rclpy.node import Node
+from std_msgs.msg import String  # ROS2 message type for publishing objects
 import pyrealsense2 as rs
 import numpy as np
 import cv2
 import torch
-from ultralytics import YOLO
 
 class RealSenseYOLOv5(Node):
     def __init__(self):
@@ -21,15 +21,18 @@ class RealSenseYOLOv5(Node):
         # Start streaming
         self.pipeline.start(config)
 
-        # Load YOLOv5 model
-        # self.model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5n.pt')
-        self.model = torch.hub.load('ultralytics/yolov5',
+        # Load YOLOv5 model with CUDA enabled
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.model = torch.hub.load('ultralytics/yolov5', 
                                     'custom', 
-                                    path="/home/hermes/Hermes/hermes_ws/src/teleop_camera/teleop_camera/yolov5m_Objects365.pt", 
-                                    force_reload=True)
-        self.model.eval()  # Set the model to evaluation mode
+                                    path="/home/hermes/Hermes/hermes_ws/src/cameras/cameras/yolov5m_Objects365.pt", 
+                                    force_reload=True).to(self.device)
+        self.model.eval()  # Set model to evaluation mode
 
-        # Timer to periodically show images
+        # Publisher for detected objects with distance
+        self.objects_publisher = self.create_publisher(String, 'objects', 10)
+
+        # Timer to periodically process frames
         self.timer = self.create_timer(0.1, self.process_frames)
 
     def process_frames(self):
@@ -47,14 +50,15 @@ class RealSenseYOLOv5(Node):
         color_image = np.asanyarray(color_frame.get_data())
         depth_image = np.asanyarray(depth_frame.get_data())
 
-        # Run YOLOv5 object detection on the color image
-        results = self.model(color_image)
+        # Convert the color image to a torch tensor, move it to CUDA, and add a batch dimension
+        color_image_tensor = torch.from_numpy(color_image).to(self.device).permute(2, 0, 1).unsqueeze(0).float() / 255.0
 
-        # Extract bounding boxes, labels, and confidences
-        detections = results.xyxy[0].cpu().numpy()  # Format: [x1, y1, x2, y2, confidence, class]
+        # Run YOLOv5 object detection on the color image (tensor is already on CUDA)
+        results = self.model(color_image_tensor)
 
-        # Iterate through detections and add bounding boxes to color image
-        for *box, conf, cls in detections:
+        # Extract bounding boxes, labels, confidences, and calculate distances
+        detections = []
+        for *box, conf, cls in results.xyxy[0].cpu().numpy():  # Format: [x1, y1, x2, y2, confidence, class]
             x1, y1, x2, y2 = map(int, box)
             class_name = self.model.names[int(cls)]
             confidence = conf
@@ -64,12 +68,27 @@ class RealSenseYOLOv5(Node):
             center_y = (y1 + y2) // 2
             distance = depth_image[center_y, center_x] * 0.001  # Convert depth from mm to meters
 
+            # Store detection with distance
+            detections.append((class_name, confidence, distance, (x1, y1, x2, y2)))
+
+        # Sort detections by nearest distance first
+        detections.sort(key=lambda x: x[2])
+
+        # Publish sorted objects to the 'objects' topic
+        objects_msg = String()
+        objects_data = []
+        for class_name, confidence, distance, box in detections:
+            objects_data.append(f"{class_name} {confidence:.2f} Distance: {distance:.2f}m")
+        objects_msg.data = ', '.join(objects_data)
+        self.objects_publisher.publish(objects_msg)
+
+        # Display the color image with bounding boxes
+        for class_name, confidence, distance, (x1, y1, x2, y2) in detections:
             # Draw bounding box on color image
             cv2.rectangle(color_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
             label = f'{class_name} {confidence:.2f} Distance: {distance:.2f}m'
             cv2.putText(color_image, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
 
-        # Display the color image with bounding boxes
         cv2.imshow('YOLOv5 Detection with Distance', color_image)
 
         # Wait for a key press for 1ms to allow OpenCV to process the display
