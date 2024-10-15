@@ -20,8 +20,8 @@ Gst.init(None)
 COLOR_WIDTH = 1280  # Adjust as needed
 COLOR_HEIGHT = 720
 COLOR_FPS = 30
-UDP_HOST = "10.0.3.160"
-UDP_PORT = 5000
+UDP_HOST = "10.0.3.225"
+UDP_PORT = "8554"
 QUEUE_SIZE = 5  # Max number of frames to hold in queue
 
 # ===========================
@@ -126,7 +126,7 @@ def frame_processing():
                 push_to_gstreamer(color_image)
 
             # Optionally, display the frame
-            cv2.imshow('Person Detection', color_image)
+            # cv2.imshow('Person Detection', color_image)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
 
