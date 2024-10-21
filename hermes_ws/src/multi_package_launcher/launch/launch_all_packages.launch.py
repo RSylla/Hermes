@@ -38,13 +38,13 @@ def generate_launch_description():
     )
 
     # Odometry Publisher Node
-    odometry_publisher_node = Node(
+    """ odometry_publisher_node = Node(
         package='odometry_publisher',
         executable='odometry_publisher_node',
         name='odometry_publisher_node',
         output='screen',
         namespace=LaunchConfiguration('namespace')
-    )
+    ) """
 
     # GPS Publisher Node
     gps_publisher_node = Node(
@@ -55,12 +55,21 @@ def generate_launch_description():
         namespace=LaunchConfiguration('namespace'),
     )
 
+    # Wheel Joint Publisher Node
+    """    wheel_joint_publisher_node = Node(
+        package='wheel_joint_publisher_pkg',
+        executable='wheel_joint_publisher',
+        name='wheel_joint_publisher_node',
+        output='screen',
+        namespace=LaunchConfiguration('namespace'),
+    )  """
+
     # Assemble all actions into the launch description
     return LaunchDescription([
         namespace_arg,
         icm_imu_node,
         imu_filter_launch,
-        odometry_publisher_node,
+        #odometry_publisher_node,
         gps_publisher_node,
+        #wheel_joint_publisher_node,
     ])
-
