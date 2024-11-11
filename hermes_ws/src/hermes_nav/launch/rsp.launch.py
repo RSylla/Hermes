@@ -2,7 +2,7 @@ import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.substitutions import LaunchConfiguration, Command
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, SetParameter
 from launch_ros.actions import Node
 
 def generate_launch_description():
@@ -13,16 +13,21 @@ def generate_launch_description():
     hermes_urdf_dir = get_package_share_directory('hermes_urdf')
     urdf_file_path = os.path.join(hermes_urdf_dir, 'urdf', 'hermes_model.urdf')
 
+    # Process the URDF file using xacro
+    robot_description_content = Command(['xacro ', urdf_file_path])
 
-    # Robot State Publisher (make sure it doesn't override odom frames)
+    # Set robot_description parameter globally
+    set_robot_description = SetParameter(name='robot_description', value=robot_description_content)
+
+    # Robot State Publisher
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         parameters=[
             {
-                'robot_description': Command(['xacro ', urdf_file_path]),
+                'robot_description': robot_description_content,
                 'use_sim_time': use_sim_time,
-                'publish_tf': False  # Disable unnecessary TF publishing to avoid conflicts
+                'publish_tf': True
             }
         ],
         output='screen'
@@ -36,7 +41,7 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}]
     )
 
-    # Launch!
+    # Launch Description
     return LaunchDescription([
         DeclareLaunchArgument(
             'use_sim_time',
@@ -46,8 +51,8 @@ def generate_launch_description():
             'use_ros2_control',
             default_value='true',
             description='Use ros2_control if true'),
-
+        set_robot_description,
         node_robot_state_publisher,
-        node_joint_state_publisher  # Add joint state publisher
+        node_joint_state_publisher
     ])
 

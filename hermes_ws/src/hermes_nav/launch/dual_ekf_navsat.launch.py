@@ -21,10 +21,8 @@ import launch.actions
 
 
 def generate_launch_description():
-    gps_wpf_dir = get_package_share_directory(
-        "hermes_nav")
-    rl_params_file = os.path.join(
-        gps_wpf_dir, "params", "dual_ekf_navsat_params.yaml")
+    gps_wpf_dir = get_package_share_directory("hermes_nav")
+    rl_params_file = os.path.join(gps_wpf_dir, "params", "dual_ekf_navsat_params.yaml")
 
     return LaunchDescription(
         [
@@ -40,7 +38,7 @@ def generate_launch_description():
                 name="ekf_filter_node_odom",
                 output="screen",
                 parameters=[rl_params_file, {"use_sim_time": False}],
-                remappings=[("odometry/filtered", "odometry/local")],
+                remappings=[("odometry/filtered", "odometry/filtered")],
             ),
             launch_ros.actions.Node(
                 package="robot_localization",
@@ -50,19 +48,31 @@ def generate_launch_description():
                 parameters=[rl_params_file, {"use_sim_time": False}],
                 remappings=[("odometry/filtered", "odometry/global")],
             ),
-            #launch_ros.actions.Node(
-            #    package="robot_localization",
-            #    executable="navsat_transform_node",
-            #    name="navsat_transform",
-            #    output="screen",
-            #    parameters=[rl_params_file, {"use_sim_time": False}],
-            #    remappings=[
-            #        ("imu/data", "imu/data"),
-            #        ("gps/fix", "gps/fix"),
-            #        ("gps/filtered", "gps/filtered"),
-            #        ("odometry/gps", "odometry/gps"),
-            #        ("odometry/filtered", "odometry/global"),
-            #    ],
-            #),
+            launch_ros.actions.Node(
+                package="robot_localization",
+                executable="navsat_transform_node",
+                name="navsat_transform",
+                output="screen",
+                parameters=[
+                    {
+                        "use_sim_time": False,
+                        "magnetic_declination_radians": 0.0,
+                        "yaw_offset": 0.0,
+                        "zero_altitude": True,
+                        "broadcast_utm_transform": True,
+                        "publish_filtered_gps": True,
+                        "use_odometry_yaw": False,
+                        "wait_for_datum": False,
+                        "datum": "",
+                        # Add other parameters as needed
+                    }
+                ],
+                remappings=[
+                    ("/gps/fix", "/gps/fix"),  # Ensure this matches your topic names
+                    ("/imu/data", "/imu/data"),  # If you have IMU data
+                    ("/odometry/gps", "/odometry/gps"),
+                ],
+            ),
         ]
     )
+

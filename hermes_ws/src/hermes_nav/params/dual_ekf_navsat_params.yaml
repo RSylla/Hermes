@@ -1,6 +1,10 @@
 ekf_filter_node_odom:
   ros__parameters:
+<<<<<<< HEAD
+    frequency: 20.0
+=======
     frequency: 40.0
+>>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
     two_d_mode: false
     print_diagnostics: true
     debug: false
@@ -12,7 +16,7 @@ ekf_filter_node_odom:
     base_link_frame: base_footprint
     world_frame: odom
 
-    # Enable position (x, y, z) and orientation (roll, pitch, yaw) from /odom
+
     odom0: /odom
     odom0_config: [true,  true,  true,
                    true,  true,  true,
@@ -41,10 +45,16 @@ ekf_filter_node_odom:
                   false, false, false,
                   false, false, false]
     mag0_queue_size: 10
+    
+    
 
 ekf_filter_node_map:
   ros__parameters:
+<<<<<<< HEAD
+    frequency: 20.0
+=======
     frequency: 40.0
+>>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
     two_d_mode: true
     print_diagnostics: true
     debug: false
@@ -55,7 +65,7 @@ ekf_filter_node_map:
     base_link_frame: base_footprint
     world_frame: map
 
-    # Enable position (x, y, z) and orientation (roll, pitch, yaw) from /odom
+
     odom0: /odom
     odom0_config: [true,  true,  true,
                    true,  true,  true,
@@ -66,7 +76,11 @@ ekf_filter_node_map:
     odom0_differential: false
     odom0_relative: false
 
+<<<<<<< HEAD
+    odom1: /fix
+=======
     odom1: /gps/fix4
+>>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
     odom1_config: [true, true, false,
                    false, false, false,
                    false, false, false,
@@ -75,10 +89,14 @@ ekf_filter_node_map:
     odom1_queue_size: 10
     odom1_differential: false
     odom1_relative: false
+<<<<<<< HEAD
+    
+=======
 
+>>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
     imu0: /imu/data_raw
     imu0_config: [false, false, false,
-                  false, false, true,  # Measure YAW only
+                  false, false, true,  
                   false, false, false,
                   false, false, false,
                   false, false, false]
@@ -94,4 +112,28 @@ ekf_filter_node_map:
                   false, false, false,
                   false, false, false]
     mag0_queue_size: 10
+    
+navsat_transform_node:
+  ros__parameters:
+    use_sim_time: False
+    magnetic_declination_radians: 0.0
+    yaw_offset: 0.0
+    zero_altitude: True
+    broadcast_utm_transform: True
+    broadcast_tf: True
+    world_frame: 'map'
+    base_link_frame: 'base_footprint'
+    gps_frame: 'gps'
+    odom_frame: 'odom'
+    gps_topic: '/gps/fix'
+    imu_topic: '/imu/data'
+    use_odometry_source: False
+    publish_filtered_gps: True
+    wait_for_datum: True
+    datum: "WGS84"
+    debug: true
 
+<<<<<<< HEAD
+   
+=======
+>>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
