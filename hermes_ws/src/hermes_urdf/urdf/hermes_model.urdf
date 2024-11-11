@@ -185,11 +185,7 @@
         <origin xyz="0 0 0.1" rpy="0 0 1.57"/>
     </joint>
 
-<<<<<<< HEAD
-    <!-- IMU link -->
-=======
-    
->>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
+
     <link name="imu_link">
     </link>
 

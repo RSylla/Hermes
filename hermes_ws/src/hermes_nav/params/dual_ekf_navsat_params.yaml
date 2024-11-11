@@ -1,10 +1,10 @@
 ekf_filter_node_odom:
   ros__parameters:
-<<<<<<< HEAD
+
     frequency: 20.0
-=======
+
     frequency: 40.0
->>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
+
     two_d_mode: false
     print_diagnostics: true
     debug: false
@@ -50,11 +50,11 @@ ekf_filter_node_odom:
 
 ekf_filter_node_map:
   ros__parameters:
-<<<<<<< HEAD
+
     frequency: 20.0
-=======
+
     frequency: 40.0
->>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
+
     two_d_mode: true
     print_diagnostics: true
     debug: false
@@ -76,11 +76,11 @@ ekf_filter_node_map:
     odom0_differential: false
     odom0_relative: false
 
-<<<<<<< HEAD
+
     odom1: /fix
-=======
+
     odom1: /gps/fix4
->>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
+
     odom1_config: [true, true, false,
                    false, false, false,
                    false, false, false,
@@ -89,11 +89,7 @@ ekf_filter_node_map:
     odom1_queue_size: 10
     odom1_differential: false
     odom1_relative: false
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
     imu0: /imu/data_raw
     imu0_config: [false, false, false,
                   false, false, true,  
@@ -133,7 +129,3 @@ navsat_transform_node:
     datum: "WGS84"
     debug: true
 
-<<<<<<< HEAD
-   
-=======
->>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
