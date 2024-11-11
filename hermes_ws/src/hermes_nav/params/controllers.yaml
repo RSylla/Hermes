@@ -1,12 +1,12 @@
 controller_manager:
   ros__parameters:
-<<<<<<< HEAD
+
     update_rate: 30
     # use_sim_time: true
 
     diffbot_base_controller:
       type: diff_drive_controller/DiffDriveController
-=======
+
     update_rate: 100.0
     use_sim_time: false  # This can be set to false if you're working with real hardware
 
@@ -22,7 +22,7 @@ controller_manager:
       wheel_separation: 0.530
       wheel_radius: 0.135
       cmd_vel_timeout: 0.25
->>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
+
 
     joint_broad:
       type: joint_state_broadcaster/JointStateBroadcaster

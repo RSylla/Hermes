@@ -68,8 +68,8 @@ def generate_launch_description():
                     }
                 ],
                 remappings=[
-                    ("/gps/fix", "/gps/fix"),  # Ensure this matches your topic names
-                    ("/imu/data", "/imu/data"),  # If you have IMU data
+                    ("/fix", "/fix"),  # Ensure this matches your topic names
+                    ("/imu/data_raw", "/imu/data_raw"),  # If you have IMU data
                     ("/odometry/gps", "/odometry/gps"),
                 ],
             ),

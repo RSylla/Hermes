@@ -90,16 +90,8 @@ def generate_launch_description():
     controller_manager_cmd = Node(
         package='controller_manager',
         executable='ros2_control_node',
-<<<<<<< HEAD
         parameters=[{'robot_description': robot_description_content}, controllers_params],
         output='screen',
-        
-=======
-        name='controller_manager',
-        parameters=[controllers_params],
-        output='screen',
-        arguments=['--ros-args', '--log-level', 'debug']
->>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
     )
 
     # Diff Drive controller spawner with further delay (after controller manager starts)
@@ -108,7 +100,7 @@ def generate_launch_description():
         executable='spawner',
         arguments=['diffbot_base_controller'],
     )
-<<<<<<< HEAD
+
 
     joint_broad_spawner = Node(
         package='controller_manager',
@@ -143,9 +135,10 @@ def generate_launch_description():
     )
 
     # Launch Description
-=======
+
     
-    # Static transforms
+    
+    
     static_transform_map_to_odom = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
@@ -159,17 +152,22 @@ def generate_launch_description():
         name='odom_to_base_footprint',
         arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_footprint']
     )
-    diff_drive_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["diff_drive_controller", "--controller-manager", "/controller_manager"]
+    #diff_drive_spawner = Node(
+    #    package="controller_manager",
+    #    executable="spawner",
+    #    arguments=["diff_drive_controller", "--controller-manager", "/controller_manager"]
+    #)
+    static_transform_base_link_to_gps = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='base_link_to_gps',
+        arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'gps']
     )
-    
 
     
     
     # Create the launch description and populate
->>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
+
     ld = LaunchDescription()
 
     # Add actions to Launch Description
@@ -180,15 +178,16 @@ def generate_launch_description():
     ld.add_action(navigation2_cmd)
     ld.add_action(rviz_cmd)
     ld.add_action(controller_manager_cmd)
-<<<<<<< HEAD
+
     ld.add_action(delayed_diff_drive_spawner)
     ld.add_action(delayed_joint_broad_spawner)
     ld.add_action(delayed_steering_controller_spawner)
-=======
-    ld.add_action(rsp_cmd)
+
+    #ld.add_action(rsp_cmd)
+    ld.add_action(static_transform_base_link_to_gps)
     ld.add_action(static_transform_map_to_odom)
     ld.add_action(static_transform_odom_to_base_footprint)
-    ld.add_action(diff_drive_spawner)    
->>>>>>> 983780703ae1681e6eebcb8c4634135f8974e252
+    #ld.add_action(diff_drive_spawner)    
+
     return ld
 

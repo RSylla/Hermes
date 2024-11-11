@@ -2,16 +2,13 @@ ekf_filter_node_odom:
   ros__parameters:
 
     frequency: 20.0
-
-    frequency: 40.0
-
-    two_d_mode: false
+    two_d_mode: true
     print_diagnostics: true
     debug: false
     publish_tf: true
     use_sim_time: false
     
-    map_frame: map
+    map_frame: odom
     odom_frame: odom
     base_link_frame: base_footprint
     world_frame: odom
@@ -38,7 +35,7 @@ ekf_filter_node_odom:
     imu0_queue_size: 10
     imu0_remove_gravitational_acceleration: true
 
-    mag0: /imu/mag
+    mag0: /imu_mag
     mag0_config: [true, true, true,
                   false, false, false,
                   false, false, false,
@@ -50,11 +47,7 @@ ekf_filter_node_odom:
 
 ekf_filter_node_map:
   ros__parameters:
-
-    frequency: 20.0
-
-    frequency: 40.0
-
+    frequency: 30.0
     two_d_mode: true
     print_diagnostics: true
     debug: false
@@ -65,22 +58,18 @@ ekf_filter_node_map:
     base_link_frame: base_footprint
     world_frame: map
 
+    odom0: /odometry/filtered
 
-    odom0: /odom
-    odom0_config: [true,  true,  true,
-                   true,  true,  true,
-                   true,  true,  true,
-                   false, false, true,
+    odom0_config: [true, true, true,
+                   true, true, true,
+                   true, true, true,
+                   false, false, false,
                    false, false, false]
     odom0_queue_size: 10
     odom0_differential: false
     odom0_relative: false
 
-
-    odom1: /fix
-
-    odom1: /gps/fix4
-
+    odom1: /odometry/gps
     odom1_config: [true, true, false,
                    false, false, false,
                    false, false, false,
@@ -92,7 +81,7 @@ ekf_filter_node_map:
 
     imu0: /imu/data_raw
     imu0_config: [false, false, false,
-                  false, false, true,  
+                  false, false, true,
                   false, false, false,
                   false, false, false,
                   false, false, false]
@@ -101,13 +90,6 @@ ekf_filter_node_map:
     imu0_queue_size: 10
     imu0_remove_gravitational_acceleration: true
 
-    mag0: /imu/mag
-    mag0_config: [true, true, true,
-                  false, false, false,
-                  false, false, false,
-                  false, false, false,
-                  false, false, false]
-    mag0_queue_size: 10
     
 navsat_transform_node:
   ros__parameters:
@@ -116,16 +98,17 @@ navsat_transform_node:
     yaw_offset: 0.0
     zero_altitude: True
     broadcast_utm_transform: True
-    broadcast_tf: True
-    world_frame: 'map'
-    base_link_frame: 'base_footprint'
-    gps_frame: 'gps'
-    odom_frame: 'odom'
-    gps_topic: '/gps/fix'
-    imu_topic: '/imu/data'
-    use_odometry_source: False
     publish_filtered_gps: True
-    wait_for_datum: True
-    datum: "WGS84"
-    debug: true
+    use_odometry_yaw: False
+    wait_for_datum: False  # Set to False to prevent waiting indefinitely
+    datum: ""
+    world_frame: "map"
+    odom_frame: "odom"
+    base_link_frame: "base_footprint"
+    gps_frame: "base_link"
+    imu_frame: "imu_link"
+    gps_topic: "/fix"
+    imu_topic: "/imu/data_raw"
+    odom_topic: "/odometry/filtered"
+    use_odometry_source: False
 
