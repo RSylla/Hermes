@@ -18,8 +18,8 @@ class ICM20948Node(Node):
         self.initialize_imu()
         
         # Publishers
-        self.imu_pub = self.create_publisher(Imu, "/imu/data_raw", 100)
-        self.mag_pub = self.create_publisher(MagneticField, "/imu/mag", 100)
+        self.imu_pub = self.create_publisher(Imu, "/imu/data_raw", 10)
+        self.mag_pub = self.create_publisher(MagneticField, "/imu_mag", 10)
         
         # Timer for publishing
         self.create_timer(1.0 / self.pub_rate, self.publish_data)
@@ -31,7 +31,7 @@ class ICM20948Node(Node):
     def declare_and_get_parameters(self):
         self.declare_parameter("i2c_address", 0x69)
         self.declare_parameter("frame_id", "imu_link")  # Changed to imu_link
-        self.declare_parameter("pub_rate", 100)
+        self.declare_parameter("pub_rate", 50)
         
         self.i2c_addr = self.get_parameter("i2c_address").value
         self.frame_id = self.get_parameter("frame_id").value

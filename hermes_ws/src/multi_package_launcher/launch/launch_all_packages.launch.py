@@ -17,16 +17,16 @@ def generate_launch_description():
     )
 
     # ICM IMU Node
-    icm_imu_node = Node(
+    """ icm_imu_node = Node(
         package='icm20948_publisher',
         executable='icm_imu',
         name='icm_imu_node',
         output='screen',
         namespace=LaunchConfiguration('namespace')
-    )
+    ) """
 
     # IMU Filter Launch File
-    imu_filter_launch = IncludeLaunchDescription(
+    """ imu_filter_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             PathJoinSubstitution([
                 FindPackageShare('imu_filter_madgwick'),
@@ -35,7 +35,7 @@ def generate_launch_description():
             ])
         ]),
         launch_arguments={'namespace': LaunchConfiguration('namespace')}.items()
-    )
+    )  """
 
     # Odometry Publisher Node
     odometry_publisher_node = Node(
@@ -47,29 +47,29 @@ def generate_launch_description():
     ) 
 
     # GPS Publisher Node
-    gps_publisher_node = Node(
+    """  gps_publisher_node = Node(
         package='gps_publisher',
         executable='gps_publisher_node',
         name='gps_publisher_node',
         output='screen',
         namespace=LaunchConfiguration('namespace'),
-    )
+    ) """
 
     # Wheel Joint Publisher Node
-    wheel_joint_publisher_node = Node(
+    """  wheel_joint_publisher_node = Node(
         package='wheel_joint_publisher_pkg',
         executable='wheel_joint_publisher',
         name='wheel_joint_publisher_node',
         output='screen',
         namespace=LaunchConfiguration('namespace'),
-    )  
+    )   """
 
     # Assemble all actions into the launch description
     return LaunchDescription([
         namespace_arg,
-        icm_imu_node,
-        imu_filter_launch,
+        #icm_imu_node,
+        #imu_filter_launch,
         odometry_publisher_node,
-        gps_publisher_node,
-        wheel_joint_publisher_node,
+       #gps_publisher_node,
+        #wheel_joint_publisher_node,
     ])
