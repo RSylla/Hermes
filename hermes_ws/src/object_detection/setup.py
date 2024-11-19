@@ -19,7 +19,8 @@ setup(
     license='Apache-2.0',
     entry_points={
         'console_scripts': [
-            'object_detection_node = object_detection.object_detection_node:main'
+            'object_detection_node = object_detection.object_detection_node:main',
+            'lane_follower = object_detection.lane_follower:main',
         ],
     },
 )

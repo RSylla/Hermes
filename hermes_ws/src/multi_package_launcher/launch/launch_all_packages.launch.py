@@ -16,14 +16,32 @@ def generate_launch_description():
         description='Namespace for all nodes'
     )
 
-    # ICM IMU Node
-    """ icm_imu_node = Node(
-        package='icm20948_publisher',
-        executable='icm_imu',
-        name='icm_imu_node',
+      # BNO055 IMU Node
+    bno055_node = Node(
+        package='bno055_driver',
+        executable='bno055_node',
+        name='bno055_node',
         output='screen',
-        namespace=LaunchConfiguration('namespace')
-    ) """
+        namespace=LaunchConfiguration('namespace'),
+        parameters=[{
+            'frame_id': 'imu_link',
+            'bus_num': 1,
+            'i2c_address': 0x28,
+            'update_rate': 100.0
+        }]
+    )
+    
+    bno08x_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            PathJoinSubstitution([
+                FindPackageShare('ros2_bno08x_driver'),
+                'launch',
+                'bno08x.launch.py'
+            ])
+        ]),
+        launch_arguments={'namespace': LaunchConfiguration('namespace')}.items()
+    )
+
 
     # IMU Filter Launch File
     """ imu_filter_launch = IncludeLaunchDescription(
@@ -67,9 +85,10 @@ def generate_launch_description():
     # Assemble all actions into the launch description
     return LaunchDescription([
         namespace_arg,
-        #icm_imu_node,
+        #bno055_node,
+        bno08x_launch,  
         #imu_filter_launch,
         odometry_publisher_node,
-       #gps_publisher_node,
+        #gps_publisher_node,
         #wheel_joint_publisher_node,
     ])
