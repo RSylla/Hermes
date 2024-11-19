@@ -1,0 +1,18 @@
+digraph G {
+"gps" -> "map"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"map" -> "odom"[label=" Broadcaster: default_authority\nAverage rate: 39.834\nBuffer length: 4.72\nMost recent transform: 1731326121.784448\nOldest transform: 1731326117.064809\n"];
+"odom" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 80.788\nBuffer length: 4.06\nMost recent transform: 1731326121.784448\nOldest transform: 1731326117.724458\n"];
+"liigend" -> "front_left_wheel"[label=" Broadcaster: default_authority\nAverage rate: 20.357\nBuffer length: 4.618\nMost recent transform: 1731326121.775738\nOldest transform: 1731326117.158109\n"];
+"base_link" -> "liigend"[label=" Broadcaster: default_authority\nAverage rate: 20.357\nBuffer length: 4.618\nMost recent transform: 1731326121.775738\nOldest transform: 1731326117.158109\n"];
+"liigend" -> "front_right_wheel"[label=" Broadcaster: default_authority\nAverage rate: 20.357\nBuffer length: 4.618\nMost recent transform: 1731326121.775738\nOldest transform: 1731326117.158109\n"];
+"base_footprint" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "rear_left_wheel"[label=" Broadcaster: default_authority\nAverage rate: 10.217\nBuffer length: 4.6\nMost recent transform: 1731326121.775738\nOldest transform: 1731326117.175583\n"];
+"base_link" -> "rear_right_wheel"[label=" Broadcaster: default_authority\nAverage rate: 10.217\nBuffer length: 4.6\nMost recent transform: 1731326121.775738\nOldest transform: 1731326117.175583\n"];
+"base_link" -> "ld19"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "imu_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1731326121.8180208"[ shape=plaintext ] ;
+}->"gps";
+}

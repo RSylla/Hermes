@@ -1,25 +1,40 @@
 waypoints:
-- latitude: 38.161491054181276
-  longitude: -122.45464431092836
+- latitude: 58.3417386667
+  longitude: 25.5687481667
   yaw: 0.0
-- latitude: 38.161587576524845
-  longitude: -122.4547994038464
-  yaw: 1.57
-- latitude: 38.161708040316405
-  longitude: -122.45499603070951
-  yaw: 3.14
-- latitude: 38.16180165780551
-  longitude: -122.45515645020123
-  yaw: 4.71
-- latitude: 38.161502424692806
-  longitude: -122.45467093222697
+- latitude: 58.3417006667
+  longitude: 25.5686105
   yaw: 0.0
-- latitude: 38.16150244991558
-  longitude: -122.45467096965518
+- latitude: 58.3416815
+  longitude: 25.5685673333
   yaw: 0.0
-- latitude: 38.16147181269905
-  longitude: -122.45454694554087
+- latitude: 58.341639
+  longitude: 25.5685565
   yaw: 0.0
-- latitude: 38.16138570153875
-  longitude: -122.45460710493394
+- latitude: 58.3415713333
+  longitude: 25.5686205
+  yaw: 0.0
+- latitude: 58.3415301667
+  longitude: 25.5686545
+  yaw: 0.0
+- latitude: 58.3415041667
+  longitude: 25.568666
+  yaw: 0.0
+- latitude: 58.3414895
+  longitude: 25.5687278333
+  yaw: 0.0
+- latitude: 58.341549
+  longitude: 25.5688785
+  yaw: 0.0
+- latitude: 58.3415645
+  longitude: 25.568952
+  yaw: 0.0
+- latitude: 58.3416008333
+  longitude: 25.5690265
+  yaw: 0.0
+- latitude: 58.3417226667
+  longitude: 25.5689095
+  yaw: 0.0
+- latitude: 58.3417636667
+  longitude: 25.5688656667
   yaw: 0.0
