@@ -51,25 +51,12 @@ def generate_launch_description():
             launch_ros.actions.Node(
                 package="robot_localization",
                 executable="navsat_transform_node",
-                name="navsat_transform",
+                name="navsat_transform_node",
                 output="screen",
-                parameters=[
-                    {
-                        "use_sim_time": False,
-                        "magnetic_declination_radians": 0.0,
-                        "yaw_offset": 0.0,
-                        "zero_altitude": True,
-                        "broadcast_utm_transform": True,
-                        "publish_filtered_gps": True,
-                        "use_odometry_yaw": False,
-                        "wait_for_datum": False,
-                        "datum": "",
-                        # Add other parameters as needed
-                    }
-                ],
+                parameters=[rl_params_file, {"use_sim_time": False}, {'gps_topic': '/fix'}],
                 remappings=[
-                    ("/fix", "/fix"),  # Ensure this matches your topic names
-                    ("/imu/data_raw", "/imu/data_raw"),  # If you have IMU data
+                    ("/gps/fix", "/fix"),  
+                    ("/imu", "/imu"),  # If you have IMU data
                     ("/odometry/gps", "/odometry/gps"),
                 ],
             ),

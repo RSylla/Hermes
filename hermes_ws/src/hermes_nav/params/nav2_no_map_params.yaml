@@ -84,7 +84,7 @@ controller_server:
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.001
     min_theta_velocity_threshold: 0.001
-    failure_tolerance: 0.5
+    failure_tolerance: 1.0
     progress_checker_plugins: ["progress_checker"]
     goal_checker_plugins: ["general_goal_checker"]
     controller_plugins: ["FollowPath"]  # Use DWB Controller for differential drive
@@ -108,7 +108,7 @@ controller_server:
       debug_trajectory_details: True
       min_vel_x: 0.0
       min_vel_y: 0.0
-      max_vel_x: 0.25  # Lower max velocity for better control
+      max_vel_x: 0.5  # Lower max velocity for better control
       max_vel_y: 0.0  # No lateral movement
       max_vel_theta: 0.5  # Lower angular velocity to prevent oscillation
       min_speed_xy: 0.0
@@ -194,8 +194,8 @@ global_costmap:
       global_frame: map
       robot_base_frame: base_footprint
       rolling_window: True
-      width: 100
-      height: 100
+      width: 250
+      height: 250
       resolution: 0.2
       track_unknown_space: true
       # Define the robot footprint to reflect the shape of the robot with trailer
@@ -229,14 +229,21 @@ map_server:
 
 planner_server:
   ros__parameters:
-    expected_planner_frequency: 20.0  # Adjusted frequency
+    expected_planner_frequency: 20.0
     planner_plugins: ["GridBased"]
     GridBased:
-      plugin: "nav2_navfn_planner/NavfnPlanner"  # Using NavfnPlanner for differential drive
+      plugin: "nav2_smac_planner/SmacPlannerHybrid"  # Switch to SmacPlanner
       tolerance: 0.5
-      use_astar: false
-      allow_unknown: true
+      downsample_costmap: True
+      downsampling_factor: 1
+      angle_quantization_bins: 72
+      minimum_turning_radius: 0.1
+      cache_obstacle_heuristic: True
+      motion_model_for_search: "REEDS_SHEPP"  # Suitable for nonholonomic robots
+      allow_unknown: True
     use_sim_time: False
+
+
 
 smoother_server:
   ros__parameters:

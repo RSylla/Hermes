@@ -16,7 +16,7 @@ class CorrectionHandlerNode(Node):
     def __init__(self):
         super().__init__('Correction_handler_node')
         threading.Thread(target=self.run_loop).start()
-        self.stream = Serial(port="/dev/ttyACM0", baudrate=115200, timeout=1)
+        self.stream = Serial(port="/dev/ttyACM1", baudrate=115200, timeout=1)
                 
         
     def run_loop(self):

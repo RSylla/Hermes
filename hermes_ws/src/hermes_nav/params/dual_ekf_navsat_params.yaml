@@ -8,10 +8,10 @@ ekf_filter_node_odom:
     publish_tf: true
     use_sim_time: false
     
-    map_frame: odom
-    odom_frame: odom
-    base_link_frame: base_footprint
-    world_frame: odom
+    map_frame: "map"
+    odom_frame: "odom"
+    base_link_frame: "base_footprint"
+    world_frame: "odom"
 
 
     odom0: /odom
@@ -24,7 +24,7 @@ ekf_filter_node_odom:
     odom0_differential: false
     odom0_relative: false
 
-    imu0: /imu/data_raw
+    imu0: /imu
     imu0_config: [false, false, false,
                   false, false, true,  # Measure YAW only
                   false, false, false,
@@ -35,13 +35,7 @@ ekf_filter_node_odom:
     imu0_queue_size: 10
     imu0_remove_gravitational_acceleration: true
 
-    mag0: /imu_mag
-    mag0_config: [true, true, true,
-                  false, false, false,
-                  false, false, false,
-                  false, false, false,
-                  false, false, false]
-    mag0_queue_size: 10
+    
     
     
 
@@ -79,7 +73,7 @@ ekf_filter_node_map:
     odom1_differential: false
     odom1_relative: false
 
-    imu0: /imu/data_raw
+    imu0: /imu
     imu0_config: [false, false, false,
                   false, false, true,
                   false, false, false,
@@ -105,10 +99,10 @@ navsat_transform_node:
     world_frame: "map"
     odom_frame: "odom"
     base_link_frame: "base_footprint"
-    gps_frame: "base_link"
+    gps_frame: "gps"
     imu_frame: "imu_link"
     gps_topic: "/fix"
-    imu_topic: "/imu/data_raw"
+    imu_topic: "/imu"
     odom_topic: "/odometry/filtered"
     use_odometry_source: False
 
