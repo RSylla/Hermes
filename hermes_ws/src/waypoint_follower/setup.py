@@ -17,7 +17,6 @@ setup(
     maintainer_email='raivo.sylla@gmail.com',
     description='TODO: Package description',
     license='Apache-2.0',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'waypoint_recorder_node = waypoint_follower.waypoint_recorder_node:main',

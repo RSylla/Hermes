@@ -18,7 +18,7 @@ class WaypointRecorder(Node):
             10)
         
         self.last_save_time = time.time()
-        self.save_interval = 0.5  # Save every 0.5 seconds
+        self.save_interval = 1  # Save every 0.5 seconds
         self.filename = 'src/waypoint_follower/waypoint_follower/waypoints.txt'
         self.get_logger().info('Waypoint recorder started. Saving to waypoints.txt')
 

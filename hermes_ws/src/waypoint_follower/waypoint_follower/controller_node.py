@@ -2,11 +2,12 @@
 
 import rclpy
 from rclpy.node import Node
-
+from std_msgs.msg import String
 from sensor_msgs.msg import NavSatFix
 from geometry_msgs.msg import Twist
 import math
 import time
+import ast
 
 # ------------------
 # Simple PID Class
@@ -78,12 +79,20 @@ class WaypointFollower(Node):
             10
         )
 
+        # Setup subscription to detected objects
+        self.subscription = self.create_subscription(
+            String,
+            '/detected_objects',
+            self.object_callback,
+            10
+        )
+
         # Setup publisher for cmd_vel
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel_out', 10)
 
         # PID controllers
         # Example: For heading error
-        self.heading_pid = PIDController(kp=1.5, ki=0.0, kd=0.0, dt=0.1,
+        self.heading_pid = PIDController(kp=0.0001, ki=0.0, kd=15.0, dt=0.1,
                                          max_output=0.5, min_output=-0.5)
 
         # Timer to publish commands at 10 Hz
@@ -100,6 +109,7 @@ class WaypointFollower(Node):
         self.prev_lon = None
         self.last_time = time.time()
 
+        self.detected_objects = []
         self.get_logger().info("Waypoint Follower node initialized.")
 
     def load_waypoints(self, filename):
@@ -130,6 +140,9 @@ class WaypointFollower(Node):
 
         self.prev_lat = self.current_lat
         self.prev_lon = self.current_lon
+    
+    def object_callback(self, msg: String):
+        self.detected_objects = ast.literal_eval(msg.data)
 
     def control_loop(self):
         # If we don't have a valid GPS fix yet, do nothing
@@ -142,7 +155,17 @@ class WaypointFollower(Node):
             self.publish_cmd_vel(0.0, 0.0)
             self.get_logger().info("All waypoints reached. Stopping.")
             return
-
+        
+        # Check if we have detected objects
+        if self.detected_objects:
+            nearest_object = list(self.detected_objects[0])
+            # print(nearest_object, type(nearest_object))
+            if nearest_object[1] <= 1.5 and nearest_object[1] and not 0.0:  # Minimum distance to object
+                self.publish_cmd_vel(0.0, 0.0)
+                self.get_logger().info(f"{nearest_object[0]} detected. Stopping.")
+                return
+            
+        # self.publish_cmd_vel(0.5, 0.0)
         # Current target waypoint
         wp_lat, wp_lon = self.waypoints[self.current_waypoint_idx]
 
@@ -155,7 +178,7 @@ class WaypointFollower(Node):
         dist = math.sqrt((x_w - x_r)**2 + (y_w - y_r)**2)
 
         # If close enough to current waypoint, move on
-        if dist < 0.3:  # your chosen threshold
+        if dist < 0.7:  # your chosen threshold
             self.get_logger().info(f"Reached waypoint {self.current_waypoint_idx}. Moving to next.")
             self.current_waypoint_idx += 1
             return
@@ -167,14 +190,16 @@ class WaypointFollower(Node):
         heading_error = self.angle_normalize(desired_heading - self.current_heading)
 
         # Update heading PID to get angular speed
-        angular_z = 0.3 * self.heading_pid.update(heading_error)
+        angular_z = self.heading_pid.update(heading_error)
 
         # Simple logic for linear speed:
         # - Go at a constant speed if far from waypoint.
         # - You can also use a separate PID if you want more sophisticated behavior.
         linear_x = 0.5  # m/s, tune as needed
+        
 
         # Publish cmd_vel
+        print(F"Continuing navigation: lin: {linear_x}, ang: {angular_z}")
         self.publish_cmd_vel(linear_x, angular_z)
 
     def publish_cmd_vel(self, lin, ang):
