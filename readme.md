@@ -1,7 +1,8 @@
 # Project "Hermes" - Autonomus parcel courier for closed areas.
 Clevon academy project.
-
-SSH connection: ssh -X hermes@10.0.3.255
+Clevon: 10.0.3.255
+Clevon_Academy 5 ja 2: 10.0.6.185
+SSH connection: ssh -X hermes@ip_aadress 
 
 Launcher command:
 ROS cmd: ros2 launch multi_package_launcher launch_all_packages.launch.py
